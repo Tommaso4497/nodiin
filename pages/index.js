@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
@@ -12,7 +11,9 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      <Button color="primary">Ciao</Button>
+      <div>Home</div>
+
+
     </div>
   );
 }
