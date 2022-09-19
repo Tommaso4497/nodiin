@@ -23,6 +23,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import InfoIcon from "@mui/icons-material/Info";
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
+import HomeIcon from '@mui/icons-material/Home';
 
 const Navigation = () => {
   const router = useRouter();
@@ -66,6 +67,17 @@ const Navigation = () => {
             </div>
             <Divider />
             <List>
+            <ListItem>
+              <ListItemButton
+                onClick={() => {
+                  setOpen(false)
+                  router.push('/')}}>
+                  <ListItemIcon>
+                    <HomeIcon />
+                  </ListItemIcon>
+                  Home
+                </ListItemButton>
+              </ListItem>
               <ListItem>
                 <ListItemButton 
                  onClick={() => {
