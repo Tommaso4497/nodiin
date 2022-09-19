@@ -23,7 +23,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import InfoIcon from "@mui/icons-material/Info";
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from "@mui/icons-material/Home";
 
 const Navigation = () => {
   const router = useRouter();
@@ -38,7 +38,9 @@ const Navigation = () => {
             <Toolbar>
               <IconButton
                 color="inherit"
-                onClick={()=>{setOpen(true)}}
+                onClick={() => {
+                  setOpen(true);
+                }}
                 edge="start"
               >
                 <MenuIcon />
@@ -58,20 +60,27 @@ const Navigation = () => {
             }}
             variant="persistent"
             anchor="left"
-            open={open}>
+            open={open}
+          >
             <div>
-              <IconButton onClick={()=>{setOpen(false)}}>
+              <IconButton
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
                 <KeyboardArrowLeftIcon />
               </IconButton>
               Menu
             </div>
             <Divider />
             <List>
-            <ListItem>
-              <ListItemButton
-                onClick={() => {
-                  setOpen(false)
-                  router.push('/')}}>
+              <ListItem>
+                <ListItemButton
+                  onClick={() => {
+                    setOpen(false);
+                    router.push("/");
+                  }}
+                >
                   <ListItemIcon>
                     <HomeIcon />
                   </ListItemIcon>
@@ -79,10 +88,12 @@ const Navigation = () => {
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton 
-                 onClick={() => {
-                  setOpen(false)
-                  router.push('/chiacchierino/Chiacchierino')}}>
+                <ListItemButton
+                  onClick={() => {
+                    setOpen(false);
+                    router.push("/chiacchierino/Chiacchierino");
+                  }}
+                >
                   <ListItemIcon>
                     <CollectionsIcon />
                   </ListItemIcon>
@@ -90,10 +101,12 @@ const Navigation = () => {
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton 
-                onClick={() => {
-                  setOpen(false)
-                  router.push('/uncinetto/Uncinetto')}}>
+                <ListItemButton
+                  onClick={() => {
+                    setOpen(false);
+                    router.push("/uncinetto/Uncinetto");
+                  }}
+                >
                   <ListItemIcon>
                     <CollectionsIcon />
                   </ListItemIcon>
@@ -102,9 +115,11 @@ const Navigation = () => {
               </ListItem>
               <ListItem>
                 <ListItemButton
-                onClick={() => {
-                  setOpen(false)
-                  router.push('/informations/Informations')}}>
+                  onClick={() => {
+                    setOpen(false);
+                    router.push("/informations/Informations");
+                  }}
+                >
                   <ListItemIcon>
                     <InfoIcon />
                   </ListItemIcon>
@@ -112,15 +127,21 @@ const Navigation = () => {
                 </ListItemButton>
               </ListItem>
               <ListItem>
-              <ListItemButton
-                onClick={() => {
-                  setOpen(false)
-                  router.push('/contactUs/contactUs')}}>
+                <ListItemButton
+                  onClick={() => {
+                    setOpen(false);
+                    router.push("/contactUs/contactUs");
+                  }}
+                >
                   <ListItemIcon>
                     <MailIcon />
                   </ListItemIcon>
                   Contattaci
                 </ListItemButton>
+              </ListItem>
+              <ListItem style={{ position: "fixed", bottom: "0"}}>
+                <IconButton><FacebookIcon /></IconButton>
+                <IconButton><InstagramIcon/></IconButton>
               </ListItem>
             </List>
           </Drawer>
@@ -146,11 +167,33 @@ const Navigation = () => {
             <IconButton>
               <InstagramIcon />
             </IconButton>
-            <Button variant="contained" onClick={() => router.push('/')}>Home</Button>
-            <Button variant="contained" onClick={() => router.push('/chiacchierino/Chiacchierino')}>Chiacchierino</Button>
-            <Button variant="contained" onClick={() => router.push('/uncinetto/Uncinetto')}>Uncinetto</Button>
-            <Button variant="contained" onClick={() => router.push('/informations/Informations')}>Informazioni</Button>
-            <Button variant="contained"  onClick={() => router.push('/contactUs/contactUs')}>Contattaci</Button>
+            <Button variant="contained" onClick={() => router.push("/")}>
+              Home
+            </Button>
+            <Button
+              variant="contained"
+              onClick={() => router.push("/chiacchierino/Chiacchierino")}
+            >
+              Chiacchierino
+            </Button>
+            <Button
+              variant="contained"
+              onClick={() => router.push("/uncinetto/Uncinetto")}
+            >
+              Uncinetto
+            </Button>
+            <Button
+              variant="contained"
+              onClick={() => router.push("/informations/Informations")}
+            >
+              Informazioni
+            </Button>
+            <Button
+              variant="contained"
+              onClick={() => router.push("/contactUs/contactUs")}
+            >
+              Contattaci
+            </Button>
           </div>
         </div>
       )}
