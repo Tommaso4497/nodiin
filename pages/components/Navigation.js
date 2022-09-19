@@ -28,13 +28,12 @@ import theme from "../../styles/main";
 
 const Navigation = () => {
   const router = useRouter();
-  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
   const [open, setOpen] = useState(false);
 
   return (
     <div className={styles.navigationWrapper}>
-      {matches ? (
-        <>
+        <div style={{display: matches ? "none" : ""}}>
           <AppBar position="static" open={open}>
             <Toolbar>
               <IconButton
@@ -146,11 +145,10 @@ const Navigation = () => {
               </ListItem>
             </List>
           </Drawer>
-        </>
-      ) : (
+        </div>
         <div
           style={{
-            display: "flex",
+            display: matches ? "flex" : "none",
             backgroundColor: "#adc178",
             alignItems: "center",
             justifyContent: "space-between",
@@ -197,7 +195,6 @@ const Navigation = () => {
             </Button>
           </div>
         </div>
-      )}
     </div>
   );
 };
