@@ -33,7 +33,6 @@ const Navigation = () => {
       key={element?.id}
       variant="contained"
       onClick={() => {
-        setOpen(false);
         router.push(`${element?.path}`);
       }}
     >
