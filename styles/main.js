@@ -12,12 +12,12 @@ const theme = createTheme({
         root:{
           color:"#000",
           fontSize:"1rem",
-          borderRadius:"60%",
           padding:".5rem .5rem",
           boxShadow:["none"],
           "&:hover":{
-            backgroundColor: "#7B8F4B",
+            backgroundColor:"#adc178",
             color:"#fff",
+            boxShadow:["none"],
           }
         }
       }

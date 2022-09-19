@@ -24,10 +24,11 @@ import InfoIcon from "@mui/icons-material/Info";
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
+import theme from "../../styles/main";
 
 const Navigation = () => {
   const router = useRouter();
-  const matches = useMediaQuery("(max-width:600px)");
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
   const [open, setOpen] = useState(false);
 
   return (
