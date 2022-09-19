@@ -20,32 +20,24 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import InfoIcon from '@mui/icons-material/Info';
-import MailIcon from '@mui/icons-material/Mail';
-import CollectionsIcon from '@mui/icons-material/Collections';
+import InfoIcon from "@mui/icons-material/Info";
+import MailIcon from "@mui/icons-material/Mail";
+import CollectionsIcon from "@mui/icons-material/Collections";
 
 const Navigation = () => {
   const router = useRouter();
   const matches = useMediaQuery("(max-width:600px)");
   const [open, setOpen] = useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
-
   return (
     <div className={styles.navigationWrapper}>
       {matches ? (
         <>
-          <AppBar position="fixed" open={open}>
+          <AppBar position="static" open={open}>
             <Toolbar>
               <IconButton
                 color="inherit"
-                onClick={handleDrawerOpen}
+                onClick={()=>{setOpen(true)}}
                 edge="start"
               >
                 <MenuIcon />
@@ -65,10 +57,9 @@ const Navigation = () => {
             }}
             variant="persistent"
             anchor="left"
-            open={open}
-          >
-            <div >
-              <IconButton onClick={handleDrawerClose}>
+            open={open}>
+            <div>
+              <IconButton onClick={()=>{setOpen(false)}}>
                 <KeyboardArrowLeftIcon />
               </IconButton>
               Menu
@@ -76,24 +67,48 @@ const Navigation = () => {
             <Divider />
             <List>
               <ListItem>
-                <ListItemButton>
-                  <ListItemIcon><CollectionsIcon/></ListItemIcon>
-                  Chiacchierino</ListItemButton>
+                <ListItemButton 
+                 onClick={() => {
+                  setOpen(false)
+                  router.push('/chiacchierino/Chiacchierino')}}>
+                  <ListItemIcon>
+                    <CollectionsIcon />
+                  </ListItemIcon>
+                  Chiacchierino
+                </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
-                  <ListItemIcon><CollectionsIcon/></ListItemIcon>
-                  Uncinetto</ListItemButton>
+                <ListItemButton 
+                onClick={() => {
+                  setOpen(false)
+                  router.push('/uncinetto/Uncinetto')}}>
+                  <ListItemIcon>
+                    <CollectionsIcon />
+                  </ListItemIcon>
+                  Uncinetto
+                </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
-                <ListItemIcon><InfoIcon/></ListItemIcon>
-                  Informazioni</ListItemButton>
+                <ListItemButton
+                onClick={() => {
+                  setOpen(false)
+                  router.push('/informations/Informations')}}>
+                  <ListItemIcon>
+                    <InfoIcon />
+                  </ListItemIcon>
+                  Informazioni
+                </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
-                  <ListItemIcon><MailIcon/></ListItemIcon>
-                  Contattaci</ListItemButton>
+              <ListItemButton
+                onClick={() => {
+                  setOpen(false)
+                  router.push('/contactUs/contactUs')}}>
+                  <ListItemIcon>
+                    <MailIcon />
+                  </ListItemIcon>
+                  Contattaci
+                </ListItemButton>
               </ListItem>
             </List>
           </Drawer>
@@ -119,11 +134,11 @@ const Navigation = () => {
             <IconButton>
               <InstagramIcon />
             </IconButton>
-            <Button variant="contained">Home</Button>
-            <Button variant="contained">Chiacchierino</Button>
-            <Button variant="contained">Uncinetto</Button>
-            <Button variant="contained">Informazioni</Button>
-            <Button variant="contained">Contattaci</Button>
+            <Button variant="contained" onClick={() => router.push('/')}>Home</Button>
+            <Button variant="contained" onClick={() => router.push('/chiacchierino/Chiacchierino')}>Chiacchierino</Button>
+            <Button variant="contained" onClick={() => router.push('/uncinetto/Uncinetto')}>Uncinetto</Button>
+            <Button variant="contained" onClick={() => router.push('/informations/Informations')}>Informazioni</Button>
+            <Button variant="contained"  onClick={() => router.push('/contactUs/contactUs')}>Contattaci</Button>
           </div>
         </div>
       )}

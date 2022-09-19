@@ -1,4 +1,5 @@
 
 .navigationWrapper{
   display: flex;
+  flex-direction: column;
 }

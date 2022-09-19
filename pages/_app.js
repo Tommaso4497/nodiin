@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Navigation />
+      <Navigation  />
         <Component {...pageProps} />
     </ThemeProvider>
   );
