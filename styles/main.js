@@ -21,6 +21,19 @@ const theme = createTheme({
           }
         }
       }
+    }, 
+    MuiDrawer:{
+      styleOverrides:{
+        root:{
+            width: "240px",
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              backgroundColor: "#fefae0",
+              width: "240px",
+              boxSizing: "border-box",
+            },
+        }
+      }
     }
   }
 });

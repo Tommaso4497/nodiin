@@ -33,168 +33,163 @@ const Navigation = () => {
 
   return (
     <div className={styles.navigationWrapper}>
-        <div style={{display: matches ? "none" : "block"}}>
-          <AppBar position="static" open={open}>
-            <Toolbar>
-              <IconButton
-                color="inherit"
+      <div style={{ display: matches ? "none" : "block" }}>
+        <AppBar position="static" open={open}>
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              onClick={() => {
+                setOpen((prev) => !prev);
+              }}
+              edge="start"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6">Nodi in chiacchierino</Typography>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          variant="persistent"
+          anchor="left"
+          open={open}
+        >
+          <div style={{display:"flex", alignItems:"center"}}>
+            <IconButton
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              <KeyboardArrowLeftIcon />
+            </IconButton>
+            Menu
+          </div>
+          <Divider />
+          <List>
+            <ListItem>
+              <ListItemButton
                 onClick={() => {
-                  setOpen(true);
+                  setOpen((prev) => !prev);
+                  router.push("/");
                 }}
-                edge="start"
               >
-                <MenuIcon />
-              </IconButton>
-              <Typography variant="h6">Nodi in chiacchierino</Typography>
-            </Toolbar>
-          </AppBar>
-          <Drawer
-            sx={{
-              width: "240px",
-              flexShrink: 0,
-              "& .MuiDrawer-paper": {
-                backgroundColor: "#fefae0",
-                width: "240px",
-                boxSizing: "border-box",
-              },
-            }}
-            variant="persistent"
-            anchor="left"
-            open={open}
-          >
-            <div>
-              <IconButton
+                <ListItemIcon>
+                  <HomeIcon />
+                </ListItemIcon>
+                Home
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton
                 onClick={() => {
                   setOpen(false);
+                  router.push("/chiacchierino/Chiacchierino");
                 }}
               >
-                <KeyboardArrowLeftIcon />
+                <ListItemIcon>
+                  <CollectionsIcon />
+                </ListItemIcon>
+                Chiacchierino
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton
+                onClick={() => {
+                  setOpen(false);
+                  router.push("/uncinetto/Uncinetto");
+                }}
+              >
+                <ListItemIcon>
+                  <CollectionsIcon />
+                </ListItemIcon>
+                Uncinetto
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton
+                onClick={() => {
+                  setOpen(false);
+                  router.push("/informations/Informations");
+                }}
+              >
+                <ListItemIcon>
+                  <InfoIcon />
+                </ListItemIcon>
+                Informazioni
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton
+                onClick={() => {
+                  setOpen(false);
+                  router.push("/contactUs/contactUs");
+                }}
+              >
+                <ListItemIcon>
+                  <MailIcon />
+                </ListItemIcon>
+                Contattaci
+              </ListItemButton>
+            </ListItem>
+            <ListItem style={{ position: "fixed", bottom: "0" }}>
+              <IconButton>
+                <FacebookIcon />
               </IconButton>
-              Menu
-            </div>
-            <Divider />
-            <List>
-              <ListItem>
-                <ListItemButton
-                  onClick={() => {
-                    setOpen(false);
-                    router.push("/");
-                  }}
-                >
-                  <ListItemIcon>
-                    <HomeIcon />
-                  </ListItemIcon>
-                  Home
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton
-                  onClick={() => {
-                    setOpen(false);
-                    router.push("/chiacchierino/Chiacchierino");
-                  }}
-                >
-                  <ListItemIcon>
-                    <CollectionsIcon />
-                  </ListItemIcon>
-                  Chiacchierino
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton
-                  onClick={() => {
-                    setOpen(false);
-                    router.push("/uncinetto/Uncinetto");
-                  }}
-                >
-                  <ListItemIcon>
-                    <CollectionsIcon />
-                  </ListItemIcon>
-                  Uncinetto
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton
-                  onClick={() => {
-                    setOpen(false);
-                    router.push("/informations/Informations");
-                  }}
-                >
-                  <ListItemIcon>
-                    <InfoIcon />
-                  </ListItemIcon>
-                  Informazioni
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton
-                  onClick={() => {
-                    setOpen(false);
-                    router.push("/contactUs/contactUs");
-                  }}
-                >
-                  <ListItemIcon>
-                    <MailIcon />
-                  </ListItemIcon>
-                  Contattaci
-                </ListItemButton>
-              </ListItem>
-              <ListItem style={{ position: "fixed", bottom: "0"}}>
-                <IconButton><FacebookIcon /></IconButton>
-                <IconButton><InstagramIcon/></IconButton>
-              </ListItem>
-            </List>
-          </Drawer>
+              <IconButton>
+                <InstagramIcon />
+              </IconButton>
+            </ListItem>
+          </List>
+        </Drawer>
+      </div>
+      <div
+        style={{
+          display: matches ? "flex" : "none",
+          backgroundColor: "#adc178",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+          padding: ".25rem .5rem",
+        }}
+      >
+        <div>
+          <Typography>Nodi in chiacchierino</Typography>
         </div>
-        <div
-          style={{
-            display: matches ? "flex" : "none",
-            backgroundColor: "#adc178",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
-            padding: ".25rem .5rem",
-          }}
-        >
-          <div>
-            <Typography>Nodi in chiacchierino</Typography>
-          </div>
-          <div style={{ display: "flex", gap: ".75rem" }}>
-            <IconButton>
-              <FacebookIcon />
-            </IconButton>
-            <IconButton>
-              <InstagramIcon />
-            </IconButton>
-            <Button variant="contained" onClick={() => router.push("/")}>
-              Home
-            </Button>
-            <Button
-              variant="contained"
-              onClick={() => router.push("/chiacchierino/Chiacchierino")}
-            >
-              Chiacchierino
-            </Button>
-            <Button
-              variant="contained"
-              onClick={() => router.push("/uncinetto/Uncinetto")}
-            >
-              Uncinetto
-            </Button>
-            <Button
-              variant="contained"
-              onClick={() => router.push("/informations/Informations")}
-            >
-              Informazioni
-            </Button>
-            <Button
-              variant="contained"
-              onClick={() => router.push("/contactUs/contactUs")}
-            >
-              Contattaci
-            </Button>
-          </div>
+        <div style={{ display: "flex", gap: ".75rem" }}>
+          <IconButton>
+            <FacebookIcon />
+          </IconButton>
+          <IconButton>
+            <InstagramIcon />
+          </IconButton>
+          <Button variant="contained" onClick={() => router.push("/")}>
+            Home
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => router.push("/chiacchierino/Chiacchierino")}
+          >
+            Chiacchierino
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => router.push("/uncinetto/Uncinetto")}
+          >
+            Uncinetto
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => router.push("/informations/Informations")}
+          >
+            Informazioni
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => router.push("/contactUs/contactUs")}
+          >
+            Contattaci
+          </Button>
         </div>
+      </div>
     </div>
   );
 };
