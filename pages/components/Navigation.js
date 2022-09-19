@@ -33,7 +33,7 @@ const Navigation = () => {
 
   return (
     <div className={styles.navigationWrapper}>
-        <div style={{display: matches ? "none" : ""}}>
+        <div style={{display: matches ? "none" : "block"}}>
           <AppBar position="static" open={open}>
             <Toolbar>
               <IconButton
