@@ -21,7 +21,7 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import theme from "../../styles/main";
-import { menuElement } from "../utilsFunction/utilsFunction";
+// import { menuElement } from "../utilsFunction/utilsFunction";
 
 
 const Navigation = () => {
@@ -29,17 +29,17 @@ const Navigation = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
   const [open, setOpen] = useState(false);
 
-  const elementWeb = menuElement.map((element) => (
-    <Button
-      key={element?.id}
-      variant="contained"
-      onClick={() => {
-        router.push(`${element?.path}`);
-      }}
-    >
-      {element.section}
-    </Button>
-  ));
+  // const elementWeb = menuElement.map((element) => (
+  //   <Button
+  //     key={element?.id}
+  //     variant="contained"
+  //     onClick={() => {
+  //       router.push(`${element?.path}`);
+  //     }}
+  //   >
+  //     {element.section}
+  //   </Button>
+  // ));
 
   const elementsMobile = menuElement.map((element) => (
     <ListItem key={element?.id}>
@@ -111,7 +111,7 @@ const Navigation = () => {
           <IconButton>
             <InstagramIcon />
           </IconButton>
-          {elementWeb}
+          {/* {elementWeb} */}
         </div>
       </div>
     </div>
