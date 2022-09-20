@@ -3,36 +3,40 @@ import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
 
-export const menuElement = [
+const menuElement = [
   {
     id: "0",
     section: "Home",
     path: "/",
-    icon: <HomeIcon/>,
+    icon: <HomeIcon />,
   },
   {
     id: "1",
     section: "Chiacchierino",
     path: "/chiacchierino/Chiacchierino",
-    icon: <CollectionsIcon/>,
+    icon: <CollectionsIcon />,
   },
   {
     id: "2",
     section: "Uncinetto",
     path: "/uncinetto/Uncinetto",
-    icon: <CollectionsIcon/>,
+    icon: <CollectionsIcon />,
   },
   {
     id: "3",
     section: "Informazioni",
     path: "/informations/Informations",
-    icon: <InfoIcon/>,
+    icon: <InfoIcon />,
   },
   {
     id: "4",
     section: "Contattaci",
     path: "/contactUs/contactUs",
-    icon: <MailIcon/>,
+    icon: <MailIcon />,
   },
 ];
+
+export {
+  menuElement,
+};
 
