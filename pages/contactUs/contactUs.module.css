@@ -1,0 +1,16 @@
+.spacing {
+    margin-top: 1rem;
+}
+
+.contentWrapper {
+    padding: 1rem 2rem;
+}
+
+.formWrapper {
+    margin-top: .5rem;
+    text-align: end;
+}
+
+.footerTitle {
+    margin-top: 1rem;
+}
