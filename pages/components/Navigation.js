@@ -85,14 +85,16 @@ const Navigation = () => {
           </div>
           <Divider />
           <List>{elementsMobile}</List>
-          <ListItem className={styles.footerWrapper}>
-            <IconButton>
-              <FacebookIcon />
-            </IconButton>
-            <IconButton>
-              <InstagramIcon />
-            </IconButton>
-          </ListItem>
+          <List className={styles.footerWrapper}>
+            <ListItem >
+              <IconButton>
+                <FacebookIcon />
+              </IconButton>
+              <IconButton>
+                <InstagramIcon />
+              </IconButton>
+            </ListItem>
+          </List>
         </Drawer>
       </div>
       <div
