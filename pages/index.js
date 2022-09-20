@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Gioielli in pizzo chiacchierino" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <div>Home</div>
+      <div >Home</div>
     </div>
   );
 }

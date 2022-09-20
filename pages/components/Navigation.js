@@ -23,6 +23,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import theme from "../../styles/main";
 import { menuElement } from "../utilsFunction/utilsFunction";
 
+
 const Navigation = () => {
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
@@ -71,7 +72,7 @@ const Navigation = () => {
             <Typography variant="h6">Nodi in chiacchierino</Typography>
           </Toolbar>
         </AppBar>
-        <Drawer variant="persistent" anchor="left" open={open}>
+        <Drawer variant="temporary" anchor="left" open={open} onClose={() => { setOpen(prev => !prev); }} >
           <div className={styles.wrapperDrawer}>
             <IconButton
               onClick={() => {
