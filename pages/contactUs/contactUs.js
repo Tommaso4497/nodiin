@@ -1,14 +1,12 @@
-import { TextField, Typography, Button, useMediaQuery, IconButton } from "@mui/material";
+import { TextField, Typography, Button, IconButton } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import React from "react";
 import styles from "./contactUs.module.css";
-import theme from "../../styles/main";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 
 const contactUs = () => {
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <div className={styles.contentWrapper}>
