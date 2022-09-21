@@ -1,4 +1,3 @@
-import InfoIcon from "@mui/icons-material/Info";
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
@@ -27,7 +26,7 @@ const menuElement = [
   {
     id: "3",
     section: "Contattaci",
-    path: "/ContactUs/ContactUs",
+    path: "/contactUs/contactUs",
     icon: <MailIcon />,
   },
 ];
