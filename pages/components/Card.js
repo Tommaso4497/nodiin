@@ -1,13 +1,15 @@
 import { Divider, Typography } from '@mui/material';
 import React from 'react';
+import styles from "./Card.module.css";
+import theme from "../../styles/main";
 
 const Card = ({ title, image, descr }) => {
     return (
-        <div style={{ backgroundColor: "#adc178", border: "10px solid #adc178", borderRadius: "3%" }}>
+        <div className={styles.wrapperCard}>
             {image}
-            <Typography variant="h5" style={{ textAlign: "center" }}>{title}</Typography>
-            <Divider color="secondary" />
-            <Typography variant="h6" style={{ textAlign: "center" }}>{descr}</Typography>
+            <Typography variant="h5" className={styles.title}>{title}</Typography>
+            <Divider />
+            <Typography className={styles.description}>{descr}</Typography>
         </div>
     );
 };

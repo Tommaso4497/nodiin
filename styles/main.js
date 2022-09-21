@@ -37,6 +37,13 @@ const theme = createTheme({
           },
         }
       }
+    },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#000",
+        }
+      }
     }
   }
 });
