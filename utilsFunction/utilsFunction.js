@@ -2,6 +2,8 @@ import InfoIcon from "@mui/icons-material/Info";
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
+import Image from "next/image";
+import orecchini from "../images/orecchini.jpg";
 
 const menuElement = [
   {
@@ -24,19 +26,54 @@ const menuElement = [
   },
   {
     id: "3",
-    section: "Informazioni",
-    path: "/informations/Informations",
-    icon: <InfoIcon />,
-  },
-  {
-    id: "4",
     section: "Contattaci",
     path: "/contactUs/contactUs",
     icon: <MailIcon />,
   },
 ];
 
+
+const uncinettoElements = [
+  {
+    id: "0",
+    title: "Orecchini argento",
+    desc: "Orecchini realizzati in argento metallizzato, con cristalli azzurri e blu.",
+    img: <Image src={orecchini} width="500" height="450" />,
+  },
+  {
+    id: "1",
+    title: "Orecchini argento",
+    desc: "Orecchini realizzati in argento metallizzato, con cristalli azzurri e blu.",
+    img: <Image src={orecchini} width="500" height="450" />,
+  },
+  {
+    id: "2",
+    title: "Orecchini argento",
+    desc: "Orecchini realizzati in argento metallizzato, con cristalli azzurri e blu.",
+    img: <Image src={orecchini} width="500" height="450" />,
+  },
+  {
+    id: "3",
+    desc: "Orecchini realizzati in argento metallizzato, con cristalli azzurri e blu.",
+    title: "Orecchini argento",
+    img: <Image src={orecchini} width="500" height="450" />,
+  },
+];
+
+
+
+const axiosToData = async (axiosPromise) => {
+  try {
+    const results = await axiosPromise;
+    return results.data.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
 export {
   menuElement,
+  uncinettoElements,
+  axiosToData,
 };
 
