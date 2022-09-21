@@ -21,7 +21,7 @@ export default function Home() {
       <div style={{ padding: "2rem", display: "grid", gridTemplateColumns: matches ? "1fr 1fr 1fr" : "1fr", gap: "4rem" }}>
 
         {uncinettoElements.map((elem) => (
-          <Card title={elem.title} image={elem.img} descr={elem.desc}></Card>
+          <Card key={elem.id} title={elem.title} image={elem.img} descr={elem.desc}></Card>
         ))}
 
       </div>
