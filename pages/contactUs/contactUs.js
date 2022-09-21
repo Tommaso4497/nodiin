@@ -1,7 +1,7 @@
 import { TextField, Typography, Button, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import React from "react";
-import styles from "./ContactUs.module.css";
+import styles from "./contactUs.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -51,14 +51,14 @@ const ContactUs = () => {
 
       <div className={styles.footerTitle}>
         <Typography>Oppure contattaci tramite i nostri canali social</Typography>
-          <div style={{ display: "flex", justifyContent: matches ? "start" : "space-around" }}>
-            <IconButton>
-              <FacebookIcon fontSize="large" />
-            </IconButton>
-            <IconButton>
-              <InstagramIcon fontSize="large" />
-            </IconButton>
-          </div>
+        <div style={{ display: "flex", justifyContent: matches ? "start" : "space-around" }}>
+          <IconButton>
+            <FacebookIcon fontSize="large" />
+          </IconButton>
+          <IconButton>
+            <InstagramIcon fontSize="large" />
+          </IconButton>
+        </div>
       </div>
     </div>
   );
