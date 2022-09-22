@@ -22,6 +22,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import theme from "../../styles/main";
 import { menuElement } from "../../utilsFunction/utilsFunction";
+import Image from "next/image";
+import logo from "../../images/logo.png";
 
 
 const Navigation = () => {
@@ -69,7 +71,10 @@ const Navigation = () => {
             >
               <MenuIcon />
             </IconButton>
+            <div style={{display:"flex", alignItems:"center", width:"100%", justifyContent:"space-around"}}>
             <Typography variant="h6">Nodi in chiacchierino</Typography>
+            <Image src={logo} width="40" height="40"/>
+            </div>
           </Toolbar>
         </AppBar>
         <Drawer variant="temporary" anchor="left" open={open} onClose={() => { setOpen(prev => !prev); }} >
@@ -103,7 +108,8 @@ const Navigation = () => {
           display: matches ? "flex" : "none",
         }}
       >
-        <div>
+        <div style={{display:"flex", alignItems:"center", gap:"1rem"}}>
+          <Image src={logo} width="50" height="50" />
           <Typography>Nodi in chiacchierino</Typography>
         </div>
         <div className={styles.buttonHeaderWrapper}>
