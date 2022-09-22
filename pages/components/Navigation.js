@@ -24,6 +24,7 @@ import theme from "../../styles/main";
 import { menuElement } from "../../utilsFunction/utilsFunction";
 import Image from "next/image";
 import logo from "../../images/logo.png";
+import logoOriz from "../../images/logoOriz.png";
 
 
 const Navigation = () => {
@@ -72,7 +73,7 @@ const Navigation = () => {
               <MenuIcon />
             </IconButton>
             <div style={{display:"flex", alignItems:"center", width:"100%", justifyContent:"space-around"}}>
-            <Typography variant="h6">Nodi in chiacchierino</Typography>
+            <Image src={logoOriz} width="240" />
             <Image src={logo} width="40" height="40"/>
             </div>
           </Toolbar>
@@ -109,8 +110,8 @@ const Navigation = () => {
         }}
       >
         <div style={{display:"flex", alignItems:"center", gap:"1rem"}}>
-          <Image src={logo} width="50" height="50" />
-          <Typography>Nodi in chiacchierino</Typography>
+          <Image src={logo} width="30" height="30" />
+          <Image src={logoOriz}  />
         </div>
         <div className={styles.buttonHeaderWrapper}>
           <IconButton>
