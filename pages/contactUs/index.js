@@ -11,7 +11,7 @@ const ContactUs = () => {
   return (
     <div >
       <Typography variant="h5">Contattaci</Typography>
-      <Typography className={styles.spacing}>
+      <Typography >
         Scrivici per qualsiasi informazione
       </Typography>
       <form >
