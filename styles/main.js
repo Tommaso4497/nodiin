@@ -44,6 +44,13 @@ const theme = createTheme({
           backgroundColor: "#000",
         }
       }
+    },
+    MuiTextField:{
+      styleOverrides:{
+        root:{
+          marginBottom:".5rem"
+        }
+      }
     }
   }
 });
