@@ -26,7 +26,7 @@ const menuElement = [
   {
     id: "3",
     section: "Contattaci",
-    path: "/contactUs/ContactUs",
+    path: "/contactUs/contactUs",
     icon: <MailIcon />,
   },
 ];
