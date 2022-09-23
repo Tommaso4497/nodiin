@@ -14,19 +14,19 @@ const menuElement = [
   {
     id: "1",
     section: "Chiacchierino",
-    path: "/chiacchierino/Chiacchierino",
+    path: "/chiacchierino/chiacchierino",
     icon: <CollectionsIcon />,
   },
   {
     id: "2",
     section: "Uncinetto",
-    path: "/uncinetto/Uncinetto",
+    path: "/uncinetto/uncinetto",
     icon: <CollectionsIcon />,
   },
   {
     id: "3",
     section: "Contattaci",
-    path: "/ContactUs/contactUs",
+    path: "/contactUs/contactUs",
     icon: <MailIcon />,
   },
 ];

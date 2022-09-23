@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 
-const ContactUs = () => {
+const contactUs = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <div className={styles.contentWrapper}>
@@ -64,4 +64,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default contactUs;

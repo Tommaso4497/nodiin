@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Uncinetto = () => {
+const uncinetto = () => {
   return (
     <>
     <div>Uncinetto</div>
@@ -8,4 +8,4 @@ const Uncinetto = () => {
   )
 }
 
-export default Uncinetto
+export default uncinetto
