@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React from "react";
 import Card from "./components/Card";
@@ -10,7 +11,7 @@ export default function Home() {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Nodi in chiacchierino</title>
         <meta name="description" content="Gioielli in pizzo chiacchierino" />
