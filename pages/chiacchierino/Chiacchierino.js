@@ -1,6 +1,6 @@
 import React from 'react'
 
-const chiacchierino = () => {
+const Chiacchierino = () => {
   return (
     <div>
         Chiacchierino
@@ -8,4 +8,4 @@ const chiacchierino = () => {
   )
 }
 
-export default chiacchierino
+export default Chiacchierino
