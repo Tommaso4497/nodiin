@@ -11,7 +11,7 @@ export default function Home() {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>Nodi in chiacchierino</title>
         <meta name="description" content="Gioielli in pizzo chiacchierino" />
