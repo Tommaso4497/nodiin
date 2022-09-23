@@ -1,7 +1,7 @@
 import { TextField, Typography, Button, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import React from "react";
-import styles from "./index.module.css"
+import styles from "../../styles/ContactUs.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
