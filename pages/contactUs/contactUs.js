@@ -1,7 +1,7 @@
 import { TextField, Typography, Button, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import React from "react";
-import styles from "./contactUs.module.css";
+import styles from "./ContactUs.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -13,7 +13,7 @@ const ContactUs = () => {
     <div className={styles.contentWrapper}>
       <Typography variant="h5">Contattaci</Typography>
       <Typography className={styles.spacing}>
-        Scrivici per qualsiasi informazione!
+        Scrivici per qualsiasi informazione
       </Typography>
       <form className={styles.formWrapper}>
         <TextField
