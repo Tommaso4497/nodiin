@@ -25,12 +25,10 @@ const ContactUs = () => {
           fullWidth
           color="secondary"
         >
-          {" "}
         </TextField>
         <TextField
           autoComplete="off"
           required
-          className={styles.spacing}
           minRows={15}
           multiline
           label="Contenuto"
@@ -40,7 +38,6 @@ const ContactUs = () => {
           color="secondary"
         ></TextField>
         <Button
-          className={styles.spacing}
           type="submit"
           variant="contained"
           endIcon={<SendIcon />}

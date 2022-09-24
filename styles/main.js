@@ -6,8 +6,8 @@ const theme = createTheme({
       main: "#adc178",
     },
     secondary: {
-      main: "#000"
-    }
+      main: "#000",
+    },
   },
   components: {
     MuiButton: {
@@ -21,9 +21,9 @@ const theme = createTheme({
             backgroundColor: "#adc178",
             color: "#fff",
             boxShadow: ["none"],
-          }
-        }
-      }
+          },
+        },
+      },
     },
     MuiDrawer: {
       styleOverrides: {
@@ -35,23 +35,16 @@ const theme = createTheme({
             width: "240px",
             boxSizing: "border-box",
           },
-        }
-      }
+        },
+      },
     },
     MuiDivider: {
       styleOverrides: {
         root: {
           backgroundColor: "#000",
-        }
-      }
+        },
+      },
     },
-    MuiTextField:{
-      styleOverrides:{
-        root:{
-          marginBottom:".5rem"
-        }
-      }
-    }
-  }
+  },
 });
 export default theme;
