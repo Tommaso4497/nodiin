@@ -1,0 +1,14 @@
+.contentWrapper {
+  padding: 1rem;
+}
+
+.contentForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.wrapperButton {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+}
