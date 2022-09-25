@@ -45,21 +45,15 @@ const ContactUs = () => {
             color="secondary"
           ></TextField>
         </div>
-        <div className={styles.wrapperButton} >
-          <Button
-            type="submit"
-            variant="contained"
-            endIcon={<SendIcon />}
-          >
+        <div className={styles.wrapperButton}>
+          <Button type="submit" variant="contained" endIcon={<SendIcon />}>
             Invia
           </Button>
         </div>
       </form>
 
-      <div>
-        <Typography>
-          Oppure contattaci tramite i nostri  social
-        </Typography>
+      <div style={{ textAlign: matches ? "start" : "center" }}>
+        <Typography>Oppure contattaci tramite i nostri social</Typography>
         <div
           style={{
             display: "flex",
