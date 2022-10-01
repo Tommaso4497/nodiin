@@ -26,9 +26,9 @@ const SingleCard = ({ title, image, descr }) => {
         <div className={styles.imageWrapper}>{image}</div>
       </CardMedia>
       <CardContent>
-        <Typography className={styles.title}>{title}</Typography>
+        <p className={styles.title}>{title}</p>
         <Divider className={styles.description} />
-        <Typography>{descr}</Typography>
+        <p>{descr}</p>
       </CardContent>
       <CardActions
         style={{
