@@ -15,8 +15,11 @@ import theme from "../../styles/main";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import { useRouter } from "next/router";
 
 const Singlecard = ({ title, image, descr }) => {
+  const router = useRouter();
+
   return (
     <Card sx={{ minWidth: 325, backgroundColor: "#adc178" }}>
       <CardMedia>
@@ -37,18 +40,18 @@ const Singlecard = ({ title, image, descr }) => {
         <div>
           <Tooltip title="Informazioni" arrow>
             <IconButton>
-              <InfoOutlinedIcon />
+              <InfoOutlinedIcon onClick={() => {router.push("contactUs")}} />
             </IconButton>
           </Tooltip>
           <Tooltip title="Acquista" arrow>
-            <IconButton>
+            <IconButton onClick={() => {router.push("contactUs")}}>
               <ShoppingBagOutlinedIcon />
             </IconButton>
           </Tooltip>
         </div>
         <div>
           <Tooltip title="Contattaci" arrow>
-            <IconButton>
+            <IconButton onClick={() => {router.push("contactUs")}}>
               <EmailOutlinedIcon />
             </IconButton>
           </Tooltip>
