@@ -5,7 +5,7 @@ import React from "react";
 import { uncinettoElements } from "../utilsFunction/utilsFunction";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Typography } from "@mui/material";
-import Singlecard from "./components/Singlecard";
+import SingleCard from "./components/SingleCard";
 
 export default function Home() {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
@@ -46,12 +46,12 @@ export default function Home() {
        
       >
         {uncinettoElements.map((elem) => (
-          <Singlecard
+          <SingleCard
             key={elem.id}
             title={elem.title}
             image={elem.img}
             descr={elem.desc}
-          ></Singlecard>
+          ></SingleCard>
         ))}
       </div>
     </div>

@@ -17,7 +17,7 @@ import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { useRouter } from "next/router";
 
-const Singlecard = ({ title, image, descr }) => {
+const SingleCard = ({ title, image, descr }) => {
   const router = useRouter();
 
   return (
@@ -39,12 +39,12 @@ const Singlecard = ({ title, image, descr }) => {
       >
         <div>
           <Tooltip title="Informazioni" arrow>
-            <IconButton>
-              <InfoOutlinedIcon onClick={() => {router.push("contactUs")}} />
+            <IconButton >
+              <InfoOutlinedIcon />
             </IconButton>
           </Tooltip>
           <Tooltip title="Acquista" arrow>
-            <IconButton onClick={() => {router.push("contactUs")}}>
+            <IconButton >
               <ShoppingBagOutlinedIcon />
             </IconButton>
           </Tooltip>
@@ -61,4 +61,4 @@ const Singlecard = ({ title, image, descr }) => {
   );
 };
 
-export default Singlecard;
+export default SingleCard;
