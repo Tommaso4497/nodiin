@@ -1,5 +1,4 @@
 import {
-  Button,
   Card,
   CardActions,
   CardContent,
@@ -7,7 +6,6 @@ import {
   Divider,
   IconButton,
   Tooltip,
-  Typography,
 } from "@mui/material";
 import React from "react";
 import styles from "./SingleCard.module.css";

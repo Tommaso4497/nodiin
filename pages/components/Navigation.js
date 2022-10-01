@@ -26,7 +26,6 @@ import Image from "next/image";
 import logo from "../../images/logo.png";
 import logoOriz from "../../images/logoOriz.png";
 
-
 const Navigation = () => {
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
@@ -72,13 +71,27 @@ const Navigation = () => {
             >
               <MenuIcon />
             </IconButton>
-            <div style={{display:"flex", alignItems:"center", width:"100%", justifyContent:"space-around"}}>
-            <Image src={logoOriz} width="240" />
-            <Image src={logo} width="40" height="40"/>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                width: "100%",
+                justifyContent: "space-around",
+              }}
+            >
+              <Image src={logoOriz} width="240" />
+              <Image src={logo} width="40" height="40" />
             </div>
           </Toolbar>
         </AppBar>
-        <Drawer variant="temporary" anchor="left" open={open} onClose={() => { setOpen(prev => !prev); }} >
+        <Drawer
+          variant="temporary"
+          anchor="left"
+          open={open}
+          onClose={() => {
+            setOpen((prev) => !prev);
+          }}
+        >
           <div className={styles.wrapperDrawer}>
             <IconButton
               onClick={() => {
@@ -92,13 +105,16 @@ const Navigation = () => {
           <Divider />
           <List>{elementsMobile}</List>
           <List className={styles.footerWrapper}>
-            <ListItem >
+            <ListItem>
               <IconButton>
                 <FacebookIcon />
               </IconButton>
-              <IconButton>
+              <IconButton
+                target="_blank"
+                href="https://www.instagram.com/nodiinchiacchierino/"
+              >
                 <InstagramIcon />
-              </IconButton>
+              </IconButton>{" "}
             </ListItem>
           </List>
         </Drawer>
@@ -109,15 +125,18 @@ const Navigation = () => {
           display: matches ? "flex" : "none",
         }}
       >
-        <div style={{display:"flex", alignItems:"center", gap:"1rem"}}>
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <Image src={logo} width="30" height="30" />
-          <Image src={logoOriz}  />
+          <Image src={logoOriz} />
         </div>
         <div className={styles.buttonHeaderWrapper}>
           <IconButton>
             <FacebookIcon />
           </IconButton>
-          <IconButton>
+          <IconButton
+            target="_blank"
+            href="https://www.instagram.com/nodiinchiacchierino/"
+          >
             <InstagramIcon />
           </IconButton>
           {elementWeb}

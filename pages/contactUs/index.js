@@ -1,6 +1,6 @@
-import { TextField, Typography, Button, IconButton } from "@mui/material";
+import { TextField, Typography, Button, IconButton, drawerClasses } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
-import React from "react";
+import React, { useCallback, useState } from "react";
 import styles from "./ContactUs.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -9,11 +9,20 @@ import theme from "../../styles/main";
 
 const ContactUs = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const [email, setEmail] = useState();
+  const [obj, setObj] = useState();
+  const [content, setContent] = useState();
+
+  const draw= useCallback((e)=>{
+    e.preventDefault();
+    console.log("email:",email,"obj:",obj,"content:",content); 
+  },[email, content, obj])
+
   return (
     <div className={styles.contentWrapper}>
       <Typography variant="h5">Contattaci</Typography>
       <Typography>Scrivici per qualsiasi informazione</Typography>
-      <form autoComplete="off">
+      <form autoComplete="off" onSubmit={draw}>
         <div className={styles.contentForm}>
           <TextField
             autoComplete="off"
@@ -21,8 +30,10 @@ const ContactUs = () => {
             label="Email"
             variant="filled"
             size="small"
+            type="email"
             fullWidth
             color="secondary"
+            onChange={(e)=>{setEmail(e.target.value)}}
           ></TextField>
           <TextField
             autoComplete="off"
@@ -32,6 +43,7 @@ const ContactUs = () => {
             size="small"
             fullWidth
             color="secondary"
+            onChange={(e)=>{setObj(e.target.value)}}
           ></TextField>
           <TextField
             autoComplete="off"
@@ -43,6 +55,7 @@ const ContactUs = () => {
             size="small"
             fullWidth
             color="secondary"
+            onChange={(e)=>{setContent(e.target.value)}}
           ></TextField>
         </div>
         <div className={styles.wrapperButton}>
@@ -63,7 +76,7 @@ const ContactUs = () => {
           <IconButton>
             <FacebookIcon fontSize="large" />
           </IconButton>
-          <IconButton>
+          <IconButton target="_blank" href="https://www.instagram.com/nodiinchiacchierino/" >
             <InstagramIcon fontSize="large" />
           </IconButton>
         </div>
