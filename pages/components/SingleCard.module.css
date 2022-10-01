@@ -1,0 +1,14 @@
+.imageWrapper{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+.title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.description{
+    margin-block: .5rem;
+}
