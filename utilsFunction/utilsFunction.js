@@ -63,6 +63,18 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={orecchini} width="300" height="250" />,
   },
+  {
+    id: "5",
+    desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
+    title: "Orecchini argento",
+    img: <Image src={orecchini} width="300" height="250" />,
+  },
+  {
+    id: "6",
+    desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
+    title: "Orecchini argento",
+    img: <Image src={orecchini} width="300" height="250" />,
+  },
 ];
 
 

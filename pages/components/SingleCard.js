@@ -10,15 +10,15 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import styles from "./SingleCard.module.css";
+import styles from "./Singlecard.module.css";
 import theme from "../../styles/main";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
-const SingleCard = ({ title, image, descr }) => {
+const Singlecard = ({ title, image, descr }) => {
   return (
-    <Card sx={{ maxWidth: 320, backgroundColor: "#adc178" }}>
+    <Card sx={{ minWidth: 325, backgroundColor: "#adc178" }}>
       <CardMedia>
         <div className={styles.imageWrapper}>{image}</div>
       </CardMedia>
@@ -58,4 +58,4 @@ const SingleCard = ({ title, image, descr }) => {
   );
 };
 
-export default SingleCard;
+export default Singlecard;
