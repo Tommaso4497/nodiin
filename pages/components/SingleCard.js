@@ -19,7 +19,7 @@ const SingleCard = ({ title, image, descr }) => {
   const router = useRouter();
 
   return (
-    <Card sx={{ minWidth: 325, backgroundColor: "#adc178" }}>
+    <Card sx={{ backgroundColor: "#adc178" }}>
       <CardMedia>
         <div className={styles.imageWrapper}>{image}</div>
       </CardMedia>

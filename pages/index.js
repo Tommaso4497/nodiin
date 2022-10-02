@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
 import SingleCard from "./components/SingleCard";
 
 export default function Home() {
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <div>
@@ -42,14 +42,14 @@ export default function Home() {
       >
         Ultime creazioni
       </Typography>
-      <div className={styles.wrapper}
+      <div style={{  padding: "2rem",display: "grid", gridTemplateColumns: matches ? ("1fr 1fr 1fr") : ("1fr"),gap: "2rem"}}
        
       >
         {uncinettoElements.map((elem) => (
           <SingleCard
             key={elem.id}
             title={elem.title}
-            image={elem.img}
+            image= {matches ? elem.img: elem.imG }
             descr={elem.desc}
           ></SingleCard>
         ))}

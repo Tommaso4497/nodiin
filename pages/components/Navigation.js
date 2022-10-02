@@ -28,7 +28,7 @@ import logoOriz from "../../images/logoOriz.png";
 
 const Navigation = () => {
   const router = useRouter();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = useState(false);
 
   const elementWeb = menuElement.map((element) => (
