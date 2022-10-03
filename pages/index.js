@@ -51,6 +51,7 @@ export default function Home() {
             title={elem.title}
             image= {matches ? elem.imG: elem.img }
             descr={elem.desc}
+            imZ={elem.imZ}
           ></SingleCard>
         ))}
       </div>
