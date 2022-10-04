@@ -76,7 +76,7 @@ const Navigation = () => {
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
-                justifyContent: "space-around",
+                justifyContent: "space-between",
               }}
             >
               <Image src={logoOriz} width="240" />
@@ -119,8 +119,7 @@ const Navigation = () => {
           </List>
         </Drawer>
       </div>
-      <div
-        className={styles.headerWrapper}>
+      <div className={styles.headerWrapper}>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <Image src={logo} width="30" height="30" />
           <Image src={logoOriz} />

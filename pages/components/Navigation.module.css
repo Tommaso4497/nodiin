@@ -7,16 +7,24 @@
    display: none
  }
 
- @media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 768px) {
    .view {
      display: block;
    }
  }
 
+ .headerWrapper {
+   background-color: #adc178;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 0.25rem 0.5rem;
+   display: none;
+ }
 
- @media only screen and (max-width: 768px) {
+ @media only screen and (min-width: 768px) {
    .headerWrapper {
-     display: none;
+     display: flex;
    }
  }
 
@@ -28,15 +36,6 @@
  .buttonHeaderWrapper {
    display: flex;
    gap: 0.75rem;
- }
-
- .headerWrapper {
-   background-color: #adc178;
-   align-items: center;
-   justify-content: space-between;
-   width: 100%;
-   padding: 0.25rem 0.5rem;
-   display: flex;
  }
 
  .footerWrapper {

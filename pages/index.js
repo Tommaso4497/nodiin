@@ -42,14 +42,12 @@ export default function Home() {
       >
         Ultime creazioni
       </Typography>
-      <div style={{  padding: "2rem",display: "grid", gridTemplateColumns: matches ? ("1fr 1fr 1fr 1fr") : ("1fr"),gap: "2rem"}}
-       
-      >
+      <div className={styles.gridWrapper}>
         {uncinettoElements.map((elem) => (
           <SingleCard
             key={elem.id}
             title={elem.title}
-            image= {matches ? elem.imG: elem.img }
+            image={matches ? elem.imG : elem.img}
             descr={elem.desc}
             imZ={elem.imZ}
           ></SingleCard>
