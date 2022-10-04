@@ -59,7 +59,7 @@ const Navigation = () => {
 
   return (
     <div className={styles.navigationWrapper}>
-      <div style={{ display: matches ? "none" : "block" }}>
+      <div className={styles.view}>
         <AppBar position="static" open={open}>
           <Toolbar>
             <IconButton
@@ -120,11 +120,7 @@ const Navigation = () => {
         </Drawer>
       </div>
       <div
-        className={styles.headerWrapper}
-        style={{
-          display: matches ? "flex" : "none",
-        }}
-      >
+        className={styles.headerWrapper}>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <Image src={logo} width="30" height="30" />
           <Image src={logoOriz} />
