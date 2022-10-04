@@ -1,20 +1,18 @@
-import { Button, Dialog, DialogContent, DialogTitle } from "@mui/material";
+import { Dialog, DialogContent, DialogTitle } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 import React from "react";
+import styles from "./InfoDialog.module.css";
 
 const InfoDialog = ({ open, title, zoomedImg, onClose }) => {
   return (
     <div>
-      <Dialog open={open} maxWidth={"lg"} onClose={onClose}>
-        <DialogTitle>
-            {title}
-            <Button variant="outlined" onClick={onClose}>Chiudi</Button>
-            </DialogTitle>
+      <Dialog open={open} maxWidth={"md"} onClose={onClose}>
+        <DialogTitle className={styles.titleWrapper}>
+          {title}
+          <button className={styles.exitButton} onClick={onClose}><CloseIcon /></button>
+        </DialogTitle>
         <DialogContent>
-          <div>{zoomedImg}
-          <p>lunghezza: 25cm</p>
-          <p>colore: oro metallizzato</p>
-          </div>
-
+          <div>{zoomedImg}</div>
         </DialogContent>
       </Dialog>
     </div>

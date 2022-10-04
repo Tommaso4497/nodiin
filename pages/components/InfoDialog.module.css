@@ -1,0 +1,13 @@
+.exitButton {
+    margin: 0;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}

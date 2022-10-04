@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import styles from "./SingleCard.module.css";
 import theme from "../../styles/main";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { useRouter } from "next/router";
@@ -26,7 +26,7 @@ const SingleCard = ({ title, image, descr, imZ }) => {
 
   return (
     <div>
-      <Card sx={{ backgroundColor: "transparent" }}>
+      <Card sx={{ backgroundColor: "transparent", height: "100%" }}>
         <CardMedia>
           <div className={styles.imageWrapper}>{image}</div>
         </CardMedia>
@@ -43,9 +43,9 @@ const SingleCard = ({ title, image, descr, imZ }) => {
           }}
         >
           <div>
-            <Tooltip title="Informazioni" arrow>
+            <Tooltip title="Ingrandisci" arrow>
               <IconButton onClick={() => setOpenInfo(true)}>
-                <InfoOutlinedIcon />
+                <ZoomInIcon />
               </IconButton>
             </Tooltip>
             <Tooltip title="Acquista" arrow>

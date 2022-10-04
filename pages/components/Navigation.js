@@ -114,7 +114,7 @@ const Navigation = () => {
                 href="https://www.instagram.com/nodiinchiacchierino/"
               >
                 <InstagramIcon />
-              </IconButton>{" "}
+              </IconButton>
             </ListItem>
           </List>
         </Drawer>
