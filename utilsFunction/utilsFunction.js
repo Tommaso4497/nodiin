@@ -68,7 +68,7 @@ const uncinettoElements = [
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato e pietre di colore nero e giallo.",
     img: <Image src={collana02} width="300" height="250" />,
     imG: <Image src={collana02} width="450" height="300" />,
-    imZ: <Image src={collana02} />,
+    imZ: <Image src={collana02} placeholder="blur" blurDataURL />,
   },
   {
     id: "2",
@@ -76,7 +76,7 @@ const uncinettoElements = [
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato arancione e pietre di colore arancione.",
     img: <Image src={collana03} width="300" height="250" />,
     imG: <Image src={collana03} width="450" height="300" />,
-    imZ: <Image src={collana03} />,
+    imZ: <Image src={collana03} placeholder="blur" blurDataURL />,
   },
   {
     id: "3",
@@ -84,7 +84,7 @@ const uncinettoElements = [
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato e pietre di colore blu.",
     img: <Image src={collana04} width="300" height="250" />,
     imG: <Image src={collana04} width="450" height="300" />,
-    imZ: <Image src={collana04} />,
+    imZ: <Image src={collana04} placeholder="blur" blurDataURL />,
   },
   {
     id: "4",
@@ -92,7 +92,7 @@ const uncinettoElements = [
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato, pietre rosa e perle bianche.",
     img: <Image src={collana05} width="300" height="250" />,
     imG: <Image src={collana05} width="450" height="300" />,
-    imZ: <Image src={collana05} />,
+    imZ: <Image src={collana05} placeholder="blur" blurDataURL />,
   },
   {
     id: "5",
@@ -100,7 +100,7 @@ const uncinettoElements = [
     desc: "Collana realizzata in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato e pietre di colore marrone.",
     img: <Image src={collana06} width="300" height="250" />,
     imG: <Image src={collana06} width="450" height="300" />,
-    imZ: <Image src={collana06} />,
+    imZ: <Image src={collana06} placeholder="blur" blurDataURL />,
   },
   {
     id: "6",
@@ -108,7 +108,7 @@ const uncinettoElements = [
     desc: "Collana realizzata in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato argento metallizzato e pietre di colore vario.",
     img: <Image src={collana07} width="300" height="250" />,
     imG: <Image src={collana07} width="450" height="300" />,
-    imZ: <Image src={collana07} />,
+    imZ: <Image src={collana07} placeholder="blur" blurDataURL />,
   },
   {
     id: "7",
@@ -116,7 +116,7 @@ const uncinettoElements = [
     desc: "Collana realizzata in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato blu notte e pietre di colore blu.",
     img: <Image src={collana08} width="300" height="250" />,
     imG: <Image src={collana08} width="450" height="300" />,
-    imZ: <Image src={collana08} />,
+    imZ: <Image src={collana08} placeholder="blur" blurDataURL />,
   },
   {
     id: "8",
@@ -124,7 +124,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana09} width="300" height="250" />,
     imG: <Image src={collana09} width="450" height="300" />,
-    imZ: <Image src={collana09} />,
+    imZ: <Image src={collana09} placeholder="blur" blurDataURL />,
   },
   {
     id: "9",
@@ -132,7 +132,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana10} width="300" height="250" />,
     imG: <Image src={collana10} width="450" height="300" />,
-    imZ: <Image src={collana10} />,
+    imZ: <Image src={collana10} placeholder="blur" blurDataURL />,
   },
   {
     id: "10",
@@ -140,7 +140,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana11} width="300" height="250" />,
     imG: <Image src={collana11} width="450" height="300" />,
-    imZ: <Image src={collana11} />,
+    imZ: <Image src={collana11} placeholder="blur" blurDataURL />,
   },
   {
     id: "11",
@@ -148,7 +148,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana12} width="300" height="250" />,
     imG: <Image src={collana12} width="450" height="300" />,
-    imZ: <Image src={collana12} />,
+    imZ: <Image src={collana12} placeholder="blur" blurDataURL />,
   },
   {
     id: "12",
@@ -156,7 +156,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana13} width="300" height="250" />,
     imG: <Image src={collana13} width="450" height="300" />,
-    imZ: <Image src={collana13} />,
+    imZ: <Image src={collana13} placeholder="blur" blurDataURL />,
   },
   {
     id: "13",
@@ -164,7 +164,7 @@ const uncinettoElements = [
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     img: <Image src={collana14} width="300" height="250" />,
     imG: <Image src={collana14} width="450" height="300" />,
-    imZ: <Image src={collana14} />,
+    imZ: <Image src={collana14} placeholder="blur" blurDataURL />,
   },
   {
     id: "14",
@@ -172,7 +172,7 @@ const uncinettoElements = [
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     img: <Image src={collana15} width="300" height="250" />,
     imG: <Image src={collana15} width="450" height="300" />,
-    imZ: <Image src={collana15} />,
+    imZ: <Image src={collana15} placeholder="blur" blurDataURL />,
   },
   {
     id: "15",
@@ -180,7 +180,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana16} width="300" height="250" />,
     imG: <Image src={collana16} width="450" height="300" />,
-    imZ: <Image src={collana16} />,
+    imZ: <Image src={collana16} placeholder="blur" blurDataURL />,
   },
   {
     id: "16",
@@ -188,7 +188,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana17} width="300" height="250" />,
     imG: <Image src={collana17} width="450" height="300" />,
-    imZ: <Image src={collana17} />,
+    imZ: <Image src={collana17} placeholder="blur" blurDataURL />,
   },
   {
     id: "17",
@@ -196,7 +196,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana18} width="300" height="250" />,
     imG: <Image src={collana18} width="450" height="300" />,
-    imZ: <Image src={collana18} />,
+    imZ: <Image src={collana18} placeholder="blur" blurDataURL />,
   },
   {
     id: "18",
@@ -204,7 +204,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana19} width="300" height="250" />,
     imG: <Image src={collana19} width="450" height="300" />,
-    imZ: <Image src={collana19} />,
+    imZ: <Image src={collana19} placeholder="blur" blurDataURL />,
   },
   {
     id: "19",
@@ -212,7 +212,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana20} width="300" height="250" />,
     imG: <Image src={collana20} width="450" height="300" />,
-    imZ: <Image src={collana20} />,
+    imZ: <Image src={collana20} placeholder="blur" blurDataURL />,
   },
   {
     id: "20",
@@ -220,7 +220,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana21} width="300" height="250" />,
     imG: <Image src={collana21} width="450" height="300" />,
-    imZ: <Image src={collana21} />,
+    imZ: <Image src={collana21} placeholder="blur" blurDataURL />,
   },
   {
     id: "21",
@@ -228,7 +228,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana22} width="300" height="250" />,
     imG: <Image src={collana22} width="450" height="300" />,
-    imZ: <Image src={collana22} />,
+    imZ: <Image src={collana22} placeholder="blur" blurDataURL />,
   },
   {
     id: "22",
@@ -236,7 +236,7 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana23} width="300" height="250" />,
     imG: <Image src={collana23} width="450" height="300" />,
-    imZ: <Image src={collana23} />,
+    imZ: <Image src={collana23} placeholder="blur" blurDataURL />,
   },
 ];
 
