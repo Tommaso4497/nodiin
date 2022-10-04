@@ -2,7 +2,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
 import Image from "next/image";
-import collana01 from "../images/Collana 001.jpg";
+import collana01 from "../images/Collana_001.jpg";
 import collana02 from "../images/Collana 002.jpg";
 import collana03 from "../images/Collana 003.jpg";
 import collana04 from "../images/Collana 004.jpg";
