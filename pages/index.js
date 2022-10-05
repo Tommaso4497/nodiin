@@ -54,9 +54,6 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
-
-      <Typography style={{ backgroundColor: "#adc178", fontStyle: "italic", textAlign: "center" }} variant="h5"
-      >Collane</Typography>
       <div className={styles.gridWrapper}>
         {uncinettoElements.map((elem) => (
           <SingleCard
