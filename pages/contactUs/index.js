@@ -6,6 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
+import { CheckBox } from "@mui/icons-material";
 
 const ContactUs = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
@@ -13,10 +14,10 @@ const ContactUs = () => {
   const [obj, setObj] = useState();
   const [content, setContent] = useState();
 
-  const draw= useCallback((e)=>{
+  const draw = useCallback((e) => {
     e.preventDefault();
-    console.log("email:",email,"obj:",obj,"content:",content); 
-  },[email, content, obj])
+    console.log("email:", email, "obj:", obj, "content:", content);
+  }, [email, content, obj]);
 
   return (
     <div className={styles.contentWrapper}>
@@ -33,7 +34,7 @@ const ContactUs = () => {
             type="email"
             fullWidth
             color="secondary"
-            onChange={(e)=>{setEmail(e.target.value)}}
+            onChange={(e) => { setEmail(e.target.value); }}
           ></TextField>
           <TextField
             autoComplete="off"
@@ -43,7 +44,7 @@ const ContactUs = () => {
             size="small"
             fullWidth
             color="secondary"
-            onChange={(e)=>{setObj(e.target.value)}}
+            onChange={(e) => { setObj(e.target.value); }}
           ></TextField>
           <TextField
             autoComplete="off"
@@ -55,7 +56,7 @@ const ContactUs = () => {
             size="small"
             fullWidth
             color="secondary"
-            onChange={(e)=>{setContent(e.target.value)}}
+            onChange={(e) => { setContent(e.target.value); }}
           ></TextField>
         </div>
         <div className={styles.wrapperButton}>

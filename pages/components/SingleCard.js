@@ -19,7 +19,7 @@ import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import InfoDialog from "./InfoDialog";
 
-const SingleCard = ({ title, image, descr, imZ }) => {
+const SingleCard = ({ title, image, descr }) => {
   const router = useRouter();
   const [openInfo, setOpenInfo] = useState(false);
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -67,7 +67,7 @@ const SingleCard = ({ title, image, descr, imZ }) => {
           </div>
         </CardActions>
       </Card>
-      <InfoDialog open={openInfo} title={title} zoomedImg={imZ} onClose={() => (setOpenInfo(false))} />
+      <InfoDialog open={openInfo} title={title} zoomedImg={image} onClose={() => (setOpenInfo(false))} />
     </div>
   );
 };

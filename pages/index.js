@@ -3,12 +3,10 @@ import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React from "react";
 import { uncinettoElements } from "../utilsFunction/utilsFunction";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { Typography } from "@mui/material";
 import SingleCard from "./components/SingleCard";
 
 export default function Home() {
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <div>
@@ -47,9 +45,8 @@ export default function Home() {
           <SingleCard
             key={elem.id}
             title={elem.title}
-            image={matches ? elem.imG : elem.img}
+            image={elem.img}
             descr={elem.desc}
-            imZ={elem.imZ}
           ></SingleCard>
         ))}
       </div>

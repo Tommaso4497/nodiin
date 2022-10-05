@@ -125,19 +125,20 @@ const Navigation = () => {
           <Image src={logoOriz} />
         </div>
         <div className={styles.buttonHeaderWrapper}>
-          <IconButton>
+          <IconButton
+            className={styles.iconButt}>
             <FacebookIcon />
           </IconButton>
           <IconButton
+            className={styles.iconButt}
             target="_blank"
-            href="https://www.instagram.com/nodiinchiacchierino/"
-          >
+            href="https://www.instagram.com/nodiinchiacchierino/">
             <InstagramIcon />
           </IconButton>
           {elementWeb}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
