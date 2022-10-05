@@ -41,6 +41,12 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <Typography
+        variant="h4"
+        style={{ fontStyle: "italic", marginTop: "1rem", textAlign: "center" }}
+      >
+        Le mie ultime creazioni
+      </Typography>
       <div style={{ padding: "2rem" }}>
         <Carousel autoPlay showArrows={false} showStatus={false} infiniteLoop dynamicHeight >
           <div>
@@ -54,6 +60,9 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
+
+      <Typography style={{ backgroundColor: "#adc178", fontStyle: "italic", textAlign: "center" }} variant="h5"
+      >Collane in chiacchierino</Typography>
       <div className={styles.gridWrapper}>
         {uncinettoElements.map((elem) => (
           <SingleCard
