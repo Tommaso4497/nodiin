@@ -45,7 +45,7 @@ export default function Home() {
         variant="h4"
         style={{ fontStyle: "italic", marginTop: "1rem", textAlign: "center" }}
       >
-        Creazioni recenti
+        Creazioni
       </Typography>
       <div style={{ padding: "2rem" }}>
         <Carousel autoPlay showArrows={false} showStatus={false} infiniteLoop dynamicHeight >
