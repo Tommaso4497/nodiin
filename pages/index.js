@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <Typography style={{ backgroundColor: "#adc178", fontStyle: "italic", textAlign: "center" }} variant="h5"
-      >Collane in chiacchierino</Typography>
+      >Collane</Typography>
       <div className={styles.gridWrapper}>
         {uncinettoElements.map((elem) => (
           <SingleCard
