@@ -19,7 +19,7 @@ import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import InfoDialog from "./InfoDialog";
 
-const SingleCard = ({ title, image, descr }) => {
+const SingleCard = ({ title, image, descr, imZ }) => {
   const router = useRouter();
   const [openInfo, setOpenInfo] = useState(false);
   const matches = useMediaQuery(theme.breakpoints.up("md"));

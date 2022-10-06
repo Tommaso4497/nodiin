@@ -8,12 +8,13 @@ import SingleCard from "./components/SingleCard";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import copertina from "../images/copertina.jpg";
-import { padding } from "@mui/system";
 
 
 export default function Home() {
+  const mathes = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <div>
@@ -68,7 +69,8 @@ export default function Home() {
           <SingleCard
             key={elem.id}
             title={elem.title}
-            image={elem.img}
+            image={mathes ? elem.imG : elem.img}
+            imZ={elem.imZ}
             descr={elem.desc}
           ></SingleCard>
         ))}

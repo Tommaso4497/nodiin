@@ -58,13 +58,13 @@ const uncinettoElements = [
     id: "0",
     title: "Collana in oro con pietre rosse",
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato e pietre di colore rosso.",
-    img: <Image src={collana01} />,
+    imZ: <Image src={collana01} />,
   },
   {
     id: "1",
     title: "Collana in oro con pietre nere e gialle",
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato e pietre di colore nero e giallo.",
-    img: <Image src={collana02} />,
+    imZ: <Image src={collana02} />,
   },
   {
     id: "2",
