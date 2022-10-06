@@ -67,7 +67,7 @@ const SingleCard = ({ title, image, descr, imZ }) => {
           </div>
         </CardActions>
       </Card>
-      <InfoDialog open={openInfo} title={title} zoomedImg={image} onClose={() => (setOpenInfo(false))} />
+      <InfoDialog open={openInfo} title={title} zoomedImg={imZ} onClose={() => (setOpenInfo(false))} />
     </div>
   );
 };
