@@ -25,7 +25,7 @@ const SingleCard = ({ title, image, descr, imZ }) => {
 
   return (
     <div>
-      <Card className={styles.cardContent}>
+      <Card className={styles.cardContent} style={{backgroundColor:"transparent"}}>
         <CardMedia >
           <div onClick={() => setOpenInfo(true)} className={styles.imageWrapper}>{image}</div>
         </CardMedia>
