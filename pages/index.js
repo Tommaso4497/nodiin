@@ -10,6 +10,10 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import copertina from "../images/copertina.jpg";
+import uncinetto from "../images/uncinetto.jpg";
+import chiacchierino from "../images/chiacchierino.jpg";
+import altro from "../images/altro.jpg";
+import { SERVER_FILES_MANIFEST } from "next/dist/shared/lib/constants";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
@@ -84,32 +88,11 @@ export default function Home() {
           <Image src={copertina} />
         </Carousel>
       </div>
-      <Typography
-        variant="h4"
-        style={{
-          fontStyle: "italic",
-          textAlign: "center",
-          paddingBottom: "1rem",
-        }}
+      <p className={styles.title}> Le ultime creazioni</p>
+      <p className={styles.subtitle}
       >
-        Ultime creazioni
-      </Typography>
-      <Typography variant="h5"
-        style={{
-          fontStyle: "italic",
-          textAlign: "center",
-          paddingBottom: "2rem",
-        }}>In questa sezione troverai tutte le mie ultime creazioni!</Typography>
-      <Typography
-        style={{
-          backgroundColor: "#adc178",
-          fontStyle: "italic",
-          textAlign: "center",
-        }}
-        variant="h5"
-      >
-        Collane
-      </Typography>
+        In questa sezione troverai tutte le mie ultime creazioni!
+      </p>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
           {necklaceElements.map((elem) => (
@@ -125,78 +108,23 @@ export default function Home() {
         </Carousel>
       </div>
 
-      <Typography
-        style={{
-          backgroundColor: "#adc178",
-          fontStyle: "italic",
-          textAlign: "center",
-        }}
-        variant="h5"
+      <p className={styles.subtitle}
       >
-        Orecchini
-      </Typography>
-      <div className={styles.carouselWrapper}>
-        <Carousel responsive={responsiveCard}>
-          {necklaceElements.map((elem) => (
-            <SingleCard
-              key={elem.id}
-              category={elem.category}
-              title={elem.title}
-              image={mathes ? elem.imG : elem.img}
-              imZ={elem.imZ}
-              descr={elem.desc}
-            ></SingleCard>
-          ))}
-        </Carousel>
-      </div>
-      <Typography
-        style={{
-          backgroundColor: "#adc178",
-          fontStyle: "italic",
-          textAlign: "center",
-        }}
-        variant="h5"
-      >
-        Bracciali
-      </Typography>
-      <div className={styles.carouselWrapper}>
-        <Carousel responsive={responsiveCard}>
-          {necklaceElements.map((elem) => (
-            <SingleCard
-              key={elem.id}
-              category={elem.category}
-              title={elem.title}
-              image={mathes ? elem.imG : elem.img}
-              imZ={elem.imZ}
-              descr={elem.desc}
-            ></SingleCard>
-          ))}
-        </Carousel>
-      </div>
+        Per altre creazioni visita i cataloghi!
+      </p>
 
-      <Typography
-        style={{
-          backgroundColor: "#adc178",
-          fontStyle: "italic",
-          textAlign: "center",
-        }}
-        variant="h5"
-      >
-        Completi
-      </Typography>
-      <div className={styles.carouselWrapper}>
-        <Carousel responsive={responsiveCard}>
-          {necklaceElements.map((elem) => (
-            <SingleCard
-              key={elem.id}
-              category={elem.category}
-              title={elem.title}
-              image={mathes ? elem.imG : elem.img}
-              imZ={elem.imZ}
-              descr={elem.desc}
-            ></SingleCard>
-          ))}
-        </Carousel>
+      <div className={styles.gridWrapper}>
+        <div>
+          <Image src={chiacchierino} className={styles.image}/>
+          chiacchierino
+        </div>
+        <div>
+          <Image className={styles.image} src={uncinetto} />
+          Uncinetto
+        </div>
+        <div>
+          <Image className={styles.image} src={altro}/>
+          Altro</div>
       </div>
     </div>
   );
