@@ -5,18 +5,43 @@ import React, { useState } from "react";
 import { uncinettoElements } from "../utilsFunction/utilsFunction";
 import { IconButton, TextField, Typography } from "@mui/material";
 import SingleCard from "./components/SingleCard";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import copertina from "../images/copertina.jpg";
-import { Search } from "@mui/icons-material";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
-  const [search,setSearch] = useState("")
+  const responsiveCard = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
-  console.log(search)
+  const responsive ={
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  }
 
   return (
     <div>
@@ -44,34 +69,37 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <div style={{ padding: "2rem" }}>
+        <Carousel responsive={responsive} autoPlay={true} infinite={true}>
+          <Image src={copertina} />
+          <Image src={copertina} />
+          <Image src={copertina} />
+        </Carousel>
+        <Typography>
+          In questa sezione troverai tutte le mie ultime creazioni
+        </Typography>
+      </div>
       <Typography
-        variant="h4"
         style={{
+          backgroundColor: "#adc178",
           fontStyle: "italic",
-          marginTop: "1rem",
           textAlign: "center",
         }}
+        variant="h5"
       >
-        Le mie ultime creazioni
+        Collane Chiacchierino
       </Typography>
-      <div style={{ padding: "2rem", paddingBottom: "0" }}>
-        <Carousel
-          autoPlay
-          showThumbs={false}
-          showArrows={false}
-          showStatus={false}
-          infiniteLoop
-          dynamicHeight
-        >
-          <div>
-            <Image src={copertina} />,
-          </div>
-          <div>
-            <Image src={copertina} />,
-          </div>
-          <div>
-            <Image src={copertina} />,
-          </div>
+      <div style={{ padding: "1rem" }}>
+        <Carousel responsive={responsiveCard}>
+          {uncinettoElements.map((elem) => (
+            <SingleCard
+              key={elem.id}
+              title={elem.title}
+              image={mathes ? elem.imG : elem.img}
+              imZ={elem.imZ}
+              descr={elem.desc}
+            ></SingleCard>
+          ))}
         </Carousel>
       </div>
 
@@ -83,18 +111,67 @@ export default function Home() {
         }}
         variant="h5"
       >
-        Collane in chiacchierino
+        Orecchini Chiacchierino
       </Typography>
-      <div className={styles.gridWrapper}>
-        {uncinettoElements.map((elem) => (
-          <SingleCard
-            key={elem.id}
-            title={elem.title}
-            image={mathes ? elem.imG : elem.img}
-            imZ={elem.imZ}
-            descr={elem.desc}
-          ></SingleCard>
-        ))}
+      <div style={{ padding: "1rem" }}>
+        <Carousel responsive={responsiveCard}>
+          {uncinettoElements.map((elem) => (
+            <SingleCard
+              key={elem.id}
+              title={elem.title}
+              image={mathes ? elem.imG : elem.img}
+              imZ={elem.imZ}
+              descr={elem.desc}
+            ></SingleCard>
+          ))}
+        </Carousel>
+      </div>
+      <Typography
+        style={{
+          backgroundColor: "#adc178",
+          fontStyle: "italic",
+          textAlign: "center",
+        }}
+        variant="h5"
+      >
+        Bracciali Chiacchierino
+      </Typography>
+      <div style={{ padding: "1rem" }}>
+        <Carousel responsive={responsiveCard}>
+          {uncinettoElements.map((elem) => (
+            <SingleCard
+              key={elem.id}
+              title={elem.title}
+              image={mathes ? elem.imG : elem.img}
+              imZ={elem.imZ}
+              descr={elem.desc}
+            ></SingleCard>
+          ))}
+        </Carousel>
+      </div>
+
+      <Typography
+        style={{
+          backgroundColor: "#adc178",
+          fontStyle: "italic",
+          textAlign: "center",
+        }}
+        variant="h5"
+      >
+        Completi in chiacchierino
+      </Typography>
+      <div style={{ padding: "1rem" }}>
+        <Carousel responsive={responsiveCard}>
+          {uncinettoElements.map((elem) => (
+            <SingleCard
+              key={elem.id}
+              title={elem.title}
+              image={mathes ? elem.imG : elem.img}
+              imZ={elem.imZ}
+              descr={elem.desc}
+            ></SingleCard>
+          ))}
+        </Carousel>
       </div>
     </div>
   );
