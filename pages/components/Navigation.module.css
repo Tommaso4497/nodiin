@@ -44,5 +44,6 @@
  }
 
  .iconButt:hover {
+  background-color: transparent;
    color: #fff;
  }

@@ -21,6 +21,6 @@
 }
 
 .icon:hover{
-    background-color: #adc178;
-    color: #fff;
+    color: #adc178;
+    background-color: transparent;
 }

@@ -28,7 +28,7 @@ export default function Home() {
     },
   };
 
-  const responsive ={
+  const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
@@ -41,7 +41,7 @@ export default function Home() {
       breakpoint: { max: 464, min: 0 },
       items: 1,
     },
-  }
+  };
 
   return (
     <div>
@@ -69,15 +69,20 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <div style={{ padding: "2rem" }}>
-        <Carousel responsive={responsive} autoPlay={true} infinite={true}>
+      <div className={styles.headerCarousel}>
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          infinite={true}
+          showDots={true}
+          arrows={false}
+          autoPlaySpeed={4000}
+        >
+          <Image src={copertina} />
           <Image src={copertina} />
           <Image src={copertina} />
           <Image src={copertina} />
         </Carousel>
-        <Typography>
-          In questa sezione troverai tutte le mie ultime creazioni
-        </Typography>
       </div>
       <Typography
         style={{
@@ -89,7 +94,7 @@ export default function Home() {
       >
         Collane Chiacchierino
       </Typography>
-      <div style={{ padding: "1rem" }}>
+      <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
           {uncinettoElements.map((elem) => (
             <SingleCard
@@ -113,7 +118,7 @@ export default function Home() {
       >
         Orecchini Chiacchierino
       </Typography>
-      <div style={{ padding: "1rem" }}>
+      <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
           {uncinettoElements.map((elem) => (
             <SingleCard
@@ -136,7 +141,7 @@ export default function Home() {
       >
         Bracciali Chiacchierino
       </Typography>
-      <div style={{ padding: "1rem" }}>
+      <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
           {uncinettoElements.map((elem) => (
             <SingleCard
@@ -160,7 +165,7 @@ export default function Home() {
       >
         Completi in chiacchierino
       </Typography>
-      <div style={{ padding: "1rem" }}>
+      <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
           {uncinettoElements.map((elem) => (
             <SingleCard

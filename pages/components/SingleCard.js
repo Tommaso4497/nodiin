@@ -33,10 +33,10 @@ const SingleCard = ({ title, image, descr, imZ }) => {
         <CardContent className={styles.wrapperContent}>
           <p>{descr}</p>
           <CardActions>
-            <IconButton className={styles.icon}>
+            <IconButton className={styles.icon} onClick={() => setOpenInfo(true)}>
               <InfoOutlinedIcon/>
             </IconButton>
-            <IconButton className={styles.icon}>
+            <IconButton className={styles.icon} >
               <ShoppingBagOutlinedIcon/>
             </IconButton>
           </CardActions>

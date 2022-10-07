@@ -17,3 +17,11 @@
     grid-template-columns: 1fr;
   }
 }
+
+.carouselWrapper {
+  padding: 1rem;
+}
+
+.headerCarousel {
+  padding: 2rem;
+}
