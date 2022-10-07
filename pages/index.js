@@ -89,11 +89,17 @@ export default function Home() {
         style={{
           fontStyle: "italic",
           textAlign: "center",
-          paddingBottom: "2rem",
+          paddingBottom: "1rem",
         }}
       >
-        In questa sezione troverai tutti i miei ultimi lavori!
+        Ultime creazioni
       </Typography>
+      <Typography variant="h5"
+        style={{
+          fontStyle: "italic",
+          textAlign: "center",
+          paddingBottom: "2rem",
+        }}>In questa sezione troverai tutte le mie ultime creazioni!</Typography>
       <Typography
         style={{
           backgroundColor: "#adc178",
