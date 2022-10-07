@@ -22,7 +22,6 @@ import InfoDialog from "./InfoDialog";
 const SingleCard = ({ title, image, descr, imZ }) => {
   const router = useRouter();
   const [openInfo, setOpenInfo] = useState(false);
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <div>

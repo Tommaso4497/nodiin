@@ -1,20 +1,22 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
-import React from "react";
+import React, { useState } from "react";
 import { uncinettoElements } from "../utilsFunction/utilsFunction";
-import { Typography } from "@mui/material";
+import { IconButton, TextField, Typography } from "@mui/material";
 import SingleCard from "./components/SingleCard";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
-
 import copertina from "../images/copertina.jpg";
-
+import { Search } from "@mui/icons-material";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
+  const [search,setSearch] = useState("")
+
+  console.log(search)
 
   return (
     <div>
@@ -44,12 +46,23 @@ export default function Home() {
       </Head>
       <Typography
         variant="h4"
-        style={{ fontStyle: "italic", marginTop: "1rem", textAlign: "center" }}
+        style={{
+          fontStyle: "italic",
+          marginTop: "1rem",
+          textAlign: "center",
+        }}
       >
         Le mie ultime creazioni
       </Typography>
-      <div style={{ padding: "2rem" }}>
-        <Carousel autoPlay showArrows={false} showStatus={false} infiniteLoop dynamicHeight >
+      <div style={{ padding: "2rem", paddingBottom: "0" }}>
+        <Carousel
+          autoPlay
+          showThumbs={false}
+          showArrows={false}
+          showStatus={false}
+          infiniteLoop
+          dynamicHeight
+        >
           <div>
             <Image src={copertina} />,
           </div>
@@ -62,8 +75,16 @@ export default function Home() {
         </Carousel>
       </div>
 
-      <Typography style={{ backgroundColor: "#adc178", fontStyle: "italic", textAlign: "center" }} variant="h5"
-      >Collane in chiacchierino</Typography>
+      <Typography
+        style={{
+          backgroundColor: "#adc178",
+          fontStyle: "italic",
+          textAlign: "center",
+        }}
+        variant="h5"
+      >
+        Collane in chiacchierino
+      </Typography>
       <div className={styles.gridWrapper}>
         {uncinettoElements.map((elem) => (
           <SingleCard
@@ -75,6 +96,6 @@ export default function Home() {
           ></SingleCard>
         ))}
       </div>
-    </div >
+    </div>
   );
 }
