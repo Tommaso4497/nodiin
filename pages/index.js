@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React, { useState } from "react";
-import { uncinettoElements } from "../utilsFunction/utilsFunction";
+import { necklaceElements } from "../utilsFunction/utilsFunction";
 import { IconButton, TextField, Typography } from "@mui/material";
 import SingleCard from "./components/SingleCard";
 import Carousel from "react-multi-carousel";
@@ -85,6 +85,16 @@ export default function Home() {
         </Carousel>
       </div>
       <Typography
+        variant="h4"
+        style={{
+          fontStyle: "italic",
+          textAlign: "center",
+          paddingBottom: "2rem",
+        }}
+      >
+        In questa sezione troverai tutti i miei ultimi lavori!
+      </Typography>
+      <Typography
         style={{
           backgroundColor: "#adc178",
           fontStyle: "italic",
@@ -92,12 +102,13 @@ export default function Home() {
         }}
         variant="h5"
       >
-        Collane Chiacchierino
+        Collane
       </Typography>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {uncinettoElements.map((elem) => (
+          {necklaceElements.map((elem) => (
             <SingleCard
+              category={elem.category}
               key={elem.id}
               title={elem.title}
               image={mathes ? elem.imG : elem.img}
@@ -116,13 +127,14 @@ export default function Home() {
         }}
         variant="h5"
       >
-        Orecchini Chiacchierino
+        Orecchini
       </Typography>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {uncinettoElements.map((elem) => (
+          {necklaceElements.map((elem) => (
             <SingleCard
               key={elem.id}
+              category={elem.category}
               title={elem.title}
               image={mathes ? elem.imG : elem.img}
               imZ={elem.imZ}
@@ -139,13 +151,14 @@ export default function Home() {
         }}
         variant="h5"
       >
-        Bracciali Chiacchierino
+        Bracciali
       </Typography>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {uncinettoElements.map((elem) => (
+          {necklaceElements.map((elem) => (
             <SingleCard
               key={elem.id}
+              category={elem.category}
               title={elem.title}
               image={mathes ? elem.imG : elem.img}
               imZ={elem.imZ}
@@ -163,13 +176,14 @@ export default function Home() {
         }}
         variant="h5"
       >
-        Completi in chiacchierino
+        Completi
       </Typography>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {uncinettoElements.map((elem) => (
+          {necklaceElements.map((elem) => (
             <SingleCard
               key={elem.id}
+              category={elem.category}
               title={elem.title}
               image={mathes ? elem.imG : elem.img}
               imZ={elem.imZ}

@@ -26,6 +26,7 @@ import collana21 from "../images/Collana021.jpg";
 import collana22 from "../images/Collana022.jpg";
 import collana23 from "../images/Collana023.jpg";
 
+
 const menuElement = [
   {
     id: "0",
@@ -53,7 +54,7 @@ const menuElement = [
   },
 ];
 
-const uncinettoElements = [
+const necklaceElements = [
   {
     id: "0",
     title: "Collana in oro con pietre rosse",
@@ -61,6 +62,7 @@ const uncinettoElements = [
     img: <Image src={collana01} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana01} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana01} placeholder="blur" />,
+    category:"Chiacchierino"
   },
   {
     id: "1",
@@ -69,6 +71,8 @@ const uncinettoElements = [
     img: <Image src={collana02} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana02} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana02} placeholder="blur" />,
+    category:"Chiacchierino"
+
   },
   {
     id: "2",
@@ -77,6 +81,8 @@ const uncinettoElements = [
     img: <Image src={collana03} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana03} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana03} placeholder="blur" />,
+    category:"Chiacchierino"
+
   },
   {
     id: "3",
@@ -85,6 +91,8 @@ const uncinettoElements = [
     img: <Image src={collana04} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana04} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana04}  placeholder="blur"/>,
+    category:"Chiacchierino"
+
   },
   {
     id: "4",
@@ -93,6 +101,8 @@ const uncinettoElements = [
     img: <Image src={collana05} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana05} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana05}  placeholder="blur"/>,
+    category:"Chiacchierino"
+
   },
   {
     id: "5",
@@ -101,6 +111,8 @@ const uncinettoElements = [
     img: <Image src={collana06} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana06} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana06}  placeholder="blur"/>,
+    category:"Chiacchierino"
+
   },
   {
     id: "6",
@@ -109,6 +121,8 @@ const uncinettoElements = [
     img: <Image src={collana07} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana07} width="450" height="300" placeholder="blur"/>,
     imZ: <Image src={collana07} placeholder="blur"/>,
+    category:"Chiacchierino"
+
   },
   {
     id: "7",
@@ -117,6 +131,8 @@ const uncinettoElements = [
     img: <Image src={collana08} width="300" height="250"placeholder="blur" />,
     imG: <Image src={collana08} width="450" height="300"placeholder="blur" />,
     imZ: <Image src={collana08}placeholder="blur" />,
+    category:"Chiacchierino"
+
   },
   {
     id: "8",
@@ -125,6 +141,8 @@ const uncinettoElements = [
     img: <Image src={collana09} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana09} width="450" height="300" placeholder="blur"/>,
     imZ: <Image src={collana09} placeholder="blur"/>,
+    category:"Chiacchierino"
+
   },
   {
     id: "9",
@@ -133,6 +151,8 @@ const uncinettoElements = [
     img: <Image src={collana10} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana10} width="450" height="300" placeholder="blur"/>,
     imZ: <Image src={collana10} placeholder="blur"/>,
+    category:"Chiacchierino"
+
   },
   {
     id: "10",
@@ -140,92 +160,119 @@ const uncinettoElements = [
     title: "Orecchini argento",
     img: <Image src={collana11} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana11} width="450" height="300" placeholder="blur"/>,
-    imZ: <Image src={collana11} placeholder="blur"/>,  },
+    imZ: <Image src={collana11} placeholder="blur"/>, 
+    category:"Chiacchierino"
+  },
   {
     id: "11",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana12} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana12} width="450" height="300"placeholder="blur" />,
-    imZ: <Image src={collana12} placeholder="blur"/>,  },
+    imZ: <Image src={collana12} placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
   {
     id: "12",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana13} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana13} width="450" height="300" placeholder="blur"/>,
-    imZ: <Image src={collana13} placeholder="blur"/>,  },
+    imZ: <Image src={collana13} placeholder="blur"/>, 
+    category:"Chiacchierino"
+  },
   {
     id: "13",
     title: "Orecchini argento",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     img: <Image src={collana14} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana14} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana14}  placeholder="blur"/>,  },
+    imZ: <Image src={collana14}  placeholder="blur"/>, 
+    category:"Chiacchierino"
+  },
   {
     id: "14",
     title: "Orecchini argento",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     img: <Image src={collana15} width="300" height="250"  placeholder="blur" />,
     imG: <Image src={collana15} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana15}  placeholder="blur"/>,  },
+    imZ: <Image src={collana15}  placeholder="blur"/>, 
+    category:"Chiacchierino"
+  },
   {
     id: "15",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana16} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana16} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana16}  placeholder="blur"/>,  },
+    imZ: <Image src={collana16}  placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
   {
     id: "16",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana17} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana17} width="450" height="300" placeholder="blur" />,
-    imZ: <Image src={collana17} placeholder="blur" />,  },
+    imZ: <Image src={collana17} placeholder="blur" />,
+    category:"Chiacchierino"
+  },
   {
     id: "17",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana18} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana18} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana18}  placeholder="blur"/>,  },
+    imZ: <Image src={collana18}  placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
   {
     id: "18",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana19} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana19} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana19}  placeholder="blur"/>,  },
+    imZ: <Image src={collana19}  placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
   {
     id: "19",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana20} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana20} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana20} placeholder="blur" />,  },
+    imZ: <Image src={collana20} placeholder="blur" />,
+    category:"Chiacchierino"
+  },
   {
     id: "20",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana21} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana21} width="450" height="300"  placeholder="blur"/>,
-    imZ: <Image src={collana21}  placeholder="blur"/>,  },
+    imZ: <Image src={collana21}  placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
   {
     id: "21",
     title: "Collana AllBlack",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     img: <Image src={collana22} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana22} width="450" height="300" placeholder="blur" />,
-    imZ: <Image src={collana22}  placeholder="blur"/>,  },
+    imZ: <Image src={collana22}  placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
   {
     id: "22",
     desc: "Orecchini in pizzo fatti interamente a mano con l'antica tecnica del chiacchierino con filato argento metallizzato e ricamato con cristalli e pietre in sfumature di colore blu.",
     title: "Orecchini argento",
     img: <Image src={collana23} width="300" height="250"  placeholder="blur"/>,
     imG: <Image src={collana23} width="450" height="300" placeholder="blur" />,
-    imZ: <Image src={collana23}  placeholder="blur"/>,  },
+    imZ: <Image src={collana23}  placeholder="blur"/>,
+    category:"Chiacchierino"
+  },
 ];
+
 
 const axiosToData = async (axiosPromise) => {
   try {
@@ -236,4 +283,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, uncinettoElements, axiosToData };
+export { menuElement, necklaceElements, axiosToData };

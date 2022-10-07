@@ -74,10 +74,10 @@ const ContactUs = () => {
             justifyContent: matches ? "start" : "space-around",
           }}
         >
-          <IconButton>
+          <IconButton className={styles.icon}>
             <FacebookIcon fontSize="large" />
           </IconButton>
-          <IconButton target="_blank" href="https://www.instagram.com/nodiinchiacchierino/" >
+          <IconButton className={styles.icon} target="_blank" href="https://www.instagram.com/nodiinchiacchierino/" >
             <InstagramIcon fontSize="large" />
           </IconButton>
         </div>

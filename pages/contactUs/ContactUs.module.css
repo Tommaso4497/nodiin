@@ -12,3 +12,8 @@
   justify-content: center;
   margin-block: 1rem;
 }
+
+.icon:hover{
+  color: #adc178;
+  background-color: transparent;
+}
