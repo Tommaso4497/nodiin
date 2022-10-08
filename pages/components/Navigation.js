@@ -6,6 +6,7 @@ import { useState } from "react";
 import {
   AppBar,
   Button,
+  ButtonGroup,
   Divider,
   Drawer,
   IconButton,
@@ -32,15 +33,16 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   const elementWeb = menuElement.map((element) => (
-    <Button
-      key={element?.id}
-      variant="contained"
-      onClick={() => {
-        router.push(`${element?.path}`);
-      }}
-    >
-      {element.section}
-    </Button>
+    <ButtonGroup>
+      <Button
+        key={element?.id}
+        onClick={() => {
+          router.push(`${element?.path}`);
+        }}
+      >
+        {element.section}
+      </Button>
+    </ButtonGroup>
   ));
 
   const elementsMobile = menuElement.map((element) => (
@@ -119,26 +121,8 @@ const Navigation = () => {
           </List>
         </Drawer>
       </div>
-      <div className={styles.headerWrapper}>
-        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-          <Image src={logo} width="30" height="30" />
-          <Image src={logoOriz} />
-        </div>
-        <div className={styles.buttonHeaderWrapper}>
-          <IconButton
-            className={styles.iconButt}>
-            <FacebookIcon />
-          </IconButton>
-          <IconButton
-            className={styles.iconButt}
-            target="_blank"
-            href="https://www.instagram.com/nodiinchiacchierino/">
-            <InstagramIcon />
-          </IconButton>
-          {elementWeb}
-        </div>
-      </div>
-    </div >
+      <div className={styles.headerWrapper}>{elementWeb}</div>
+    </div>
   );
 };
 

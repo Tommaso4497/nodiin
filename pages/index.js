@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React, { useState } from "react";
 import { necklaceElements } from "../utilsFunction/utilsFunction";
-import { IconButton, TextField, Typography } from "@mui/material";
+import { Divider, IconButton, TextField, Typography } from "@mui/material";
 import SingleCard from "./components/SingleCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -13,10 +13,15 @@ import copertina from "../images/copertina.jpg";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import altro from "../images/altro.jpg";
-import { SERVER_FILES_MANIFEST } from "next/dist/shared/lib/constants";
+import { useRouter } from "next/router";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
+  const router = useRouter();
+
   const responsiveCard = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -72,7 +77,34 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
+
+      <p className={styles.pageTitle}>Nodi in Chiacchierino</p>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
+      >
+        <IconButton>
+          <FacebookIcon fontSize="large" />
+        </IconButton>
+        <IconButton>
+          <InstagramIcon fontSize="large" />
+        </IconButton>
+        <IconButton onClick={() => router.push("contactUs/")}>
+          <EmailOutlinedIcon fontSize="large" />
+        </IconButton>
+      </div>
       <div className={styles.headerCarousel}>
         <Carousel
           responsive={responsive}
@@ -89,8 +121,7 @@ export default function Home() {
         </Carousel>
       </div>
       <p className={styles.title}> Le ultime creazioni</p>
-      <p className={styles.subtitle}
-      >
+      <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie ultime creazioni!
       </p>
       <div className={styles.carouselWrapper}>
@@ -107,24 +138,36 @@ export default function Home() {
           ))}
         </Carousel>
       </div>
-
-      <p className={styles.subtitle}
-      >
-        Per altre creazioni visita i cataloghi!
+      <p className={styles.subtitle}>
+        Per altre creazioni visita i nostri cataloghi!
       </p>
-
       <div className={styles.gridWrapper}>
-        <div>
-          <Image src={chiacchierino} className={styles.image}/>
-          chiacchierino
+        <div
+          className={styles.category}
+          onClick={() => router.push("chiacchierino/")}
+        >
+          <Image
+            src={chiacchierino}
+            alt="Chiacchierino background"
+            placeholder="blur"
+          />
+          <p className={styles.categoryTitle}>Chiacchierino</p>
         </div>
-        <div>
-          <Image className={styles.image} src={uncinetto} />
-          Uncinetto
+        <div
+          className={styles.category}
+          onClick={() => router.push("uncinetto/")}
+        >
+          <Image
+            src={uncinetto}
+            alt="Uncinetto background"
+            placeholder="blur"
+          />
+          <p className={styles.categoryTitle}>Uncinetto</p>
         </div>
-        <div>
-          <Image className={styles.image} src={altro}/>
-          Altro</div>
+        <div className={styles.category}>
+          <Image src={altro} alt="Altro background" placeholder="blur" />
+          <p className={styles.categoryTitle}>Altro</p>
+        </div>
       </div>
     </div>
   );
