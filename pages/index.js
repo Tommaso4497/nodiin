@@ -95,13 +95,14 @@ export default function Home() {
           gap: "1rem",
         }}
       >
-        <IconButton>
+        <IconButton className={styles.iconButt}>
           <FacebookIcon fontSize="large" />
         </IconButton>
-        <IconButton>
+        <IconButton className={styles.iconButt} target="_blank"
+                href="https://www.instagram.com/nodiinchiacchierino/">
           <InstagramIcon fontSize="large" />
         </IconButton>
-        <IconButton onClick={() => router.push("contactUs/")}>
+        <IconButton onClick={() => router.push("contactUs/")} className={styles.iconButt}>
           <EmailOutlinedIcon fontSize="large" />
         </IconButton>
       </div>

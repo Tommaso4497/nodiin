@@ -61,3 +61,8 @@
   font-size: 6rem;
   font-family: "Italianno";
 }
+
+.iconButt:hover {
+  background-color: transparent;
+   color:#c9184a;
+ }
