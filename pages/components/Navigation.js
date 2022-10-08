@@ -47,7 +47,7 @@ const Navigation = () => {
 
   const elementsMobile = menuElement.map((element) => (
     <ListItem key={element?.id}>
-      <ListItemButton
+      <Button
         onClick={() => {
           setOpen((prev) => !prev);
           router.push(`${element?.path}`);
@@ -55,7 +55,7 @@ const Navigation = () => {
       >
         <ListItemIcon>{element?.icon}</ListItemIcon>
         {element?.section}
-      </ListItemButton>
+      </Button>
     </ListItem>
   ));
 
@@ -121,7 +121,10 @@ const Navigation = () => {
           </List>
         </Drawer>
       </div>
-      <div className={styles.headerWrapper}>{elementWeb}</div>
+      <div className={styles.headerWrapper}>
+        <Image src={logo} width="40" height="40"  />
+        <div>{elementWeb}</div>
+      </div>
     </div>
   );
 };
