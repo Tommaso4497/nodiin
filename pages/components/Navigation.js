@@ -33,7 +33,6 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   const elementWeb = menuElement.map((element) => (
-    <ButtonGroup>
       <Button
         key={element?.id}
         onClick={() => {
@@ -42,7 +41,6 @@ const Navigation = () => {
       >
         {element.section}
       </Button>
-    </ButtonGroup>
   ));
 
   const elementsMobile = menuElement.map((element) => (
