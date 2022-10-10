@@ -51,7 +51,7 @@ const Navigation = () => {
           router.push(`${element?.path}`);
         }}
       >
-        <ListItemIcon>{element?.icon}</ListItemIcon>
+        <ListItemIcon style={{color:"#fff"}}>{element?.icon}</ListItemIcon>
         {element?.section}
       </Button>
     </ListItem>
@@ -63,23 +63,22 @@ const Navigation = () => {
         <AppBar position="static" open={open}>
           <Toolbar>
             <IconButton
-              color="inherit"
+              
               onClick={() => {
                 setOpen((prev) => !prev);
               }}
               edge="start"
             >
-              <MenuIcon />
+              <MenuIcon style={{color:"#fff"}}/>
             </IconButton>
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
-                justifyContent: "space-between",
+                justifyContent: "end",
               }}
             >
-              <Image src={logoOriz} width="240" />
               <Image src={logo} width="40" height="40" />
             </div>
           </Toolbar>
@@ -92,13 +91,13 @@ const Navigation = () => {
             setOpen((prev) => !prev);
           }}
         >
-          <div className={styles.wrapperDrawer}>
+          <div style={{color:"#fff"}}>
             <IconButton
               onClick={() => {
                 setOpen(false);
               }}
             >
-              <KeyboardArrowLeftIcon />
+              <KeyboardArrowLeftIcon style={{color:"#fff"}} />
             </IconButton>
             Menu
           </div>
@@ -107,13 +106,13 @@ const Navigation = () => {
           <List className={styles.footerWrapper}>
             <ListItem>
               <IconButton>
-                <FacebookIcon />
+                <FacebookIcon style={{color:"#fff"}}/>
               </IconButton>
               <IconButton
                 target="_blank"
                 href="https://www.instagram.com/nodiinchiacchierino/"
               >
-                <InstagramIcon />
+                <InstagramIcon style={{color:"#fff"}} />
               </IconButton>
             </ListItem>
           </List>

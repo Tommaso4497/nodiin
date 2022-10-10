@@ -13,7 +13,7 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          color: "#000",
+          color: "#fff",
           fontSize: "1rem",
           padding: ".5rem .5rem",
           boxShadow: ["none"],
@@ -33,7 +33,7 @@ const theme = createTheme({
           width: "240px",
           flexShrink: 0,
           "& .MuiDrawer-paper": {
-            backgroundColor: "#fefae0",
+            backgroundColor: "#c9184a",
             width: "240px",
             boxSizing: "border-box",
           },
@@ -43,7 +43,7 @@ const theme = createTheme({
     MuiDivider: {
       styleOverrides: {
         root: {
-          backgroundColor: "#000",
+          backgroundColor: "#fff",
         },
       },
     },

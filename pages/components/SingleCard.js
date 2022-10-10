@@ -27,8 +27,8 @@ const SingleCard = ({ title, image, descr, imZ, category }) => {
   return (
     <div>
       <Card
+        style={{ backgroundColor: "transparent", height:"100%" }}
         className={styles.cardContent}
-        style={{ backgroundColor: "transparent" }}
       >
         <CardMedia>
           <div
@@ -57,7 +57,7 @@ const SingleCard = ({ title, image, descr, imZ, category }) => {
                 <ShoppingBagOutlinedIcon />
               </IconButton>
             </div>
-            <Chip label={category}  size="small" variant="outlined" />
+            <Chip label={category} color="primary"  size="small" variant="outlined" />
           </CardActions>
         </CardContent>
       </Card>

@@ -6,13 +6,15 @@
   padding: 0.5rem;
 }
 .title {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   margin: 0;
+  font-size: 1.25rem;
 }
 
 .wrapperContent {
   padding: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .cardContent {
@@ -21,6 +23,7 @@
 }
 
 .icon:hover{
-    color: #adc178;
+    color: #c9184a;
     background-color: transparent;
 }
+

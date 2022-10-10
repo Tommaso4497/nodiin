@@ -114,6 +114,8 @@ export default function Home() {
           showDots={true}
           arrows={false}
           autoPlaySpeed={4000}
+          renderButtonGroupOutside={true}
+          renderDotsOutside={true}
         >
           <Image src={copertina} />
           <Image src={copertina} />
