@@ -10,7 +10,7 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import copertina from "../images/copertina.jpg";
-import collana01 from "../images/collana001.jpg";
+import collana01 from "../images/Collana001.jpg";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import altro from "../images/altro.jpg";
