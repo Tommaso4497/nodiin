@@ -1,29 +1,6 @@
-.imageWrapper {
-  justify-content: center;
-  cursor: zoom-in;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-}
-.title {
-  font-weight: 400;
-  text-align: center;
-  margin: 0;
-  font-size: 1.25rem;
-}
 
-.wrapperContent {
-  padding: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.cardContent {
-  height: 100%;
-  margin: 1rem;
-}
 
 .icon:hover{
-    color: #c9184a;
-    background-color: transparent;
+  color: #c9184a;
+  background-color: transparent;
 }
-
