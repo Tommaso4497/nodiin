@@ -25,7 +25,6 @@ import theme from "../../styles/main";
 import { menuElement } from "../../utilsFunction/utilsFunction";
 import Image from "next/image";
 import logo from "../../images/logo.png";
-import logoOriz from "../../images/logoOriz.png";
 
 const Navigation = () => {
   const router = useRouter();
@@ -45,7 +44,8 @@ const Navigation = () => {
 
   const elementsMobile = menuElement.map((element) => (
     <ListItem key={element?.id}>
-      <Button
+      <ListItemButton
+      style={{color:"#fff"}}
         onClick={() => {
           setOpen((prev) => !prev);
           router.push(`${element?.path}`);
@@ -53,7 +53,7 @@ const Navigation = () => {
       >
         <ListItemIcon style={{color:"#fff"}}>{element?.icon}</ListItemIcon>
         {element?.section}
-      </Button>
+      </ListItemButton>
     </ListItem>
   ));
 

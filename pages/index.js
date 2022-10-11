@@ -10,6 +10,7 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import copertina from "../images/copertina.jpg";
+import collana01 from "../images/collana001.jpg";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import altro from "../images/altro.jpg";
@@ -111,16 +112,17 @@ export default function Home() {
           responsive={responsive}
           autoPlay={true}
           infinite={true}
-          showDots={true}
+          showDots={mathes? true: false}
           arrows={false}
+          dynamicHeight={true}
           autoPlaySpeed={4000}
           renderButtonGroupOutside={true}
           renderDotsOutside={true}
         >
-          <Image src={copertina} />
-          <Image src={copertina} />
-          <Image src={copertina} />
-          <Image src={copertina} />
+          <Image src={mathes? copertina : collana01} />
+          <Image src={mathes? copertina : collana01} />
+          <Image src={mathes? copertina : collana01} />
+          <Image src={mathes? copertina : collana01} />
         </Carousel>
       </div>
       <p className={styles.title}> Le ultime creazioni</p>
@@ -131,6 +133,7 @@ export default function Home() {
         <Carousel responsive={responsiveCard}>
           {necklaceElements.map((elem) => (
             <SingleCard
+            link={elem.link}
               category={elem.category}
               key={elem.id}
               title={elem.title}

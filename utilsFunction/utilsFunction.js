@@ -71,6 +71,7 @@ const necklaceElements = [
     img: <Image src={collana02} width="300" height="250" placeholder="blur" />,
     imG: <Image src={collana02} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={collana02} placeholder="blur" />,
+    link: "https://www.subito.it/abbigliamento-accessori/collana-in-chiacchierino-con-perle-in-ceramica-campobasso-459925750.htm",
     category:"Chiacchierino"
 
   },
@@ -179,6 +180,7 @@ const necklaceElements = [
     img: <Image src={collana13} width="300" height="250" placeholder="blur"/>,
     imG: <Image src={collana13} width="450" height="300" placeholder="blur"/>,
     imZ: <Image src={collana13} placeholder="blur"/>, 
+    link: "https://www.misshobby.com/it/oggetti/collana-in-chiacchierino-con-perle-di-ceramica-multicolor",
     category:"Chiacchierino"
   },
   {

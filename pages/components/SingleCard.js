@@ -6,6 +6,7 @@ import {
   CardMedia,
   Chip,
   Divider,
+  Grid,
   IconButton,
   Menu,
   MenuItem,
@@ -20,14 +21,14 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import InfoDialog from "./InfoDialog";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-const SingleCard = ({ title, image, descr, imZ, category }) => {
+const SingleCard = ({ title, image, descr, imZ, category, link }) => {
   const router = useRouter();
   const [openInfo, setOpenInfo] = useState(false);
 
   return (
     <div>
       <Card
-        style={{ backgroundColor: "transparent", height:"100%" }}
+        style={{ display :"block",backgroundColor: "transparent", height:"100%" }}
         className={styles.cardContent}
       >
         <CardMedia>
@@ -42,7 +43,7 @@ const SingleCard = ({ title, image, descr, imZ, category }) => {
         <CardContent className={styles.wrapperContent}>
           <p>{descr}</p>
           <CardActions
-            style={{ display: "flex", justifyContent: "space-between" }}
+            style={{ display: "flex", justifyContent: "space-between"}}
           >
             <div>
               <IconButton
@@ -53,8 +54,8 @@ const SingleCard = ({ title, image, descr, imZ, category }) => {
                   <InfoOutlinedIcon />
                 </Tooltip>
               </IconButton>
-              <IconButton className={styles.icon}>
-                <ShoppingBagOutlinedIcon />
+              <IconButton className={styles.icon} href={link} target="_blank">
+                <ShoppingBagOutlinedIcon  />
               </IconButton>
             </div>
             <Chip label={category} color="primary"  size="small" variant="outlined" />
