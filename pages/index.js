@@ -78,13 +78,6 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
 
       <p className={styles.pageTitle}>Nodi in Chiacchierino</p>
@@ -150,7 +143,7 @@ export default function Home() {
           />
           <p className={styles.categoryTitle}>Uncinetto</p>
         </div>
-        <div className={styles.category}>
+        <div className={styles.category} onClick={() => router.push("other/")}>
           <Image src={altro} alt="Altro background" placeholder="blur" />
           <p className={styles.categoryTitle}>Altro</p>
         </div>

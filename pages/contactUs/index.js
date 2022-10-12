@@ -6,7 +6,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import { CheckBox } from "@mui/icons-material";
 
 const ContactUs = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
@@ -21,8 +20,8 @@ const ContactUs = () => {
 
   return (
     <div className={styles.contentWrapper}>
-      <Typography variant="h5">Contattaci</Typography>
-      <Typography>Scrivici per qualsiasi informazione</Typography>
+      <p className={styles.pageTitle}>Contattaci</p>
+      <p className={styles.pageSubtitle}>Scrivici per qualsiasi informazione</p>
       <form autoComplete="off" onSubmit={draw}>
         <div className={styles.contentForm}>
           <TextField
@@ -60,18 +59,18 @@ const ContactUs = () => {
           ></TextField>
         </div>
         <div className={styles.wrapperButton}>
-          <Button type="submit" variant="contained" endIcon={<SendIcon />}>
+          <Button type="submit" color="primary" variant="outlined" startIcon={<SendIcon />} >
             Invia
           </Button>
         </div>
       </form>
 
       <div style={{ textAlign: matches ? "start" : "center" }}>
-        <Typography>Oppure contattaci tramite i nostri social</Typography>
+        <p className={styles.pageSubtitle}>Oppure contattaci tramite i nostri social</p>
         <div
           style={{
             display: "flex",
-            justifyContent: matches ? "start" : "space-around",
+            justifyContent: "center",
           }}
         >
           <IconButton className={styles.icon}>

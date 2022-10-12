@@ -3,17 +3,33 @@
 }
 
 .contentForm {
+  padding-top: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
+
 .wrapperButton {
   display: flex;
   justify-content: center;
   margin-block: 1rem;
 }
 
-.icon:hover{
-  color: #adc178;
+.icon:hover {
+  color: #c9184a;
   background-color: transparent;
+}
+
+.pageTitle {
+  text-align: center;
+  font-family: "Italianno";
+  font-size: 4rem;
+  margin: 0;
+}
+
+.pageSubtitle {
+  text-align: center;
+  font-family: "Italianno";
+  font-size: 2rem;
+  margin: 0;
 }

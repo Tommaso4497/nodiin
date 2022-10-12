@@ -17,8 +17,7 @@ const theme = createTheme({
           fontSize: "1rem",
           padding: ".5rem .5rem",
           boxShadow: ["none"],
-          border:"none",
-          borderRadius:"0",
+          borderRadius: "0",
           "&:hover": {
             backgroundColor: "#c9184a",
             color: "#fff",
