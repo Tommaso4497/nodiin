@@ -273,16 +273,6 @@ const otherElements = [
     imZ: <Image src={cristalliRossi} placeholder="blur" />,
     category: "Bigiotteria",
   },
-  {
-    id: "21",
-    title: "Orecchini in cristallo rosso",
-    desc: "prova",
-    img: <Image src={cristalliRossi} width="300" height="250" placeholder="blur" />,
-    imG: <Image src={cristalliRossi} width="450" height="300" placeholder="blur" />,
-    imZ: <Image src={cristalliRossi} placeholder="blur" />,
-    category: "Bigiotteria",
-  },
-  
 ];
 
 const necklaceElements = [
