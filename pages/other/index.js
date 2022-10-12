@@ -7,7 +7,7 @@ import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 
-const index = () => {
+const Other = () => {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <div style={{padding:"2rem"}}>
@@ -32,4 +32,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Other;
