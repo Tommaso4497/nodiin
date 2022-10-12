@@ -4,7 +4,7 @@ import copertina from "../../images/copertina.jpg";
 import styles from "./other.module.css";
 import { otherElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
-import { useMediaQuery } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 
 const index = () => {
