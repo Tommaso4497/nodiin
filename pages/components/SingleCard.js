@@ -49,7 +49,7 @@ const SingleCard = ({ title, image, descr, imZ, category, link }) => {
         <div
           style={{
             display: "flex",
-            padding: "0 .5rem",
+            padding: ".25rem .5rem",
             alignItems: "center",
             justifyContent: "space-between",
             position: "absolute",
@@ -59,14 +59,14 @@ const SingleCard = ({ title, image, descr, imZ, category, link }) => {
           }}
         >
           <div>
-            <IconButton className={styles.icon}>
+            <IconButton className={styles.icon} onClick={()=>(setOpenInfo(true))}>
               <ZoomInIcon />
             </IconButton>
             <IconButton className={styles.icon}>
               <ShoppingBagOutlinedIcon />
             </IconButton>
           </div>
-          <div>
+          <div >
             <Chip
               variant="outlined"
               size="small"
@@ -81,7 +81,7 @@ const SingleCard = ({ title, image, descr, imZ, category, link }) => {
         open={openInfo}
         title={title}
         zoomedImg={imZ}
-        onClose={() => setOpenInfo(false)}
+        onClose={() =>{ setOpenInfo(false); console.log(open)}}
       />
     </div>
   );
