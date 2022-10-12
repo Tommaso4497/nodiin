@@ -38,7 +38,7 @@
   font-family: "Italianno", cursive;
   font-size: 2.5rem;
   text-align: center;
-  margin: 0;
+  margin: 1rem;
 }
 
 .category {
@@ -49,6 +49,7 @@
   opacity: 0.5;
   cursor: pointer;
 }
+
 .categoryTitle {
   margin: 0;
   font-size: 3rem;

@@ -88,41 +88,21 @@ export default function Home() {
       </Head>
 
       <p className={styles.pageTitle}>Nodi in Chiacchierino</p>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-        }}
-      >
-        <IconButton className={styles.iconButt}>
-          <FacebookIcon fontSize="large" />
-        </IconButton>
-        <IconButton className={styles.iconButt} target="_blank"
-                href="https://www.instagram.com/nodiinchiacchierino/">
-          <InstagramIcon fontSize="large" />
-        </IconButton>
-        <IconButton onClick={() => router.push("contactUs/")} className={styles.iconButt}>
-          <EmailOutlinedIcon fontSize="large" />
-        </IconButton>
-      </div>
       <div className={styles.headerCarousel}>
         <Carousel
           responsive={responsive}
           autoPlay={true}
           infinite={true}
-          showDots={mathes? true: false}
-          arrows={false}
+          arrows={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
           dynamicHeight={true}
           autoPlaySpeed={4000}
-          renderButtonGroupOutside={true}
-          renderDotsOutside={true}
+
         >
-          <Image src={mathes? copertina : collana01} />
-          <Image src={mathes? copertina : collana01} />
-          <Image src={mathes? copertina : collana01} />
-          <Image src={mathes? copertina : collana01} />
+          <Image src={mathes ? copertina : collana01} />
+          <Image src={mathes ? copertina : collana01} />
+          <Image src={mathes ? copertina : collana01} />
+          <Image src={mathes ? copertina : collana01} />
         </Carousel>
       </div>
       <p className={styles.title}> Le ultime creazioni</p>
@@ -174,6 +154,26 @@ export default function Home() {
           <Image src={altro} alt="Altro background" placeholder="blur" />
           <p className={styles.categoryTitle}>Altro</p>
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+          marginBottom: "2rem"
+        }}
+      >
+        <IconButton className={styles.iconButt}>
+          <FacebookIcon fontSize="large" />
+        </IconButton>
+        <IconButton className={styles.iconButt} target="_blank"
+          href="https://www.instagram.com/nodiinchiacchierino/">
+          <InstagramIcon fontSize="large" />
+        </IconButton>
+        <IconButton onClick={() => router.push("contactUs/")} className={styles.iconButt}>
+          <EmailOutlinedIcon fontSize="large" />
+        </IconButton>
       </div>
     </div>
   );

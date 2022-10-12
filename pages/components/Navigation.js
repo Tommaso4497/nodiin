@@ -32,26 +32,26 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   const elementWeb = menuElement.map((element) => (
-      <Button
-        key={element?.id}
-        onClick={() => {
-          router.push(`${element?.path}`);
-        }}
-      >
-        {element.section}
-      </Button>
+    <Button
+      key={element?.id}
+      onClick={() => {
+        router.push(`${element?.path}`);
+      }}
+    >
+      {element.section}
+    </Button>
   ));
 
   const elementsMobile = menuElement.map((element) => (
     <ListItem key={element?.id}>
       <ListItemButton
-      style={{color:"#fff"}}
+        style={{ color: "#fff" }}
         onClick={() => {
           setOpen((prev) => !prev);
           router.push(`${element?.path}`);
         }}
       >
-        <ListItemIcon style={{color:"#fff"}}>{element?.icon}</ListItemIcon>
+        <ListItemIcon style={{ color: "#fff" }}>{element?.icon}</ListItemIcon>
         {element?.section}
       </ListItemButton>
     </ListItem>
@@ -63,13 +63,12 @@ const Navigation = () => {
         <AppBar position="static" open={open}>
           <Toolbar>
             <IconButton
-              
               onClick={() => {
                 setOpen((prev) => !prev);
               }}
               edge="start"
             >
-              <MenuIcon style={{color:"#fff"}}/>
+              <MenuIcon style={{ color: "#fff" }} />
             </IconButton>
             <div
               style={{
@@ -91,35 +90,37 @@ const Navigation = () => {
             setOpen((prev) => !prev);
           }}
         >
-          <div style={{color:"#fff"}}>
+          <div style={{ color: "#fff", fontSize: "1.5rem", fontFamily: "Italianno", display: "flex", alignItems: "center" }}>
             <IconButton
               onClick={() => {
                 setOpen(false);
               }}
             >
-              <KeyboardArrowLeftIcon style={{color:"#fff"}} />
+              <KeyboardArrowLeftIcon style={{ color: "#fff" }} />
             </IconButton>
-            Menu
+            <p style={{ margin: "0" }}>
+              Menu
+            </p>
           </div>
           <Divider />
-          <List>{elementsMobile}</List>
+          <List style={{ fontSize: "2rem", fontFamily: "Italianno" }}>{elementsMobile}</List>
           <List className={styles.footerWrapper}>
             <ListItem>
               <IconButton>
-                <FacebookIcon style={{color:"#fff"}}/>
+                <FacebookIcon style={{ color: "#fff" }} />
               </IconButton>
               <IconButton
                 target="_blank"
                 href="https://www.instagram.com/nodiinchiacchierino/"
               >
-                <InstagramIcon style={{color:"#fff"}} />
+                <InstagramIcon style={{ color: "#fff" }} />
               </IconButton>
             </ListItem>
           </List>
         </Drawer>
       </div>
       <div className={styles.headerWrapper}>
-        <Image src={logo} width="40" height="40"  />
+        <Image src={logo} width="40" height="40" />
         <div>{elementWeb}</div>
       </div>
     </div>
