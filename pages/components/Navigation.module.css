@@ -19,7 +19,7 @@
 
  @media only screen and (min-width: 768px) {
    .headerWrapper {
-    margin: 1rem;
+     margin: 1rem;
      display: flex;
      justify-content: space-between;
      margin-right: 1rem;
@@ -32,6 +32,6 @@
  }
 
  .footerWrapper {
-   position: fixed;
+   position: absolute;
    bottom: 0;
  }

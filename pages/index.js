@@ -92,10 +92,10 @@ export default function Home() {
           autoPlaySpeed={4000}
 
         >
-          <Image src={mathes ? copertina : collana01} />
-          <Image src={mathes ? copertina : collana01} />
-          <Image src={mathes ? copertina : collana01} />
-          <Image src={mathes ? copertina : collana01} />
+          <Image src={mathes ? copertina : collana01} placeholder="blur" />
+          <Image src={mathes ? copertina : collana01} placeholder="blur" />
+          <Image src={mathes ? copertina : collana01} placeholder="blur" />
+          <Image src={mathes ? copertina : collana01} placeholder="blur" />
         </Carousel>
       </div>
       <p className={styles.title}> Le ultime creazioni</p>
