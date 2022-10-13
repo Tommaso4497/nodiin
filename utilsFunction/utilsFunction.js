@@ -30,7 +30,6 @@ import angeloGrigioChiaro from "../images/other/angeloGrigioChiaro.jpeg"
 import angeloLilla from "../images/other/angeloLilla.jpeg"
 import angeloLillaChiaro from "../images/other/angeloLillaChiaro.jpeg"
 import angeloMarrone from "../images/other/angeloMarrone.jpeg"
-import angeloMarroneChiaro from "../images/other/angeloMarroneChiaro.jpeg"
 import angeloRosaAntico from "../images/other/angeloRosaAntico.jpeg"
 import angeloTurchese from "../images/other/angeloTurchese.jpeg"
 import babbonataleArancione from "../images/other/babbonataleArancione.jpeg"
@@ -119,15 +118,15 @@ const otherElements = [
     imZ: <Image src={angeloMarrone} placeholder="blur" />,
     category: "Bigiotteria",
   },
-  {
-    id: "4",
-    title: "Angelo Marrone Chiaro",
-    desc: "prova",
-    img: <Image src={angeloMarroneChiaro} width="300" height="250" placeholder="blur" />,
-    imG: <Image src={angeloMarroneChiaro} width="450" height="300" placeholder="blur" />,
-    imZ: <Image src={angeloMarroneChiaro} placeholder="blur" />,
-    category: "Bigiotteria",
-  },
+  // {
+  //   id: "4",
+  //   title: "Angelo Marrone Chiaro",
+  //   desc: "prova",
+  //   img: <Image src={angeloMarroneChiaro} width="300" height="250" placeholder="blur" />,
+  //   imG: <Image src={angeloMarroneChiaro} width="450" height="300" placeholder="blur" />,
+  //   imZ: <Image src={angeloMarroneChiaro} placeholder="blur" />,
+  //   category: "Bigiotteria",
+  // },
   {
     id: "5",
     title: "Angelo Rosa Antico",
