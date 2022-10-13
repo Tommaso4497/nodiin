@@ -47,6 +47,10 @@ import pietreRosse from "../images/other/pietreRosse.jpeg"
 import cristalliLilla from "../images/other/cristalliLilla.jpeg"
 import cristalliRosa from "../images/other/cristalliRosa.jpeg"
 import cristalliRossi from "../images/other/cristalliRossi.jpeg"
+import pallaArancione from "../images/other/pallaArancione.jpeg"
+import pallaBlu from "../images/other/pallaBlu.jpeg"
+import pallaCeleste from "../images/other/pallaCeleste.jpeg"
+import pallaGialla from "../images/other/pallaGialla.jpeg"
 
 
 const menuElement = [
@@ -270,6 +274,42 @@ const otherElements = [
     img: <Image src={cristalliRossi} width="300" height="250" placeholder="blur" />,
     imG: <Image src={cristalliRossi} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={cristalliRossi} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: "21",
+    title: "Orecchini in cristallo sferico arancione",
+    desc: "prova",
+    img: <Image src={pallaArancione} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={pallaArancione} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={pallaArancione} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: "22",
+    title: "Orecchini in cristallo sferico blu",
+    desc: "prova",
+    img: <Image src={pallaBlu} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={pallaBlu} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={pallaBlu} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: "23",
+    title: "Orecchini in cristallo sferico celeste",
+    desc: "prova",
+    img: <Image src={pallaCeleste} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={pallaCeleste} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={pallaCeleste} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: "24",
+    title: "Orecchini in cristallo sferico giallo",
+    desc: "prova",
+    img: <Image src={pallaGialla} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={pallaGialla} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={pallaGialla} placeholder="blur" />,
     category: "Bigiotteria",
   },
 ];
