@@ -10,7 +10,7 @@ import theme from "../../styles/main";
 const Other = () => {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <div style={{padding:"2rem"}}>
+    <div style={{ padding: "2rem" }}>
       <Image src={copertina} />
       <p className={styles.title}>Altro</p>
       <p className={styles.subtitle}>
