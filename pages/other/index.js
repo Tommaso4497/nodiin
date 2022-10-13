@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import copertina from "../../images/copertina.jpg";
-import styles from "./other.module.css";
+import styles from "./Other.module.css";
 import { otherElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
