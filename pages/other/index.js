@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import copertina from "../../images/copertina.jpg";
 import styles from "./OtherC.module.css";
 import { otherElements } from "../../utilsFunction/utilsFunction";
@@ -8,10 +8,22 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import { OutlinedInput, InputAdornment } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import BackToTop from "../components/BackToTop";
 
 const Other = () => {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
   const [search, setSearch] = useState("");
+  const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 150) {
+        return setVisibilityButtonToTop(true);
+      }
+      return setVisibilityButtonToTop(false);
+    });
+  }, []);
+
   return (
     <div style={{ padding: "2rem 3rem" }}>
       <Image src={copertina} />
@@ -30,7 +42,7 @@ const Other = () => {
         <OutlinedInput
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          style={{ width: "40%" }}
+          style={{ width: mathes ? "40%" : "90%" }}
           size="small"
           placeholder="Cerca..."
           startAdornment={
@@ -57,6 +69,7 @@ const Other = () => {
             ></SingleCard>
           ))}
       </div>
+      {visibilityButtonToTop && <BackToTop />}
     </div>
   );
 };

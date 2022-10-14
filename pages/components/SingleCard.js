@@ -83,7 +83,6 @@ const SingleCard = ({ title, image, descr, imZ, category, link, cat }) => {
 
       <InfoDialog
         open={openInfo}
-        title={title}
         zoomedImg={imZ}
         onClose={() =>{ setOpenInfo(false)}}
       />
