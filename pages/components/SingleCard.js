@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import styles from "./SingleCard.module.css";
 import theme from "../../styles/main";
 import { useRouter } from "next/router";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import InfoDialog from "./InfoDialog";
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+import CircleIcon from '@mui/icons-material/Circle';
 
-const SingleCard = ({ title, image, descr, imZ, category, link }) => {
+const SingleCard = ({ title, image, descr, imZ, category, link, cat }) => {
   const router = useRouter();
   const [openInfo, setOpenInfo] = useState(false);
 
@@ -66,7 +66,11 @@ const SingleCard = ({ title, image, descr, imZ, category, link }) => {
               <ShoppingBagOutlinedIcon />
             </IconButton>
           </div>
-          <div >
+          <div style={{display:"flex", gap:".2rem"}} >
+            <Chip variant="outlined"
+              size="small"
+              color="primary"
+              label={cat} />
             <Chip
               variant="outlined"
               size="small"
@@ -81,7 +85,7 @@ const SingleCard = ({ title, image, descr, imZ, category, link }) => {
         open={openInfo}
         title={title}
         zoomedImg={imZ}
-        onClose={() =>{ setOpenInfo(false); console.log(open)}}
+        onClose={() =>{ setOpenInfo(false)}}
       />
     </div>
   );

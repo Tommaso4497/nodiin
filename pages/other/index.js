@@ -6,51 +6,57 @@ import { otherElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import { OutlinedInput, InputAdornment } from "@mui/material";
+import { OutlinedInput, InputAdornment, Divider, Fab } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Other = () => {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
   const [search, setSearch] = useState("");
-  console.log(search)
+  console.log(search);
   return (
-    <div style={{ padding: "2rem" }}>
+    <div style={{ padding: "5rem" }}>
       <Image src={copertina} />
       <p className={styles.title}>Altro</p>
       <p className={styles.subtitle}>
-        In questa sezione troverai tanti altre creazioni!
+        In questa sezione troverai tante altre creazioni di Bigiotteria!
       </p>
       <div
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          paddingBottom: "2rem",
         }}
       >
         <OutlinedInput
-        value={search}
+          value={search}
           onChange={(e) => setSearch(e.target.value)}
           style={{ width: "40%" }}
           size="small"
           placeholder="Cerca..."
           startAdornment={
             <InputAdornment position="start">
-              <SearchIcon color="primary"/>
+              <SearchIcon color="primary" />
             </InputAdornment>
           }
         />
       </div>
       <div className={styles.wrapperGrid}>
-        {otherElements.filter(elem => (elem.title.toLowerCase().match(search.toLowerCase()))).map((filt) => (
-          <SingleCard
-            category={filt.category}
-            key={filt.id}
-            title={filt.title}
-            image={mathes ? filt?.imG : filt?.img}
-            imZ={filt.imZ}
-            descr={filt.desc}
-          ></SingleCard>
-        ))}
+        {otherElements
+          .filter((elem) =>
+            elem.title.toLowerCase().match(search.toLowerCase())
+          )
+          .map((filt) => (
+            <SingleCard
+              cat={filt.cat}
+              category={filt.category}
+              key={filt.id}
+              title={filt.title}
+              image={mathes ? filt?.imG : filt?.img}
+              imZ={filt.imZ}
+              descr={filt.desc}
+            ></SingleCard>
+          ))}
       </div>
     </div>
   );
