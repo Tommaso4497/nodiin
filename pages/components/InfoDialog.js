@@ -1,20 +1,17 @@
-import { Dialog, DialogContent, DialogTitle } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
+import { Backdrop } from "@mui/material";
 import React from "react";
 import styles from "./InfoDialog.module.css";
 
-const InfoDialog = ({ open, title, zoomedImg, onClose }) => {
+const InfoDialog = ({ open, zoomedImg, onClose }) => {
   return (
     <div>
-      <Dialog open={open} maxWidth={"md"} onClose={onClose}>
-        <DialogTitle className={styles.titleWrapper}>
-          {title}
-          <button className={styles.exitButton} onClick={onClose}><CloseIcon /></button>
-        </DialogTitle>
-        <DialogContent>
-          <div>{zoomedImg}</div>
-        </DialogContent>
-      </Dialog>
+      <Backdrop className={styles.wrapper} open={open} onClick={onClose}>
+        <button className={styles.exitButton} onClick={onClose}>
+          <CloseIcon />
+        </button>
+        {zoomedImg}
+      </Backdrop>
     </div>
   );
 };

@@ -6,15 +6,14 @@ import { otherElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import { OutlinedInput, InputAdornment, Divider, Fab } from "@mui/material";
+import { OutlinedInput, InputAdornment } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Other = () => {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
   const [search, setSearch] = useState("");
-  console.log(search);
   return (
-    <div style={{ padding: "5rem" }}>
+    <div style={{ padding: "2rem 3rem" }}>
       <Image src={copertina} />
       <p className={styles.title}>Altro</p>
       <p className={styles.subtitle}>

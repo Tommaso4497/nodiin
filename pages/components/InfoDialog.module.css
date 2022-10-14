@@ -1,13 +1,17 @@
-.exitButton {
-    margin: 0;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
+.wrapper {
+  z-index: 100;
 }
 
-.titleWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
+.wrapper:hover {
+  cursor: zoom-out;
+}
+
+.exitButton {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  background-color: #f00;
+  border: 0;
+  color: #fff;
 }
