@@ -1,6 +1,7 @@
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
+import { v4 as uuidv4 } from 'uuid';
 import Image from "next/image";
 import collana01 from "../images/Collana001.jpg";
 import collana02 from "../images/Collana002.jpg";
@@ -51,6 +52,25 @@ import pallaArancione from "../images/other/pallaArancione.jpeg"
 import pallaBlu from "../images/other/pallaBlu.jpeg"
 import pallaCeleste from "../images/other/pallaCeleste.jpeg"
 import pallaGialla from "../images/other/pallaGialla.jpeg"
+import stellaGialla from "../images/other/stellaGialla.jpeg"
+import stellaLime from "../images/other/stellaLime.jpeg"
+import stellaArancione from "../images/other/stelleArancione.jpeg"
+import stellaCeleste from "../images/other/stelleCeleste.jpeg"
+import stellaLilla from "../images/other/stelleLilla.jpeg"
+import stellaRosa from "../images/other/stelleRosa.jpeg"
+import stellaRossa from "../images/other/stelleRossa.jpeg"
+import stellaViola from "../images/other/stelleViola.jpeg"
+import angeliArancione from "../images/other/angeliArancione.jpeg"
+import angeliBianco from "../images/other/angeliBianco.jpeg"
+import angeliBiancoLilla from "../images/other/angeliBiancoLilla.jpeg"
+import angeliBlu from "../images/other/angeliBlu.jpeg"
+import angeliCeleste from "../images/other/angeliCeleste.jpeg"
+import angeliGiallo from "../images/other/angeliGiallo.jpeg"
+import angeliLilla from "../images/other/angeliLilla.jpeg"
+import angeliRosa from "../images/other/angeliRosa.jpeg"
+import angeliRosaChiaro from "../images/other/angeliRosaChiaro.jpeg"
+import angeliRosso from "../images/other/angeliRosso.jpeg"
+import angeliRossoTr from "../images/other/angeliRossoTr.jpeg"
 
 
 const menuElement = [
@@ -88,7 +108,7 @@ const menuElement = [
 
 const otherElements = [
   {
-    id: "0",
+    id: uuidv4(),
     title: "Angelo Grigio Chiaro",
     desc: "prova",
     img: <Image src={angeloGrigioChiaro} width="300" height="250" placeholder="blur" />,
@@ -97,7 +117,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "1",
+    id: uuidv4(),
     title: "Angelo Lilla",
     desc: "prova",
     img: <Image src={angeloLilla} width="300" height="250" placeholder="blur" />,
@@ -106,7 +126,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "2",
+    id: uuidv4(),
     title: "Angelo Lilla Chiaro",
     desc: "prova",
     img: <Image src={angeloLillaChiaro} width="300" height="250" placeholder="blur" />,
@@ -115,7 +135,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "3",
+    id: uuidv4(),
     title: "Angelo Marrone",
     desc: "prova",
     img: <Image src={angeloMarrone} width="300" height="250" placeholder="blur" />,
@@ -124,7 +144,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "4",
+    id: uuidv4(),
     title: "Angelo Marrone Chiaro",
     desc: "prova",
     img: <Image src={angeloMarrChiaro} width="300" height="250" placeholder="blur" />,
@@ -133,7 +153,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "5",
+    id: uuidv4(),
     title: "Angelo Rosa Antico",
     desc: "prova",
     img: <Image src={angeloRosaAntico} width="300" height="250" placeholder="blur" />,
@@ -142,7 +162,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "6",
+    id: uuidv4(),
     title: "Angelo Turchese",
     desc: "prova",
     img: <Image src={angeloTurchese} width="300" height="250" placeholder="blur" />,
@@ -151,7 +171,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "7",
+    id: uuidv4(),
     title: "Babbo Natale Arancione",
     desc: "prova",
     img: <Image src={babbonataleArancione} width="300" height="250" placeholder="blur" />,
@@ -160,7 +180,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "8",
+    id: uuidv4(),
     title: "Babbo Natale Azzurro",
     desc: "prova",
     img: <Image src={babbonataleAzzurro} width="300" height="250" placeholder="blur" />,
@@ -169,7 +189,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "9",
+    id: uuidv4(),
     title: "Babbo Natale Rosso",
     desc: "prova",
     img: <Image src={babbonataleRosso} width="300" height="250" placeholder="blur" />,
@@ -178,7 +198,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "10",
+    id: uuidv4(),
     title: "Babbo Natale Verde",
     desc: "prova",
     img: <Image src={babbonataleVerde} width="300" height="250" placeholder="blur" />,
@@ -187,7 +207,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "11",
+    id: uuidv4(),
     title: "Pupazzo di neve Blu",
     desc: "prova",
     img: <Image src={pupazzoNeveBlu} width="300" height="250" placeholder="blur" />,
@@ -196,7 +216,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "12",
+    id: uuidv4(),
     title: "Pupazzo di neve Rosso",
     desc: "prova",
     img: <Image src={pupazzoNeveRosso} width="300" height="250" placeholder="blur" />,
@@ -205,7 +225,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "13",
+    id: uuidv4(),
     title: "Pupazzo di neve Verde",
     desc: "prova",
     img: <Image src={pupazzoNeveVerde} width="300" height="250" placeholder="blur" />,
@@ -214,7 +234,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "14",
+    id: uuidv4(),
     title: "Orecchini in pietra bianca",
     desc: "prova",
     img: <Image src={pietreBianco} width="300" height="250" placeholder="blur" />,
@@ -223,7 +243,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "15",
+    id: uuidv4(),
     title: "Orecchini in pietra gialla e nera",
     desc: "prova",
     img: <Image src={pietreGialleNere} width="300" height="250" placeholder="blur" />,
@@ -232,7 +252,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "16",
+    id: uuidv4(),
     title: "Orecchini in pietra gialla trasparente",
     desc: "prova",
     img: <Image src={pietreGialloChiaro} width="300" height="250" placeholder="blur" />,
@@ -241,7 +261,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "17",
+    id: uuidv4(),
     title: "Orecchini in pietra rossa",
     desc: "prova",
     img: <Image src={pietreRosse} width="300" height="250" placeholder="blur" />,
@@ -250,7 +270,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "18",
+    id: uuidv4(),
     title: "Orecchini in cristallo lilla",
     desc: "prova",
     img: <Image src={cristalliLilla} width="300" height="250" placeholder="blur" />,
@@ -259,7 +279,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "19",
+    id: uuidv4(),
     title: "Orecchini in cristallo rosa",
     desc: "prova",
     img: <Image src={cristalliRosa} width="300" height="250" placeholder="blur" />,
@@ -268,7 +288,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "20",
+    id: uuidv4(),
     title: "Orecchini in cristallo rosso",
     desc: "prova",
     img: <Image src={cristalliRossi} width="300" height="250" placeholder="blur" />,
@@ -277,7 +297,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "21",
+    id: uuidv4(),
     title: "Orecchini in cristallo sferico arancione",
     desc: "prova",
     img: <Image src={pallaArancione} width="300" height="250" placeholder="blur" />,
@@ -286,7 +306,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "22",
+    id: uuidv4(),
     title: "Orecchini in cristallo sferico blu",
     desc: "prova",
     img: <Image src={pallaBlu} width="300" height="250" placeholder="blur" />,
@@ -295,7 +315,7 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "23",
+    id: uuidv4(),
     title: "Orecchini in cristallo sferico celeste",
     desc: "prova",
     img: <Image src={pallaCeleste} width="300" height="250" placeholder="blur" />,
@@ -304,12 +324,183 @@ const otherElements = [
     category: "Bigiotteria",
   },
   {
-    id: "24",
+    id: uuidv4(),
     title: "Orecchini in cristallo sferico giallo",
     desc: "prova",
     img: <Image src={pallaGialla} width="300" height="250" placeholder="blur" />,
     imG: <Image src={pallaGialla} width="450" height="300" placeholder="blur" />,
     imZ: <Image src={pallaGialla} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella giallo",
+    desc: "prova",
+    img: <Image src={stellaGialla} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaGialla} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaGialla} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella lime",
+    desc: "prova",
+    img: <Image src={stellaLime} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaLime} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaLime} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella arancione",
+    desc: "prova",
+    img: <Image src={stellaArancione} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaArancione} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaArancione} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella celeste",
+    desc: "prova",
+    img: <Image src={stellaCeleste} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaCeleste} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaCeleste} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella lilla",
+    desc: "prova",
+    img: <Image src={stellaLilla} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaLilla} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaLilla} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella rosa",
+    desc: "prova",
+    img: <Image src={stellaRosa} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaRosa} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaRosa} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella rossa",
+    desc: "prova",
+    img: <Image src={stellaRossa} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaRossa} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaRossa} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini in cristallo stella viola",
+    desc: "prova",
+    img: <Image src={stellaViola} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={stellaViola} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={stellaViola} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo arancione",
+    desc: "prova",
+    img: <Image src={angeliArancione} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliArancione} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliArancione} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo bianco",
+    desc: "prova",
+    img: <Image src={angeliBianco} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliBianco} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliBianco} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo bianco lilla",
+    desc: "prova",
+    img: <Image src={angeliBiancoLilla} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliBiancoLilla} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliBiancoLilla} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo blu",
+    desc: "prova",
+    img: <Image src={angeliBlu} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliBlu} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliBlu} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo celeste",
+    desc: "prova",
+    img: <Image src={angeliCeleste} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliCeleste} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliCeleste} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo giallo",
+    desc: "prova",
+    img: <Image src={angeliGiallo} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliGiallo} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliGiallo} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo lilla",
+    desc: "prova",
+    img: <Image src={angeliLilla} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliLilla} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliLilla} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo rosa",
+    desc: "prova",
+    img: <Image src={angeliRosa} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliRosa} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliRosa} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo rosa chiaro",
+    desc: "prova",
+    img: <Image src={angeliRosaChiaro} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliRosaChiaro} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliRosaChiaro} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo rosso",
+    desc: "prova",
+    img: <Image src={angeliRosso} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliRosso} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliRosso} placeholder="blur" />,
+    category: "Bigiotteria",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini angelo rosso cristallo",
+    desc: "prova",
+    img: <Image src={angeliRossoTr} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={angeliRossoTr} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={angeliRossoTr} placeholder="blur" />,
     category: "Bigiotteria",
   },
 ];
