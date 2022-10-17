@@ -75,6 +75,14 @@ import tricotin from "../images/other/tricotin.png"
 import tricotin2 from "../images/other/tricotin2.png"
 import tricotin3 from "../images/other/tricotin3.png"
 
+import rombiBlueSenape from "../images/uncinetto/rombiBlueSenape.jpg"
+import rombiOroeBlu from "../images/uncinetto/rombiOroeBlu.jpg"
+import cerchioFioreVerde from "../images/uncinetto/cerchioFioreVerde.jpg"
+import cerchioFioreArancione from "../images/uncinetto/cerchioFioreArancione.jpg"
+import cerchioFioreBlu from "../images/uncinetto/cerchioFioreBlu.jpg"
+import cerchioRosaAvorio from "../images/uncinetto/cerchioRosaAvorio.jpg"
+import medaglioneRosaAvorio from "../images/uncinetto/medaglioneRosaAvorio.jpg"
+
 
 const menuElement = [
   {
@@ -108,6 +116,79 @@ const menuElement = [
     icon: <MailIcon />,
   },
 ];
+
+const uncinettoElements = [
+  {
+  id: uuidv4(),
+    title: "Rombo Blu e Senape",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={rombiBlueSenape} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={rombiBlueSenape} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={rombiBlueSenape} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+},
+{
+  id: uuidv4(),
+    title: "Rombo Oro e Blu",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={rombiOroeBlu} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={rombiOroeBlu} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={rombiOroeBlu} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+},
+{
+  id: uuidv4(),
+    title: "Cerchio con fiore in Verde",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={cerchioFioreVerde} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={cerchioFioreVerde} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={cerchioFioreVerde} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+},
+{
+  id: uuidv4(),
+    title: "Cerchio con fiore in Arancione",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={cerchioFioreArancione} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={cerchioFioreArancione} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={cerchioFioreArancione} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+},
+{
+  id: uuidv4(),
+    title: "Cerchio con fiore in Blu",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={cerchioFioreBlu} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={cerchioFioreBlu} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={cerchioFioreBlu} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+},
+{
+  id: uuidv4(),
+    title: "Cerchio Marrone con rosa in Avorio",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={cerchioRosaAvorio} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={cerchioRosaAvorio} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={cerchioRosaAvorio} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+},
+{
+  id: uuidv4(),
+    title: "Medaglione Marrone con rosa in Avorio",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={medaglioneRosaAvorio} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={medaglioneRosaAvorio} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={medaglioneRosaAvorio} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Medaglione",
+},
+]
 
 const otherElements = [
   {
@@ -849,4 +930,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, necklaceElements, axiosToData, otherElements };
+export { menuElement, necklaceElements, axiosToData, otherElements, uncinettoElements };
