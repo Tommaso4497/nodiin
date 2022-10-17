@@ -71,9 +71,9 @@ import angeliRosa from "../images/other/angeliRosa.jpeg"
 import angeliRosaChiaro from "../images/other/angeliRosaChiaro.jpeg"
 import angeliRosso from "../images/other/angeliRosso.jpeg"
 import angeliRossoTr from "../images/other/angeliRossoTr.jpeg"
-import tricotin from "../images/other/tricotin.jpg"
-import tricotin2 from "../images/other/tricotin2.jpg"
-import tricotin3 from "../images/other/tricotin3.jpg"
+import tricotin from "../images/other/tricotin.png"
+import tricotin2 from "../images/other/tricotin2.png"
+import tricotin3 from "../images/other/tricotin3.png"
 
 
 const menuElement = [
