@@ -82,6 +82,8 @@ import cerchioFioreArancione from "../images/uncinetto/cerchioFioreArancione.jpg
 import cerchioFioreBlu from "../images/uncinetto/cerchioFioreBlu.jpg"
 import cerchioRosaAvorio from "../images/uncinetto/cerchioRosaAvorio.jpg"
 import medaglioneRosaAvorio from "../images/uncinetto/medaglioneRosaAvorio.jpg"
+import medaglioneFioreOro from "../images/uncinetto/medaglioneFioreOro.jpg"
+import fioreOro from "../images/uncinetto/fioreOro.jpg"
 
 
 const menuElement = [
@@ -187,6 +189,26 @@ const uncinettoElements = [
     imZ: <Image src={medaglioneRosaAvorio} placeholder="blur" />,
     category: "Uncinetto",
     cat: "Medaglione",
+},
+{
+  id: uuidv4(),
+    title: "Medaglione a fiore in Oro",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={medaglioneFioreOro} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={medaglioneFioreOro} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={medaglioneFioreOro} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Medaglione",
+},
+{
+  id: uuidv4(),
+    title: "Fiore in Oro",
+    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    img: <Image src={fioreOro} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={fioreOro} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={fioreOro} placeholder="blur" />,
+    category: "Uncinetto",
+    cat: "Orecchini",
 },
 ]
 
