@@ -15,9 +15,6 @@ import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import altro from "../images/altro.jpg";
 import { useRouter } from "next/router";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
@@ -90,7 +87,6 @@ export default function Home() {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           dynamicHeight={true}
           autoPlaySpeed={4000}
-
         >
           <Image src={mathes ? copertina : collana01} placeholder="blur" />
           <Image src={mathes ? copertina : collana01} placeholder="blur" />
@@ -113,6 +109,7 @@ export default function Home() {
               image={mathes ? elem?.imG : elem?.img}
               imZ={elem.imZ}
               descr={elem.desc}
+              cat={elem.cat}
             ></SingleCard>
           ))}
         </Carousel>
@@ -147,26 +144,6 @@ export default function Home() {
           <Image src={altro} alt="Altro background" placeholder="blur" />
           <p className={styles.categoryTitle}>Altro</p>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-          marginBottom: "2rem"
-        }}
-      >
-        <IconButton className={styles.iconButt}>
-          <FacebookIcon fontSize="large" />
-        </IconButton>
-        <IconButton className={styles.iconButt} target="_blank"
-          href="https://www.instagram.com/nodiinchiacchierino/">
-          <InstagramIcon fontSize="large" />
-        </IconButton>
-        <IconButton onClick={() => router.push("contactUs/")} className={styles.iconButt}>
-          <EmailOutlinedIcon fontSize="large" />
-        </IconButton>
       </div>
     </div>
   );

@@ -2,8 +2,6 @@ import { TextField, Typography, Button, IconButton, drawerClasses } from "@mui/m
 import SendIcon from "@mui/icons-material/Send";
 import React, { useCallback, useState } from "react";
 import styles from "./ContactUs.module.css";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 
@@ -67,19 +65,6 @@ const ContactUs = () => {
 
       <div style={{ textAlign: matches ? "start" : "center" }}>
         <p className={styles.pageSubtitle}>Oppure contattaci tramite i nostri social</p>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <IconButton className={styles.icon}>
-            <FacebookIcon fontSize="large" />
-          </IconButton>
-          <IconButton className={styles.icon} target="_blank" href="https://www.instagram.com/nodiinchiacchierino/" >
-            <InstagramIcon fontSize="large" />
-          </IconButton>
-        </div>
       </div>
     </div>
   );

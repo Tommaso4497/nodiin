@@ -6,7 +6,7 @@ import { otherElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import { OutlinedInput, InputAdornment } from "@mui/material";
+import { OutlinedInput, InputAdornment, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BackToTop from "../components/BackToTop";
 
