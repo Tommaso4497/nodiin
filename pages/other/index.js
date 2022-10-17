@@ -26,6 +26,7 @@ const Other = () => {
 
   return (
     <div style={{ padding: "2rem 3rem" }}>
+
       <Image src={copertina} />
       <p className={styles.title}>Altro</p>
       <p className={styles.subtitle}>

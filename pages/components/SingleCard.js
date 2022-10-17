@@ -3,10 +3,9 @@ import React, { useState } from "react";
 import styles from "./SingleCard.module.css";
 import theme from "../../styles/main";
 import { useRouter } from "next/router";
-import InfoDialog from "./InfoDialog";
-import ZoomInIcon from '@mui/icons-material/ZoomIn';
+import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
-import CircleIcon from '@mui/icons-material/Circle';
+import InfoDialog from "./InfoDialog";
 
 const SingleCard = ({ title, image, descr, imZ, category, link, cat }) => {
   const router = useRouter();
@@ -59,18 +58,18 @@ const SingleCard = ({ title, image, descr, imZ, category, link, cat }) => {
           }}
         >
           <div>
-            <IconButton className={styles.icon} onClick={()=>(setOpenInfo(true))}>
+            <IconButton
+              className={styles.icon}
+              onClick={() => setOpenInfo(true)}
+            >
               <ZoomInIcon />
             </IconButton>
             <IconButton className={styles.icon}>
               <ShoppingBagOutlinedIcon />
             </IconButton>
           </div>
-          <div style={{display:"flex", gap:".2rem"}} >
-            <Chip variant="outlined"
-              size="small"
-              color="primary"
-              label={cat} />
+          <div style={{ display: "flex", gap: ".2rem" }}>
+            <Chip variant="outlined" size="small" color="primary" label={cat} />
             <Chip
               variant="outlined"
               size="small"
@@ -80,12 +79,11 @@ const SingleCard = ({ title, image, descr, imZ, category, link, cat }) => {
           </div>
         </div>
       </div>
-
       <InfoDialog
         open={openInfo}
-        zoomedImg={imZ}
-        onClose={() =>{ setOpenInfo(false)}}
-      />
+        zoom={imZ}
+        onClose={() => setOpenInfo(false)}
+      ></InfoDialog>
     </div>
   );
 };

@@ -71,6 +71,9 @@ import angeliRosa from "../images/other/angeliRosa.jpeg"
 import angeliRosaChiaro from "../images/other/angeliRosaChiaro.jpeg"
 import angeliRosso from "../images/other/angeliRosso.jpeg"
 import angeliRossoTr from "../images/other/angeliRossoTr.jpeg"
+import tricotin from "../images/other/tricotin.jpg"
+import tricotin2 from "../images/other/tricotin2.jpg"
+import tricotin3 from "../images/other/tricotin3.jpg"
 
 
 const menuElement = [
@@ -546,6 +549,36 @@ const otherElements = [
     imZ: <Image src={angeliRossoTr} placeholder="blur" />,
     category: "Bigiotteria",
     cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Braccialetti con charm",
+    desc: "Braccialetti con charm . La lunghezza complessiva è di circa 13 cm.",
+    img: <Image src={tricotin} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={tricotin} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={tricotin} placeholder="blur" />,
+    category: "Tricotin",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Braccialetti con charm",
+    desc: "Braccialetti con charm . La lunghezza complessiva è di circa 13 cm.",
+    img: <Image src={tricotin2} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={tricotin2} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={tricotin2} placeholder="blur" />,
+    category: "Tricotin",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Braccialetti con charm",
+    desc: "Braccialetti con charm . La lunghezza complessiva è di circa 13 cm.",
+    img: <Image src={tricotin3} width="300" height="250" placeholder="blur" />,
+    imG: <Image src={tricotin3} width="450" height="300" placeholder="blur" />,
+    imZ: <Image src={tricotin3} placeholder="blur" />,
+    category: "Tricotin",
+    cat: "Bracciali",
   },
 ];
 

@@ -1,17 +1,10 @@
-.wrapper {
-  z-index: 100;
-}
-
-.wrapper:hover {
-  cursor: zoom-out;
-}
-
-.exitButton {
-  z-index: 100;
+.exitbutton {
   position: absolute;
-  top: 0;
-  cursor: pointer;
-  background-color: #f00;
-  border: 0;
+  right: 0;
+  border: none;
   color: #fff;
+  background-color: #f00;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
