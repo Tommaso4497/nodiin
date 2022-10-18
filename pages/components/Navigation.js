@@ -96,9 +96,7 @@ const Navigation = () => {
             >
               <KeyboardArrowLeftIcon style={{ color: "#fff" }} />
             </IconButton>
-            <p style={{ margin: "0" }}>
-              Menu
-            </p>
+            Menu
           </div>
           <Divider />
           <List style={{ fontSize: "2rem", fontFamily: "Italianno" }}>{elementsMobile}</List>

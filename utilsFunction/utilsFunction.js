@@ -110,7 +110,7 @@ const menuElement = [
     id: "0",
     section: "Home",
     path: "/",
-    icon: <HomeIcon />,
+    icon: <HomeIcon sx={{ fontSize: 30 }} />,
   },
   {
     id: "1",
