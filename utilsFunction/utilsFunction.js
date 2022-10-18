@@ -142,7 +142,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Rombo Blu e Senape",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto, colore blue e senape a forma di rombo. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={rombiBlueSenape} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={rombiBlueSenape} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={rombiBlueSenape} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -152,7 +152,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Rombo Oro e Blu",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto, colore oro e blu a forma di rombo. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={rombiOroeBlu} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={rombiOroeBlu} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={rombiOroeBlu} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -162,7 +162,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Cerchio con fiore in Verde",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli verdi ricamati, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={cerchioFioreVerde} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={cerchioFioreVerde} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={cerchioFioreVerde} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -172,7 +172,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Cerchio con fiore in Arancione",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli arancioni ricamati, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={cerchioFioreArancione} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={cerchioFioreArancione} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={cerchioFioreArancione} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -182,7 +182,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Cerchio con fiore in Blu",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli blu ricamati, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={cerchioFioreBlu} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={cerchioFioreBlu} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={cerchioFioreBlu} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -192,7 +192,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Cerchio Marrone con rosa in Avorio",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli rosa e marroni ricamati e una rosa in colore avorio, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={cerchiRosaAvorio} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={cerchiRosaAvorio} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={cerchiRosaAvorio} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -202,7 +202,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Medaglione Marrone con rosa in Avorio",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Medaglione fatto con la tecnica dell'uncinetto con cristalli rosa e marroni ricamati e una rosa in colore avorio, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={medaglioneRosaAvorio} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={medaglioneRosaAvorio} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={medaglioneRosaAvorio} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -212,7 +212,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Medaglione a fiore in Oro",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Medaglione fatto con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={medaglioneFioreOro} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={medaglioneFioreOro} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={medaglioneFioreOro} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
@@ -222,7 +222,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Fiore in Oro",
-    desc: "Orecchini in perla colore grigio chiaro a forma di angelo. La lunghezza complessiva è di circa 3 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
     img: <Image src={fioreOro} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={fioreOro} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={fioreOro} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
