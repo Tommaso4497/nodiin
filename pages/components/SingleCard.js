@@ -18,7 +18,7 @@ const SingleCard = ({ title, image, descr, imZ, category, link, cat }) => {
           padding: "1rem",
           margin: ".5rem",
           borderRadius: "4px",
-          height: "30rem",
+          height: "32rem",
           boxShadow:
             "rgba(201, 24, 74, 0.2) 0px 2px 1px -1px, rgba(201, 24, 74, 0.14) 0px 1px 1px 0px, rgba(201, 24, 74, 0.12) 0px 1px 3px 0px",
           position: "relative",
