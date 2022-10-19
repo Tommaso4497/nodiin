@@ -9,15 +9,7 @@ import { useRouter } from "next/router";
 const Footer = () => {
   const router = useRouter();
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "1rem",
-        marginBottom: "2rem",
-      }}
-    >
+    <div className={styles.footerWrapper}>
       <IconButton className={styles.iconButt}>
         <FacebookIcon fontSize="large" />
       </IconButton>

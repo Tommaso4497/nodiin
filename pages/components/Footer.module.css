@@ -1,4 +1,12 @@
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 .iconButt:hover {
-    background-color: transparent;
-    color: #c9184a;
-  }
+  background-color: transparent;
+  color: #c9184a;
+}

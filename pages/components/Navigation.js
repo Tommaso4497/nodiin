@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import { useRouter } from "next/router";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useState } from "react";
 import {
   AppBar,
@@ -19,14 +18,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import theme from "../../styles/main";
 import { menuElement } from "../../utilsFunction/utilsFunction";
 import Image from "next/image";
 import logo from "../../images/logo.png";
 
 const Navigation = () => {
   const router = useRouter();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = useState(false);
 
   const elementWeb = menuElement.map((element) => (
@@ -69,12 +66,7 @@ const Navigation = () => {
               <MenuIcon style={{ color: "#fff" }} />
             </IconButton>
             <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                width: "100%",
-                justifyContent: "end",
-              }}
+              className={styles.imageWrapper}
             >
               <Image src={logo} width="40" height="40" />
             </div>
@@ -88,38 +80,39 @@ const Navigation = () => {
             setOpen((prev) => !prev);
           }}
         >
-          <div style={{ color: "#fff", fontSize: "1.5rem", fontFamily: "Italianno", display: "flex", alignItems: "center" }}>
-            <IconButton
+          <div className={styles.drawerHeader}>
+            <button
+              className={styles.backButton}
               onClick={() => {
                 setOpen(false);
               }}
             >
               <KeyboardArrowLeftIcon style={{ color: "#fff" }} />
-            </IconButton>
-            Menu
+            </button>
+            <p className={styles.drawerTitle}>Nodi in Chiacchierino</p>
           </div>
           <Divider />
           <List style={{ fontSize: "2rem", fontFamily: "Italianno" }}>{elementsMobile}</List>
-          <List className={styles.footerWrapper}>
-            <ListItem>
-              <IconButton>
-                <FacebookIcon style={{ color: "#fff" }} />
-              </IconButton>
-              <IconButton
-                target="_blank"
-                href="https://www.instagram.com/nodiinchiacchierino/"
-              >
-                <InstagramIcon style={{ color: "#fff" }} />
-              </IconButton>
-            </ListItem>
-          </List>
+          <div className={styles.footerWrapper}>
+            <button style={{ backgroundColor: "transparent", border: "none" }}>
+              <FacebookIcon style={{ color: "#fff" }} />
+            </button>
+
+            <button
+              style={{ backgroundColor: "transparent", border: "none" }}
+              target="_blank"
+              href="https://www.instagram.com/nodiinchiacchierino/"
+            >
+              <InstagramIcon style={{ color: "#fff" }} />
+            </button>
+          </div>
         </Drawer>
-      </div>
+      </div >
       <div className={styles.headerWrapper}>
         <Image src={logo} width="40" height="40" />
         <div>{elementWeb}</div>
       </div>
-    </div>
+    </div >
   );
 };
 

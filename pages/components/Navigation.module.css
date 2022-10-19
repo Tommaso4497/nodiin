@@ -31,6 +31,33 @@
    align-items: center;
  }
 
+ .drawerHeader {
+   color: #fff;
+   font-size: 1.5rem;
+   font-family: Italianno;
+   display: flex;
+   align-items: center;
+ }
+
+ .backButton {
+   background-color: transparent;
+   padding: 0;
+   margin: 0;
+   border: none;
+ }
+
+ .imageWrapper {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: end;
+ }
+
+ .drawerTitle {
+   padding-top: .2rem;
+   margin: .25rem .5rem;
+ }
+
  .footerWrapper {
    position: absolute;
    bottom: 0;
