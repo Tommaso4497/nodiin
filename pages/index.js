@@ -54,6 +54,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Nodi in chiacchierino</title>
+        <meta name="google-site-verification" content="AUeL2WPQ7Rs2x1Oi6qjqRsi2qtCIItxZWfHMKuL4eUU" />
         <meta name="description" content="Gioielli in pizzo chiacchierino" />
         <link
           rel="apple-touch-icon"
