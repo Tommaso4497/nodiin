@@ -58,7 +58,15 @@
    margin: .25rem .5rem;
  }
 
+ .iconButtonDrawer {
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   margin: 0;
+ }
+
  .footerWrapper {
    position: absolute;
-   bottom: 0;
+   bottom: 1rem;
+   left: .5rem;
  }
