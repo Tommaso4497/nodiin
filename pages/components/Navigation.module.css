@@ -58,15 +58,11 @@
    margin: .25rem .5rem;
  }
 
- .iconButtonDrawer {
-   background-color: transparent;
-   border: none;
-   padding: 0;
-   margin: 0;
+ .iconLinkDrawer {
+   margin-left: 1rem;
  }
 
  .footerWrapper {
    position: absolute;
    bottom: 1rem;
-   left: .5rem;
  }
