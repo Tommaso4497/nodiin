@@ -94,13 +94,16 @@ const Navigation = () => {
           <Divider />
           <List style={{ fontSize: "2rem", fontFamily: "Italianno" }}>{elementsMobile}</List>
           <div className={styles.footerWrapper}>
-            <a className={styles.iconLinkDrawer}>
+            <a className={styles.iconLinkDrawer}
+              rel="noopener noreferrer"
+            >
               <FacebookIcon fontSize="large" style={{ color: "#fff" }} />
             </a>
 
             <a
               className={styles.iconLinkDrawer}
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/nodiinchiacchierino/"
             >
               <InstagramIcon fontSize="large" style={{ color: "#fff" }} />
