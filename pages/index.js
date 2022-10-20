@@ -54,7 +54,59 @@ export default function Home() {
     <div>
       <Head>
         <title>Nodi in chiacchierino</title>
-        <meta name="google-site-verification" content="AUeL2WPQ7Rs2x1Oi6qjqRsi2qtCIItxZWfHMKuL4eUU" />
+
+        <meta name="application-name" content="Nodi in Chiacchierino" />
+        <meta
+          name="description"
+          content="La passione per l'intreccio dei fili, dà origine a veri e propri gioielli fatti a mano e impreziositi da pietre e cristalli"
+        />
+        <meta
+          name="keywords"
+          content="Chiacchierino, Uncinetto, Gioelli, Accessori, Donna, Regalo, Handmade, Pizzo, Pietre, Cristalli,Bracciali, Collane, Orecchini"
+        />
+        <meta name="author" content="Nodi in Chiacchierino" />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="imagemode" content="force" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Nodi in Chiacchierino"
+        />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="theme-color" content="Metti un colore" />
+        <meta name="msapplication-TileColor" content="Metti un colore" />
+        <meta property="og:title" content="Nodi in Chiacchierino" />
+        <meta property="og:image" content="/favicon-32x32.png" />
+        <meta property="og:url" content="https://nodiinchiacchierino.it/" />
+        <meta
+          property="og:description"
+          content="La passione per l'intreccio dei fili, dà origine a veri e propri gioielli fatti a mano e impreziositi da pietre e cristalli "
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:site_name" content="Nodi in Chiacchierino" />
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="alternate" href=" " hreflang="x-default" />
+        <link
+          rel="sitemap"
+          type="application/xml"
+          title="Sitemap"
+          href="https://www.nodiinchiacchierino.it/sitemap-0.xml"
+        />
+
+        <meta
+          name="google-site-verification"
+          content="AUeL2WPQ7Rs2x1Oi6qjqRsi2qtCIItxZWfHMKuL4eUU"
+        />
         <meta name="description" content="Gioielli in pizzo chiacchierino" />
         <link
           rel="apple-touch-icon"
