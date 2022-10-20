@@ -6,4 +6,4 @@ Allow: /
 Host: https://www.nodiinchiacchierino.it
 
 # Sitemaps
-Sitemap: https://www.nodiinchiacchierino.it/sitemap.xml
+Sitemap: https://www.nodiinchiacchierino.it/sitemap-0.xml
