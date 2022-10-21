@@ -84,6 +84,12 @@ import cerchiRosaAvorio from "../images/uncinetto/cerchiRosaAvorio.jpg";
 import medaglioneRosaAvorio from "../images/uncinetto/medaglioneRosaAvorio.jpg";
 import medaglioneFioreOro from "../images/uncinetto/medaglioneFioreOro.jpg";
 import fioreOro from "../images/uncinetto/fioreOro.jpg";
+import fioccoArgentoVerde from "../images/uncinetto/fioccoArgentoVerde.jpg";
+import fioccoNeveArgentoBianco from "../images/uncinetto/fioccoNeveArgentoBianco.jpg";
+import fioccoNeveOroBianco from "../images/uncinetto/fioccoNeveOroBianco.jpg";
+import fioccoNeveArgentoNero from "../images/uncinetto/fioccoNeveArgentoNero.jpg";
+import stellaOroBlu from "../images/uncinetto/stellaOroBlu.jpg";
+import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoArgentoVerde.jpg";
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -226,6 +232,66 @@ const uncinettoElements = [
     img: <Image src={fioreOro} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
     imG: <Image src={fioreOro} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     imZ: <Image src={fioreOro} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco in Argento con cristalli",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    img: <Image src={fioccoArgentoVerde} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoArgentoVerde} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoArgentoVerde} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Medaglione a fiocco in Argento con cristalli",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    img: <Image src={medaglioneFioccoArgentoVerde} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={medaglioneFioccoArgentoVerde} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={medaglioneFioccoArgentoVerde} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve in Argento con cristalli Bianchi",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    img: <Image src={fioccoNeveArgentoBianco} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveArgentoBianco} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveArgentoBianco} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve in Oro con cristalli Bianchi",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    img: <Image src={fioccoNeveOroBianco} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveOroBianco} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveOroBianco} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve in Argento con cristalli Neri",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    img: <Image src={fioccoNeveArgentoNero} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveArgentoNero} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveArgentoNero} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella in Oro con cristalli Blu",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli e perle ricamate, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    img: <Image src={stellaOroBlu} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={stellaOroBlu} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={stellaOroBlu} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Uncinetto",
     cat: "Orecchini",
   },
