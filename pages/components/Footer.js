@@ -3,6 +3,7 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import styles from "./Footer.module.css";
 import { useRouter } from "next/router";
 
@@ -25,6 +26,13 @@ const Footer = () => {
         className={styles.iconButt}
       >
         <EmailOutlinedIcon fontSize="large" />
+      </IconButton>
+      <IconButton
+        className={styles.iconButt}
+        target="_blank"
+        href="https://t.me/+pvDtZ4zVIYk3OGU8"
+      >
+        <TelegramIcon fontSize="large" />
       </IconButton>
     </div>
   );

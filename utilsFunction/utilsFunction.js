@@ -91,6 +91,24 @@ import fioccoNeveArgentoNero from "../images/uncinetto/fioccoNeveArgentoNero.jpg
 import stellaOroBlu from "../images/uncinetto/stellaOroBlu.jpg";
 import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoArgentoVerde.jpg";
 
+import angeloFortunaOro from "../images/chiacchierino/angeloFortunaOro.jpeg";
+import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
+import completoOroRosa from "../images/chiacchierino/completoOroRosa.jpg";
+import completoVentaglioBianco from "../images/chiacchierino/completoVentaglioBianco.jpg";
+import completoVentaglioRosso from "../images/chiacchierino/completoVentaglioRosso.jpg";
+import completoVentaglioNero from "../images/chiacchierino/completoVentaglioNero.jpg";
+import braccialeOroVerde from "../images/chiacchierino/braccialeOroVerde.jpg";
+import braccialeArgentoRosa from "../images/chiacchierino/braccialeArgentoRosa.jpg";
+import farfallaOroRosa from "../images/chiacchierino/farfallaOroRosa.jpg";
+import fioccoFioreRotondo from "../images/chiacchierino/fioccoFioreRotondo.jpeg";
+import fioccoNeveFiorellino from "../images/chiacchierino/fioccoNeveFiorellino.jpeg";
+import fioccoNeveOrecchini from "../images/chiacchierino/fioccoNeveOrecchini.jpeg";
+import fioccoNeveRotondoGrande from "../images/chiacchierino/fioccoNeveRotondoGrande.jpeg";
+import fioccoNeveStella from "../images/chiacchierino/fioccoNeveStella.jpeg";
+import fioccoNeveCiondolo from "../images/chiacchierino/fioccoNeveCiondolo.jpeg";
+
+
+
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
@@ -143,6 +161,159 @@ const menuElement = [
     icon: <MailIcon />,
   },
 ];
+
+const chiacchierinoElements = [
+  {
+    id: uuidv4(),
+    title: "Angelo portafortuna Oro",
+    desc: "Ciondolo portafortuna a forma di Angelo ricamato in color Oro, impreziosito con una perla.",
+    img: <Image src={angeloFortunaOro} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={angeloFortunaOro} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={angeloFortunaOro} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Angelo portafortuna Argento",
+    desc: "Ciondolo portafortuna a forma di Angelo ricamato in color Argento, impreziosito con una perla.",
+    img: <Image src={angeloFortunaArgento} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={angeloFortunaArgento} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={angeloFortunaArgento} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo in Oro con rosa",
+    desc: "Completo in color oro metallizzato, impreziosito con rose in resina.",
+    img: <Image src={completoOroRosa} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={completoOroRosa} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={completoOroRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo Bianco",
+    desc: "Completo ricamato in colore bianco, impreziosito da perle.",
+    img: <Image src={completoVentaglioBianco} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={completoVentaglioBianco} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={completoVentaglioBianco} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo Rosso",
+    desc: "Completo ricamato in colore rosso, impreziosito da perle.",
+    img: <Image src={completoVentaglioRosso} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={completoVentaglioRosso} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={completoVentaglioRosso} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo Nero",
+    desc: "Completo ricamato in colore nero, impreziosito da perle.",
+    img: <Image src={completoVentaglioNero} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={completoVentaglioNero} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={completoVentaglioNero} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale alla schiava Oro e Verde",
+    desc: "Bracciale alla schiava ricamato in oro metallizzato e impreziosito da cristalli in sfumature di verde. Il bracciale è dotato di chiusura magnetica",
+    img: <Image src={braccialeOroVerde} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={braccialeOroVerde} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={braccialeOroVerde} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Bracciale",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale alla schiava Argento e Rosa",
+    desc: "Bracciale alla schiava ricamato in argento metallizzato e impreziosito da cristalli in sfumature di rosa. Il bracciale è dotato di chiusura magnetica",
+    img: <Image src={braccialeArgentoRosa} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={braccialeArgentoRosa} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={braccialeArgentoRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Bracciale",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini farfalla in Oro con rosa",
+    desc: "Orecchini a forma di farfalla, ricamati in colore oro metallizzato e impreziositi con una rosa in resina.",
+    img: <Image src={farfallaOroRosa} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={farfallaOroRosa} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={farfallaOroRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod.1",
+    desc: "Orecchini ricamati a forma di fiocco di Neve in colore bianco",
+    img: <Image src={fioccoFioreRotondo} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoFioreRotondo} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoFioreRotondo} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod.2",
+    desc: "Orecchini ricamati a forma di fiocco di Neve in colore bianco",
+    img: <Image src={fioccoNeveFiorellino} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveFiorellino} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveFiorellino} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod.3",
+    desc: "Orecchini ricamati a forma di fiocco di Neve in colore bianco",
+    img: <Image src={fioccoNeveOrecchini} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveOrecchini} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveOrecchini} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Ciondolo fiocco di Neve mod.3",
+    desc: "Ciondolo ricamato a forma di fiocco di Neve in colore bianco",
+    img: <Image src={fioccoNeveCiondolo} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveCiondolo} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveCiondolo} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Medaglione",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod.4",
+    desc: "Orecchini ricamati a forma di fiocco di Neve in colore bianco",
+    img: <Image src={fioccoNeveRotondoGrande} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveRotondoGrande} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveRotondoGrande} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod.5",
+    desc: "Orecchini ricamati a forma di fiocco di Neve in colore bianco",
+    img: <Image src={fioccoNeveStella} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+    imG: <Image src={fioccoNeveStella} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+    imZ: <Image src={fioccoNeveStella} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+]
 
 const uncinettoElements = [
   {
@@ -1037,4 +1208,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, necklaceElements, axiosToData, otherElements, uncinettoElements };
+export { menuElement, necklaceElements, axiosToData, otherElements, uncinettoElements, chiacchierinoElements };
