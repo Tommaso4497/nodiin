@@ -25,7 +25,7 @@ const SingleCard = ({ title, image, descr, imZ, category, link, cat, colors }) =
         <div style={{ paddingTop: "1rem", display: "flex", alignItems: "center" }}>
           <p> Colori: </p>
           {colors.map((color) =>
-          (<Tooltip title={color.name}>
+          (<Tooltip key={color.name} title={color.name}>
             <CircleIcon onClick={() => (console.log(color.name))} style={{ fill: `${color.color}`, stroke: "grey" }} />
           </Tooltip>))}
 
