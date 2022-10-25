@@ -54,6 +54,7 @@ const Chiacchierino = () => {
               image={mathes ? filt?.imG : filt?.img}
               imZ={filt.imZ}
               descr={filt.desc}
+              colors={filt.colors}
             ></SingleCard>
           ))}
       </div>

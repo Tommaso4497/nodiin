@@ -172,6 +172,7 @@ const chiacchierinoElements = [
     imZ: <Image src={angeloFortunaOro} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Ciondolo",
+    colors: [{ name: "Oro", color: "#ffd700" }, { name: "Argento", color: "#c0c0c0" }],
   },
   {
     id: uuidv4(),
@@ -182,6 +183,7 @@ const chiacchierinoElements = [
     imZ: <Image src={angeloFortunaArgento} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Ciondolo",
+    colors: [{ name: "Oro", color: "#ffd700" }, { name: "Argento", color: "#c0c0c0" }],
   },
   {
     id: uuidv4(),
@@ -192,6 +194,8 @@ const chiacchierinoElements = [
     imZ: <Image src={completoOroRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Completo",
+    colors: [{ name: "Oro", color: "#ffd700" }],
+
   },
   {
     id: uuidv4(),
@@ -202,6 +206,8 @@ const chiacchierinoElements = [
     imZ: <Image src={completoVentaglioBianco} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Completo",
+    colors: [{ name: "Bianco", color: "#fff" }, { name: "Rosso", color: "#f00" }, { name: "Nero", color: "#000" }],
+
   },
   {
     id: uuidv4(),
@@ -212,6 +218,8 @@ const chiacchierinoElements = [
     imZ: <Image src={completoVentaglioRosso} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Completo",
+    colors: [{ name: "Bianco", color: "#fff" }, { name: "Rosso", color: "#f00" }, { name: "Nero", color: "#000" }],
+
   },
   {
     id: uuidv4(),
@@ -222,6 +230,8 @@ const chiacchierinoElements = [
     imZ: <Image src={completoVentaglioNero} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Completo",
+    colors: [{ name: "Bianco", color: "#fff" }, { name: "Rosso", color: "#f00" }, { name: "Nero", color: "#000" }],
+
   },
   {
     id: uuidv4(),
@@ -232,6 +242,8 @@ const chiacchierinoElements = [
     imZ: <Image src={braccialeOroVerde} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Bracciale",
+    colors: [{ name: "Oro", color: "#ffd700" }],
+
   },
   {
     id: uuidv4(),
@@ -242,6 +254,8 @@ const chiacchierinoElements = [
     imZ: <Image src={braccialeArgentoRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Bracciale",
+    colors: [{ name: "Argento", color: "#c0c0c0" }],
+
   },
   {
     id: uuidv4(),
@@ -252,6 +266,8 @@ const chiacchierinoElements = [
     imZ: <Image src={farfallaOroRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Orecchini",
+    colors: [{ name: "Oro", color: "#ffd700" }],
+
   },
   {
     id: uuidv4(),
@@ -262,6 +278,8 @@ const chiacchierinoElements = [
     imZ: <Image src={fioccoFioreRotondo} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Orecchini",
+    colors: [{ name: "Bianco", color: "#fff" }],
+
   },
   {
     id: uuidv4(),
@@ -272,6 +290,8 @@ const chiacchierinoElements = [
     imZ: <Image src={fioccoNeveFiorellino} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Orecchini",
+    colors: [{ name: "Bianco", color: "#fff" }],
+
   },
   {
     id: uuidv4(),
@@ -282,6 +302,8 @@ const chiacchierinoElements = [
     imZ: <Image src={fioccoNeveOrecchini} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Orecchini",
+    colors: [{ name: "Bianco", color: "#fff" }],
+
   },
   {
     id: uuidv4(),
@@ -292,6 +314,8 @@ const chiacchierinoElements = [
     imZ: <Image src={fioccoNeveCiondolo} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Medaglione",
+    colors: [{ name: "Bianco", color: "#fff" }],
+
   },
   {
     id: uuidv4(),
@@ -302,6 +326,8 @@ const chiacchierinoElements = [
     imZ: <Image src={fioccoNeveRotondoGrande} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Orecchini",
+    colors: [{ name: "Bianco", color: "#fff" }],
+
   },
   {
     id: uuidv4(),
@@ -312,8 +338,10 @@ const chiacchierinoElements = [
     imZ: <Image src={fioccoNeveStella} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     category: "Chiacchierino",
     cat: "Orecchini",
+    colors: [{ name: "Bianco", color: "#fff" }],
+
   },
-]
+];
 
 const uncinettoElements = [
   {
