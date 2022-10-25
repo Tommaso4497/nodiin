@@ -27,7 +27,7 @@ const SingleCard = ({ title, pics, descr, category, cat }) => {
           <p> Colori: </p>
           {
             pics.map((col, i) => (
-              <button style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>
+              <button key={col.name} style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>
                 <Tooltip title={col.name}>
                   <CircleIcon style={{ fill: `${col.color}`, stroke: selectedColor == i ? "#c9184a" : "gray", strokeWidth: selectedColor == i ? "3px" : "1PX" }} />
                 </Tooltip>
