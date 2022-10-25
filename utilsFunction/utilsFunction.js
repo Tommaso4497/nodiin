@@ -260,6 +260,11 @@ const necklaceElements = [
       img: <Image src={collana01} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
       imG: <Image src={collana01} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
       imZ: <Image src={collana01} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    }, {
+      name: "Oro",
+      color: "#ffd100",
+      img: <Image src={collana01} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+      imG: <Image src={collana01} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
     }],
     category: "Chiacchierino",
     cat: "Collane",

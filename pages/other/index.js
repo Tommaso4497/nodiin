@@ -64,8 +64,7 @@ const Other = () => {
               category={filt.category}
               key={filt.id}
               title={filt.title}
-              pics={filt?.images}
-              imZ={filt.imZ}
+              pics={filt.images}
               descr={filt.desc}
             ></SingleCard>
           ))}

@@ -5,19 +5,20 @@ import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import InfoDialog from "./InfoDialog";
 import CircleIcon from '@mui/icons-material/Circle';
 
-const SingleCard = ({ title, pics, descr, category, cat }) => {
+const SingleCard = ({ title, pics = [], descr, category, cat }) => {
   const [openInfo, setOpenInfo] = useState(false);
-  const [selectedColor, setSelectedColor] = useState("0");
+  const [selectedColor, setSelectedColor] = useState(0);
   const selectedImage = pics[selectedColor];
+  console.log(selectedColor, selectedImage, pics);
 
   return (
     <div>
       <div className={styles.card}>
         <div className={styles.image} onClick={() => setOpenInfo(true)}>
-          {selectedImage.imG}
+          {selectedImage?.imG && selectedImage.imG}
         </div>
         <div className={styles.title}>
-          {selectedImage.title}
+          {title}
         </div>
         <Divider />
         <div className={styles.descriptionWrapper}>
@@ -27,7 +28,7 @@ const SingleCard = ({ title, pics, descr, category, cat }) => {
           <p> Colori: </p>
           {
             pics.map((col, i) => (
-              <button key={col.name} style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>
+              <button key={col?.name} style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>
                 <Tooltip title={col.name}>
                   <CircleIcon style={{ fill: `${col.color}`, stroke: selectedColor == i ? "#c9184a" : "gray", strokeWidth: selectedColor == i ? "3px" : "1px" }} />
                 </Tooltip>
@@ -51,7 +52,7 @@ const SingleCard = ({ title, pics, descr, category, cat }) => {
       </div>
       <InfoDialog
         open={openInfo}
-        zoom={selectedImage.imZ}
+        zoom={selectedImage?.imZ}
         onClose={() => setOpenInfo(false)}
       ></InfoDialog>
     </div >

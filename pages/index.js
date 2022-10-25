@@ -158,7 +158,7 @@ export default function Home() {
               category={elem.category}
               key={elem.id}
               title={elem.title}
-              pics={elem?.images}
+              pics={elem.images}
               descr={elem.desc}
               cat={elem.cat}
             ></SingleCard>
