@@ -7,7 +7,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 
 const SingleCard = ({ title, pics, descr, category, cat }) => {
   const [openInfo, setOpenInfo] = useState(false);
-  const [selectedColor, setSelectedColor] = useState(0);
+  const [selectedColor, setSelectedColor] = useState("0");
   const selectedImage = pics[selectedColor];
 
   return (
@@ -29,7 +29,7 @@ const SingleCard = ({ title, pics, descr, category, cat }) => {
             pics.map((col, i) => (
               <button key={col.name} style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>
                 <Tooltip title={col.name}>
-                  <CircleIcon style={{ fill: `${col.color}`, stroke: selectedColor == i ? "#c9184a" : "gray", strokeWidth: selectedColor == i ? "3px" : "1PX" }} />
+                  <CircleIcon style={{ fill: `${col.color}`, stroke: selectedColor == i ? "#c9184a" : "gray", strokeWidth: selectedColor == i ? "3px" : "1px" }} />
                 </Tooltip>
               </button>)
             )
