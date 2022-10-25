@@ -155,12 +155,10 @@ export default function Home() {
         <Carousel responsive={responsiveCard}>
           {necklaceElements.map((elem) => (
             <SingleCard
-              link={elem.link}
               category={elem.category}
               key={elem.id}
               title={elem.title}
-              image={mathes ? elem?.imG : elem?.img}
-              imZ={elem.imZ}
+              pics={elem?.images}
               descr={elem.desc}
               cat={elem.cat}
             ></SingleCard>

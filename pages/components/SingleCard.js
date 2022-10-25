@@ -2,44 +2,45 @@ import { Chip, Divider, IconButton, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import styles from "./SingleCard.module.css";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
-import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import InfoDialog from "./InfoDialog";
 import CircleIcon from '@mui/icons-material/Circle';
 
-const SingleCard = ({ title, image, descr, imZ, category, link, cat, colors }) => {
+const SingleCard = ({ title, pics, descr, category, cat }) => {
   const [openInfo, setOpenInfo] = useState(false);
+  const [selectedColor, setSelectedColor] = useState(0);
+  const selectedImage = pics[selectedColor];
 
   return (
     <div>
       <div className={styles.card}>
         <div className={styles.image} onClick={() => setOpenInfo(true)}>
-          {image}
+          {selectedImage.imG}
         </div>
         <div className={styles.title}>
-          {title}
+          {selectedImage.title}
         </div>
         <Divider />
         <div className={styles.descriptionWrapper}>
           {descr}
         </div>
-        <div style={{ paddingTop: "1rem", display: "flex", alignItems: "center" }}>
+        <div style={{ paddingTop: "1rem", display: "flex", alignItems: "center", gap: ".5rem" }}>
           <p> Colori: </p>
-          {colors?.map((color) =>
-          (<Tooltip key={color.name} title={color.name}>
-            <CircleIcon onClick={() => (console.log(color.name))} style={{ fill: `${color.color}`, stroke: "grey" }} />
-          </Tooltip>))}
-
+          {
+            pics.map((col, i) => (
+              <button style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>
+                <Tooltip title={col.name}>
+                  <CircleIcon style={{ fill: `${col.color}`, stroke: selectedColor == i ? "#c9184a" : "gray", strokeWidth: selectedColor == i ? "3px" : "1PX" }} />
+                </Tooltip>
+              </button>)
+            )
+          }
         </div>
         <div className={styles.footerCard}>
           <div>
             <IconButton
               className={styles.icon}
-              onClick={() => setOpenInfo(true)}
-            >
+              onClick={() => setOpenInfo(true)}>
               <ZoomInIcon />
-            </IconButton>
-            <IconButton className={styles.icon}>
-              <ShoppingBagOutlinedIcon />
             </IconButton>
           </div>
           <div className={styles.chipWrapper}>
@@ -50,10 +51,10 @@ const SingleCard = ({ title, image, descr, imZ, category, link, cat, colors }) =
       </div>
       <InfoDialog
         open={openInfo}
-        zoom={imZ}
+        zoom={selectedImage.imZ}
         onClose={() => setOpenInfo(false)}
       ></InfoDialog>
-    </div>
+    </div >
   );
 };
 

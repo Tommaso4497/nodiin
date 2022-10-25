@@ -15,7 +15,7 @@ import SearchIcon from "@mui/icons-material/Search";
 const Uncinetto = () => {
   const [search, setSearch] = useState("");
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
-  
+
 
 
   return (
@@ -57,7 +57,7 @@ const Uncinetto = () => {
               category={filt.category}
               key={filt.id}
               title={filt.title}
-              image={mathes ? filt?.imG : filt?.img}
+              pics={filt?.images}
               imZ={filt.imZ}
               descr={filt.desc}
             ></SingleCard>
