@@ -166,7 +166,7 @@ const chiacchierinoElements = [
   {
     id: uuidv4(),
     title: "Angelo portafortuna",
-    desc: "Ciondolo portafortuna a forma di Angelo ricamato in color Oro, impreziosito con una perla.",
+    desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
     images: [{
       name: "Oro",
       color: "#ffd100",
@@ -181,6 +181,61 @@ const chiacchierinoElements = [
       imZ: <Image src={angeloFortunaArgento} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
     }
     ],
+    category: "Chiacchierino",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo ventaglio",
+    desc: "Completo composto da bracciale e orecchini, ricamati a forma di ventaglio.",
+    images: [{
+      name: "Bianco",
+      color: "#fff",
+      img: <Image src={completoVentaglioBianco} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+      imG: <Image src={completoVentaglioBianco} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+      imZ: <Image src={completoVentaglioBianco} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />
+    }, {
+      name: "Nero",
+      color: "#000",
+      img: <Image src={completoVentaglioNero} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+      imG: <Image src={completoVentaglioNero} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+      imZ: <Image src={completoVentaglioNero} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    }, {
+      name: "Rosso",
+      color: "#f00",
+      img: <Image src={completoVentaglioRosso} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+      imG: <Image src={completoVentaglioRosso} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+      imZ: <Image src={completoVentaglioRosso} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />,
+    }
+    ],
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale alla schiava",
+    desc: "Bracciale alla schiava impreziosito da cristalli.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      img: <Image src={braccialeOroVerde} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+      imG: <Image src={braccialeOroVerde} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+      imZ: <Image src={braccialeOroVerde} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />
+    }],
+    category: "Chiacchierino",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale alla schiava",
+    desc: "Bracciale alla schiava impreziosito da cristalli.",
+    images: [{
+      name: "Argento",
+      color: "#c0c0c0",
+      img: <Image src={braccialeArgentoRosa} width="300" height="250" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(300, 250))}`} />,
+      imG: <Image src={braccialeArgentoRosa} width="450" height="300" placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(450, 300))}`} />,
+      imZ: <Image src={braccialeArgentoRosa} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(900, 675))}`} />
+    }],
     category: "Chiacchierino",
     cat: "Ciondolo",
   },
