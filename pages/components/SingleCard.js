@@ -27,8 +27,8 @@ const SingleCard = ({ title, pics = [], descr, category, cat }) => {
         <div className={styles.descriptionWrapper}>
           {descr}
         </div>
+        <p style={{ marginBottom: "0" }}> Colori: </p>
         <div style={{ paddingTop: "1rem", display: "grid", gridTemplateColumns: "repeat(7, 1fr)", alignItems: "center", gap: ".5rem" }}>
-          <p> Colori: </p>
           {
             pics.map((col, i) => (
               <button key={col?.name} style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>

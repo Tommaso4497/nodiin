@@ -737,6 +737,107 @@ const necklaceElements = [
   },
 ];
 
+const christmas = [
+  {
+    id: uuidv4(),
+    title: "Angelo portafortuna",
+    desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: angeloFortunaOro,
+    }, {
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: angeloFortunaArgento,
+    }
+    ],
+    category: "Chiacchierino",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve",
+    desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: fioccoNeveOroBianco,
+    },
+    {
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: fioccoNeveArgentoBianco,
+    },
+    {
+      name: "Nero",
+      color: "#000",
+      imG: fioccoNeveArgentoNero,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod 4.",
+    desc: "Orecchini ricamati a forma di fiocco di neve.",
+    images: [{
+      name: "Bianco",
+      color: "#fff",
+      imG: fioccoNeveStella,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Pupazzo di neve ",
+    desc: "Orecchini a forma di Pupazzo di neve in perla con separatore colorato.",
+    images: [{
+      name: "Blu",
+      color: "#00f",
+      imG: pupazzoNeveBlu,
+    },
+    {
+      name: " Rosso",
+      color: "#f00",
+      imG: pupazzoNeveRosso,
+    }, {
+      name: "Verde",
+      color: "#0f0",
+      imG: pupazzoNeveVerde,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Babbo Natale ",
+    desc: "Orecchini a forma di Babbo Natale in cristalli colorati.",
+    images: [{
+      name: "Arancione",
+      color: "#ffa500",
+      imG: babbonataleArancione,
+    },
+    {
+      name: " Azzurro",
+      color: "#007fff",
+      imG: babbonataleAzzurro,
+    }, {
+      name: "Rosso",
+      color: "#f00",
+      imG: babbonataleRosso,
+    }, {
+      name: "Verde",
+      color: "#0f0",
+      imG: babbonataleVerde,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+
+];
+
 const axiosToData = async (axiosPromise) => {
   try {
     const results = await axiosPromise;
@@ -746,4 +847,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, necklaceElements, axiosToData, otherElements, uncinettoElements, chiacchierinoElements };
+export { menuElement, necklaceElements, axiosToData, otherElements, uncinettoElements, chiacchierinoElements, christmas };

@@ -36,9 +36,12 @@
 
 .subtitle {
   font-family: "Italianno", cursive;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .category {
@@ -58,8 +61,11 @@
 }
 
 .pageTitle {
-  margin: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-block: 0;
   font-size: 6rem;
   font-family: "Italianno";
 }

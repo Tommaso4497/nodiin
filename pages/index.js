@@ -2,8 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React, { useState } from "react";
-import { necklaceElements } from "../utilsFunction/utilsFunction";
-import { Divider, IconButton, TextField, Typography } from "@mui/material";
+import { christmas } from "../utilsFunction/utilsFunction";
 import SingleCard from "./components/SingleCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -15,6 +14,9 @@ import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import altro from "../images/altro.jpg";
 import { useRouter } from "next/router";
+import gooseberry from "../images/christmasImage/gooseberry.svg";
+import box from "../images/christmasImage/box.svg";
+import hat from "../images/christmasImage/hat.svg";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
@@ -130,7 +132,11 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <p className={styles.pageTitle}>Nodi in Chiacchierino</p>
+      <div className={styles.pageTitle}>
+        <Image src={gooseberry} />
+        <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
+        <Image src={gooseberry} />
+      </div>
       <div className={styles.headerCarousel}>
         <Carousel
           responsive={responsive}
@@ -147,13 +153,14 @@ export default function Home() {
           <Image src={mathes ? copertina : collana01} placeholder="blur" />
         </Carousel>
       </div>
-      <p className={styles.title}> Le ultime creazioni</p>
-      <p className={styles.subtitle}>
-        In questa sezione troverai tutte le mie ultime creazioni!
-      </p>
+      <div className={styles.subtitle}>
+        <p style={{ marginBlock: "2rem", color: "red" }}>  Gioielli Natalizi</p>
+        <Image src={box} />
+      </div>
+
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {necklaceElements.map((elem) => (
+          {christmas.map((elem) => (
             <SingleCard
               category={elem.category}
               key={elem.id}
@@ -165,9 +172,13 @@ export default function Home() {
           ))}
         </Carousel>
       </div>
-      <p className={styles.subtitle}>
-        Per altre creazioni visita i nostri cataloghi!
-      </p>
+      <div className={styles.subtitle}>
+        <Image src={hat} />
+        <p style={{ marginBlock: "2rem" }}>
+          Per altre creazioni visita i nostri cataloghi!
+        </p>
+      </div>
+      <div></div>
       <div className={styles.gridWrapper}>
         <div
           className={styles.category}

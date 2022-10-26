@@ -1,0 +1,41 @@
+<svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <title>Icon Color</title>
+  <g class="cls-1" style="isolation: isolate;" transform="matrix(0.782123, 0, 0, 0.655282, 1.122066, -0.010019)">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="Vector">
+        <path class="cls-2" d="M25.43,27.62H38a14.54,14.54,0,1,0-12.58,0Z" style="fill: rgb(241, 242, 242);"></path>
+        <path class="cls-2" d="M29.24,33.25H22.15a2,2,0,0,1-1.3-.49,17.54,17.54,0,1,0,21.75,0,2,2,0,0,1-1.3.49H34.7" style="fill: rgb(241, 242, 242);"></path>
+        <circle class="cls-3" cx="31.72" cy="15.37" r="1.8" style="fill: rgb(242, 113, 33);"></circle>
+        <path class="cls-3" d="M29.31,33.24H22.4a1.93,1.93,0,0,1-1.93-1.93V29.55a1.93,1.93,0,0,1,1.93-1.93H41A1.92,1.92,0,0,1,43,29.55v1.76A1.92,1.92,0,0,1,41,33.24H34.62" style="fill: rgb(242, 113, 33);"></path>
+        <path class="cls-3" d="M28.29,27.78s1.93,14.78,7.29,19.5c0,0,1.93.21,5.36-3.43,0,0-6.65-5.36-7.61-16.07" style="fill: rgb(242, 113, 33);"></path>
+        <path class="cls-3" d="M29.31,33.24s-3,5.1-5.3,6.33l3.22,3.26s-.14,1,3.88-3.26" style="fill: rgb(242, 113, 33);"></path>
+        <circle class="cls-4" cx="31.72" cy="49.14" r="1.86" style="fill: rgb(86, 86, 86);"></circle>
+        <circle class="cls-4" cx="31.72" cy="56.17" r="1.86" style="fill: rgb(86, 86, 86);"></circle>
+      </g>
+      <g id="Line">
+        <path class="cls-5" d="M29.31,33.24H22.4a1.93,1.93,0,0,1-1.93-1.93V29.55a1.93,1.93,0,0,1,1.93-1.93H41A1.92,1.92,0,0,1,43,29.55v1.76A1.92,1.92,0,0,1,41,33.24H34.62" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-5" d="M25.43,27.62H38a14.54,14.54,0,1,0-12.58,0Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-6" d="M14.77,51A17.54,17.54,0,1,0,42.6,32.76a2,2,0,0,1-1.3.49H34.7" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-6" d="M29.24,33.25H22.15a2,2,0,0,1-1.3-.49A17.48,17.48,0,0,0,14.25,45" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-5" d="M33.33,27.78c1,10.71,7.61,16.07,7.61,16.07-3.43,3.64-5.36,3.43-5.36,3.43-5.36-4.72-7.29-19.5-7.29-19.5" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-5" d="M29.31,33.24s-3,5.1-5.3,6.33l3.22,3.26s-.14,1,3.88-3.26" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path>
+        <circle class="cls-5" cx="31.72" cy="49.14" r="1.86" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></circle>
+        <circle class="cls-5" cx="31.72" cy="56.17" r="1.86" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></circle>
+        <polyline class="cls-5" points="17.61 36.11 9.06 24.24 7.46 21.94" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></polyline>
+        <polyline class="cls-5" points="5.15 28.47 12.43 28.91 14.9 21.94" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></polyline>
+        <polyline class="cls-5" points="46.39 36.11 54.94 24.24 56.54 21.94" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></polyline>
+        <polyline class="cls-5" points="58.85 28.47 51.57 28.91 49.1 21.94" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></polyline>
+        <circle class="cls-7" cx="26.65" cy="10.43" r="2.11" style="stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 0px;"></circle>
+        <circle class="cls-7" cx="36.8" cy="10.43" r="2.11" style="stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 0px;"></circle>
+        <path class="cls-5" d="M28.42,20.44a4.33,4.33,0,0,0,6.61,0" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"></path>
+      </g>
+      <g id="Shadow" class="cls-8" style="mix-blend-mode: multiply;">
+        <g class="cls-9" style="opacity: 0.25;">
+          <path d="M35.36,2.59a21.26,21.26,0,0,1,2,15.53c-.87,3.32-2.57,6.65-1.87,10a11.8,11.8,0,0,0,2.87,5.11H41A1.92,1.92,0,0,0,43,31.31V29.55A1.92,1.92,0,0,0,41,27.62H38A14.53,14.53,0,0,0,33.7.12,21.32,21.32,0,0,1,35.36,2.59Z"></path>
+          <path d="M31.72,64A17.52,17.52,0,0,0,42.6,32.76a2,2,0,0,1-1.3.49h-3a32.7,32.7,0,0,1,4,5.19,11.33,11.33,0,0,1-4.51,14.82c-5.61,3-13.22.81-18.23,4.71a6.84,6.84,0,0,0-.64.55A17.46,17.46,0,0,0,31.72,64Z"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
