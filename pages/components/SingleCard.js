@@ -27,7 +27,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat }) => {
         <div className={styles.descriptionWrapper}>
           {descr}
         </div>
-        <div style={{ paddingTop: "1rem", display: "flex", alignItems: "center", gap: ".5rem" }}>
+        <div style={{ paddingTop: "1rem", display: "grid", gridTemplateColumns: "repeat(7, 1fr)", alignItems: "center", gap: ".5rem" }}>
           <p> Colori: </p>
           {
             pics.map((col, i) => (

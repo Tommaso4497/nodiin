@@ -451,26 +451,275 @@ const uncinettoElements = [
 const otherElements = [
   {
     id: uuidv4(),
-    title: "Angioletto ",
-    desc: "Orecchini in perla con pendente in resina a forma di angelo. La lunghezza complessiva è di circa 2 cm.",
+    title: "Pupazzo di neve ",
+    desc: "Orecchini a forma di Pupazzo di neve in perla con separatore colorato.",
     images: [{
-      name: "Rosa",
-      color: "#ffc0cb",
-      imG: angeliRosa,
+      name: "Blu",
+      color: "#00f",
+      imG: pupazzoNeveBlu,
     },
     {
-      name: " Rosa Chiaro",
-      color: "#fadadd",
-      imG: angeliRosaChiaro,
-    }, {
-      name: "Rosso",
+      name: " Rosso",
       color: "#f00",
-      imG: angeliRosso,
+      imG: pupazzoNeveRosso,
+    }, {
+      name: "Verde",
+      color: "#0f0",
+      imG: pupazzoNeveVerde,
     }],
     category: "Bigiotteria",
     cat: "Orecchini",
   },
+  {
+    id: uuidv4(),
+    title: "Babbo Natale ",
+    desc: "Orecchini a forma di Babbo Natale in cristalli colorati.",
+    images: [{
+      name: "Arancione",
+      color: "#ffa500",
+      imG: babbonataleArancione,
+    },
+    {
+      name: " Azzurro",
+      color: "#007fff",
+      imG: babbonataleAzzurro,
+    }, {
+      name: "Rosso",
+      color: "#f00",
+      imG: babbonataleRosso,
+    }, {
+      name: "Verde",
+      color: "#0f0",
+      imG: babbonataleVerde,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Cristalli",
+    desc: "Orecchini cristalli colorati di varie forme.",
+    images: [{
+      name: "Arancione",
+      color: "#ffa500",
+      imG: pallaArancione,
+    },
+    {
+      name: " Azzurro",
+      color: "#007fff",
+      imG: pallaCeleste,
+    }, {
+      name: "Blu",
+      color: "#00f",
+      imG: pallaBlu,
+    }, {
+      name: "Giallo",
+      color: "#ff0",
+      imG: pallaGialla,
+    }, {
+      name: "Fucsia",
+      color: "#ff00ff",
+      imG: cristalliLilla,
+    }, {
+      name: "Rosa",
+      color: "#ffc0cb",
+      imG: cristalliRosa,
+    }, {
+      name: "Rosso",
+      color: "#f00",
+      imG: cristalliRossi,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Stelle in cristallo",
+    desc: "Orecchini a forma di stella in cristalli colorati.",
+    images: [{
+      name: "Arancione",
+      color: "#ffa500",
+      imG: stellaArancione,
+    },
+    {
+      name: " Azzurro",
+      color: "#007fff",
+      imG: stellaCeleste,
+    }, {
+      name: "Lime",
+      color: "#ccff00",
+      imG: stellaLime,
+    }, {
+      name: "Giallo",
+      color: "#ff0",
+      imG: stellaGialla,
+    }, {
+      name: "Fucsia",
+      color: "#ff00ff",
+      imG: stellaLilla,
+    }, {
+      name: "Rosa",
+      color: "#ffc0cb",
+      imG: stellaRosa,
+    }, {
+      name: "Rosso",
+      color: "#f00",
+      imG: stellaRossa,
+    }, {
+      name: "Viola",
+      color: "#8f00ff",
+      imG: stellaViola,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Angioletti in cristallo",
+    desc: "Orecchini a forma di angelo in perle e pendenti colorati.",
+    images: [{
+      name: "Rosso",
+      color: "#f00",
+      imG: angeliRosso,
+    }, {
+      name: "Arancione",
+      color: "#ffa500",
+      imG: angeliArancione,
+    },
+    {
+      name: " Azzurro",
+      color: "#007fff",
+      imG: angeliCeleste,
+    }, {
+      name: "Bianco",
+      color: "#fff",
+      imG: angeliBianco,
+    }, {
+      name: "Giallo",
+      color: "#ff0",
+      imG: angeliGiallo,
+    }, {
+      name: "Viola",
+      color: "#8f00ff",
+      imG: angeliBiancoLilla,
+    }, {
+      name: "Rosa",
+      color: "#ffc0cb",
+      imG: angeliRosa,
+    }, {
+      name: "Viola",
+      color: "#8f00ff",
+      imG: angeliLilla,
+    }, {
+      name: "Blu",
+      color: "#00f",
+      imG: angeliBlu,
+    }, {
+      name: "Rosa chiaro",
+      color: "#fadadd",
+      imG: angeliRosaChiaro,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Angeli in perla",
+    desc: "Orecchini a forma di angelo in perle colorate.",
+    images: [{
+      name: "Marrone",
+      color: "#cd853f",
+      imG: angeloMarrone,
+    }, {
+      name: " Azzurro",
+      color: "#007fff",
+      imG: angeloTurchese,
+    }, {
+      name: "Marrone Chiaro",
+      color: "#E1C699",
+      imG: angeloMarrChiaro,
+    }, {
+      name: "Grigio Chiaro",
+      color: "#9c9c9c",
+      imG: angeloGrigioChiaro,
+    }, {
+      name: "Fucsia",
+      color: "#f400a1",
+      imG: angeloLilla,
+    }, {
+      name: "Lilla Chiaro",
+      color: "#c8a2c8",
+      imG: angeloLillaChiaro,
+    }, {
+      name: "Rosa chiaro",
+      color: "#fadadd",
+      imG: angeloRosaAntico,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Pietra Bianca",
+    desc: "Orecchini in pietra bianca.",
+    images: [{
+      name: "Bianco",
+      color: "#fff",
+      imG: pietreBianco,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Pietra Gialla Zebrata",
+    desc: "Orecchini in pietra gialla zebrata.",
+    images: [{
+      name: "Giallo",
+      color: "#ff0",
+      imG: pietreGialleNere,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Pietra sintetica Zebrata",
+    desc: "Orecchini in resina gialla zebrata.",
+    images: [{
+      name: "Giallo",
+      color: "#ff0",
+      imG: pietreGialloChiaro,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Pietra Rossa",
+    desc: "Orecchini in pietra rossa.",
+    images: [{
+      name: "Rosso",
+      color: "#f00",
+      imG: pietreRosse,
+    }],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Angeli in cristallo",
+    desc: "Orecchini a forma di Angelo in cristalli rossi.",
+    images: [{
+      name: "Rosso",
+      color: "#f00",
+      imG: angeliRossoTr,
+    }
 
+    ],
+    category: "Bigiotteria",
+    cat: "Orecchini",
+  },
 ];
 
 const necklaceElements = [
