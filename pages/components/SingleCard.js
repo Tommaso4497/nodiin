@@ -4,18 +4,21 @@ import styles from "./SingleCard.module.css";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import InfoDialog from "./InfoDialog";
 import CircleIcon from '@mui/icons-material/Circle';
+import Image from "next/image";
+import ImageEdit from "./ImageEdit";
 
 const SingleCard = ({ title, pics = [], descr, category, cat }) => {
   const [openInfo, setOpenInfo] = useState(false);
   const [selectedColor, setSelectedColor] = useState(0);
   const selectedImage = pics[selectedColor];
-  console.log(selectedColor, selectedImage, pics);
 
   return (
     <div>
       <div className={styles.card}>
         <div className={styles.image} onClick={() => setOpenInfo(true)}>
-          {selectedImage?.imG && selectedImage.imG}
+          {selectedImage?.imG &&
+            <ImageEdit url={selectedImage.imG} w={450} h={300} />
+          }
         </div>
         <div className={styles.title}>
           {title}
@@ -52,7 +55,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat }) => {
       </div>
       <InfoDialog
         open={openInfo}
-        zoom={selectedImage?.imZ}
+        zoom={selectedImage?.imG}
         onClose={() => setOpenInfo(false)}
       ></InfoDialog>
     </div >

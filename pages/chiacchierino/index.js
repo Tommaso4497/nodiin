@@ -43,7 +43,7 @@ const Chiacchierino = () => {
       <div className={styles.wrapperGrid}>
         {chiacchierinoElements
           .filter((elem) =>
-            elem.title.toLowerCase().match(search.toLowerCase())
+            (elem.title.toLowerCase().match(search.toLowerCase()) || elem.desc.toLowerCase().match(search.toLowerCase()))
           )
           .map((filt) => (
             <SingleCard
@@ -52,7 +52,6 @@ const Chiacchierino = () => {
               key={filt.id}
               title={filt.title}
               pics={filt?.images}
-              imZ={filt.imZ}
               descr={filt.desc}
             ></SingleCard>
           ))}
