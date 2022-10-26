@@ -2,7 +2,6 @@ import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
 import { v4 as uuidv4 } from 'uuid';
-import Image from "next/image";
 import collana01 from "../images/Collana001.jpg";
 import collana02 from "../images/Collana002.jpg";
 import collana03 from "../images/Collana003.jpg";
@@ -107,28 +106,6 @@ import fioccoNeveRotondoGrande from "../images/chiacchierino/fioccoNeveRotondoGr
 import fioccoNeveStella from "../images/chiacchierino/fioccoNeveStella.jpeg";
 import fioccoNeveCiondolo from "../images/chiacchierino/fioccoNeveCiondolo.jpeg";
 
-
-
-const shimmer = (w, h) => `
-<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <linearGradient id="g">
-      <stop stop-color="#F4A2B8" offset="20%" />
-      <stop stop-color="#E55B83" offset="50%" />
-      <stop stop-color="#c9184a" offset="70%" />
-    </linearGradient>
-  </defs>
-  <rect width="${w}" height="${h}" fill="#fff" />
-  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
-  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-</svg>`;
-
-const toBase64 = (str) =>
-  typeof window === 'undefined'
-    ? Buffer.from(str).toString('base64')
-    : window.btoa(str);
-
-
 const menuElement = [
   {
     id: "0",
@@ -211,7 +188,7 @@ const chiacchierinoElements = [
       imG: braccialeOroVerde,
     }],
     category: "Chiacchierino",
-    cat: "Ciondolo",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -223,7 +200,7 @@ const chiacchierinoElements = [
       imG: braccialeArgentoRosa,
     }],
     category: "Chiacchierino",
-    cat: "Ciondolo",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -292,6 +269,18 @@ const chiacchierinoElements = [
     images: [{
       name: "Bianco",
       color: "#fff",
+      imG: fioccoNeveStella,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod 5.",
+    desc: "Orecchini ricamati a forma di fiocco di neve.",
+    images: [{
+      name: "Bianco",
+      color: "#fff",
       imG: fioccoNeveOrecchini,
     }],
     category: "Chiacchierino",
@@ -299,7 +288,7 @@ const chiacchierinoElements = [
   },
   {
     id: uuidv4(),
-    title: "Ciondolo fiocco di Neve mod 4.",
+    title: "Ciondolo fiocco di Neve mod 5.",
     desc: "Ciondolo ricamato a forma di fiocco di neve.",
     images: [{
       name: "Bianco",
@@ -315,7 +304,7 @@ const uncinettoElements = [
   {
     id: uuidv4(),
     title: "Cerchio con fiore",
-    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli verdi ricamati, colore oro. La lunghezza complessiva è di circa 8 cm.",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli ricamati. La lunghezza complessiva è di circa 8 cm.",
     images: [{
       name: "Verde",
       color: "#0f0",
@@ -330,6 +319,128 @@ const uncinettoElements = [
       name: "Blu",
       color: "#00f",
       imG: cerchioFioreBlu,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve",
+    desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: fioccoNeveOroBianco,
+    },
+    {
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: fioccoNeveArgentoBianco,
+    },
+    {
+      name: "Nero",
+      color: "#000",
+      imG: fioccoNeveArgentoNero,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Sole con nappine",
+    desc: "Orecchini ricamati a forma di Sole impreziositi con cristalli e nappine colorate.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: stellaOroBlu,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiore con perle",
+    desc: "Orecchini ricamati a forma di Fiore e impreziositi con cristalli e perle.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: fioreOro,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Ciondolo Fiore con perle",
+    desc: "Ciodnolo ricamato a forma di Fiore e impreziosito con cristalli e perle.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: medaglioneFioreOro,
+    }],
+    category: "Uncinetto",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Mandala con rosa",
+    desc: "Orecchini ricamati a forma di mandala e impreziositi con cristalli e rose.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: cerchiRosaAvorio,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Ciondolo Mandala con rosa",
+    desc: "Ciondolo ricamato a forma di Mandala e impreziosito con cristalli e rose.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: medaglioneRosaAvorio,
+    }],
+    category: "Uncinetto",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiore con cristalli",
+    desc: "Orecchini ricamati a forma di fiore e impreziositi con cristalli.",
+    images: [{
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: fioccoArgentoVerde,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Ciondolo Fiore con cristalli",
+    desc: "Ciondolo ricamato a forma di fiore e impreziosito con cristalli.",
+    images: [{
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: medaglioneFioccoArgentoVerde,
+    }],
+    category: "Uncinetto",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Rombo con Fiore",
+    desc: "Orecchini ricamati a forma di rombo.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: rombiOroeBlu,
+    }, {
+      name: "Blu",
+      color: "#00f",
+      imG: rombiBlueSenape,
     }],
     category: "Uncinetto",
     cat: "Orecchini",
