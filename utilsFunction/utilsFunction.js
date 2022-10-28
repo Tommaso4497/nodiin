@@ -26,53 +26,7 @@ import collana21 from "../images/Collana021.jpg";
 import collana22 from "../images/Collana022.jpg";
 import collana23 from "../images/Collana023.jpg";
 
-import angeloGrigioChiaro from "../images/other/angeloGrigioChiaro.jpeg";
-import angeloLilla from "../images/other/angeloLilla.jpeg";
-import angeloLillaChiaro from "../images/other/angeloLillaChiaro.jpeg";
-import angeloMarrone from "../images/other/angeloMarrone.jpeg";
-import angeloRosaAntico from "../images/other/angeloRosaAntico.jpeg";
-import angeloTurchese from "../images/other/angeloTurchese.jpeg";
-import angeloMarrChiaro from "../images/other/angeloMarrChiaro.jpeg";
-import babbonataleArancione from "../images/other/babbonataleArancione.jpeg";
-import babbonataleAzzurro from "../images/other/babbonataleAzzurro.jpeg";
-import babbonataleRosso from "../images/other/babbonataleRosso.jpeg";
-import babbonataleVerde from "../images/other/babbonataleVerde.jpeg";
-import pupazzoNeveBlu from "../images/other/pupazzoNeveBlu.jpeg";
-import pupazzoNeveRosso from "../images/other/pupazzoNeveRosso.jpeg";
-import pupazzoNeveVerde from "../images/other/pupazzoNeveVerde.jpeg";
-import pietreBianco from "../images/other/pietreBianco.jpeg";
-import pietreGialleNere from "../images/other/pietreGialleNere.jpeg";
-import pietreGialloChiaro from "../images/other/pietreGialloChiaro.jpeg";
-import pietreRosse from "../images/other/pietreRosse.jpeg";
-import cristalliLilla from "../images/other/cristalliLilla.jpeg";
-import cristalliRosa from "../images/other/cristalliRosa.jpeg";
-import cristalliRossi from "../images/other/cristalliRossi.jpeg";
-import pallaArancione from "../images/other/pallaArancione.jpeg";
-import pallaBlu from "../images/other/pallaBlu.jpeg";
-import pallaCeleste from "../images/other/pallaCeleste.jpeg";
-import pallaGialla from "../images/other/pallaGialla.jpeg";
-import stellaGialla from "../images/other/stellaGialla.jpeg";
-import stellaLime from "../images/other/stellaLime.jpeg";
-import stellaArancione from "../images/other/stelleArancione.jpeg";
-import stellaCeleste from "../images/other/stelleCeleste.jpeg";
-import stellaLilla from "../images/other/stelleLilla.jpeg";
-import stellaRosa from "../images/other/stelleRosa.jpeg";
-import stellaRossa from "../images/other/stelleRossa.jpeg";
-import stellaViola from "../images/other/stelleViola.jpeg";
-import angeliArancione from "../images/other/angeliArancione.jpeg";
-import angeliBianco from "../images/other/angeliBianco.jpeg";
-import angeliBiancoLilla from "../images/other/angeliBiancoLilla.jpeg";
-import angeliBlu from "../images/other/angeliBlu.jpeg";
-import angeliCeleste from "../images/other/angeliCeleste.jpeg";
-import angeliGiallo from "../images/other/angeliGiallo.jpeg";
-import angeliLilla from "../images/other/angeliLilla.jpeg";
-import angeliRosa from "../images/other/angeliRosa.jpeg";
-import angeliRosaChiaro from "../images/other/angeliRosaChiaro.jpeg";
-import angeliRosso from "../images/other/angeliRosso.jpeg";
-import angeliRossoTr from "../images/other/angeliRossoTr.jpeg";
-import tricotin from "../images/other/tricotin.png";
-import tricotin2 from "../images/other/tricotin2.png";
-import tricotin3 from "../images/other/tricotin3.png";
+
 
 import rombiBlueSenape from "../images/uncinetto/rombiBlueSenape.jpg";
 import rombiOroeBlu from "../images/uncinetto/rombiOroeBlu.jpg";
@@ -105,6 +59,13 @@ import fioccoNeveOrecchini from "../images/chiacchierino/fioccoNeveOrecchini.jpe
 import fioccoNeveRotondoGrande from "../images/chiacchierino/fioccoNeveRotondoGrande.jpeg";
 import fioccoNeveStella from "../images/chiacchierino/fioccoNeveStella.jpeg";
 import fioccoNeveCiondolo from "../images/chiacchierino/fioccoNeveCiondolo.jpeg";
+import ondulinaRossa from "../images/chiacchierino/ondulinaRossa.jpg";
+import ondulinaNero from "../images/chiacchierino/ondulinaNero.jpg";
+import ondulinaLilla from "../images/chiacchierino/ondulinaLilla.jpg";
+import completoFiorellinoBianco from "../images/chiacchierino/completoFiorellinoBianco.jpg";
+import ricamoRosa from "../images/chiacchierino/ricamoRosa.jpg";
+import completoCampaneNero from "../images/chiacchierino/completoCampaneNero.jpg";
+import completoCampaneRosso from "../images/chiacchierino/completoCampaneRosso.jpg";
 
 const menuElement = [
   {
@@ -123,12 +84,6 @@ const menuElement = [
     id: "2",
     section: "Uncinetto",
     path: "uncinetto/",
-    icon: <CollectionsIcon />,
-  },
-  {
-    id: "3",
-    section: "Altro",
-    path: "other/",
     icon: <CollectionsIcon />,
   },
   {
@@ -298,6 +253,67 @@ const chiacchierinoElements = [
     category: "Chiacchierino",
     cat: "Ciondolo",
   },
+  {
+    id: uuidv4(),
+    title: "Completo Fiorellini",
+    desc: "Completo ricamato a forma di fiorellini ed edera.",
+    images: [{
+      name: "Bianco",
+      color: "#fff",
+      imG: completoFiorellinoBianco,
+    }],
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Ricamo con Rosa",
+    desc: "Orecchini ricamati e impreziositi con una rosa.",
+    images: [{
+      name: "Nero",
+      color: "#000",
+      imG: ricamoRosa,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Ondulina",
+    desc: "Bracciale ricamato a forma di ondulina impreziosito con perle.",
+    images: [{
+      name: "Rosa",
+      color: "#ffc0cb",
+      imG: ondulinaRossa,
+    },{
+      name: "Nero",
+      color: "#000",
+      imG: ondulinaNero,
+    },
+    {
+      name: "Lilla",
+      color: "#ff00ff",
+      imG: ondulinaLilla,
+    }],
+    category: "Chiacchierino",
+    cat: "Bracciale",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo campane",
+    desc: "Completo con orecchini e collane ricamati a forma di campana.",
+    images: [{
+      name: "Rosso",
+      color: "#f00",
+      imG: completoCampaneRosso,
+    },{
+      name: "Nero",
+      color: "#000",
+      imG: completoCampaneNero,
+    }],
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
 ];
 
 const uncinettoElements = [
@@ -448,280 +464,6 @@ const uncinettoElements = [
 
 ];
 
-const otherElements = [
-  {
-    id: uuidv4(),
-    title: "Pupazzo di neve ",
-    desc: "Orecchini a forma di Pupazzo di neve in perla con separatore colorato.",
-    images: [{
-      name: "Blu",
-      color: "#00f",
-      imG: pupazzoNeveBlu,
-    },
-    {
-      name: " Rosso",
-      color: "#f00",
-      imG: pupazzoNeveRosso,
-    }, {
-      name: "Verde",
-      color: "#0f0",
-      imG: pupazzoNeveVerde,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Babbo Natale ",
-    desc: "Orecchini a forma di Babbo Natale in cristalli colorati.",
-    images: [{
-      name: "Arancione",
-      color: "#ffa500",
-      imG: babbonataleArancione,
-    },
-    {
-      name: " Azzurro",
-      color: "#007fff",
-      imG: babbonataleAzzurro,
-    }, {
-      name: "Rosso",
-      color: "#f00",
-      imG: babbonataleRosso,
-    }, {
-      name: "Verde",
-      color: "#0f0",
-      imG: babbonataleVerde,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Cristalli",
-    desc: "Orecchini cristalli colorati di varie forme.",
-    images: [{
-      name: "Arancione",
-      color: "#ffa500",
-      imG: pallaArancione,
-    },
-    {
-      name: " Azzurro",
-      color: "#007fff",
-      imG: pallaCeleste,
-    }, {
-      name: "Blu",
-      color: "#00f",
-      imG: pallaBlu,
-    }, {
-      name: "Giallo",
-      color: "#ff0",
-      imG: pallaGialla,
-    }, {
-      name: "Fucsia",
-      color: "#ff00ff",
-      imG: cristalliLilla,
-    }, {
-      name: "Rosa",
-      color: "#ffc0cb",
-      imG: cristalliRosa,
-    }, {
-      name: "Rosso",
-      color: "#f00",
-      imG: cristalliRossi,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Stelle in cristallo",
-    desc: "Orecchini a forma di stella in cristalli colorati.",
-    images: [{
-      name: "Arancione",
-      color: "#ffa500",
-      imG: stellaArancione,
-    },
-    {
-      name: " Azzurro",
-      color: "#007fff",
-      imG: stellaCeleste,
-    }, {
-      name: "Lime",
-      color: "#ccff00",
-      imG: stellaLime,
-    }, {
-      name: "Giallo",
-      color: "#ff0",
-      imG: stellaGialla,
-    }, {
-      name: "Fucsia",
-      color: "#ff00ff",
-      imG: stellaLilla,
-    }, {
-      name: "Rosa",
-      color: "#ffc0cb",
-      imG: stellaRosa,
-    }, {
-      name: "Rosso",
-      color: "#f00",
-      imG: stellaRossa,
-    }, {
-      name: "Viola",
-      color: "#8f00ff",
-      imG: stellaViola,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Angioletti in cristallo",
-    desc: "Orecchini a forma di angelo in perle e pendenti colorati.",
-    images: [{
-      name: "Rosso",
-      color: "#f00",
-      imG: angeliRosso,
-    }, {
-      name: "Arancione",
-      color: "#ffa500",
-      imG: angeliArancione,
-    },
-    {
-      name: " Azzurro",
-      color: "#007fff",
-      imG: angeliCeleste,
-    }, {
-      name: "Bianco",
-      color: "#fff",
-      imG: angeliBianco,
-    }, {
-      name: "Giallo",
-      color: "#ff0",
-      imG: angeliGiallo,
-    }, {
-      name: "Viola",
-      color: "#8f00ff",
-      imG: angeliBiancoLilla,
-    }, {
-      name: "Rosa",
-      color: "#ffc0cb",
-      imG: angeliRosa,
-    }, {
-      name: "Viola",
-      color: "#8f00ff",
-      imG: angeliLilla,
-    }, {
-      name: "Blu",
-      color: "#00f",
-      imG: angeliBlu,
-    }, {
-      name: "Rosa chiaro",
-      color: "#fadadd",
-      imG: angeliRosaChiaro,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Angeli in perla",
-    desc: "Orecchini a forma di angelo in perle colorate.",
-    images: [{
-      name: "Marrone",
-      color: "#cd853f",
-      imG: angeloMarrone,
-    }, {
-      name: " Azzurro",
-      color: "#007fff",
-      imG: angeloTurchese,
-    }, {
-      name: "Marrone Chiaro",
-      color: "#E1C699",
-      imG: angeloMarrChiaro,
-    }, {
-      name: "Grigio Chiaro",
-      color: "#9c9c9c",
-      imG: angeloGrigioChiaro,
-    }, {
-      name: "Fucsia",
-      color: "#f400a1",
-      imG: angeloLilla,
-    }, {
-      name: "Lilla Chiaro",
-      color: "#c8a2c8",
-      imG: angeloLillaChiaro,
-    }, {
-      name: "Rosa chiaro",
-      color: "#fadadd",
-      imG: angeloRosaAntico,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Pietra Bianca",
-    desc: "Orecchini in pietra bianca.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: pietreBianco,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Pietra Gialla Zebrata",
-    desc: "Orecchini in pietra gialla zebrata.",
-    images: [{
-      name: "Giallo",
-      color: "#ff0",
-      imG: pietreGialleNere,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Pietra sintetica Zebrata",
-    desc: "Orecchini in resina gialla zebrata.",
-    images: [{
-      name: "Giallo",
-      color: "#ff0",
-      imG: pietreGialloChiaro,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Pietra Rossa",
-    desc: "Orecchini in pietra rossa.",
-    images: [{
-      name: "Rosso",
-      color: "#f00",
-      imG: pietreRosse,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Angeli in cristallo",
-    desc: "Orecchini a forma di Angelo in cristalli rossi.",
-    images: [{
-      name: "Rosso",
-      color: "#f00",
-      imG: angeliRossoTr,
-    }
-
-    ],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-];
-
 const necklaceElements = [
   {
     id: uuidv4(),
@@ -789,54 +531,7 @@ const christmas = [
     category: "Chiacchierino",
     cat: "Orecchini",
   },
-  {
-    id: uuidv4(),
-    title: "Pupazzo di neve ",
-    desc: "Orecchini a forma di Pupazzo di neve in perla con separatore colorato.",
-    images: [{
-      name: "Blu",
-      color: "#00f",
-      imG: pupazzoNeveBlu,
-    },
-    {
-      name: " Rosso",
-      color: "#f00",
-      imG: pupazzoNeveRosso,
-    }, {
-      name: "Verde",
-      color: "#0f0",
-      imG: pupazzoNeveVerde,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Babbo Natale ",
-    desc: "Orecchini a forma di Babbo Natale in cristalli colorati.",
-    images: [{
-      name: "Arancione",
-      color: "#ffa500",
-      imG: babbonataleArancione,
-    },
-    {
-      name: " Azzurro",
-      color: "#007fff",
-      imG: babbonataleAzzurro,
-    }, {
-      name: "Rosso",
-      color: "#f00",
-      imG: babbonataleRosso,
-    }, {
-      name: "Verde",
-      color: "#0f0",
-      imG: babbonataleVerde,
-    }],
-    category: "Bigiotteria",
-    cat: "Orecchini",
-  },
-
-];
+ ];
 
 const axiosToData = async (axiosPromise) => {
   try {
@@ -847,4 +542,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, necklaceElements, axiosToData, otherElements, uncinettoElements, chiacchierinoElements, christmas };
+export { menuElement, necklaceElements, axiosToData, uncinettoElements, chiacchierinoElements, christmas };

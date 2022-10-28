@@ -202,10 +202,6 @@ export default function Home() {
           />
           <p className={styles.categoryTitle}>Uncinetto</p>
         </div>
-        <div className={styles.category} onClick={() => router.push("other/")}>
-          <Image src={altro} alt="Altro background" placeholder="blur" />
-          <p className={styles.categoryTitle}>Altro</p>
-        </div>
       </div>
     </div>
   );
