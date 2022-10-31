@@ -9,11 +9,14 @@
     }
   }
 
-  .title {
-    font-size: 3rem;
+  .pageTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-block: 0;
+    font-size: 6rem;
     font-family: "Italianno";
-    text-align: center;
-    margin-bottom: 0;
   }
   .subtitle {
     font-size: 2rem;

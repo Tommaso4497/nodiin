@@ -8,6 +8,10 @@ import { chiacchierinoElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
+import hat from "../../images/christmasImage/hat.svg";
+import tree from "../../images/christmasImage/tree.svg";
+
+
 
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");
@@ -16,7 +20,11 @@ const Chiacchierino = () => {
   return (
     <div>
       <Image src={copertina} />
-      <p className={styles.title}>Chiacchierino</p>
+      <div className={styles.pageTitle}>
+        <Image src={tree} />
+        <p style={{ marginBlock: "0" }}>Chiacchierino</p>
+        <Image src={tree} />
+      </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!
       </p>

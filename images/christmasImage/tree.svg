@@ -1,0 +1,32 @@
+<svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs></defs>
+  <g class="cls-1" transform="matrix(0.878072, 0, 0, 0.698835, -7.604107, -1.362728)" style="isolation: isolate;" bx:origin="-0.019934 0.010116">
+    <g id="Layer_1" data-name="Layer 1">
+      <g id="Vector">
+        <rect class="cls-2" x="25.46" y="51.96" width="13.07" height="10.09" style="fill: rgb(187, 116, 68);"></rect>
+        <path class="cls-3" d="M37.57,7.52a5.57,5.57,0,1,1-11.14,0,5.57,5.57,0,1,1,11.14,0Z" style="fill: rgb(215, 32, 40);"></path>
+        <path class="cls-4" d="M51.37,52H12.63a4,4,0,0,1-2.82-6.79l8-8H46.14l8,8A4,4,0,0,1,51.37,52Z" style="fill: rgb(0, 143, 87);"></path>
+        <path class="cls-4" d="M46.37,37.13H17.62a2.94,2.94,0,0,1-2.08-5l7-7h19l7,7A3,3,0,0,1,46.37,37.13Z" style="fill: rgb(0, 143, 87);"></path>
+        <path class="cls-4" d="M43.83,25.12H20.16A2.42,2.42,0,0,1,18.45,21L28,11.41a5.57,5.57,0,0,0,8,0L45.55,21A2.43,2.43,0,0,1,43.83,25.12Z" style="fill: rgb(0, 143, 87);"></path>
+        <g class="cls-5" style="opacity: 0.2;">
+          <path class="cls-6" d="M49,39.94,8.66,48.15a4,4,0,0,0,2.57,3.56l41.12-8.38Z" style="fill: rgb(35, 31, 32);"></path>
+          <path class="cls-6" d="M18,29.63l29,7.44a3,3,0,0,0,2.3-3.54l-28-7.18Z" style="fill: rgb(35, 31, 32);"></path>
+          <path class="cls-6" d="M20.16,25.12h1.06c5.84-2.32,14-5.52,20.54-7.93l-3.11-3.12C31.59,16.71,23.21,20,17.8,22.17A2.42,2.42,0,0,0,20.16,25.12Z" style="fill: rgb(35, 31, 32);"></path>
+        </g>
+        <circle class="cls-3" cx="37.49" cy="21.88" r="1.45" style="fill: rgb(215, 32, 40);"></circle>
+        <circle class="cls-3" cx="20.94" cy="33.61" r="1.53" style="fill: rgb(215, 32, 40);"></circle>
+        <circle class="cls-3" cx="44.4" cy="48.15" r="1.45" style="fill: rgb(215, 32, 40);"></circle>
+      </g>
+      <g id="Line">
+        <polyline class="cls-7" points="28 62.05 25.46 62.05 25.46 51.96 38.53 51.96 38.53 62.05 30 62.05" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></polyline>
+        <path class="cls-7" d="M37.57,7.52a5.57,5.57,0,1,1-11.14,0,5.57,5.57,0,1,1,11.14,0Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-7" d="M14,41l3.85-3.85H46.14l8,8A4,4,0,0,1,51.37,52H12.63a4,4,0,0,1-2.82-6.79L11,44" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-7" d="M46.37,37.13H17.62a2.94,2.94,0,0,1-2.08-5l7-7h19l7,7A3,3,0,0,1,46.37,37.13Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></path>
+        <path class="cls-7" d="M43.83,25.12H20.16A2.42,2.42,0,0,1,18.45,21L28,11.41a5.57,5.57,0,0,0,8,0L45.55,21A2.43,2.43,0,0,1,43.83,25.12Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px;"></path>
+      </g>
+      <g id="Shadow" class="cls-8" style="mix-blend-mode: multiply;">
+        <path class="cls-9" d="M54.18,45.17l-1.83-1.84L49,39.94l-2.82-2.81h.23a2.9,2.9,0,0,0,1.16-.24h0a2.62,2.62,0,0,0,.94-.66l0,0a3.07,3.07,0,0,0,.76-1.5v0a3,3,0,0,0,0-1.15h0a2.94,2.94,0,0,0-.8-1.43l-7-7h2.35A2.43,2.43,0,0,0,45.55,21l-3.79-3.79-3.11-3.12L36,11.41a5.5,5.5,0,0,0,1.59-3.89A5.55,5.55,0,0,0,32.11,2c2,3.74,2.81,8.17,3.54,12.42.85,4.93,1.7,10,1,14.92A25.2,25.2,0,0,1,17.63,50c-2.15.47-4.36.65-6.46,1.28l-.54.19.06,0h0a4,4,0,0,0,1.94.5H25.47V62.05H38.54V52H51.37A4,4,0,0,0,54.18,45.17Z" style="mix-blend-mode: multiply; opacity: 0.25;"></path>
+      </g>
+    </g>
+  </g>
+</svg>

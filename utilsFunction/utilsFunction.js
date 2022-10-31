@@ -43,6 +43,9 @@ import fioccoNeveOroBianco from "../images/uncinetto/fioccoNeveOroBianco.jpg";
 import fioccoNeveArgentoNero from "../images/uncinetto/fioccoNeveArgentoNero.jpg";
 import stellaOroBlu from "../images/uncinetto/stellaOroBlu.jpg";
 import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoArgentoVerde.jpg";
+import completoBN from "../images/uncinetto/completoBN.jpg";
+import agrifoglio from "../images/uncinetto/agrifoglio.jpg";
+
 
 import angeloFortunaOro from "../images/chiacchierino/angeloFortunaOro.jpeg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
@@ -484,11 +487,7 @@ const christmas = [
     id: uuidv4(),
     title: "Angelo portafortuna",
     desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: angeloFortunaOro,
-    }, {
+    images: [ {
       name: "Argento",
       color: "#c0c0c0",
       imG: angeloFortunaArgento,
@@ -521,6 +520,18 @@ const christmas = [
   },
   {
     id: uuidv4(),
+    title: "Agrifoglio",
+    desc: "Orecchini ricamati a forma di agrifoglio.",
+    images: [{
+      name: "Verde",
+      color: "#0f0",
+      imG: agrifoglio,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
     title: "Fiocco di Neve mod 4.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
     images: [{
@@ -531,6 +542,24 @@ const christmas = [
     category: "Chiacchierino",
     cat: "Orecchini",
   },
+  {
+    id: uuidv4(),
+    title: "Completo Babbo Natale",
+    desc: "Completo a forma di Babbo Natale, orecchini e bracciale.",
+    images: [{
+      name: "rOSSO",
+      color: "#f00",
+      imG: completoBN,
+    }],
+    category: "Uncientto",
+    cat: "Completo",
+  },
+ ];
+
+ const lastCreations = [{
+
+ }
+
  ];
 
 const axiosToData = async (axiosPromise) => {
@@ -542,4 +571,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, necklaceElements, axiosToData, uncinettoElements, chiacchierinoElements, christmas };
+export { menuElement, necklaceElements, axiosToData, uncinettoElements, chiacchierinoElements, christmas,lastCreations };

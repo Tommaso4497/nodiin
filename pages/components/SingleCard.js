@@ -4,13 +4,16 @@ import styles from "./SingleCard.module.css";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import InfoDialog from "./InfoDialog";
 import CircleIcon from '@mui/icons-material/Circle';
-import Image from "next/image";
 import ImageEdit from "./ImageEdit";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import theme from "../../styles/main";
 
 const SingleCard = ({ title, pics = [], descr, category, cat }) => {
   const [openInfo, setOpenInfo] = useState(false);
   const [selectedColor, setSelectedColor] = useState(0);
   const selectedImage = pics[selectedColor];
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
+
 
   return (
     <div>
@@ -28,7 +31,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat }) => {
           {descr}
         </div>
         <p style={{ marginBottom: "0" }}> Colori: </p>
-        <div style={{ paddingTop: "1rem", display: "grid", gridTemplateColumns: "repeat(7, 1fr)", alignItems: "center", gap: ".5rem" }}>
+        <div style={{ paddingTop: "1rem", display: "grid", gridTemplateColumns: matches ? "repeat(12, 1fr)" : "repeat(7, .5fr)", alignItems: "center", gap: ".5rem" }}>
           {
             pics.map((col, i) => (
               <button key={col?.name} style={{ border: "none", backgroundColor: "transparent", cursor: "pointer", padding: "0" }} onClick={() => setSelectedColor(i)}>

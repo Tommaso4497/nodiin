@@ -10,6 +10,9 @@ import { useRouter } from "next/router";
 const Footer = () => {
   const router = useRouter();
   return (
+    <div style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
+      <p style={{margin:"0", fontFamily:"Italianno", fontSize:"3rem"}}>Seguici sui social per le ultime creazioni!</p>
+
     <div className={styles.footerWrapper}>
       <IconButton className={styles.iconButt}>
         <FacebookIcon fontSize="large" />
@@ -35,6 +38,8 @@ const Footer = () => {
         <TelegramIcon fontSize="large" />
       </IconButton>
     </div>
+    </div>
+
   );
 };
 
