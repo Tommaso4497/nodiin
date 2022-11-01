@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import copertina from "../../images/copertina.jpg";
 import SearchIcon from "@mui/icons-material/Search";
-import { FormControlLabel, InputAdornment, OutlinedInput, Radio, RadioGroup } from "@mui/material";
+import {
+  FormControlLabel,
+  InputAdornment,
+  OutlinedInput,
+  Radio,
+  RadioGroup,
+} from "@mui/material";
 import styles from "./Chiacchierino.module.css";
 import { chiacchierinoElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import hat from "../../images/christmasImage/hat.svg";
+import BackToTop from "../components/BackToTop";
 import tree from "../../images/christmasImage/tree.svg";
-
-
 
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");
@@ -55,24 +59,44 @@ const Chiacchierino = () => {
           alignItems: "center",
           justifyContent: "center",
           paddingBottom: "2rem",
-          padding: mathes ? "0rem" : "1rem"
+          padding: mathes ? "0rem" : "1rem",
         }}
       >
         <RadioGroup
           row
           value={categorySearch}
-          onChange={(e) => (setCategorySearch(e.target.value))}>
+          onChange={(e) => setCategorySearch(e.target.value)}
+        >
           <FormControlLabel value="" control={<Radio />} label="Tutto" />
-          <FormControlLabel value="Orecchini" control={<Radio />} label="Orecchini" />
-          <FormControlLabel value="Bracciale" control={<Radio />} label="Bracciali" />
-          <FormControlLabel value="Ciondolo" control={<Radio />} label="Ciondoli" />
-          <FormControlLabel value="Completo" control={<Radio />} label="Completi" />
+          <FormControlLabel
+            value="Orecchini"
+            control={<Radio />}
+            label="Orecchini"
+          />
+          <FormControlLabel
+            value="Bracciale"
+            control={<Radio />}
+            label="Bracciali"
+          />
+          <FormControlLabel
+            value="Ciondolo"
+            control={<Radio />}
+            label="Ciondoli"
+          />
+          <FormControlLabel
+            value="Completo"
+            control={<Radio />}
+            label="Completi"
+          />
         </RadioGroup>
       </div>
       <div className={styles.wrapperGrid}>
         {chiacchierinoElements
-          .filter((elem) =>
-            ((elem.title.toLowerCase().match(search.toLowerCase()) || elem.desc.toLowerCase().match(search.toLowerCase())) && (elem.cat.toLowerCase().match(categorySearch.toLowerCase())))
+          .filter(
+            (elem) =>
+              (elem.title.toLowerCase().match(search.toLowerCase()) ||
+                elem.desc.toLowerCase().match(search.toLowerCase())) &&
+              elem.cat.toLowerCase().match(categorySearch.toLowerCase())
           )
           .map((filt) => (
             <SingleCard
@@ -85,6 +109,7 @@ const Chiacchierino = () => {
             ></SingleCard>
           ))}
       </div>
+      <BackToTop/>
     </div>
   );
 };

@@ -15,6 +15,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import SearchIcon from "@mui/icons-material/Search";
 import sfere from "../../images/christmasImage/sfere.svg";
+import BackToTop from "../components/BackToTop";
 
 
 const Uncinetto = () => {
@@ -111,6 +112,7 @@ const Uncinetto = () => {
             ></SingleCard>
           ))}
       </div>
+      <BackToTop/>
     </div>
   );
 };

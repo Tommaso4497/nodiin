@@ -19,6 +19,8 @@ import { useRouter } from "next/router";
 import gooseberry from "../images/christmasImage/gooseberry.svg";
 import box from "../images/christmasImage/box.svg";
 import hat from "../images/christmasImage/hat.svg";
+import sfere from "../images/christmasImage/sfere.svg";
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
@@ -176,10 +178,28 @@ export default function Home() {
         </Carousel>
       </div>
       <div className={styles.subtitle}>
-        <Image src={hat} />
+        <Image src={sfere}/>
+        <p style={{ marginBlock: "2rem" }}>Ultime Creazioni!</p>
+      </div>
+      <div className={styles.carouselWrapper}>
+        <Carousel responsive={responsiveCard}>
+          {christmas.map((elem) => (
+            <SingleCard
+              category={elem.category}
+              key={elem.id}
+              title={elem.title}
+              pics={elem.images}
+              descr={elem.desc}
+              cat={elem.cat}
+            ></SingleCard>
+          ))}
+        </Carousel>
+      </div>
+      <div className={styles.subtitle}>
         <p style={{ marginBlock: "2rem" }}>
           Per altre creazioni visita i nostri cataloghi!
         </p>
+        <Image src={hat} />
       </div>
       <div></div>
       <div className={styles.gridWrapper}>
@@ -192,7 +212,6 @@ export default function Home() {
             alt="Chiacchierino background"
             placeholder="blur"
           />
-          <p className={styles.categoryTitle}>Chiacchierino</p>
         </div>
         <div
           className={styles.category}
@@ -203,9 +222,9 @@ export default function Home() {
             alt="Uncinetto background"
             placeholder="blur"
           />
-          <p className={styles.categoryTitle}>Uncinetto</p>
         </div>
       </div>
+      <BackToTop/>
     </div>
   );
 }

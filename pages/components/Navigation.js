@@ -17,6 +17,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { menuElement } from "../../utilsFunction/utilsFunction";
 import Image from "next/image";
@@ -107,6 +108,14 @@ const Navigation = () => {
               href="https://www.instagram.com/nodiinchiacchierino/"
             >
               <InstagramIcon fontSize="large" style={{ color: "#fff" }} />
+            </a>
+            <a
+              className={styles.iconLinkDrawer}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://t.me/+pvDtZ4zVIYk3OGU8"
+              >
+              <TelegramIcon fontSize="large" style={{ color: "#fff" }} />
             </a>
           </div>
         </Drawer>
