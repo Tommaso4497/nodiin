@@ -148,9 +148,9 @@ export default function Home() {
       </Head>
 
       <div className={styles.pageTitle}>
-        <Image src={gooseberry} />
+        <Image src={gooseberry} alt="christmasIcon" />
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
-        <Image src={gooseberry} />
+        <Image src={gooseberry} alt="christmasIcon" />
       </div>
       <div className={styles.headerCarousel}>
         <Carousel
@@ -162,16 +162,16 @@ export default function Home() {
           dynamicHeight={true}
           autoPlaySpeed={4000}
         >
-          <Image src={copertina3} placeholder="blur" />
-          <Image src={copertina2} placeholder="blur" />
-          <Image src={copertina4} placeholder="blur" />
-          <Image src={copertina} placeholder="blur" />
-          <Image src={copertina1} placeholder="blur" />
+          <Image src={copertina3} placeholder="blur" alt="carouselImage" />
+          <Image src={copertina2} placeholder="blur" alt="carouselImage" />
+          <Image src={copertina4} placeholder="blur" alt="carouselImage" />
+          <Image src={copertina} placeholder="blur" alt="carouselImage" />
+          <Image src={copertina1} placeholder="blur" alt="carouselImage" />
         </Carousel>
       </div>
       <div className={styles.subtitle}>
         <p style={{ marginBlock: "2rem", color: "red" }}>  Gioielli Natalizi</p>
-        <Image src={box} />
+        <Image src={box} alt="christmasIcon" />
       </div>
 
       <div className={styles.carouselWrapper}>
@@ -189,7 +189,7 @@ export default function Home() {
         </Carousel>
       </div>
       <div className={styles.subtitle}>
-        <Image src={sfere} />
+        <Image src={sfere} alt="christmasIcon" />
         <p style={{ marginBlock: "2rem" }}>Ultime Creazioni!</p>
       </div>
       <div className={styles.carouselWrapper}>
@@ -210,7 +210,7 @@ export default function Home() {
         <p style={{ marginBlock: "2rem" }}>
           Per altre creazioni visita i nostri cataloghi!
         </p>
-        <Image src={hat} />
+        <Image src={hat} alt="carouselImage" />
       </div>
       <div></div>
       <div className={styles.gridWrapper}>
@@ -220,7 +220,7 @@ export default function Home() {
         >
           <Image
             src={chiacchierino}
-            alt="Chiacchierino background"
+            alt="chiacchierinoBackground"
             placeholder="blur"
           />
         </div>
@@ -230,7 +230,7 @@ export default function Home() {
         >
           <Image
             src={uncinetto}
-            alt="Uncinetto background"
+            alt="uncinettoBackground"
             placeholder="blur"
           />
         </div>

@@ -1,10 +1,10 @@
  .navigationWrapper {
-  height: min-content;
+   height: min-content;
    display: flex;
    flex-direction: column;
    position: sticky;
    z-index: 999;
-   top:0;
+   top: 0;
    background-color: rgba(255, 255, 255, 0.5);
  }
 
@@ -24,7 +24,7 @@
 
  @media only screen and (min-width: 768px) {
    .headerWrapper {
-    margin: 0 1rem 0 1rem;
+     margin: 0 1rem 0 1rem;
      display: flex;
      justify-content: space-between;
    }
@@ -54,7 +54,7 @@
    display: flex;
    align-items: center;
    width: 100%;
-   justify-content: end;
+   justify-content: flex-end;
  }
 
  .drawerTitle {

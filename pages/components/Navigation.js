@@ -69,7 +69,7 @@ const Navigation = () => {
             <div
               className={styles.imageWrapper}
             >
-              <Image src={logo} width="40" height="40" />
+              <Image src={logo} width="40" height="40" alt="logo" />
             </div>
           </Toolbar>
         </AppBar>
@@ -114,14 +114,14 @@ const Navigation = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://t.me/+pvDtZ4zVIYk3OGU8"
-              >
+            >
               <TelegramIcon fontSize="large" style={{ color: "#fff" }} />
             </a>
           </div>
         </Drawer>
       </div >
       <div className={styles.headerWrapper}>
-        <Image src={logo} width="40" height="40" />
+        <Image src={logo} width="40" height="40" alt="logo" />
         <div>{elementWeb}</div>
       </div>
     </div >

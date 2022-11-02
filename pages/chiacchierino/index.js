@@ -34,11 +34,11 @@ const Chiacchierino = () => {
 
   return (
     <div>
-      <Image src={copertina} />
+      <Image src={copertina} alt="chiacchierinoBackground" />
       <div className={styles.pageTitle}>
-        <Image src={tree} />
+        <Image src={tree} alt="christmasIcon" />
         <p style={{ marginBlock: "0" }}>Chiacchierino</p>
-        <Image src={tree} />
+        <Image src={tree} alt="christmasIcon" />
       </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!

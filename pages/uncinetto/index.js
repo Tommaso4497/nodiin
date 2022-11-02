@@ -36,11 +36,11 @@ const Uncinetto = () => {
 
   return (
     <div>
-      <Image src={copertina} />
+      <Image src={copertina} alt="crochetBackground" />
       <div className={styles.pageTitle}>
-        <Image src={sfere} />
+        <Image src={sfere} alt="christmasIcon" />
         <p style={{ marginBlock: "0" }}>Uncinetto</p>
-        <Image src={sfere} />
+        <Image src={sfere} alt="christmasIcon" />
       </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Uncinetto!

@@ -5,7 +5,7 @@ import React from 'react';
 
 const ImageEdit = ({ url, w, h }) => {
 
-    const shimmer = (w, h) => `
+  const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="g">
@@ -19,14 +19,14 @@ const ImageEdit = ({ url, w, h }) => {
   <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
 </svg>`;
 
-    const toBase64 = (str) =>
-        typeof window === 'undefined'
-            ? Buffer.from(str).toString('base64')
-            : window.btoa(str);
+  const toBase64 = (str) =>
+    typeof window === 'undefined'
+      ? Buffer.from(str).toString('base64')
+      : window.btoa(str);
 
-    return (
-        <Image src={url} width={w} height={h} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(w, h))}`} />
-    );
+  return (
+    <Image src={url} width={w} height={h} placeholder="blur" alt="creationImage" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(w, h))}`} />
+  );
 };
 
 export default ImageEdit;
