@@ -20,7 +20,7 @@ const ContactUs = () => {
     <div className={styles.contentWrapper}>
       <p className={styles.pageTitle}>Contattaci</p>
       <p className={styles.pageSubtitle}>Scrivici per qualsiasi informazione</p>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", padding: "1rem" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr", padding: "1rem" }}>
         <form autoComplete="off" onSubmit={draw}>
           <div className={styles.contentForm}>
             <TextField

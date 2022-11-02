@@ -21,6 +21,17 @@ const Chiacchierino = () => {
   const [search, setSearch] = useState("");
   const [categorySearch, setCategorySearch] = useState("");
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
+  const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 800) {
+        return setVisibilityButtonToTop(true);
+      }
+      return setVisibilityButtonToTop(false);
+    });
+  }, []);
+
   return (
     <div>
       <Image src={copertina} />
@@ -109,7 +120,7 @@ const Chiacchierino = () => {
             ></SingleCard>
           ))}
       </div>
-      <BackToTop/>
+      {visibilityButtonToTop && <BackToTop />}
     </div>
   );
 };

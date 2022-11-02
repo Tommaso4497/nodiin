@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { christmas } from "../utilsFunction/utilsFunction";
 import SingleCard from "./components/SingleCard";
 import Carousel from "react-multi-carousel";
@@ -25,6 +25,17 @@ import BackToTop from "./components/BackToTop";
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
   const router = useRouter();
+
+  const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 800) {
+        return setVisibilityButtonToTop(true);
+      }
+      return setVisibilityButtonToTop(false);
+    });
+  }, []);
 
   const responsiveCard = {
     desktop: {
@@ -178,7 +189,7 @@ export default function Home() {
         </Carousel>
       </div>
       <div className={styles.subtitle}>
-        <Image src={sfere}/>
+        <Image src={sfere} />
         <p style={{ marginBlock: "2rem" }}>Ultime Creazioni!</p>
       </div>
       <div className={styles.carouselWrapper}>
@@ -224,7 +235,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <BackToTop/>
+      {visibilityButtonToTop && <BackToTop />}
     </div>
   );
 }

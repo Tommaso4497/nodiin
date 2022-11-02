@@ -6,7 +6,7 @@ import {
   RadioGroup,
 } from "@mui/material";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import copertina from "../../images/copertina.jpg";
 import styles from "./Uncinetto.module.css";
 import { uncinettoElements } from "../../utilsFunction/utilsFunction";
@@ -22,6 +22,17 @@ const Uncinetto = () => {
   const [search, setSearch] = useState("");
   const [categorySearch, setCategorySearch] = useState("");
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
+  const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 800) {
+        return setVisibilityButtonToTop(true);
+      }
+      return setVisibilityButtonToTop(false);
+    });
+  }, []);
+
 
   return (
     <div>
@@ -112,7 +123,7 @@ const Uncinetto = () => {
             ></SingleCard>
           ))}
       </div>
-      <BackToTop/>
+      {visibilityButtonToTop && <BackToTop />}
     </div>
   );
 };
