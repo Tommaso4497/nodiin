@@ -5,7 +5,6 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import copertina from "../../images/copertina.jpg";
 import styles from "./Uncinetto.module.css";
@@ -16,12 +15,12 @@ import theme from "../../styles/main";
 import SearchIcon from "@mui/icons-material/Search";
 import sfere from "../../images/christmasImage/sfere.svg";
 import BackToTop from "../components/BackToTop";
-
+import ImageEdit from "../components/ImageEdit";
 
 const Uncinetto = () => {
   const [search, setSearch] = useState("");
   const [categorySearch, setCategorySearch] = useState("");
-  const mathes = useMediaQuery(theme.breakpoints.up("md"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
 
   useEffect(() => {
@@ -33,14 +32,21 @@ const Uncinetto = () => {
     });
   }, []);
 
-
   return (
     <div>
       <Image src={copertina} alt="crochetBackground" />
       <div className={styles.pageTitle}>
-        <Image src={sfere} alt="christmasIcon" />
+        <ImageEdit
+          url={sfere}
+          w={matches ? "" : "30"}
+          h={matches ? "" : "30"}
+        />
         <p style={{ marginBlock: "0" }}>Uncinetto</p>
-        <Image src={sfere} alt="christmasIcon" />
+        <ImageEdit
+          url={sfere}
+          w={matches ? "" : "30"}
+          h={matches ? "" : "30"}
+        />
       </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
@@ -56,7 +62,7 @@ const Uncinetto = () => {
         <OutlinedInput
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          style={{ width: mathes ? "40%" : "90%" }}
+          style={{ width: matches ? "40%" : "90%" }}
           size="small"
           placeholder="Cerca..."
           startAdornment={
@@ -72,7 +78,7 @@ const Uncinetto = () => {
           alignItems: "center",
           justifyContent: "center",
           paddingBottom: "2rem",
-          padding: mathes ? "0rem" : "1rem",
+          padding: matches ? "0rem" : "1rem",
         }}
       >
         <RadioGroup

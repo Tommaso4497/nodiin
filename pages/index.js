@@ -21,6 +21,7 @@ import box from "../images/christmasImage/box.svg";
 import hat from "../images/christmasImage/hat.svg";
 import sfere from "../images/christmasImage/sfere.svg";
 import BackToTop from "./components/BackToTop";
+import ImageEdit from "./components/ImageEdit";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
@@ -148,9 +149,9 @@ export default function Home() {
       </Head>
 
       <div className={styles.pageTitle}>
-        <Image src={gooseberry} alt="christmasIcon" />
+        <ImageEdit url={gooseberry} w={mathes ? "":"30"} h={mathes ? "":"30"} />
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
-        <Image src={gooseberry} alt="christmasIcon" />
+        <ImageEdit url={gooseberry} w={mathes ? "":"30"} h={mathes ? "":"30"} />
       </div>
       <div className={styles.headerCarousel}>
         <Carousel
@@ -169,9 +170,9 @@ export default function Home() {
           <Image src={copertina1} placeholder="blur" alt="carouselImage" />
         </Carousel>
       </div>
-      <div className={styles.subtitle}>
-        <p style={{ marginBlock: "2rem", color: "red" }}>  Gioielli Natalizi</p>
-        <Image src={box} alt="christmasIcon" />
+      <div className={styles.subtitleWrapper}>
+        <p className={styles.subtitle}>  Gioielli Natalizi</p>
+        <ImageEdit url={box} w={mathes ? "":"30"} h={mathes ? "":"30"} />
       </div>
 
       <div className={styles.carouselWrapper}>
@@ -188,9 +189,9 @@ export default function Home() {
           ))}
         </Carousel>
       </div>
-      <div className={styles.subtitle}>
-        <Image src={sfere} alt="christmasIcon" />
-        <p style={{ marginBlock: "2rem" }}>Ultime Creazioni!</p>
+      <div className={styles.subtitleWrapper}>
+      <ImageEdit url={sfere} w={mathes ? "":"30"} h={mathes ? "":"30"} />
+        <p className={styles.paragraph}>Ultime Creazioni!</p>
       </div>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
@@ -206,11 +207,11 @@ export default function Home() {
           ))}
         </Carousel>
       </div>
-      <div className={styles.subtitle}>
-        <p style={{ marginBlock: "2rem" }}>
+      <div className={styles.subtitleWrapper}>
+        <p className={styles.paragraph}>
           Per altre creazioni visita i nostri cataloghi!
         </p>
-        <Image src={hat} alt="carouselImage" />
+        <ImageEdit url={hat} w={mathes ? "":"30"} h={mathes ? "":"30"} />
       </div>
       <div></div>
       <div className={styles.gridWrapper}>
@@ -218,20 +219,18 @@ export default function Home() {
           className={styles.category}
           onClick={() => router.push("chiacchierino/")}
         >
-          <Image
-            src={chiacchierino}
+          <ImageEdit
+            url={chiacchierino}
             alt="chiacchierinoBackground"
-            placeholder="blur"
           />
         </div>
         <div
           className={styles.category}
           onClick={() => router.push("uncinetto/")}
         >
-          <Image
-            src={uncinetto}
+          <ImageEdit
+            url={uncinetto}
             alt="uncinettoBackground"
-            placeholder="blur"
           />
         </div>
       </div>

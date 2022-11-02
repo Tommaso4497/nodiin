@@ -13,9 +13,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .gridWrapper {
-    grid-template-columns: 1fr;
-  }
+
 }
 
 .carouselWrapper {
@@ -34,7 +32,7 @@
   margin-top: 1.5rem;
 }
 
-.subtitle {
+.subtitleWrapper {
   font-family: "Italianno", cursive;
   font-size: 3.5rem;
   text-align: center;
@@ -44,28 +42,40 @@
   gap: 1.5rem;
 }
 
-.category {
-  opacity: 1;
-}
+.subtitle{
+  margin-block: 2rem;
+  color: #f00;
+  }
 
-.category:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.categoryTitle {
-  margin: 0;
-  font-size: 3rem;
-  font-family: "Italianno", cursive;
-  text-align: center;
-}
+  .paragraph{
+    margin-block: 2rem;
+  }
 
 .pageTitle {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-around;
   margin-block: 0;
   font-size: 6rem;
   font-family: "Italianno";
+}
+
+
+@media only screen and (max-width: 899px) {
+  .pageTitle {
+    font-size:2.5rem ;
+  }
+  .subtitle{
+    margin-block: 1rem;
+    font-size: 2rem;
+  }
+  .paragraph{
+    margin-block: 1rem;
+    font-size: 2rem;
+  }
+  .gridWrapper {
+    grid-template-columns: 1fr;
+  }
+  
+
 }

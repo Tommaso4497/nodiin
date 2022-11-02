@@ -6,40 +6,46 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import styles from "./Footer.module.css";
 import { useRouter } from "next/router";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import theme from "../../styles/main";
 
 const Footer = () => {
   const router = useRouter();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <div style={{display:"flex", alignItems:"center", justifyContent:"center", flexDirection:"column"}}>
-      <p style={{margin:"0", fontFamily:"Italianno", fontSize:"3rem"}}>Seguici sui social per le ultime creazioni!</p>
+    <div className={styles.footerWrapper}
+     
+    >
+      <p className={styles.footerTitle}>
+        Seguici sui social per le ultime creazioni!
+      </p>
 
-    <div className={styles.footerWrapper}>
-      <IconButton className={styles.iconButt}>
-        <FacebookIcon fontSize="large" />
-      </IconButton>
-      <IconButton
-        className={styles.iconButt}
-        target="_blank"
-        href="https://www.instagram.com/nodiinchiacchierino/"
-      >
-        <InstagramIcon fontSize="large" />
-      </IconButton>
-      <IconButton
-        onClick={() => router.push("contactUs/")}
-        className={styles.iconButt}
-      >
-        <EmailOutlinedIcon fontSize="large" />
-      </IconButton>
-      <IconButton
-        className={styles.iconButt}
-        target="_blank"
-        href="https://t.me/+pvDtZ4zVIYk3OGU8"
-      >
-        <TelegramIcon fontSize="large" />
-      </IconButton>
+      <div className={styles.iconWrapper}>
+        <IconButton className={styles.iconButt}>
+          <FacebookIcon fontSize={matches ? "large" : "medium"} />
+        </IconButton>
+        <IconButton
+          className={styles.iconButt}
+          target="_blank"
+          href="https://www.instagram.com/nodiinchiacchierino/"
+        >
+          <InstagramIcon fontSize={matches ? "large" : "medium"} />
+        </IconButton>
+        <IconButton
+          onClick={() => router.push("contactUs/")}
+          className={styles.iconButt}
+        >
+          <EmailOutlinedIcon fontSize={matches ? "large" : "medium"} />
+        </IconButton>
+        <IconButton
+          className={styles.iconButt}
+          target="_blank"
+          href="https://t.me/+pvDtZ4zVIYk3OGU8"
+        >
+          <TelegramIcon fontSize={matches ? "large" : "medium"} />
+        </IconButton>
+      </div>
     </div>
-    </div>
-
   );
 };
 

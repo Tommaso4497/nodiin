@@ -527,7 +527,7 @@ const christmas = [
       color: "#0f0",
       imG: agrifoglio,
     }],
-    category: "Uncinetto",
+    category: "Chiacchierino",
     cat: "Orecchini",
   },
   {
@@ -551,15 +551,83 @@ const christmas = [
       color: "#f00",
       imG: completoBN,
     }],
-    category: "Uncientto",
+    category: "Uncinetto",
     cat: "Completo",
   },
  ];
 
- const lastCreations = [{
-
- }
-
+ const lastCreations = [
+  {
+    id: uuidv4(),
+    title: "Angelo portafortuna",
+    desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
+    images: [ {
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: angeloFortunaArgento,
+    }
+    ],
+    category: "Chiacchierino",
+    cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve",
+    desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
+    images: [{
+      name: "Oro",
+      color: "#ffd100",
+      imG: fioccoNeveOroBianco,
+    },
+    {
+      name: "Argento",
+      color: "#c0c0c0",
+      imG: fioccoNeveArgentoBianco,
+    },
+    {
+      name: "Nero",
+      color: "#000",
+      imG: fioccoNeveArgentoNero,
+    }],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Agrifoglio",
+    desc: "Orecchini ricamati a forma di agrifoglio.",
+    images: [{
+      name: "Verde",
+      color: "#0f0",
+      imG: agrifoglio,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiocco di Neve mod 4.",
+    desc: "Orecchini ricamati a forma di fiocco di neve.",
+    images: [{
+      name: "Bianco",
+      color: "#fff",
+      imG: fioccoNeveStella,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo Babbo Natale",
+    desc: "Completo a forma di Babbo Natale, orecchini e bracciale.",
+    images: [{
+      name: "rOSSO",
+      color: "#f00",
+      imG: completoBN,
+    }],
+    category: "Uncinetto",
+    cat: "Completo",
+  },
  ];
 
 const axiosToData = async (axiosPromise) => {

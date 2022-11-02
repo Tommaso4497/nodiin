@@ -1,4 +1,4 @@
-.footerWrapper {
+.iconWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,28 @@
   margin-block: 2rem;
 }
 
+.footerWrapper {
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .iconButt:hover {
   background-color: transparent;
   color: #c9184a;
+}
+
+.footerTitle {
+  margin: 0;
+  font-family: "Italianno";
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 899px) {
+  .footerTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
 }

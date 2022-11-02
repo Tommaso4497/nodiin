@@ -1,4 +1,4 @@
-import { TextField, Typography, Button, IconButton, drawerClasses } from "@mui/material";
+import { TextField, Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import React, { useCallback, useState } from "react";
 import styles from "./ContactUs.module.css";
@@ -6,7 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 
 const ContactUs = () => {
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [email, setEmail] = useState();
   const [obj, setObj] = useState();
   const [content, setContent] = useState();
