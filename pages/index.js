@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React, { useEffect, useState } from "react";
-import { christmas } from "../utilsFunction/utilsFunction";
+import { christmas, lastCreations } from "../utilsFunction/utilsFunction";
 import SingleCard from "./components/SingleCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -195,7 +195,7 @@ export default function Home() {
       </div>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {christmas.map((elem) => (
+          {lastCreations.map((elem) => (
             <SingleCard
               category={elem.category}
               key={elem.id}

@@ -16,6 +16,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import sfere from "../../images/christmasImage/sfere.svg";
 import BackToTop from "../components/BackToTop";
 import ImageEdit from "../components/ImageEdit";
+import Image from "next/image";
+
 
 const Uncinetto = () => {
   const [search, setSearch] = useState("");

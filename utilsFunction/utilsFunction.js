@@ -69,6 +69,10 @@ import completoFiorellinoBianco from "../images/chiacchierino/completoFiorellino
 import ricamoRosa from "../images/chiacchierino/ricamoRosa.jpg";
 import completoCampaneNero from "../images/chiacchierino/completoCampaneNero.jpg";
 import completoCampaneRosso from "../images/chiacchierino/completoCampaneRosso.jpg";
+import completoCampanaBianco from "../images/chiacchierino/completoCampanaBianco.jpg";
+import completoCampanaBeige from "../images/chiacchierino/completoCampanaBeige.jpg";
+import alberiNataleMulticolor from "../images/chiacchierino/alberiNataleMulticolor.JPG";
+import stellaNataleGrande from "../images/chiacchierino/stellaNataleGrande.jpg";
 
 const menuElement = [
   {
@@ -282,6 +286,30 @@ const chiacchierinoElements = [
   },
   {
     id: uuidv4(),
+    title: "Albero di Natale ",
+    desc: "Orecchini ricamati forma di Albero di Natale con perline colorate.",
+    images: [{
+      name: "Verde",
+      color: "#0f0",
+      imG: alberiNataleMulticolor,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella di Natale",
+    desc: "Orecchini ricamati forma di Stella di Natale in 3D con perline in oro.",
+    images: [{
+      name: "Rosso",
+      color: "#f00",
+      imG: stellaNataleGrande,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
     title: "Ondulina",
     desc: "Bracciale ricamato a forma di ondulina impreziosito con perle.",
     images: [{
@@ -313,6 +341,14 @@ const chiacchierinoElements = [
       name: "Nero",
       color: "#000",
       imG: completoCampaneNero,
+    },{
+      name: "Bianco",
+      color: "#fff",
+      imG: completoCampanaBianco,
+    },{
+      name: "Beige",
+      color: "#E1C699",
+      imG: completoCampanaBeige,
     }],
     category: "Chiacchierino",
     cat: "Completo",
@@ -557,6 +593,30 @@ const christmas = [
  ];
 
  const lastCreations = [
+  {
+    id: uuidv4(),
+    title: "Albero di Natale ",
+    desc: "Orecchini ricamati forma di Albero di Natale con perline colorate.",
+    images: [{
+      name: "Verde",
+      color: "#0f0",
+      imG: alberiNataleMulticolor,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella di Natale",
+    desc: "Orecchini ricamati forma di Stella di Natale in 3D con perline in oro.",
+    images: [{
+      name: "Rosso",
+      color: "#f00",
+      imG: stellaNataleGrande,
+    }],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
   {
     id: uuidv4(),
     title: "Angelo portafortuna",
