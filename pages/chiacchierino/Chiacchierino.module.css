@@ -2,12 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  
-  @media only screen and (max-width: 768px) {
-    .wrapperGrid {
-      grid-template-columns: 1fr;
-    }
-  }
 
   .pageTitle {
     display: flex;
@@ -23,4 +17,28 @@
     font-family: "Italianno";
     text-align: center;
     margin-top: 0;
+  }
+
+  @media only screen and (max-width: 899px) {
+    .pageTitle {
+      font-size:3rem ;
+    }
+    .subtitle{
+      margin-block: 1rem;
+      font-size: 2rem;
+    }
+    .wrapperGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  @media only screen and (max-width: 550px) {
+
+    .wrapperGrid {
+      grid-template-columns: 1fr;
+    }
+    .pageTitle {
+      font-size:2.5rem ;
+    }
   }

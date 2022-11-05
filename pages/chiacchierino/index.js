@@ -16,6 +16,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import BackToTop from "../components/BackToTop";
 import tree from "../../images/christmasImage/tree.svg";
+import ImageEdit from "../components/ImageEdit";
 
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");
@@ -36,9 +37,9 @@ const Chiacchierino = () => {
     <div>
       <Image src={copertina} alt="chiacchierinoBackground" />
       <div className={styles.pageTitle}>
-        <Image src={tree} alt="christmasIcon" />
+      <ImageEdit url={tree} w={mathes ? "":"30"} h={mathes ? "":"30"} />
         <p style={{ marginBlock: "0" }}>Chiacchierino</p>
-        <Image src={tree} alt="christmasIcon" />
+        <ImageEdit url={tree} w={mathes ? "":"30"} h={mathes ? "":"30"} />
       </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!

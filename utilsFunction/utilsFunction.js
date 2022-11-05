@@ -1,7 +1,7 @@
 import MailIcon from "@mui/icons-material/Mail";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import collana01 from "../images/Collana001.jpg";
 import collana02 from "../images/Collana002.jpg";
 import collana03 from "../images/Collana003.jpg";
@@ -26,8 +26,6 @@ import collana21 from "../images/Collana021.jpg";
 import collana22 from "../images/Collana022.jpg";
 import collana23 from "../images/Collana023.jpg";
 
-
-
 import rombiBlueSenape from "../images/uncinetto/rombiBlueSenape.jpg";
 import rombiOroeBlu from "../images/uncinetto/rombiOroeBlu.jpg";
 import cerchioFioreVerde from "../images/uncinetto/cerchioFioreVerde.jpg";
@@ -45,7 +43,6 @@ import stellaOroBlu from "../images/uncinetto/stellaOroBlu.jpg";
 import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoArgentoVerde.jpg";
 import completoBN from "../images/uncinetto/completoBN.jpg";
 import agrifoglio from "../images/uncinetto/agrifoglio.jpg";
-
 
 import angeloFortunaOro from "../images/chiacchierino/angeloFortunaOro.jpeg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
@@ -73,6 +70,28 @@ import completoCampanaBianco from "../images/chiacchierino/completoCampanaBianco
 import completoCampanaBeige from "../images/chiacchierino/completoCampanaBeige.jpg";
 import alberiNataleMulticolor from "../images/chiacchierino/alberiNataleMulticolor.JPG";
 import stellaNataleGrande from "../images/chiacchierino/stellaNataleGrande.jpg";
+import orecchiniRomboOro from "../images/chiacchierino/orecchiniRomboOro.jpg";
+import orecchiniRomboRosa from "../images/chiacchierino/orecchiniRomboRosa.jpg";
+import completoArgentoRosa from "../images/chiacchierino/completoArgentoRosa.jpg";
+import completoOroArancione from "../images/chiacchierino/completoOroArancione.jpg";
+import completoOroBlu from "../images/chiacchierino/completoOroBlu.jpg";
+import completoOroGiallo from "../images/chiacchierino/completoOroGiallo.jpg";
+import completoOroVerde from "../images/chiacchierino/completoOroVerde.jpg";
+import orecchiniStellaArancione from "../images/chiacchierino/orecchiniStellaArancione.jpg";
+import orecchiniStellaCeleste from "../images/chiacchierino/orecchiniStellaCeleste.jpg";
+import orecchiniStellaFucsia from "../images/chiacchierino/orecchiniStellaFucsia.jpg";
+import orecchiniStellaOliva from "../images/chiacchierino/orecchiniStellaOliva.jpg";
+import orecchiniStellaPietra from "../images/chiacchierino/orecchiniStellaPietra.jpg";
+import orecchiniStellaVerde from "../images/chiacchierino/orecchiniStellaVerde.jpg";
+import completoEderaRossoNero from "../images/chiacchierino/completoEderaRossoNero.jpg";
+import completoEderaNera from "../images/chiacchierino/completoEderaNera.jpg";
+import completoFioriRossi from "../images/chiacchierino/completoFioriRossi.jpg";
+import completoFioriBianchi from "../images/chiacchierino/completoFioriBianchi.jpg";
+import completoFioriNero from "../images/chiacchierino/completoFioriNero.jpg";
+import completoFioriBlu from "../images/chiacchierino/completoFioriBlu.jpg";
+import completoFioriGiallo from "../images/chiacchierino/completoFioriGiallo.jpg";
+import completoFioriViola from "../images/chiacchierino/completoFioriViola.jpg";
+import completoFioriVerde from "../images/chiacchierino/completoFioriVerde.jpg";
 
 const menuElement = [
   {
@@ -106,49 +125,129 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Angelo portafortuna",
     desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: angeloFortunaOro,
-    }, {
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: angeloFortunaArgento,
-    }
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: angeloFortunaOro,
+      },
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: angeloFortunaArgento,
+      },
     ],
     category: "Chiacchierino",
     cat: "Ciondolo",
   },
   {
     id: uuidv4(),
-    title: "Completo ventaglio",
-    desc: "Completo composto da bracciale e orecchini, ricamati a forma di ventaglio.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: completoVentaglioBianco,
-    }, {
-      name: "Nero",
-      color: "#000",
-      imG: completoVentaglioNero,
-    }, {
-      name: "Rosso",
-      color: "#f00",
-      imG: completoVentaglioRosso,
-    }
+    title: "Completo Fiore",
+    desc: "Completo composto da bracciale e orecchini, ricamati a forma di fiore e impreziositi in pietra o cristalli.",
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: completoOroVerde,
+      },
+      {
+        name: "Rosa",
+        color: "#ffc0cb",
+        imG: completoArgentoRosa,
+      },
+      {
+        name: "Arancione",
+        color: "#ffa500",
+        imG: completoOroArancione,
+      },
+      {
+        name: "Blu",
+        color: "#00f",
+        imG: completoOroBlu,
+      },
+      {
+        name: "Giallo",
+        color: "#ff0",
+        imG: completoOroGiallo,
+      },
     ],
     category: "Chiacchierino",
     cat: "Completo",
   },
   {
     id: uuidv4(),
+    title: "Orecchini Fiore",
+    desc: "Orecchini ricamati a forma di fiore e impreziositi in pietra o cristalli.",
+    images: [
+      {
+        name: "Arancione chiaro",
+        color: "#ffcc99",
+        imG: orecchiniStellaPietra,
+      },
+      {
+        name: "Verde oliva",
+        color: "#556832",
+        imG: orecchiniStellaOliva,
+      },
+      {
+        name: "Arancione",
+        color: "#ffa500",
+        imG: orecchiniStellaArancione,
+      },
+      {
+        name: "Celeste",
+        color: "#00aae4",
+        imG: orecchiniStellaCeleste,
+      },
+      {
+        name: "Fucsia",
+        color: "#fc0fc0",
+        imG: orecchiniStellaFucsia,
+      },
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: orecchiniStellaVerde,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  // {
+  //   id: uuidv4(),
+  //   title: "Completo ventaglio",
+  //   desc: "Completo composto da bracciale e orecchini, ricamati a forma di ventaglio.",
+  //   images: [
+  //     {
+  //       name: "Bianco",
+  //       color: "#fff",
+  //       imG: completoVentaglioBianco,
+  //     },
+  //     {
+  //       name: "Nero",
+  //       color: "#000",
+  //       imG: completoVentaglioNero,
+  //     },
+  //     {
+  //       name: "Rosso",
+  //       color: "#f00",
+  //       imG: completoVentaglioRosso,
+  //     },
+  //   ],
+  //   category: "Chiacchierino",
+  //   cat: "Completo",
+  // },
+  {
+    id: uuidv4(),
     title: "Bracciale alla schiava",
     desc: "Bracciale alla schiava impreziosito da cristalli.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: braccialeOroVerde,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: braccialeOroVerde,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Bracciale",
   },
@@ -156,11 +255,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Bracciale alla schiava",
     desc: "Bracciale alla schiava impreziosito da cristalli.",
-    images: [{
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: braccialeArgentoRosa,
-    }],
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: braccialeArgentoRosa,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Bracciale",
   },
@@ -168,11 +269,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo con Rosa",
     desc: "Completo di orecchini e bracciale impreziositi con una rosa in resina.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: completoOroRosa,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: completoOroRosa,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Completo",
   },
@@ -180,11 +283,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Farfalla con rosa.",
     desc: "Orecchini ricamati a forma di farfalla, impreziositi con una rosa in resina.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: farfallaOroRosa,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: farfallaOroRosa,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -192,11 +297,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 1.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoFioreRotondo,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoFioreRotondo,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -204,11 +311,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 2.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveFiorellino,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveFiorellino,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -216,11 +325,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 3.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveRotondoGrande,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveRotondoGrande,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -228,11 +339,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 4.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveStella,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveStella,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -240,11 +353,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 5.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveOrecchini,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveOrecchini,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -252,11 +367,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Ciondolo fiocco di Neve mod 5.",
     desc: "Ciondolo ricamato a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveCiondolo,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveCiondolo,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Ciondolo",
   },
@@ -264,11 +381,67 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo Fiorellini",
     desc: "Completo ricamato a forma di fiorellini ed edera.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: completoFiorellinoBianco,
-    }],
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: completoEderaRossoNero,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: completoFiorellinoBianco,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: completoEderaNera,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo Fiorellini pendenti",
+    desc: "Completo ricamato a forma di fiorellini impreziosito con pendenti.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: completoFioriRossi,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: completoFioriBianchi,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: completoFioriNero,
+      },
+      {
+        name: "Blu",
+        color: "#00f",
+        imG: completoFioriBlu,
+      },
+      {
+        name: "Giallo",
+        color: "#ff0",
+        imG: completoFioriGiallo,
+      },
+      {
+        name: "Viola",
+        color: "#8f00ff",
+        imG: completoFioriViola,
+      },
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: completoFioriVerde,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Completo",
   },
@@ -276,11 +449,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Ricamo con Rosa",
     desc: "Orecchini ricamati e impreziositi con una rosa.",
-    images: [{
-      name: "Nero",
-      color: "#000",
-      imG: ricamoRosa,
-    }],
+    images: [
+      {
+        name: "Nero",
+        color: "#000",
+        imG: ricamoRosa,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -288,11 +463,13 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Albero di Natale ",
     desc: "Orecchini ricamati forma di Albero di Natale con perline colorate.",
-    images: [{
-      name: "Verde",
-      color: "#0f0",
-      imG: alberiNataleMulticolor,
-    }],
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: alberiNataleMulticolor,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -300,11 +477,41 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Stella di Natale",
     desc: "Orecchini ricamati forma di Stella di Natale in 3D con perline in oro.",
-    images: [{
-      name: "Rosso",
-      color: "#f00",
-      imG: stellaNataleGrande,
-    }],
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: stellaNataleGrande,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Rombo con pietre",
+    desc: "Orecchini ricamati forma di rombo impreziosito con pietre di diverso colore.",
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: orecchiniRomboOro,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Rombo con rosa",
+    desc: "Orecchini ricamati forma di rombo impreziosito con pietre e una rosa.",
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: orecchiniRomboRosa,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -312,20 +519,23 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Ondulina",
     desc: "Bracciale ricamato a forma di ondulina impreziosito con perle.",
-    images: [{
-      name: "Rosa",
-      color: "#ffc0cb",
-      imG: ondulinaRossa,
-    },{
-      name: "Nero",
-      color: "#000",
-      imG: ondulinaNero,
-    },
-    {
-      name: "Lilla",
-      color: "#ff00ff",
-      imG: ondulinaLilla,
-    }],
+    images: [
+      {
+        name: "Rosa",
+        color: "#ffc0cb",
+        imG: ondulinaRossa,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: ondulinaNero,
+      },
+      {
+        name: "Lilla",
+        color: "#ff00ff",
+        imG: ondulinaLilla,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Bracciale",
   },
@@ -333,23 +543,28 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo campane",
     desc: "Completo con orecchini e collane ricamati a forma di campana.",
-    images: [{
-      name: "Rosso",
-      color: "#f00",
-      imG: completoCampaneRosso,
-    },{
-      name: "Nero",
-      color: "#000",
-      imG: completoCampaneNero,
-    },{
-      name: "Bianco",
-      color: "#fff",
-      imG: completoCampanaBianco,
-    },{
-      name: "Beige",
-      color: "#E1C699",
-      imG: completoCampanaBeige,
-    }],
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: completoCampaneRosso,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: completoCampaneNero,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: completoCampanaBianco,
+      },
+      {
+        name: "Beige",
+        color: "#E1C699",
+        imG: completoCampanaBeige,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Completo",
   },
@@ -360,21 +575,23 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Cerchio con fiore",
     desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli ricamati. La lunghezza complessiva è di circa 8 cm.",
-    images: [{
-      name: "Verde",
-      color: "#0f0",
-      imG: cerchioFioreVerde,
-    },
-    {
-      name: "Arancione",
-      color: "#ffa500",
-      imG: cerchioFioreArancione,
-    },
-    {
-      name: "Blu",
-      color: "#00f",
-      imG: cerchioFioreBlu,
-    }],
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: cerchioFioreVerde,
+      },
+      {
+        name: "Arancione",
+        color: "#ffa500",
+        imG: cerchioFioreArancione,
+      },
+      {
+        name: "Blu",
+        color: "#00f",
+        imG: cerchioFioreBlu,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -382,21 +599,23 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve",
     desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: fioccoNeveOroBianco,
-    },
-    {
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: fioccoNeveArgentoBianco,
-    },
-    {
-      name: "Nero",
-      color: "#000",
-      imG: fioccoNeveArgentoNero,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: fioccoNeveOroBianco,
+      },
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: fioccoNeveArgentoBianco,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: fioccoNeveArgentoNero,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -404,11 +623,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Sole con nappine",
     desc: "Orecchini ricamati a forma di Sole impreziositi con cristalli e nappine colorate.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: stellaOroBlu,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: stellaOroBlu,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -416,11 +637,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore con perle",
     desc: "Orecchini ricamati a forma di Fiore e impreziositi con cristalli e perle.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: fioreOro,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: fioreOro,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -428,11 +651,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Ciondolo Fiore con perle",
     desc: "Ciodnolo ricamato a forma di Fiore e impreziosito con cristalli e perle.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: medaglioneFioreOro,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: medaglioneFioreOro,
+      },
+    ],
     category: "Uncinetto",
     cat: "Ciondolo",
   },
@@ -440,11 +665,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Mandala con rosa",
     desc: "Orecchini ricamati a forma di mandala e impreziositi con cristalli e rose.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: cerchiRosaAvorio,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: cerchiRosaAvorio,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -452,11 +679,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Ciondolo Mandala con rosa",
     desc: "Ciondolo ricamato a forma di Mandala e impreziosito con cristalli e rose.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: medaglioneRosaAvorio,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: medaglioneRosaAvorio,
+      },
+    ],
     category: "Uncinetto",
     cat: "Ciondolo",
   },
@@ -464,11 +693,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore con cristalli",
     desc: "Orecchini ricamati a forma di fiore e impreziositi con cristalli.",
-    images: [{
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: fioccoArgentoVerde,
-    }],
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: fioccoArgentoVerde,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -476,11 +707,13 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Ciondolo Fiore con cristalli",
     desc: "Ciondolo ricamato a forma di fiore e impreziosito con cristalli.",
-    images: [{
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: medaglioneFioccoArgentoVerde,
-    }],
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: medaglioneFioccoArgentoVerde,
+      },
+    ],
     category: "Uncinetto",
     cat: "Ciondolo",
   },
@@ -488,19 +721,21 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Rombo con Fiore",
     desc: "Orecchini ricamati a forma di rombo.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: rombiOroeBlu,
-    }, {
-      name: "Blu",
-      color: "#00f",
-      imG: rombiBlueSenape,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: rombiOroeBlu,
+      },
+      {
+        name: "Blu",
+        color: "#00f",
+        imG: rombiBlueSenape,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
-
 ];
 
 const necklaceElements = [
@@ -508,11 +743,13 @@ const necklaceElements = [
     id: uuidv4(),
     title: "Collana in oro con pietre rosse",
     desc: "Collana realizzata  in pizzo chiacchierino fatta interamente a mano. Per realizzarla ho utilizzato un filato oro metallizzato e pietre di colore rosso.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: collana01,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: collana01,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Collane",
   },
@@ -523,11 +760,12 @@ const christmas = [
     id: uuidv4(),
     title: "Angelo portafortuna",
     desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
-    images: [ {
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: angeloFortunaArgento,
-    }
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: angeloFortunaArgento,
+      },
     ],
     category: "Chiacchierino",
     cat: "Ciondolo",
@@ -536,21 +774,23 @@ const christmas = [
     id: uuidv4(),
     title: "Fiocco di Neve",
     desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: fioccoNeveOroBianco,
-    },
-    {
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: fioccoNeveArgentoBianco,
-    },
-    {
-      name: "Nero",
-      color: "#000",
-      imG: fioccoNeveArgentoNero,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: fioccoNeveOroBianco,
+      },
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: fioccoNeveArgentoBianco,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: fioccoNeveArgentoNero,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -558,11 +798,13 @@ const christmas = [
     id: uuidv4(),
     title: "Agrifoglio",
     desc: "Orecchini ricamati a forma di agrifoglio.",
-    images: [{
-      name: "Verde",
-      color: "#0f0",
-      imG: agrifoglio,
-    }],
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: agrifoglio,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -570,11 +812,13 @@ const christmas = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 4.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveStella,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveStella,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -582,26 +826,30 @@ const christmas = [
     id: uuidv4(),
     title: "Completo Babbo Natale",
     desc: "Completo a forma di Babbo Natale, orecchini e bracciale.",
-    images: [{
-      name: "rOSSO",
-      color: "#f00",
-      imG: completoBN,
-    }],
+    images: [
+      {
+        name: "rOSSO",
+        color: "#f00",
+        imG: completoBN,
+      },
+    ],
     category: "Uncinetto",
     cat: "Completo",
   },
- ];
+];
 
- const lastCreations = [
+const lastCreations = [
   {
     id: uuidv4(),
     title: "Albero di Natale ",
     desc: "Orecchini ricamati forma di Albero di Natale con perline colorate.",
-    images: [{
-      name: "Verde",
-      color: "#0f0",
-      imG: alberiNataleMulticolor,
-    }],
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: alberiNataleMulticolor,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -609,11 +857,13 @@ const christmas = [
     id: uuidv4(),
     title: "Stella di Natale",
     desc: "Orecchini ricamati forma di Stella di Natale in 3D con perline in oro.",
-    images: [{
-      name: "Rosso",
-      color: "#f00",
-      imG: stellaNataleGrande,
-    }],
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: stellaNataleGrande,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -621,11 +871,12 @@ const christmas = [
     id: uuidv4(),
     title: "Angelo portafortuna",
     desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
-    images: [ {
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: angeloFortunaArgento,
-    }
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: angeloFortunaArgento,
+      },
     ],
     category: "Chiacchierino",
     cat: "Ciondolo",
@@ -634,21 +885,23 @@ const christmas = [
     id: uuidv4(),
     title: "Fiocco di Neve",
     desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
-    images: [{
-      name: "Oro",
-      color: "#ffd100",
-      imG: fioccoNeveOroBianco,
-    },
-    {
-      name: "Argento",
-      color: "#c0c0c0",
-      imG: fioccoNeveArgentoBianco,
-    },
-    {
-      name: "Nero",
-      color: "#000",
-      imG: fioccoNeveArgentoNero,
-    }],
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: fioccoNeveOroBianco,
+      },
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: fioccoNeveArgentoBianco,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: fioccoNeveArgentoNero,
+      },
+    ],
     category: "Uncinetto",
     cat: "Orecchini",
   },
@@ -656,11 +909,13 @@ const christmas = [
     id: uuidv4(),
     title: "Agrifoglio",
     desc: "Orecchini ricamati a forma di agrifoglio.",
-    images: [{
-      name: "Verde",
-      color: "#0f0",
-      imG: agrifoglio,
-    }],
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: agrifoglio,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -668,11 +923,13 @@ const christmas = [
     id: uuidv4(),
     title: "Fiocco di Neve mod 4.",
     desc: "Orecchini ricamati a forma di fiocco di neve.",
-    images: [{
-      name: "Bianco",
-      color: "#fff",
-      imG: fioccoNeveStella,
-    }],
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoNeveStella,
+      },
+    ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
@@ -680,15 +937,17 @@ const christmas = [
     id: uuidv4(),
     title: "Completo Babbo Natale",
     desc: "Completo a forma di Babbo Natale, orecchini e bracciale.",
-    images: [{
-      name: "rOSSO",
-      color: "#f00",
-      imG: completoBN,
-    }],
+    images: [
+      {
+        name: "rOSSO",
+        color: "#f00",
+        imG: completoBN,
+      },
+    ],
     category: "Uncinetto",
     cat: "Completo",
   },
- ];
+];
 
 const axiosToData = async (axiosPromise) => {
   try {
@@ -699,4 +958,12 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export { menuElement, necklaceElements, axiosToData, uncinettoElements, chiacchierinoElements, christmas,lastCreations };
+export {
+  menuElement,
+  necklaceElements,
+  axiosToData,
+  uncinettoElements,
+  chiacchierinoElements,
+  christmas,
+  lastCreations,
+};
