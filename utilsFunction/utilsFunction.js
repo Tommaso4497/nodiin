@@ -127,11 +127,6 @@ const chiacchierinoElements = [
     desc: "Ciondolo portafortuna a forma di Angelo, impreziosito con una perla.",
     images: [
       {
-        name: "Oro",
-        color: "#ffd100",
-        imG: angeloFortunaOro,
-      },
-      {
         name: "Argento",
         color: "#c0c0c0",
         imG: angeloFortunaArgento,
