@@ -38,7 +38,7 @@ const Chiacchierino = () => {
       <Image src={copertina} alt="chiacchierinoBackground" />
       <div className={styles.pageTitle}>
       <ImageEdit url={tree} w={mathes ? "":"30"} h={mathes ? "":"30"} />
-        <p style={{ marginBlock: "0" }}>Chiacchierino</p>
+        <p style={{ marginBlock: "0" }}>Chiacchierino!</p>
         <ImageEdit url={tree} w={mathes ? "":"30"} h={mathes ? "":"30"} />
       </div>
       <p className={styles.subtitle}>

@@ -61,7 +61,7 @@ const ContactUs = () => {
             ></TextField>
           </div>
           <div className={styles.wrapperButton}>
-            <Button type="submit" color="primary" variant="outlined" startIcon={<SendIcon />} >
+            <Button disabled type="submit" color="primary" variant="outlined" startIcon={<SendIcon />} >
               Invia
             </Button>
           </div>

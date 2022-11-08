@@ -66,9 +66,7 @@ const Navigation = () => {
             >
               <MenuIcon style={{ color: "#fff" }} />
             </IconButton>
-            <div
-              className={styles.imageWrapper}
-            >
+            <div className={styles.imageWrapper}>
               <Image src={logo} width="40" height="40" alt="logo" />
             </div>
           </Toolbar>
@@ -93,11 +91,11 @@ const Navigation = () => {
             <p className={styles.drawerTitle}>Nodi in Chiacchierino</p>
           </div>
           <Divider />
-          <List style={{ fontSize: "2rem", fontFamily: "Italianno" }}>{elementsMobile}</List>
+          <List style={{ fontSize: "2rem", fontFamily: "Italianno" }}>
+            {elementsMobile}
+          </List>
           <div className={styles.footerWrapper}>
-            <a className={styles.iconLinkDrawer}
-              rel="noopener noreferrer"
-            >
+            <a className={styles.iconLinkDrawer} rel="noopener noreferrer">
               <FacebookIcon fontSize="large" style={{ color: "#fff" }} />
             </a>
 
@@ -119,12 +117,12 @@ const Navigation = () => {
             </a>
           </div>
         </Drawer>
-      </div >
+      </div>
       <div className={styles.headerWrapper}>
         <Image src={logo} width="40" height="40" alt="logo" />
         <div>{elementWeb}</div>
       </div>
-    </div >
+    </div>
   );
 };
 
