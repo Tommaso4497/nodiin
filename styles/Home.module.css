@@ -12,10 +12,6 @@
   gap: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
-
-}
-
 .carouselWrapper {
   padding: 1rem;
 }
@@ -42,14 +38,14 @@
   gap: 1.5rem;
 }
 
-.subtitle{
+.subtitle {
   margin-block: 2rem;
   color: #f00;
-  }
+}
 
-  .paragraph{
-    margin-block: 2rem;
-  }
+.paragraph {
+  margin-block: 2rem;
+}
 
 .pageTitle {
   display: flex;
@@ -63,19 +59,22 @@
 
 @media only screen and (max-width: 899px) {
   .pageTitle {
-    font-size:2.5rem ;
+    font-size: 2.5rem;
   }
-  .subtitle{
+
+  .subtitle {
     margin-block: 1rem;
     font-size: 2rem;
   }
-  .paragraph{
+
+  .paragraph {
     margin-block: 1rem;
     font-size: 2rem;
   }
+
   .gridWrapper {
     grid-template-columns: 1fr;
   }
-  
+
 
 }

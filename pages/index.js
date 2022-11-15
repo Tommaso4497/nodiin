@@ -149,9 +149,9 @@ export default function Home() {
       </Head>
 
       <div className={styles.pageTitle}>
-        <ImageEdit url={gooseberry} w={mathes ? "":"30"} h={mathes ? "":"30"} />
+        <ImageEdit url={gooseberry} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
-        <ImageEdit url={gooseberry} w={mathes ? "":"30"} h={mathes ? "":"30"} />
+        <ImageEdit url={gooseberry} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
       <div className={styles.headerCarousel}>
         <Carousel
@@ -172,7 +172,7 @@ export default function Home() {
       </div>
       <div className={styles.subtitleWrapper}>
         <p className={styles.subtitle}>  Gioielli Natalizi</p>
-        <ImageEdit url={box} w={mathes ? "":"30"} h={mathes ? "":"30"} />
+        <ImageEdit url={box} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
 
       <div className={styles.carouselWrapper}>
@@ -190,7 +190,7 @@ export default function Home() {
         </Carousel>
       </div>
       <div className={styles.subtitleWrapper}>
-      <ImageEdit url={sfere} w={mathes ? "":"30"} h={mathes ? "":"30"} />
+        <ImageEdit url={sfere} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
         <p className={styles.paragraph}>Ultime Creazioni!</p>
       </div>
       <div className={styles.carouselWrapper}>
@@ -211,12 +211,11 @@ export default function Home() {
         <p className={styles.paragraph}>
           Per altre creazioni visita i nostri cataloghi!
         </p>
-        <ImageEdit url={hat} w={mathes ? "":"30"} h={mathes ? "":"30"} />
+        <ImageEdit url={hat} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
-      <div></div>
       <div className={styles.gridWrapper}>
         <div
-          className={styles.category}
+          style={{ cursor: "pointer" }}
           onClick={() => router.push("chiacchierino/")}
         >
           <ImageEdit
@@ -225,7 +224,7 @@ export default function Home() {
           />
         </div>
         <div
-          className={styles.category}
+          style={{ cursor: "pointer" }}
           onClick={() => router.push("uncinetto/")}
         >
           <ImageEdit
