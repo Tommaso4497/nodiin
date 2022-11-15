@@ -76,7 +76,7 @@ export default function Home() {
         <meta name="application-name" content="Nodi in Chiacchierino" />
         <meta
           name="description"
-          content="La passione per l'intreccio dei fili, dà origine a veri e propri gioielli fatti a mano e impreziositi da pietre e cristalli"
+          content="Gioielli realizzati a mano in pizzo chiacchierino, impreziositi con pietre, perle e cristalli."
         />
         <meta
           name="keywords"
