@@ -44,7 +44,7 @@ import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoAr
 import completoBN from "../images/uncinetto/completoBN.jpg";
 import agrifoglio from "../images/uncinetto/agrifoglio.jpg";
 
-import angeloFortunaOro from "../images/chiacchierino/angeloFortunaOro.jpeg";
+import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
 import completoOroRosa from "../images/chiacchierino/completoOroRosa.jpg";
 import completoVentaglioBianco from "../images/chiacchierino/completoVentaglioBianco.jpg";
@@ -92,6 +92,10 @@ import completoFioriBlu from "../images/chiacchierino/completoFioriBlu.jpg";
 import completoFioriGiallo from "../images/chiacchierino/completoFioriGiallo.jpg";
 import completoFioriViola from "../images/chiacchierino/completoFioriViola.jpg";
 import completoFioriVerde from "../images/chiacchierino/completoFioriVerde.jpg";
+import stellaPietraAzzurra from "../images/chiacchierino/stellaPietraAzzurra.jpg";
+import stellaPietraRosa from "../images/chiacchierino/stellaPietraRosa.jpg";
+import ghirlandaColorata from "../images/chiacchierino/ghirlandaColorata.jpg";
+import orecchiniM from "../images/chiacchierino/orecchiniM.jpg";
 
 const menuElement = [
   {
@@ -131,9 +135,28 @@ const chiacchierinoElements = [
         color: "#c0c0c0",
         imG: angeloFortunaArgento,
       },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: angeloBianco,
+      },
     ],
     category: "Chiacchierino",
     cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini stella",
+    desc: "Orecchini ricamati a forma di stella.",
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: orecchiniM,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
   },
   {
     id: uuidv4(),
@@ -208,30 +231,40 @@ const chiacchierinoElements = [
     category: "Chiacchierino",
     cat: "Orecchini",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Completo ventaglio",
-  //   desc: "Completo composto da bracciale e orecchini, ricamati a forma di ventaglio.",
-  //   images: [
-  //     {
-  //       name: "Bianco",
-  //       color: "#fff",
-  //       imG: completoVentaglioBianco,
-  //     },
-  //     {
-  //       name: "Nero",
-  //       color: "#000",
-  //       imG: completoVentaglioNero,
-  //     },
-  //     {
-  //       name: "Rosso",
-  //       color: "#f00",
-  //       imG: completoVentaglioRosso,
-  //     },
-  //   ],
-  //   category: "Chiacchierino",
-  //   cat: "Completo",
-  // },
+  {
+    id: uuidv4(),
+    title: "Orecchini Stella",
+    desc: "Orecchini ricamati a forma di stella e impreziositi con pietra.",
+    images: [
+      {
+        name: "Azzurro",
+        color: "#ABCDEF",
+        imG: stellaPietraAzzurra,
+      },
+      {
+        name: "Rosa",
+        color: "#FFC0CB",
+        imG: stellaPietraRosa,
+      },
+      
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini ghirlanda",
+    desc: "Orecchini ricamati a forma di ghirlanda e impreziositi con perline.",
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: ghirlandaColorata,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
   {
     id: uuidv4(),
     title: "Bracciale alla schiava",
@@ -761,6 +794,11 @@ const christmas = [
         color: "#c0c0c0",
         imG: angeloFortunaArgento,
       },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: angeloBianco,
+      },
     ],
     category: "Chiacchierino",
     cat: "Ciondolo",
@@ -871,6 +909,11 @@ const lastCreations = [
         name: "Argento",
         color: "#c0c0c0",
         imG: angeloFortunaArgento,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: angeloBianco,
       },
     ],
     category: "Chiacchierino",
