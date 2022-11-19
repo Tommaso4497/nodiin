@@ -116,12 +116,6 @@ const menuElement = [
     path: "uncinetto/",
     icon: <CollectionsIcon />,
   },
-  {
-    id: "4",
-    section: "Contattaci",
-    path: "contactUs/",
-    icon: <MailIcon />,
-  },
 ];
 
 const chiacchierinoElements = [
