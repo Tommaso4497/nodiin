@@ -114,8 +114,7 @@ const Chiacchierino = () => {
           flexDirection: "column",
         }}
       >
-        <p>Cerca per colore...</p>
-        
+        <p style={{fontFamily:"sans-serif"}}>Cerca per colore...</p>
         <div
           style={{
             display: "flex",
