@@ -18,7 +18,6 @@ import theme from "../../styles/main";
 import BackToTop from "../components/BackToTop";
 import tree from "../../images/christmasImage/tree.svg";
 import ImageEdit from "../components/ImageEdit";
-import CircleIcon from "@mui/icons-material/Circle";
 
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");
@@ -104,127 +103,7 @@ const Chiacchierino = () => {
           />
         </RadioGroup>
       </div>
-
-      <div
-        style={{
-          padding: "1rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <p style={{fontFamily:"sans-serif"}}>Cerca per colore...</p>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Tooltip title="Tutti">
-            <div className={styles.all}>T</div>
-          </Tooltip>
-          <Tooltip title="Bianco">
-            <CircleIcon
-              style={{
-                fill: "white",
-                marginRight: "1rem",
-                cursor: "pointer",
-                stroke: "#000",
-              }}
-            />
-          </Tooltip>
-          <Tooltip title="Rosa">
-            <CircleIcon
-              style={{ fill: "pink", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Viola">
-            <CircleIcon
-              style={{ fill: "purple", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Rosso">
-            <CircleIcon
-              style={{ fill: "red", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Arancione">
-            <CircleIcon
-              style={{ fill: "orange", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Oro">
-            <CircleIcon
-              style={{ fill: "gold", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Giallo">
-            <CircleIcon style={{ fill: "yellow", cursor: "pointer" }} />
-          </Tooltip>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "1rem",
-          }}
-        >
-          <Tooltip title="Verde Chiaro">
-            <CircleIcon
-              style={{
-                fill: "lightgreen",
-                marginRight: "1rem",
-                cursor: "pointer",
-              }}
-            />
-          </Tooltip>
-          <Tooltip title="Verde Scuro">
-            <CircleIcon
-              style={{ fill: "green", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Azzurro">
-            <CircleIcon
-              style={{
-                fill: "#00AAE4",
-                marginRight: "1rem",
-                cursor: "pointer",
-              }}
-            />
-          </Tooltip>
-          <Tooltip title="Blu">
-            <CircleIcon
-              style={{ fill: "#00f", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Argento">
-            <CircleIcon
-              style={{ fill: "silver", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Beige">
-            <CircleIcon
-              style={{
-                fill: "#E1C699",
-                marginRight: "1rem",
-                cursor: "pointer",
-              }}
-            />
-          </Tooltip>
-          <Tooltip title="Nero">
-            <CircleIcon
-              style={{ fill: "black", marginRight: "1rem", cursor: "pointer" }}
-            />
-          </Tooltip>
-          <Tooltip title="Multicolor">
-            <div className={styles.rainbow} />
-          </Tooltip>
-        </div>
-      </div>
-
+       
       <div className={styles.wrapperGrid}>
         {chiacchierinoElements
           .filter(
