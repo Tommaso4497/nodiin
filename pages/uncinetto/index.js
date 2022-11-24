@@ -7,7 +7,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import copertina from "../../images/copertina.jpg";
+import copertina from "../../images/copertina.jpeg";
 import styles from "./Uncinetto.module.css";
 import { uncinettoElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
