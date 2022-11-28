@@ -52,6 +52,13 @@ import rosaBlu from "../images/uncinetto/rosaBlu.png";
 import rosaViola from "../images/uncinetto/rosaViola.png";
 import rosaLilla from "../images/uncinetto/rosaLilla.png";
 import rosaFucsia from "../images/uncinetto/rosaFucsia.png";
+import stellaNataleRossa from "../images/uncinetto/stellaNataleRossa.png";
+import stellaNataleGialla from "../images/uncinetto/stellaNataleGialla.png";
+import stellaNataleBianca from "../images/uncinetto/stellaNataleBianca.png";
+import fioreSovrappostoRosso from "../images/uncinetto/fioreSovrappostoRosso.png";
+import fioreSovrappostoBianco from "../images/uncinetto/fioreSovrappostoBianco.png";
+import cerchioBronzoVerde from "../images/uncinetto/cerchioBronzoVerde.jpg";
+import margheritaBianca from "../images/uncinetto/margheritaBianca.jpg";
 
 import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
@@ -105,6 +112,10 @@ import stellaPietraAzzurra from "../images/chiacchierino/stellaPietraAzzurra.jpg
 import stellaPietraRosa from "../images/chiacchierino/stellaPietraRosa.jpg";
 import ghirlandaColorata from "../images/chiacchierino/ghirlandaColorata.jpg";
 import orecchiniM from "../images/chiacchierino/orecchiniM.jpg";
+import mandalaBronzo from "../images/chiacchierino/mandalaBronzo.png";
+import mandalaVerdeOro from "../images/chiacchierino/mandalaVerdeOro.png";
+import orecchiniOroRosso from "../images/chiacchierino/orecchiniRossoOro.jpg";
+import braccialeRossoOro from "../images/chiacchierino/braccialeRossoOro.jpg";
 
 const menuElement = [
   {
@@ -146,6 +157,67 @@ const chiacchierinoElements = [
     ],
     category: "Chiacchierino",
     cat: "Ciondolo",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini stella",
+    desc: "Orecchini ricamati a forma di stella.",
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: orecchiniM,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini natalizi",
+    desc: "Orecchini ricamati in chiacchierino con colori natalizi.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: orecchiniOroRosso ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale natalizio",
+    desc: "Bracciale ricamato in chiacchierino con colori natalizi.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: braccialeRossoOro ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Braciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Ricamo",
+    desc: "Orecchini a forma di mandala, impreziosito con perle a forma di gocce.",
+    images: [
+      {
+        name: "Bronzo",
+        color: "#cd7f32",
+        imG: mandalaBronzo,
+      },
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: mandalaVerdeOro,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
   },
   {
     id: uuidv4(),
@@ -249,7 +321,6 @@ const chiacchierinoElements = [
         color: "#FFC0CB",
         imG: stellaPietraRosa,
       },
-      
     ],
     category: "Chiacchierino",
     cat: "Orecchini",
@@ -658,6 +729,77 @@ const uncinettoElements = [
   },
   {
     id: uuidv4(),
+    title: "Fiore a ventaglio",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con perlina brillantinata.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: fioreSovrappostoRosso,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioreSovrappostoBianco,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Margherita con strass",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con strass.",
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: margheritaBianca,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Cerchi",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con perline e peitre.",
+    images: [
+      {
+        name: "Bronzo",
+        color: "#cd7f32",
+        imG: cerchioBronzoVerde,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella di Natale",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto a forma di stella di Natale.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: stellaNataleRossa,
+      },
+      {
+        name: "Giallo",
+        color: "#ff0",
+        imG: stellaNataleGialla,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: stellaNataleBianca,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
     title: "Cerchio con fiore",
     desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli ricamati. La lunghezza complessiva è di circa 8 cm.",
     images: [
@@ -929,6 +1071,131 @@ const christmas = [
 ];
 
 const lastCreations = [
+  {
+    id: uuidv4(),
+    title: "Orecchini natalizi",
+    desc: "Orecchini ricamati in chiacchierino con colori natalizi.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: orecchiniOroRosso ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale natalizio",
+    desc: "Bracciale ricamato in chiacchierino con colori natalizi.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: braccialeRossoOro ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Braciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Rosa",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con mandala in bronzo come base.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: rosaRossa,
+      },
+      {
+        name: "Arancione",
+        color: "#ffa500",
+        imG: rosaArancione,
+      },
+      {
+        name: "Giallo",
+        color: "#ff0",
+        imG: rosaGialla,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: rosaBianca,
+      },
+      {
+        name: "Celeste",
+        color: "#00aae4",
+        imG: rosaCeleste,
+      },
+      {
+        name: "Blu",
+        color: "#00f",
+        imG: rosaBlu,
+      },
+      {
+        name: "Viola",
+        color: "#6c4675",
+        imG: rosaLilla,
+      },
+      {
+        name: "Lilla",
+        color: "#8f00ff",
+        imG: rosaViola,
+      },
+      {
+        name: "Fucsia",
+        color: "#F400A1",
+        imG: rosaFucsia,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiore a ventaglio",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con perlana brillantinata.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: fioreSovrappostoRosso,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioreSovrappostoBianco,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella di Natale",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto a forma di stella di Natale.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: stellaNataleRossa,
+      },
+      {
+        name: "Giallo",
+        color: "#ff0",
+        imG: stellaNataleGialla,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: stellaNataleBianca,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
   {
     id: uuidv4(),
     title: "Albero di Natale ",
