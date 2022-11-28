@@ -26,6 +26,7 @@ import collana21 from "../images/Collana021.jpg";
 import collana22 from "../images/Collana022.jpg";
 import collana23 from "../images/Collana023.jpg";
 
+/*Uncinetto*/
 import rombiBlueSenape from "../images/uncinetto/rombiBlueSenape.jpg";
 import rombiOroeBlu from "../images/uncinetto/rombiOroeBlu.jpg";
 import cerchioFioreVerde from "../images/uncinetto/cerchioFioreVerde.jpg";
@@ -59,7 +60,17 @@ import fioreSovrappostoRosso from "../images/uncinetto/fioreSovrappostoRosso.png
 import fioreSovrappostoBianco from "../images/uncinetto/fioreSovrappostoBianco.png";
 import cerchioBronzoVerde from "../images/uncinetto/cerchioBronzoVerde.jpg";
 import margheritaBianca from "../images/uncinetto/margheritaBianca.jpg";
+import orecchiniRossoBronzo from "../images/uncinetto/orecchiniRossoBronzo.jpg";
+import orecchiniBiancoBronzo from "../images/uncinetto/orecchiniBiancoBronzo.jpg";
+import orecchiniBeijeBronzo from "../images/uncinetto/orecchiniBeijeBronzo.jpg";
+import orecchiniMargheritaBianca from "../images/uncinetto/orecchiniMargheritaBianca.jpg";
+import fiore3dBianco from "../images/uncinetto/fiore3dBianco.jpg";
+import fiore3dRosso from "../images/uncinetto/fiore3dRosso.jpg";
+import fiore3dNero from "../images/uncinetto/fiore3dNero.jpg";
+import fiore3dSenape from "../images/uncinetto/fiore3dSenape.jpg";
 
+/*Chiacchierino*/
+import romboArgentoRosa from "../images/chiacchierino/romboArgentoRosa.jpg";
 import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
 import completoOroRosa from "../images/chiacchierino/completoOroRosa.jpg";
@@ -115,7 +126,31 @@ import orecchiniM from "../images/chiacchierino/orecchiniM.jpg";
 import mandalaBronzo from "../images/chiacchierino/mandalaBronzo.png";
 import mandalaVerdeOro from "../images/chiacchierino/mandalaVerdeOro.png";
 import orecchiniOroRosso from "../images/chiacchierino/orecchiniRossoOro.jpg";
+import orecchiniFioreBianco from "../images/chiacchierino/orecchiniFioreBianco.jpg";
 import braccialeRossoOro from "../images/chiacchierino/braccialeRossoOro.jpg";
+import braccialeFioreBianco from "../images/chiacchierino/braccialeFioreBianco.jpg";
+import braccialeFioreNero from "../images/chiacchierino/braccialeFioreNero.jpg";
+import completoBiancoBianco from "../images/chiacchierino/completoBiancoBianco.jpg";
+import completoNeroBianco from "../images/chiacchierino/completoNeroBianco.jpg";
+import completoRossoBianco from "../images/chiacchierino/completoRossoBianco.jpg";
+import braccialeRossoFiorelloni from "../images/chiacchierino/braccialeRossoFiorelloni.jpg";
+import braccialeNeroFiorelloni from "../images/chiacchierino/braccialeNeroFiorelloni.jpg";
+import braccialeLoveNero from "../images/chiacchierino/braccialeLoveNero.jpg";
+import braccialeLoveRosso from "../images/chiacchierino/braccialeLoveRosso.jpg";
+import braccialeLoveBianco from "../images/chiacchierino/braccialeLoveBianco.jpg";
+import ondulinaPerleRosse from "../images/chiacchierino/ondulinaPerleRosse.jpg";
+import ondulinaPerleNero from "../images/chiacchierino/ondulinaPerleNero.jpg";
+import ondulinaPerleBianche from "../images/chiacchierino/ondulinaPerleBianche.jpg";
+import braccialePerlineFuxia from "../images/chiacchierino/braccialePerlineFuxia.jpg";
+import braccialeFiloNeroMulticolor1 from "../images/chiacchierino/braccialeFiloNeroMulticolor1.jpg";
+import braccialeFiloNeroMulticolor2 from "../images/chiacchierino/braccialeFiloNeroMulticolor2.jpg";
+import braccialeFiloNeroMulticolor3 from "../images/chiacchierino/braccialeFiloNeroMulticolor3.jpg";
+import braccialeFiloNeroPerline from "../images/chiacchierino/braccialeFiloNeroPerline.jpg";
+import braccialeFiloNeroRosso from "../images/chiacchierino/braccialeFiloNeroRosso.jpg";
+import alberelloBianco from "../images/chiacchierino/alberelloBianco.jpg";
+import alberelloOro from "../images/chiacchierino/alberelloOro.jpg";
+import alberelloRosso from "../images/chiacchierino/alberelloRosso.jpg";
+
 
 const menuElement = [
   {
@@ -174,7 +209,7 @@ const chiacchierinoElements = [
   },
   {
     id: uuidv4(),
-    title: "Orecchini natalizi",
+    title: "Orecchini Fiore",
     desc: "Orecchini ricamati in chiacchierino con colori natalizi.",
     images: [
       {
@@ -182,23 +217,201 @@ const chiacchierinoElements = [
         color: "#f00",
         imG: orecchiniOroRosso ,
       },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: orecchiniFioreBianco ,
+      },
     ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
   {
     id: uuidv4(),
-    title: "Bracciale natalizio",
-    desc: "Bracciale ricamato in chiacchierino con colori natalizi.",
+    title: "Bracciale Love",
+    desc: "Bracciale realizzato a chiacchierino con targhetta Love glitterata",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: braccialeLoveRosso ,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: braccialeLoveBianco ,
+      },
+      {
+        name: "Oro",
+        color: "#000",
+        imG: braccialeLoveNero ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale serpentina e perline",
+    desc: "Bracciale realizzato a chiacchierino con perline bianche",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: ondulinaPerleRosse ,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: ondulinaPerleBianche ,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: ondulinaPerleNero ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale con perline fucsia",
+    desc: "Bracciale realizzato a chiacchierino con perline fucsia",
+    images: [
+      {
+        name: "Nero",
+        color: "#000",
+        imG: braccialePerlineFuxia ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo Curvio",
+    desc: "Completo composto da bracciale e precchini impreziositi con perline bianche",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: completoRossoBianco ,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: completoBiancoBianco ,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: completoNeroBianco ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Completi",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale a filo",
+    desc: "Bracciale a filo di colore nero impreziosito con perline",
+    images: [
+      {
+        name: "Multicolor 1",
+        gradient: true,
+        imG: braccialeFiloNeroMulticolor1 ,
+      },
+      {
+        name: "Multicolor 2",
+        gradient: true,
+        imG: braccialeFiloNeroMulticolor2 ,
+      },
+      {
+        name: "Multicolor 3",
+        gradient: true,
+        imG: braccialeFiloNeroMulticolor3 ,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: braccialeFiloNeroPerline ,
+      },
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: braccialeFiloNeroRosso ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale con Fiori",
+    desc: "Bracciale con Fiori a forma di perlina",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: braccialeRossoFiorelloni ,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: braccialeNeroFiorelloni ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Completi",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale con Fiore",
+    desc: "Bracciale ricamato in chiacchierino ca forma di fiore.",
     images: [
       {
         name: "Rosso",
         color: "#f00",
         imG: braccialeRossoOro ,
       },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: braccialeFioreBianco ,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: braccialeFioreNero ,
+      },
     ],
     category: "Chiacchierino",
-    cat: "Braciali",
+    cat: "Bracciali",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini Alberello di Natale",
+    desc: "Orecchini ricamati in chiacchierino a forma di Alberello di Natale .",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: alberelloRosso ,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: alberelloBianco ,
+      },
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: alberelloOro ,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Bracciali",
   },
   {
     id: uuidv4(),
@@ -214,20 +427,6 @@ const chiacchierinoElements = [
         name: "Oro",
         color: "#ffd100",
         imG: mandalaVerdeOro,
-      },
-    ],
-    category: "Chiacchierino",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
-    title: "Orecchini stella",
-    desc: "Orecchini ricamati a forma di stella.",
-    images: [
-      {
-        name: "Multicolor",
-        gradient: true,
-        imG: orecchiniM,
       },
     ],
     category: "Chiacchierino",
@@ -320,6 +519,20 @@ const chiacchierinoElements = [
         name: "Rosa",
         color: "#FFC0CB",
         imG: stellaPietraRosa,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini Margherita",
+    desc: "Orecchini ricamati a forma di margherita e impreziositi con strass.",
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: orecchiniMargheritaBianca,
       },
     ],
     category: "Chiacchierino",
@@ -613,6 +826,11 @@ const chiacchierinoElements = [
         color: "#ffd100",
         imG: orecchiniRomboRosa,
       },
+      {
+        name: "Argento",
+        color: "#C0C0C0",
+        imG: romboArgentoRosa,
+      },
     ],
     category: "Chiacchierino",
     cat: "Orecchini",
@@ -735,6 +953,35 @@ const uncinettoElements = [
       {
         name: "Rosso",
         color: "#f00",
+        imG: fiore3dRosso,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fiore3dBianco,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: fiore3dNero,
+      },
+      {
+        name: "Senape",
+        color: "#E7B928",
+        imG: fiore3dSenape,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiore in risalto",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto in rilievo e impreziositi con perline.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
         imG: fioreSovrappostoRosso,
       },
       {
@@ -793,6 +1040,30 @@ const uncinettoElements = [
         name: "Bianco",
         color: "#fff",
         imG: stellaNataleBianca,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Fiore in 3D",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto a forma di fiore ma in 3D.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: orecchiniRossoBronzo,
+      },
+      {
+        name: "Beige",
+        color: "#E1C699",
+        imG: orecchiniBeijeBronzo,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: orecchiniBiancoBronzo,
       },
     ],
     category: "Uncinetto",
@@ -1073,7 +1344,7 @@ const christmas = [
 const lastCreations = [
   {
     id: uuidv4(),
-    title: "Orecchini natalizi",
+    title: "Orecchini Fiore",
     desc: "Orecchini ricamati in chiacchierino con colori natalizi.",
     images: [
       {
@@ -1081,13 +1352,18 @@ const lastCreations = [
         color: "#f00",
         imG: orecchiniOroRosso ,
       },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: orecchiniFioreBianco ,
+      },
     ],
     category: "Chiacchierino",
     cat: "Orecchini",
   },
   {
     id: uuidv4(),
-    title: "Bracciale natalizio",
+    title: "Bracciale con Fiore",
     desc: "Bracciale ricamato in chiacchierino con colori natalizi.",
     images: [
       {
@@ -1095,9 +1371,19 @@ const lastCreations = [
         color: "#f00",
         imG: braccialeRossoOro ,
       },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: braccialeFioreBianco ,
+      },
+      {
+        name: "Nero",
+        color: "#000",
+        imG: braccialeFioreNero ,
+      },
     ],
     category: "Chiacchierino",
-    cat: "Braciali",
+    cat: "Bracciali",
   },
   {
     id: uuidv4(),
