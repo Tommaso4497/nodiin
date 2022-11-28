@@ -43,6 +43,15 @@ import stellaOroBlu from "../images/uncinetto/stellaOroBlu.jpg";
 import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoArgentoVerde.jpg";
 import completoBN from "../images/uncinetto/completoBN.jpg";
 import agrifoglio from "../images/uncinetto/agrifoglio.jpg";
+import rosaArancione from "../images/uncinetto/rosaArancione.jpg";
+import rosaBianca from "../images/uncinetto/rosaBianca.jpg";
+import rosaRossa from "../images/uncinetto/rosaRossa.jpg";
+import rosaGialla from "../images/uncinetto/rosaGialla.jpg";
+import rosaCeleste from "../images/uncinetto/rosaCeleste.jpg";
+import rosaBlu from "../images/uncinetto/rosaBlu.jpg";
+import rosaViola from "../images/uncinetto/rosaViola.jpg";
+import rosaLilla from "../images/uncinetto/rosaLilla.jpg";
+import rosaFucsia from "../images/uncinetto/rosaFucsia.jpg";
 
 import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
@@ -593,6 +602,60 @@ const chiacchierinoElements = [
 ];
 
 const uncinettoElements = [
+  {
+    id: uuidv4(),
+    title: "Rosa",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto con mandala in bronzo come base.",
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: rosaRossa,
+      },
+      {
+        name: "Arancione",
+        color: "#ffa500",
+        imG: rosaArancione,
+      },
+      {
+        name: "Giallo",
+        color: "#ff0",
+        imG: rosaGialla,
+      },
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: rosaBianca,
+      },
+      {
+        name: "Celeste",
+        color: "#00aae4",
+        imG: rosaCeleste,
+      },
+      {
+        name: "Blu",
+        color: "#00f",
+        imG: rosaBlu,
+      },
+      {
+        name: "Viola",
+        color: "#6c4675",
+        imG: rosaLilla,
+      },
+      {
+        name: "Lilla",
+        color: "#8f00ff",
+        imG: rosaViola,
+      },
+      {
+        name: "Fucsia",
+        color: "#F400A1",
+        imG: rosaFucsia,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
   {
     id: uuidv4(),
     title: "Cerchio con fiore",

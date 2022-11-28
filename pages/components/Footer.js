@@ -31,12 +31,12 @@ const Footer = () => {
         >
           <InstagramIcon fontSize={matches ? "large" : "medium"} />
         </IconButton>
-        <IconButton
+        {/* <IconButton
           onClick={() => router.push("contactUs/")}
           className={styles.iconButt}
         >
           <EmailOutlinedIcon fontSize={matches ? "large" : "medium"} />
-        </IconButton>
+        </IconButton> */}
         <IconButton
           className={styles.iconButt}
           target="_blank"
