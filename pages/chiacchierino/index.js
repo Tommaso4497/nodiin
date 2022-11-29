@@ -103,7 +103,7 @@ const Chiacchierino = () => {
           />
         </RadioGroup>
       </div>
-       
+
       <div className={styles.wrapperGrid}>
         {chiacchierinoElements
           .filter(
@@ -114,6 +114,7 @@ const Chiacchierino = () => {
           )
           .map((filt) => (
             <SingleCard
+              size={filt.size}
               cat={filt.cat}
               category={filt.category}
               key={filt.id}
