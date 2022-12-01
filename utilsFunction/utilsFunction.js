@@ -341,6 +341,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo Curvo",
     desc: "Completo composto da bracciale e precchini impreziositi con perline bianche",
+    size: {
+      height: 8,
+      width: 3,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Rosso",
@@ -525,6 +533,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo Fiore",
     desc: "Completo composto da bracciale e orecchini, ricamati a forma di fiore e impreziositi in pietra o cristalli.",
+    size: {
+      height: 5,
+      width: 3,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Verde",
@@ -559,6 +575,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Orecchini Fiore",
     desc: "Orecchini ricamati a forma di fiore e impreziositi in pietra o cristalli.",
+    size: {
+      height: 5,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Arancione chiaro",
@@ -598,6 +622,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Orecchini Stella",
     desc: "Orecchini ricamati a forma di stella e impreziositi con pietra.",
+    size: {
+      height: 4,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Azzurro",
@@ -617,6 +649,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Orecchini Margherita",
     desc: "Orecchini ricamati a forma di margherita e impreziositi con strass.",
+    size: {
+      height: "",
+      width: "",
+      diameter: 5,
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Bianco",
@@ -631,6 +671,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Orecchini ghirlanda",
     desc: "Orecchini ricamati a forma di ghirlanda e impreziositi con perline.",
+    size: {
+      height: "",
+      width: "",
+      diameter: 5,
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Multicolor",
@@ -645,6 +693,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Bracciale alla schiava",
     desc: "Bracciale alla schiava impreziosito da cristalli.",
+    size: {
+      height: "",
+      width: "",
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Oro",
@@ -659,6 +715,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Bracciale alla schiava",
     desc: "Bracciale alla schiava impreziosito da cristalli.",
+    size: {
+      height: "",
+      width: "",
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Argento",
@@ -673,6 +737,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo con Rosa",
     desc: "Completo di orecchini e bracciale impreziositi con una rosa in resina.",
+    size: {
+      height: 5,
+      width: 2,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Oro",
@@ -687,6 +759,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Farfalla con rosa.",
     desc: "Orecchini ricamati a forma di farfalla, impreziositi con una rosa in resina.",
+    size: {
+      height: 6,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -785,6 +865,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo Fiorellini",
     desc: "Completo ricamato a forma di fiorellini ed edera.",
+    size: {
+      height: "",
+      width: 4,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Rosso",
@@ -809,6 +897,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo Fiorellini pendenti",
     desc: "Completo ricamato a forma di fiorellini impreziosito con pendenti.",
+    size: {
+      height: 5,
+      width: 3,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Rosso",
@@ -853,6 +949,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Ricamo con Rosa",
     desc: "Orecchini ricamati e impreziositi con una rosa.",
+    size: {
+      height: "",
+      width: "",
+      diameter: 6,
+      lenght: 23,
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Nero",
@@ -867,6 +971,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Albero di Natale ",
     desc: "Orecchini ricamati forma di Albero di Natale con perline colorate.",
+    size: {
+      height: 6,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Verde",
@@ -881,6 +993,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Stella di Natale",
     desc: "Orecchini ricamati forma di Stella di Natale in 3D con perline in oro.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Rosso",
@@ -895,6 +1015,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Rombo con pietre",
     desc: "Orecchini ricamati forma di rombo impreziosito con pietre di diverso colore.",
+    size: {
+      height: 8,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -909,6 +1037,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Rombo con rosa",
     desc: "Orecchini ricamati forma di rombo impreziosito con pietre e una rosa.",
+    size: {
+      height: 8,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -928,6 +1064,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Ondulina",
     desc: "Bracciale ricamato a forma di ondulina impreziosito con perle.",
+    size: {
+      height: "",
+      width: "",
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Rosa",
@@ -952,6 +1096,14 @@ const chiacchierinoElements = [
     id: uuidv4(),
     title: "Completo campane",
     desc: "Completo con orecchini e collane ricamati a forma di campana.",
+    size: {
+      height: 5,
+      width: 3,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
     images: [
       {
         name: "Rosso",
