@@ -1,15 +1,14 @@
 import { Chip, Divider, IconButton, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import styles from "./SingleCard.module.css";
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import InfoDialog from "./InfoDialog";
 import CircleIcon from "@mui/icons-material/Circle";
 import ImageEdit from "./ImageEdit";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import DoneOutlinedIcon from '@mui/icons-material/DoneOutlined';
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-
+import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
+import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 
 const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
   const [openInfo, setOpenInfo] = useState(false);
@@ -28,82 +27,123 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
         <div className={styles.title}>{title}</div>
         <Divider />
         <div className={styles.descriptionWrapper}>{descr}</div>
-        <p style={{ textAlign: "center", fontSize: ".75rem", fontWeight: "600" }}>Scheda tecnica</p>
-        <div>
-          {size?.width &&
-            <p style={{ fontSize: ".8rem" }}>Larghezza: {size?.width}  cm</p>
-          }
-          {size?.height &&
-            <p style={{ fontSize: ".8rem" }}>Altezza: {size?.height} cm</p>
-          }
-          {size?.lenght && <p style={{ fontSize: ".8rem" }}>Lunghezza: {size?.lenght} cm</p>
-          }
-          {size?.diameter && <p style={{ fontSize: ".8rem" }}>Diametro: {size?.diameter} cm</p>
-          }
-          {size?.adjustable &&
-            <div style={{ display: "flex", alignItems: "center", fontSize: ".8rem" }}> Regolabile <DoneOutlinedIcon color="success" fontSize="small" /></div>
-          }
-          {cat === "Ciondolo" ?
-            <div style={{ display: "flex", alignItems: "center", fontSize: ".8rem" }}> Catenina  {size?.chain ? <DoneOutlinedIcon color="success" fontSize="small" /> : <CloseOutlinedIcon color="error" fontSize="small" />}</div>
-            : ""}
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            bottom: matches ? "3rem" : "3rem",
-            display: "grid",
-            gridTemplateColumns: matches
-              ? "repeat(12, 1fr)"
-              : "repeat(7, .5fr)",
-            gap: ".5rem",
-          }}
+        <p
+          style={{ textAlign: "center", fontSize: ".75rem", fontWeight: "600" }}
         >
-          {pics.map((col, i) => (
-            <button
-              key={col?.name}
-              style={{
-                border: "none",
-                backgroundColor: "transparent",
-                cursor: "pointer",
-                padding: "0",
-              }}
-              onClick={() => setSelectedColor(i)}
-            >
-              <Tooltip title={col.name}>
-                {col.color ? (
-                  <CircleIcon
-                    style={{
-                      fill: `${col.color}`,
-                      stroke: selectedColor == i ? "#c9184a" : "gray",
-                      strokeWidth: selectedColor == i ? "3px" : "1px",
-                    }}
-                  />
-                ) : (
-                  <div className={styles.rainbow} style={{ border: selectedColor == i ? "3px solid #c9184a" : "" }} />
-                )}
-              </Tooltip>
-            </button>
-          ))}
-        </div>
-        <div className={styles.footerCard}>
+          Scheda tecnica
+        </p>
+        <div style={{display:"grid", gridTemplateColumns:"1fr 1fr"}}>
           <div>
-            <Tooltip arrow title="Informazioni">
-              <IconButton
-                className={styles.icon}
-                onClick={() => setOpenInfo(true)}
+            {size?.width && (
+              <p style={{ fontSize: ".8rem" }}>Larghezza: {size?.width} cm</p>
+            )}
+            {size?.height && (
+              <p style={{ fontSize: ".8rem" }}>Altezza: {size?.height} cm</p>
+            )}
+            {size?.lenght && (
+              <p style={{ fontSize: ".8rem" }}>Lunghezza: {size?.lenght} cm</p>
+            )}
+            {size?.diameter && (
+              <p style={{ fontSize: ".8rem" }}>Diametro: {size?.diameter} cm</p>
+            )}
+            {size?.adjustable && (
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: ".8rem",
+                }}
               >
-                <InfoOutlinedIcon />
-              </IconButton>
-            </Tooltip>
+                {" "}
+                Regolabile <DoneOutlinedIcon color="success" fontSize="small" />
+              </div>
+            )}
+            {cat === "Ciondolo" ? (
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: ".8rem",
+                }}
+              >
+                {" "}
+                Catenina{" "}
+                {size?.chain ? (
+                  <DoneOutlinedIcon color="success" fontSize="small" />
+                ) : (
+                  <CloseOutlinedIcon color="error" fontSize="small" />
+                )}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
-          <div className={styles.chipWrapper}>
-            <Chip variant="outlined" size="small" color="primary" label={cat} />
-            <Chip
-              variant="outlined"
-              size="small"
-              color="primary"
-              label={category}
-            />
+          <div
+            style={{
+
+              display: "grid",
+              gridTemplateColumns: matches
+                ? "repeat(6, 1fr)"
+                : "repeat(4, 1fr)",
+            }}
+          >
+            {pics.map((col, i) => (
+              <button
+                key={col?.name}
+                style={{
+                  border: "none",
+                  backgroundColor: "transparent",
+                  cursor: "pointer",
+                  padding: "0",
+                }}
+                onClick={() => setSelectedColor(i)}
+              >
+                <Tooltip title={col.name}>
+                  {col.color ? (
+                    <CircleIcon
+                      style={{
+                        fill: `${col.color}`,
+                        stroke: selectedColor == i ? "#c9184a" : "gray",
+                        strokeWidth: selectedColor == i ? "3px" : "1px",
+                      }}
+                    />
+                  ) : (
+                    <div
+                      className={styles.rainbow}
+                      style={{
+                        border: selectedColor == i ? "3px solid #c9184a" : "",
+                      }}
+                    />
+                  )}
+                </Tooltip>
+              </button>
+            ))}
+          </div>
+          <div className={styles.footerCard}>
+            <div>
+              <Tooltip arrow title="Informazioni">
+                <IconButton
+                  className={styles.icon}
+                  onClick={() => setOpenInfo(true)}
+                >
+                  <InfoOutlinedIcon />
+                </IconButton>
+              </Tooltip>
+            </div>
+            <div className={styles.chipWrapper}>
+              <Chip
+                variant="outlined"
+                size="small"
+                color="primary"
+                label={cat}
+              />
+              <Chip
+                variant="outlined"
+                size="small"
+                color="primary"
+                label={category}
+              />
+            </div>
           </div>
         </div>
       </div>
