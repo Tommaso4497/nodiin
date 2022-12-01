@@ -55,7 +55,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
                 }}
               >
                 {" "}
-                Regolabile <DoneOutlinedIcon color="success" fontSize="small" />
+                <DoneOutlinedIcon color="success" fontSize="small" /> Regolabile
               </div>
             )}
             {cat === "Ciondolo" ? (
@@ -66,13 +66,11 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
                   fontSize: ".8rem",
                 }}
               >
-                {" "}
-                Catenina{" "}
                 {size?.chain ? (
                   <DoneOutlinedIcon color="success" fontSize="small" />
                 ) : (
                   <CloseOutlinedIcon color="error" fontSize="small" />
-                )}
+                )}Catenina
               </div>
             ) : (
               ""
