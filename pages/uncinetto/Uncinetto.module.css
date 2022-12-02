@@ -1,4 +1,6 @@
 .wrapperGrid {
+  padding-left: 6rem;
+  padding-right: 6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
