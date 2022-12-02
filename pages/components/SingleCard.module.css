@@ -71,3 +71,9 @@
     rgba(255, 0, 0, 1) 100%
   );
 }
+
+.stats {
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-family: sans-serif;
+}

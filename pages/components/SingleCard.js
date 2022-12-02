@@ -28,11 +28,11 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
         <Divider />
         <div className={styles.descriptionWrapper}>{descr}</div>
         <p
-          style={{ textAlign: "center", fontSize: ".75rem", fontWeight: "600" }}
+          style={{ textAlign: "center", fontSize: ".8rem", fontWeight: "600" }}
         >
           Scheda tecnica
         </p>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+        <div className={styles.stats}>
           <div>
             {size?.width && (
               <p style={{ fontSize: ".8rem" }}>Larghezza: {size?.width} cm</p>
@@ -54,7 +54,6 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
                   fontSize: ".8rem",
                 }}
               >
-                {" "}
                 <DoneOutlinedIcon color="success" fontSize="small" /> Regolabile
               </div>
             )}
@@ -80,9 +79,11 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
           <div
             style={{
               display: "grid",
+              gap:".75rem",
               gridTemplateColumns: matches
-                ? "repeat(6, 1fr)"
-                : "repeat(4, 1fr)",
+                ? "repeat(6, 1.3rem)"
+                : "repeat(4, 1.3rem)",
+                gridTemplateRows:" 1.3rem 1.3rem 1.3rem",
             }}
           >
             {pics.map((col, i) => (
