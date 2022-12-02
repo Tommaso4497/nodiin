@@ -28,7 +28,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
         <Divider />
         <div className={styles.descriptionWrapper}>{descr}</div>
         <p
-          style={{ textAlign: "center", fontSize: ".8rem", fontWeight: "600" }}
+          style={{ textAlign: "center", fontSize: ".8rem", fontWeight: "600", marginTop:"0" }}
         >
           Scheda tecnica
         </p>
