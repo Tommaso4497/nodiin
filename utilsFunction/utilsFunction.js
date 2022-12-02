@@ -647,28 +647,6 @@ const chiacchierinoElements = [
   },
   {
     id: uuidv4(),
-    title: "Orecchini Margherita",
-    desc: "Orecchini ricamati a forma di margherita e impreziositi con strass.",
-    size: {
-      height: "",
-      width: "",
-      diameter: 5,
-      lenght: "",
-      chain: false,
-      adjustable: false,
-    },
-    images: [
-      {
-        name: "Bianco",
-        color: "#fff",
-        imG: orecchiniMargheritaBianca,
-      },
-    ],
-    category: "Chiacchierino",
-    cat: "Orecchini",
-  },
-  {
-    id: uuidv4(),
     title: "Orecchini ghirlanda",
     desc: "Orecchini ricamati a forma di ghirlanda e impreziositi con perline.",
     size: {
@@ -1136,6 +1114,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Rosa",
     desc: "Orecchini fatti con la tecnica dell'uncinetto con mandala in bronzo come base.",
+    size: {
+      height: 5,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Rosso",
@@ -1190,6 +1176,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore a ventaglio",
     desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con perlina brillantinata.",
+    size: {
+      height: 4,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Rosso",
@@ -1219,6 +1213,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore in risalto",
     desc: "Orecchini fatti con la tecnica dell'uncinetto in rilievo e impreziositi con perline.",
+    size: {
+      height: 3,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Rosso",
@@ -1238,6 +1240,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Margherita con strass",
     desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con strass.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Bianco",
@@ -1252,6 +1262,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Cerchi",
     desc: "Orecchini fatti con la tecnica dell'uncinetto e impreziositi con perline e peitre.",
+    size: {
+      height: 6,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Bronzo",
@@ -1266,6 +1284,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Stella di Natale",
     desc: "Orecchini fatti con la tecnica dell'uncinetto a forma di stella di Natale.",
+    size: {
+      height: 3,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Rosso",
@@ -1290,6 +1316,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore in 3D",
     desc: "Orecchini fatti con la tecnica dell'uncinetto a forma di fiore ma in 3D.",
+    size: {
+      height: 4,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Rosso",
@@ -1314,6 +1348,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Cerchio con fiore",
     desc: "Orecchini fatti con la tecnica dell'uncinetto con cristalli ricamati. La lunghezza complessiva è di circa 8 cm.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Verde",
@@ -1338,6 +1380,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiocco di Neve",
     desc: "Orecchini ricamati a forma di Fiocco di Neve impreziositi con cristalli.",
+    size: {
+      height: 4,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -1362,6 +1412,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Sole con nappine",
     desc: "Orecchini ricamati a forma di Sole impreziositi con cristalli e nappine colorate.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -1376,6 +1434,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore con perle",
     desc: "Orecchini ricamati a forma di Fiore e impreziositi con cristalli e perle.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -1390,6 +1456,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Ciondolo Fiore con perle",
     desc: "Ciodnolo ricamato a forma di Fiore e impreziosito con cristalli e perle.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -1404,6 +1478,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Mandala con rosa",
     desc: "Orecchini ricamati a forma di mandala e impreziositi con cristalli e rose.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -1418,6 +1500,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Ciondolo Mandala con rosa",
     desc: "Ciondolo ricamato a forma di Mandala e impreziosito con cristalli e rose.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",
@@ -1432,6 +1522,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Fiore con cristalli",
     desc: "Orecchini ricamati a forma di fiore e impreziositi con cristalli.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Argento",
@@ -1446,6 +1544,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Ciondolo Fiore con cristalli",
     desc: "Ciondolo ricamato a forma di fiore e impreziosito con cristalli.",
+    size: {
+      height: 5,
+      width: 5,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Argento",
@@ -1460,6 +1566,14 @@ const uncinettoElements = [
     id: uuidv4(),
     title: "Rombo con Fiore",
     desc: "Orecchini ricamati a forma di rombo.",
+    size: {
+      height: 4,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
     images: [
       {
         name: "Oro",

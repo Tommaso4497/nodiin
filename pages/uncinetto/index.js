@@ -36,7 +36,15 @@ const Uncinetto = () => {
 
   return (
     <div>
-      <Image src={copertina} alt="crochetBackground" />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Image src={copertina} alt="crochetBackground" />
+      </div>
       <div className={styles.pageTitle}>
         <ImageEdit
           url={sfere}
@@ -111,7 +119,7 @@ const Uncinetto = () => {
           />
         </RadioGroup>
       </div>
-      
+
       <div className={styles.wrapperGrid}>
         {uncinettoElements
           .filter(
@@ -122,6 +130,7 @@ const Uncinetto = () => {
           )
           .map((filt) => (
             <SingleCard
+              size={filt.size}
               cat={filt.cat}
               category={filt.category}
               key={filt.id}
