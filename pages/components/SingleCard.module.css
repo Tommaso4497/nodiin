@@ -17,6 +17,8 @@
 
 .image {
   cursor: zoom-in;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
