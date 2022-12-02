@@ -41,19 +41,7 @@
   );
 }
 
-.all {
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50px;
-  background: white;
-  border: 1px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin-right: 1rem;
-  font-family: sans-serif;
-}
+
 
 @media only screen and (max-width: 899px) {
   .pageTitle {

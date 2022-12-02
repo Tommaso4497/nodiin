@@ -32,7 +32,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
         >
           Scheda tecnica
         </p>
-        <div style={{display:"grid", gridTemplateColumns:"1fr 1fr"}}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
           <div>
             {size?.width && (
               <p style={{ fontSize: ".8rem" }}>Larghezza: {size?.width} cm</p>
@@ -70,7 +70,8 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
                   <DoneOutlinedIcon color="success" fontSize="small" />
                 ) : (
                   <CloseOutlinedIcon color="error" fontSize="small" />
-                )}Catenina
+                )}
+                Catenina
               </div>
             ) : (
               ""
@@ -78,7 +79,6 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
           </div>
           <div
             style={{
-
               display: "grid",
               gridTemplateColumns: matches
                 ? "repeat(6, 1fr)"
@@ -93,6 +93,9 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
                   backgroundColor: "transparent",
                   cursor: "pointer",
                   padding: "0",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
                 onClick={() => setSelectedColor(i)}
               >
