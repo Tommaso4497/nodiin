@@ -28,7 +28,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
         <Divider />
         <div className={styles.descriptionWrapper}>{descr}</div>
         <p
-          style={{ textAlign: "center", fontSize: ".8rem", fontWeight: "600", marginTop:".5rem" }}
+          style={{ textAlign: "center", fontSize: ".8rem", fontWeight: "600", marginTop: ".5rem", fontFamily: "sans-serif" }}
         >
           Scheda tecnica
         </p>
@@ -79,11 +79,11 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
           <div
             style={{
               display: "grid",
-              gap:".75rem",
+              gap: ".75rem",
               gridTemplateColumns: matches
                 ? "repeat(6, 1.3rem)"
                 : "repeat(4, 1.3rem)",
-                gridTemplateRows:" 1.3rem 1.3rem 1.3rem",
+              gridTemplateRows: " 1.3rem 1.3rem 1.3rem",
             }}
           >
             {pics.map((col, i) => (
