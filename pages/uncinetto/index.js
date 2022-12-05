@@ -9,7 +9,7 @@ import {
 import React, { useEffect, useState } from "react";
 import copertina from "../../images/copertina.jpeg";
 import styles from "./Uncinetto.module.css";
-import { uncinettoElements } from "../../utilsFunction/utilsFunction";
+import { elements, uncinettoElements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
@@ -121,9 +121,10 @@ const Uncinetto = () => {
       </div>
 
       <div className={styles.wrapperGrid}>
-        {uncinettoElements
+        {elements
           .filter(
             (elem) =>
+              (elem.category === "Uncinetto") &&
               (elem.title.toLowerCase().match(search.toLowerCase()) ||
                 elem.desc.toLowerCase().match(search.toLowerCase())) &&
               elem.cat.toLowerCase().match(categorySearch.toLowerCase())

@@ -11,7 +11,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import styles from "./Chiacchierino.module.css";
-import { chiacchierinoElements } from "../../utilsFunction/utilsFunction";
+import { chiacchierinoElements, elements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
@@ -36,7 +36,7 @@ const Chiacchierino = () => {
 
   return (
     <div>
-      <div style={{display:"flex",alignItems:"center", justifyContent:"center"}}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         <Image src={copertina} alt="chiacchierinoBackground" />
       </div>
       <div className={styles.pageTitle}>
@@ -107,9 +107,10 @@ const Chiacchierino = () => {
       </div>
 
       <div className={styles.wrapperGrid}>
-        {chiacchierinoElements
+        {elements
           .filter(
             (elem) =>
+              (elem.category === "Chiacchierino") &&
               (elem.title.toLowerCase().match(search.toLowerCase()) ||
                 elem.desc.toLowerCase().match(search.toLowerCase())) &&
               elem.cat.toLowerCase().match(categorySearch.toLowerCase())
