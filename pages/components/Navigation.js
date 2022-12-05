@@ -19,6 +19,7 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from '@mui/icons-material/Twitter';
 import { menuElement } from "../../utilsFunction/utilsFunction";
 import Image from "next/image";
 import logo from "../../images/logo.png";
@@ -96,7 +97,7 @@ const Navigation = () => {
           </List>
           <div className={styles.footerWrapper}>
             <a className={styles.iconLinkDrawer} rel="noopener noreferrer">
-              <FacebookIcon fontSize="large" style={{ color: "#fff" }} />
+              <FacebookIcon style={{ color: "#fff" }} />
             </a>
 
             <a
@@ -105,7 +106,7 @@ const Navigation = () => {
               rel="noopener noreferrer"
               href="https://www.instagram.com/nodiinchiacchierino/"
             >
-              <InstagramIcon fontSize="large" style={{ color: "#fff" }} />
+              <InstagramIcon style={{ color: "#fff" }} />
             </a>
             <a
               className={styles.iconLinkDrawer}
@@ -113,7 +114,15 @@ const Navigation = () => {
               rel="noopener noreferrer"
               href="https://t.me/+pvDtZ4zVIYk3OGU8"
             >
-              <TelegramIcon fontSize="large" style={{ color: "#fff" }} />
+              <TelegramIcon style={{ color: "#fff" }} />
+            </a>
+            <a
+              className={styles.iconLinkDrawer}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://t.me/+pvDtZ4zVIYk3OGU8"
+            >
+              <TwitterIcon style={{ color: "#fff" }} />
             </a>
           </div>
         </Drawer>

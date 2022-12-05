@@ -1,8 +1,8 @@
-import { IconButton } from "@mui/material";
+import { IconButton, SvgIcon } from "@mui/material";
 import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from "@mui/icons-material/Telegram";
 import styles from "./Footer.module.css";
 import { useRouter } from "next/router";
@@ -14,7 +14,7 @@ const Footer = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <div className={styles.footerWrapper}
-     
+
     >
       <p className={styles.footerTitle}>
         Seguici sui social per le ultime creazioni!
@@ -43,6 +43,13 @@ const Footer = () => {
           href="https://t.me/+pvDtZ4zVIYk3OGU8"
         >
           <TelegramIcon fontSize={matches ? "large" : "medium"} />
+        </IconButton>
+        <IconButton
+          className={styles.iconButt}
+          target="_blank"
+          href="https://twitter.com/ndChiacchierino"
+        >
+          <TwitterIcon fontSize={matches ? "large" : "medium"} />
         </IconButton>
       </div>
     </div>
