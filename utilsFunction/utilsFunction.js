@@ -101,8 +101,8 @@ import stellaPietraAzzurra from "../images/chiacchierino/stellaPietraAzzurra.jpg
 import stellaPietraRosa from "../images/chiacchierino/stellaPietraRosa.jpg";
 import ghirlandaColorata from "../images/chiacchierino/ghirlandaColorata.jpg";
 import orecchiniM from "../images/chiacchierino/orecchiniM.jpg";
-import mandalaBronzo from "../images/chiacchierino/mandalaBronzo.png";
-import mandalaVerdeOro from "../images/chiacchierino/mandalaVerdeOro.png";
+import mandalaBronzo from "../images/chiacchierino/mandalaBronzo.jpg";
+import mandalaVerdeOro from "../images/chiacchierino/mandalaVerdeOro.jpg";
 import orecchiniOroRosso from "../images/chiacchierino/orecchiniOroRosso.jpg";
 import orecchiniFioreBianco from "../images/chiacchierino/orecchiniFioreBianco.jpg";
 import braccialeRossoOro from "../images/chiacchierino/braccialeRossoOro.jpg";
