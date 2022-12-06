@@ -47,6 +47,7 @@ import romboArgentoRosa from "../images/chiacchierino/romboArgentoRosa.jpg";
 import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
 import angeloFortunaArgento from "../images/chiacchierino/angeloFortunaArgento.jpeg";
 import completoOroRosa from "../images/chiacchierino/completoOroRosa.jpg";
+import completoOroBianco from "../images/chiacchierino/completoOroBianco.jpg";
 import completoVentaglioBianco from "../images/chiacchierino/completoVentaglioBianco.jpg";
 import completoVentaglioRosso from "../images/chiacchierino/completoVentaglioRosso.jpg";
 import completoVentaglioNero from "../images/chiacchierino/completoVentaglioNero.jpg";
@@ -128,6 +129,14 @@ import braccialeFiloNeroRosso from "../images/chiacchierino/braccialeFiloNeroRos
 import alberelloBianco from "../images/chiacchierino/alberelloBianco.jpg";
 import alberelloOro from "../images/chiacchierino/alberelloOro.jpg";
 import alberelloRosso from "../images/chiacchierino/alberelloRosso.jpg";
+import orecchiniOroNero from "../images/chiacchierino/orecchiniOroNero.jpeg";
+import orecchiniOroNRosso from "../images/chiacchierino/orecchiniOroNRosso.jpg";
+import braccialeFioriPietra from "../images/chiacchierino/braccialeFioriPietra.jpg";
+import orecchiniFioriPietra from "../images/chiacchierino/orecchiniFioriPietra.jpg";
+import quadratiOro from "../images/chiacchierino/quadratiOro.jpg";
+import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
+import orecchiniArgentoMetallizz from "../images/chiacchierino/orecchiniArgentoMetallizz.jpg";
+import orecchiniRossoMetallizz from "../images/chiacchierino/orecchiniRossoMetalliz.jpg";
 
 const COMMON = 0;
 const SPECIAL = 1;
@@ -221,6 +230,34 @@ const elements = [
         name: "Bianco",
         color: "#fff",
         imG: orecchiniFioreBianco,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini metallizzati.",
+    type: LAST,
+    desc: "Orecchini ricamati in chiacchierino con filati metallizzati e impreziositi con pietre.",
+    size: {
+      height: 6,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: orecchiniArgentoMetallizz,
+      },
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: orecchiniRossoMetallizz,
       },
     ],
     category: "Chiacchierino",
@@ -657,6 +694,98 @@ const elements = [
   },
   {
     id: uuidv4(),
+    type: LAST,
+    title: "Bracciale in Pietra",
+    desc: "Bracciale ricamato a mano e impreziosito con pietre di diversa grandezza e colore.",
+    size: {
+      height: "",
+      width: "",
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: braccialeFioriPietra,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Bracciale",
+  },
+  {
+    id: uuidv4(),
+    type: LAST,
+    title: "Orecchini in Pietra",
+    desc: "Orecchini ricamati a mano e impreziosito con pietre di diversa grandezza e colore.",
+    size: {
+      height: 3,
+      width: 6,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: orecchiniFioriPietra,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: LAST,
+    title: "Orecchini quadrati",
+    desc: "Orecchini impreziositi con pietre di diversa grandezza e colore.",
+    size: {
+      height: 3,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: quadratiOro,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: LAST,
+    title: "Fiori in cascata",
+    desc: "Orecchini impreziositi con pietre di diversa grandezza e colore.",
+    size: {
+      height: 7,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Argento",
+        color: "#c0c0c0",
+        imG: orecchiniFioreCascata,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
     type: COMMON,
     title: "Bracciale alla schiava",
     desc: "Bracciale alla schiava impreziosito da cristalli.",
@@ -716,13 +845,69 @@ const elements = [
     },
     images: [
       {
-        name: "Oro",
-        color: "#ffd100",
+        name: "Bianco",
+        color: "#fff",
+        imG: completoOroBianco,
+      },
+      {
+        name: "Rosa",
+        color: "#ffc0cb",
         imG: completoOroRosa,
       },
     ],
     category: "Chiacchierino",
     cat: "Completo",
+  },
+  {
+    id: uuidv4(),
+    type: COMMON,
+    title: "Oro Nero",
+    desc: "Orecchini ricamati e impreziositi con pietre e cristalli neri.",
+    size: {
+      height: 6,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Nero",
+        color: "#000",
+        imG: orecchiniOroNero,
+      },
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: orecchiniOroNRosso,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: COMMON,
+    title: "Oro Rosso",
+    desc: "Orecchini ricamati e impreziositi con pietre e cristalli rossi.",
+    size: {
+      height: 6,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: orecchiniOroNRosso,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
   },
   {
     id: uuidv4(),
