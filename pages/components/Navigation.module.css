@@ -12,6 +12,16 @@
    display: none
  }
 
+ .selectedButton {
+   background-color: #c9184a;
+   color: "#fff"
+ }
+
+ .notSelectedButton {
+   background-color: #fff;
+   color: #c9184a;
+ }
+
  @media only screen and (max-width: 768px) {
    .view {
      display: block;

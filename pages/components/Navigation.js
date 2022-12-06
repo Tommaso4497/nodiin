@@ -27,12 +27,15 @@ import logo from "../../images/logo.png";
 const Navigation = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [isSelected, setIsSelected] = useState(0);
 
   const elementWeb = menuElement.map((element) => (
     <Button
+      style={{ backgroundColor: element?.id === isSelected ? "#c9184a" : "#fff", color: element?.id === isSelected ? "#fff" : "#c9184a" }}
       key={element?.id}
       onClick={() => {
         router.push(`${element?.path}`);
+        setIsSelected(element?.id);
       }}
     >
       {element.section}

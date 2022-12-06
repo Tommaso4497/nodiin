@@ -135,19 +135,19 @@ const LAST = 2;
 
 const menuElement = [
   {
-    id: "0",
+    id: 0,
     section: "Home",
     path: "/",
     icon: <HomeIcon sx={{ fontSize: 30 }} />,
   },
   {
-    id: "1",
+    id: 1,
     section: "Chiacchierino",
     path: "chiacchierino/",
     icon: <CollectionsIcon />,
   },
   {
-    id: "2",
+    id: 2,
     section: "Uncinetto",
     path: "uncinetto/",
     icon: <CollectionsIcon />,
