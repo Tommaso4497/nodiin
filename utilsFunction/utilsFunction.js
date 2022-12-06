@@ -1243,6 +1243,29 @@ const elements = [
   {
     id: uuidv4(),
     type: SPECIAL,
+    title: "Agrifoglio",
+    desc: "Orecchini fatti con la tecnica dell'uncinetto a forma di agrifoglio.",
+    size: {
+      height: 4,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Verde",
+        color: "#0f0",
+        imG: agrifoglio,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: SPECIAL,
     title: "Fiore in risalto",
     desc: "Orecchini fatti con la tecnica dell'uncinetto in rilievo e impreziositi con perline.",
     size: {
