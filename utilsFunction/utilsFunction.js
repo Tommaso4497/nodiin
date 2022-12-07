@@ -72,8 +72,8 @@ import completoFiorellinoBianco from "../images/chiacchierino/completoFiorellino
 import ricamoRosa from "../images/chiacchierino/ricamoRosa.jpg";
 import completoCampaneNero from "../images/chiacchierino/completoCampaneNero.jpg";
 import completoCampaneRosso from "../images/chiacchierino/completoCampaneRosso.jpg";
-import completoCampanaBianco from "../images/chiacchierino/completoCampanaBianco.jpg";
-import completoCampanaBeige from "../images/chiacchierino/completoCampanaBeige.jpg";
+import completoCampanellaBianco from "../images/chiacchierino/completoCampanellaBianco.jpg";
+import completoCampanellaBeige from "../images/chiacchierino/completoCampanellaBeige.jpg";
 import alberiNataleMulticolor from "../images/chiacchierino/alberiNataleMulticolor.JPG";
 import stellaNataleGrande from "../images/chiacchierino/stellaNataleGrande.jpg";
 import orecchiniRomboOro from "../images/chiacchierino/orecchiniRomboOro.jpg";
@@ -137,6 +137,7 @@ import quadratiOro from "../images/chiacchierino/quadratiOro.jpg";
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 import orecchiniArgentoMetallizz from "../images/chiacchierino/orecchiniArgentoMetallizz.jpg";
 import orecchiniRossoMetallizz from "../images/chiacchierino/orecchiniRossoMetalliz.jpg";
+import alberoNataleColorato from "../images/uncinetto/alberoNataleColorato.jpg";
 
 const COMMON = 0;
 const SPECIAL = 1;
@@ -205,6 +206,29 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini Albero di Natale",
+    type: SPECIAL,
+    desc: "Orecchini ricamati a forma di albero di Natale.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: alberoNataleColorato,
+      },
+    ],
+    category: "Uncinetto",
     cat: "Orecchini",
   },
   {
@@ -1313,12 +1337,12 @@ const elements = [
       {
         name: "Bianco",
         color: "#fff",
-        imG: completoCampanaBianco,
+        imG: completoCampanellaBianco,
       },
       {
         name: "Beige",
         color: "#E1C699",
-        imG: completoCampanaBeige,
+        imG: completoCampanellaBeige,
       },
     ],
     category: "Chiacchierino",
