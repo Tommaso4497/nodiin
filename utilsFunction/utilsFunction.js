@@ -75,6 +75,8 @@ import completoCampaneRosso from "../images/chiacchierino/completoCampaneRosso.j
 import completoCampanellaBianco from "../images/chiacchierino/completoCampanellaBianco.jpg";
 import completoCampanellaBeige from "../images/chiacchierino/completoCampanellaBeige.jpg";
 import alberiNataleMulticolor from "../images/chiacchierino/alberiNataleMulticolor.JPG";
+import alberoNataleRosso from "../images/chiacchierino/alberoNataleRosso.jpg";
+import alberoNataleOro from "../images/chiacchierino/alberoNataleOro.jpg";
 import stellaNataleGrande from "../images/chiacchierino/stellaNataleGrande.jpg";
 import orecchiniRomboOro from "../images/chiacchierino/orecchiniRomboOro.jpg";
 import orecchiniRomboRosa from "../images/chiacchierino/orecchiniRomboRosa.jpg";
@@ -137,7 +139,12 @@ import quadratiOro from "../images/chiacchierino/quadratiOro.jpg";
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 import orecchiniArgentoMetallizz from "../images/chiacchierino/orecchiniArgentoMetallizz.jpg";
 import orecchiniRossoMetallizz from "../images/chiacchierino/orecchiniRossoMetalliz.jpg";
+import orecchiniAngelo from "../images/chiacchierino/orecchiniAngelo.jpg";
+import completoStellaNatale from "../images/chiacchierino/completoStellaNatale.jpg";
+import fioccoBianco from "../images/chiacchierino/fioccoBianco.jpg";
+import fioccoRosso from "../images/chiacchierino/fioccoRosso.jpg";
 import alberoNataleColorato from "../images/uncinetto/alberoNataleColorato.jpg";
+import babboNataleCompleto from "../images/uncinetto/babboNataleCompleto.jpg";
 
 const COMMON = 0;
 const SPECIAL = 1;
@@ -856,6 +863,29 @@ const elements = [
   },
   {
     id: uuidv4(),
+    type: SPECIAL,
+    title: "Completo Babbo Natale ",
+    desc: "Completo ricamati forma di Babbo Natale.",
+    size: {
+      height: 4,
+      width: 2,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: babboNataleCompleto,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Completi",
+  },
+  {
+    id: uuidv4(),
     type: COMMON,
     title: "Completo con Rosa",
     desc: "Completo di orecchini e bracciale impreziositi con una rosa in resina.",
@@ -1173,6 +1203,80 @@ const elements = [
         name: "Verde",
         color: "#0f0",
         imG: alberiNataleMulticolor,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: SPECIAL,
+    title: "Albero di Natale Rosso",
+    desc: "Orecchini ricamati forma di Albero di Natale con perline rosse.",
+    size: {
+      height: 6,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: alberoNataleRosso,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: SPECIAL,
+    title: "Albero di Natale in Oro",
+    desc: "Orecchini ricamati forma di Albero di Natale con perline e catenella in oro.",
+    size: {
+      height: 6,
+      width: 4,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Oro",
+        color: "#ffd100",
+        imG: alberoNataleOro,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: SPECIAL,
+    title: "Fiocco",
+    desc: "Orecchini ricamati forma di fiocco.",
+    size: {
+      height: 2,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: fioccoBianco,
+      },
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: fioccoRosso,
       },
     ],
     category: "Chiacchierino",
@@ -1545,6 +1649,52 @@ const elements = [
     ],
     category: "Uncinetto",
     cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: SPECIAL,
+    title: "Angelo",
+    desc: "Orecchini ricamati forma di Angelo.",
+    size: {
+      height: 4,
+      width: 3,
+      diameter: "",
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Bianco",
+        color: "#fff",
+        imG: orecchiniAngelo,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    type: SPECIAL,
+    title: "Stella di Natale",
+    desc: "Completo di bracciale, anello e orecchini a forma di stella di Natale con applicazioni in bronzo",
+    size: {
+      height: 6,
+      width: 3,
+      diameter: "",
+      lenght: 23,
+      chain: false,
+      adjustable: true,
+    },
+    images: [
+      {
+        name: "Rosso",
+        color: "#f00",
+        imG: completoStellaNatale,
+      },
+    ],
+    category: "Chiacchierino",
+    cat: "Completo",
   },
   {
     id: uuidv4(),

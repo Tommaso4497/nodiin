@@ -41,7 +41,7 @@ export default function Home() {
   const responsiveCard = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -185,6 +185,7 @@ export default function Home() {
               pics={elem.images}
               descr={elem.desc}
               cat={elem.cat}
+              size={elem.size}
             ></SingleCard>
           ))}
         </Carousel>
@@ -203,6 +204,7 @@ export default function Home() {
               pics={elem.images}
               descr={elem.desc}
               cat={elem.cat}
+              size={elem.size}
             ></SingleCard>
           ))}
         </Carousel>
