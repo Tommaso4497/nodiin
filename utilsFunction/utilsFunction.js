@@ -18,7 +18,7 @@ import fioccoNeveArgentoNero from "../images/uncinetto/fioccoNeveArgentoNero.jpg
 import stellaOroBlu from "../images/uncinetto/stellaOroBlu.jpg";
 import medaglioneFioccoArgentoVerde from "../images/uncinetto/medaglioneFioccoArgentoVerde.jpg";
 import completoBN from "../images/uncinetto/completoBN.jpg";
-import agrifoglio from "../images/uncinetto/agrifoglio.jpg";
+import agrifoglio from "../images/chiacchierino/agrifoglio.jpg";
 import rosaArancione from "../images/uncinetto/rosaArancione.png";
 import rosaBianca from "../images/uncinetto/rosaBianca.png";
 import rosaRossa from "../images/uncinetto/rosaRossa.png";
@@ -235,7 +235,7 @@ const elements = [
         imG: alberoNataleColorato,
       },
     ],
-    category: "Uncinetto",
+    category: "Chiacchierino",
     cat: "Orecchini",
   },
   {
@@ -1573,7 +1573,7 @@ const elements = [
         imG: agrifoglio,
       },
     ],
-    category: "Uncinetto",
+    category: "Chiacchierino",
     cat: "Orecchini",
   },
   {
