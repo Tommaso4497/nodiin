@@ -11,7 +11,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import styles from "./Chiacchierino.module.css";
-import { chiacchierinoElements, elements } from "../../utilsFunction/utilsFunction";
+import { elements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
