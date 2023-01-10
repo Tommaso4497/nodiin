@@ -14,7 +14,6 @@ import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import SearchIcon from "@mui/icons-material/Search";
-import sfere from "../../images/christmasImage/sfere.svg";
 import BackToTop from "../components/BackToTop";
 import ImageEdit from "../components/ImageEdit";
 import Image from "next/image";
@@ -46,17 +45,7 @@ const Uncinetto = () => {
         <Image src={copertina} alt="crochetBackground" />
       </div>
       <div className={styles.pageTitle}>
-        <ImageEdit
-          url={sfere}
-          w={matches ? "" : "30"}
-          h={matches ? "" : "30"}
-        />
         <p style={{ marginBlock: "0" }}>Uncinetto</p>
-        <ImageEdit
-          url={sfere}
-          w={matches ? "" : "30"}
-          h={matches ? "" : "30"}
-        />
       </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
@@ -124,7 +113,7 @@ const Uncinetto = () => {
         {elements
           .filter(
             (elem) =>
-              (elem.category === "Uncinetto") &&
+              elem.category === "Uncinetto" &&
               (elem.title.toLowerCase().match(search.toLowerCase()) ||
                 elem.desc.toLowerCase().match(search.toLowerCase())) &&
               elem.cat.toLowerCase().match(categorySearch.toLowerCase())

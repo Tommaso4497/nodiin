@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 
+
 const Footer = () => {
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -38,7 +39,7 @@ const Footer = () => {
           <EmailOutlinedIcon fontSize={matches ? "large" : "medium"} />
         </IconButton> */}
         <IconButton
-          className={styles.iconButt}
+          // className={styles.iconButt}
           target="_blank"
           href="https://t.me/+pvDtZ4zVIYk3OGU8"
         >

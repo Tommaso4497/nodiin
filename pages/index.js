@@ -16,10 +16,6 @@ import copertina4 from "../images/cover/copertina4.jpg";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import { useRouter } from "next/router";
-import gooseberry from "../images/christmasImage/gooseberry.svg";
-import box from "../images/christmasImage/box.svg";
-import hat from "../images/christmasImage/hat.svg";
-import sfere from "../images/christmasImage/sfere.svg";
 import BackToTop from "./components/BackToTop";
 import ImageEdit from "./components/ImageEdit";
 
@@ -149,9 +145,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.pageTitle}>
-        <ImageEdit url={gooseberry} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
-        <ImageEdit url={gooseberry} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
       <div className={styles.headerCarousel}>
         <Carousel
@@ -170,7 +164,7 @@ export default function Home() {
           <Image src={copertina1} placeholder="blur" alt="carouselImage" />
         </Carousel>
       </div>
-      <div className={styles.subtitleWrapper}>
+      {/* <div className={styles.subtitleWrapper}>
         <p className={styles.subtitle}>  Gioielli Natalizi</p>
         <ImageEdit url={box} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
@@ -189,9 +183,8 @@ export default function Home() {
             ></SingleCard>
           ))}
         </Carousel>
-      </div>
+      </div> */}
       <div className={styles.subtitleWrapper}>
-        <ImageEdit url={sfere} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
         <p className={styles.paragraph}>Ultime Creazioni!</p>
       </div>
       <div className={styles.carouselWrapper}>
@@ -213,7 +206,6 @@ export default function Home() {
         <p className={styles.paragraph}>
           Per altre creazioni visita i nostri cataloghi!
         </p>
-        <ImageEdit url={hat} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
       <div className={styles.gridWrapper}>
         <div

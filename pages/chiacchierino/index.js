@@ -8,7 +8,6 @@ import {
   OutlinedInput,
   Radio,
   RadioGroup,
-  Tooltip,
 } from "@mui/material";
 import styles from "./Chiacchierino.module.css";
 import { elements } from "../../utilsFunction/utilsFunction";
@@ -16,7 +15,6 @@ import SingleCard from "../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import BackToTop from "../components/BackToTop";
-import tree from "../../images/christmasImage/tree.svg";
 import ImageEdit from "../components/ImageEdit";
 
 const Chiacchierino = () => {
@@ -40,9 +38,7 @@ const Chiacchierino = () => {
         <Image src={copertina} alt="chiacchierinoBackground" />
       </div>
       <div className={styles.pageTitle}>
-        <ImageEdit url={tree} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
         <p style={{ marginBlock: "0" }}>Chiacchierino</p>
-        <ImageEdit url={tree} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
       </div>
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!
