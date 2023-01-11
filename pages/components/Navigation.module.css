@@ -37,6 +37,7 @@
      margin: 0 1rem 0 1rem;
      display: flex;
      justify-content: space-between;
+     padding-block: .125rem;
    }
  }
 

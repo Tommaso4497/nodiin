@@ -169,6 +169,12 @@ const menuElement = [
     path: "uncinetto/",
     icon: <CollectionsIcon />,
   },
+  // {
+  //   id: 3,
+  //   section: "Amigrumi",
+  //   path: "amigrumi/",
+  //   icon: <CollectionsIcon />,
+  // },
 ];
 
 const elements = [
