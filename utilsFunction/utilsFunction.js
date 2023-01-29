@@ -146,6 +146,14 @@ import fioccoRosso from "../images/chiacchierino/fioccoRosso.jpg";
 import alberoNataleColorato from "../images/uncinetto/alberoNataleColorato.jpg";
 import babboNataleCompleto from "../images/uncinetto/babboNataleCompleto.jpg";
 
+import draghetto from "../images/amigrumi/draghetto.jpg"
+import draghetto1 from "../images/amigrumi/draghetto1.jpg"
+import polipetto from "../images/amigrumi/polipetto.jpg"
+import polipetto1 from "../images/amigrumi/polipetto1.jpg"
+import pinguino from "../images/amigrumi/pinguino.jpg"
+import margheritaA from "../images/amigrumi/margherita.jpg"
+import minionsBall from "../images/amigrumi/minions.jpg"
+
 const COMMON = 0;
 const SPECIAL = 1;
 const LAST = 2;
@@ -220,6 +228,131 @@ const elements = [
     ],
     category: "Chiacchierino",
     cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Draghetto",
+    type: COMMON,
+    desc: "Draghetto in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: draghetto,
+      },
+      {
+        name: "Profilo",
+        color: "white",
+        imG: draghetto1,
+      }
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Polipetto",
+    type: COMMON,
+    desc: "Polipetto con fiocco in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: polipetto,
+      },
+      {
+        name: "Profilo",
+        color: "white",
+        imG: polipetto1,
+      }
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Pinguino",
+    type: COMMON,
+    desc: "Pinguino in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: pinguino,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Margherita",
+    type: COMMON,
+    desc: "Margerita in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: margheritaA,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Pallina Minions",
+    type: COMMON,
+    desc: "Minions a forma di pallina in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: minionsBall,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
   },
   {
     id: uuidv4(),

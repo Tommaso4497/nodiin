@@ -57,7 +57,7 @@ const SingleCard = ({ title, pics = [], descr, category, cat, size }) => {
                 <DoneOutlinedIcon color="success" fontSize="small" /> Regolabile
               </div>
             )}
-            {cat === "Ciondolo" ? (
+            {(cat === "Ciondolo" || cat === "Portachiavi") ? (
               <div
                 style={{
                   display: "flex",
