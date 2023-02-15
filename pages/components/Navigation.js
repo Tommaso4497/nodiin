@@ -99,7 +99,10 @@ const Navigation = () => {
             {elementsMobile}
           </List>
           <div className={styles.footerWrapper}>
-            <a className={styles.iconLinkDrawer} rel="noopener noreferrer">
+            <a className={styles.iconLinkDrawer}
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100088005822575">
               <FacebookIcon style={{ color: "#fff" }} />
             </a>
 
