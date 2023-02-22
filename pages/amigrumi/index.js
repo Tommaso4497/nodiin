@@ -79,24 +79,6 @@ const Amigrumi = () => {
           padding: matches ? "0rem" : "1rem",
         }}
       >
-        <RadioGroup
-          row
-          value={categorySearch}
-          onChange={(e) => setCategorySearch(e.target.value)}
-        >
-          <FormControlLabel value="" control={<Radio />} label="Tutto" />
-          <FormControlLabel
-            value="Portachiavi"
-            control={<Radio />}
-            label="Portachiavi"
-          />
-          <FormControlLabel
-            value="Decorazione"
-            control={<Radio />}
-            label="Decorazione"
-          />
-         
-        </RadioGroup>
       </div>
 
       <div className={styles.wrapperGrid}>

@@ -158,6 +158,10 @@ import polipetti from "../images/amigrumi/polipetti.jpeg";
 import panda from "../images/amigrumi/panda.jpeg";
 import minionsBall from "../images/amigrumi/pallinaminions.jpeg";
 import minions3 from "../images/amigrumi/minions3.jpeg";
+import minions4 from "../images/amigrumi/minions4.jpeg";
+import smile from "../images/amigrumi/smile.jpeg";
+import spring from "../images/amigrumi/spring.jpeg";
+import draghetto from "../images/amigrumi/draghetto.jpeg";
 
 const COMMON = 0;
 const SPECIAL = 1;
@@ -466,7 +470,7 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "Pallina Minions 2",
+    title: "Pallina Minions II Modello",
     type: COMMON,
     desc: "Minions a forma di pallina in Amigrumi.",
     size: {
@@ -491,7 +495,7 @@ const elements = [
     id: uuidv4(),
     title: "Minions",
     type: COMMON,
-    desc: "Minions  in Amigrumi.",
+    desc: "Minions in Amigrumi.",
     size: {
       height: "4",
       width: "4",
@@ -505,6 +509,98 @@ const elements = [
         name: "Frontale",
         color: "white",
         imG: minions3,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Primavera",
+    type: COMMON,
+    desc: "Margherita e ape in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: spring,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Draghetto",
+    type: COMMON,
+    desc: "Draghetto in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: draghetto,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Minions II Modello",
+    type: COMMON,
+    desc: "Minions  in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: minions4,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Smile",
+    type: COMMON,
+    desc: "Smile  in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: smile,
       },
     ],
     category: "Amigrumi",
