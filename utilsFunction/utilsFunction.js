@@ -146,13 +146,18 @@ import fioccoRosso from "../images/chiacchierino/fioccoRosso.jpg";
 import alberoNataleColorato from "../images/uncinetto/alberoNataleColorato.jpg";
 import babboNataleCompleto from "../images/uncinetto/babboNataleCompleto.jpg";
 
-import draghetto from "../images/amigrumi/draghetto.jpg"
-import draghetto1 from "../images/amigrumi/draghetto1.jpg"
-import polipetto from "../images/amigrumi/polipetto.jpg"
-import polipetto1 from "../images/amigrumi/polipetto1.jpg"
-import pinguino from "../images/amigrumi/pinguino.jpg"
-import margheritaA from "../images/amigrumi/margherita.jpg"
-import minionsBall from "../images/amigrumi/minions.jpg"
+import pokeball from "../images/amigrumi/pokeball.jpeg";
+import pallinaMinions from "../images/amigrumi/pallina_minions.jpeg";
+import polipetto from "../images/amigrumi/polipetto.jpeg";
+import pinguino from "../images/amigrumi/pinguino.png";
+import balenottere from "../images/amigrumi/balenottere.jpeg";
+import smileHearts from "../images/amigrumi/smileHearts.jpeg";
+import orsetto from "../images/amigrumi/orsetto.jpeg";
+import polipi from "../images/amigrumi/polipi.jpeg";
+import polipetti from "../images/amigrumi/polipetti.jpeg";
+import panda from "../images/amigrumi/panda.jpeg";
+import minionsBall from "../images/amigrumi/pallinaminions.jpeg";
+import minions3 from "../images/amigrumi/minions3.jpeg";
 
 const COMMON = 0;
 const SPECIAL = 1;
@@ -231,9 +236,9 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "Draghetto",
+    title: "Pallina Minions",
     type: COMMON,
-    desc: "Draghetto in Amigrumi.",
+    desc: "Pallina dei Minions.",
     size: {
       height: "4",
       width: "4",
@@ -246,13 +251,31 @@ const elements = [
       {
         name: "Frontale",
         color: "white",
-        imG: draghetto,
+        imG: pallinaMinions,
       },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Pokèball",
+    type: COMMON,
+    desc: "Pokèball.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
       {
-        name: "Profilo",
+        name: "Frontale",
         color: "white",
-        imG: draghetto1,
-      }
+        imG: pokeball,
+      },
     ],
     category: "Amigrumi",
     cat: "Portachiavi",
@@ -276,11 +299,6 @@ const elements = [
         color: "white",
         imG: polipetto,
       },
-      {
-        name: "Profilo",
-        color: "white",
-        imG: polipetto1,
-      }
     ],
     category: "Amigrumi",
     cat: "Portachiavi",
@@ -310,9 +328,9 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "Margherita",
+    title: "Polipi",
     type: COMMON,
-    desc: "Margerita in Amigrumi.",
+    desc: "Polipi in Amigrumi.",
     size: {
       height: "4",
       width: "4",
@@ -325,7 +343,7 @@ const elements = [
       {
         name: "Frontale",
         color: "white",
-        imG: margheritaA,
+        imG: polipi,
       },
     ],
     category: "Amigrumi",
@@ -333,7 +351,122 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "Pallina Minions",
+    title: "Polipetti",
+    type: COMMON,
+    desc: "Polipetti in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: polipetti,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Panda",
+    type: COMMON,
+    desc: "Panda in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: panda,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Balenottere",
+    type: COMMON,
+    desc: "Balenottere in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: balenottere,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Orsetto",
+    type: COMMON,
+    desc: "Orsetto in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: orsetto,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Smile",
+    type: COMMON,
+    desc: "Smile in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: smileHearts,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Pallina Minions 2",
     type: COMMON,
     desc: "Minions a forma di pallina in Amigrumi.",
     size: {
@@ -349,6 +482,29 @@ const elements = [
         name: "Frontale",
         color: "white",
         imG: minionsBall,
+      },
+    ],
+    category: "Amigrumi",
+    cat: "Portachiavi",
+  },
+  {
+    id: uuidv4(),
+    title: "Minions",
+    type: COMMON,
+    desc: "Minions  in Amigrumi.",
+    size: {
+      height: "4",
+      width: "4",
+      diameter: "",
+      lenght: "",
+      chain: true,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Frontale",
+        color: "white",
+        imG: minions3,
       },
     ],
     category: "Amigrumi",
@@ -464,7 +620,7 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
-    cat: "Bracciali",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -497,7 +653,7 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
-    cat: "Bracciali",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -520,7 +676,7 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
-    cat: "Bracciali",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -596,7 +752,7 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
-    cat: "Bracciali",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -657,7 +813,7 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
-    cat: "Bracciali",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
@@ -690,7 +846,7 @@ const elements = [
       },
     ],
     category: "Chiacchierino",
-    cat: "Bracciali",
+    cat: "Bracciale",
   },
   {
     id: uuidv4(),
