@@ -3,7 +3,7 @@ import React from "react";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import { Head } from "next/document";
+import Head from "next/head";
 
 const BackToTop = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));

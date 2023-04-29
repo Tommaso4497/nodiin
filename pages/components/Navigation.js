@@ -23,7 +23,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { menuElement } from "../../utilsFunction/utilsFunction";
 import Image from "next/image";
 import logo from "../../images/logo.png";
-import { Head } from "next/document";
+import Head from "next/head";
 
 
 const Navigation = () => {
