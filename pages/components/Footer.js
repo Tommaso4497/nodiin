@@ -8,6 +8,8 @@ import styles from "./Footer.module.css";
 import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
+import { Head } from "next/document";
+
 
 const Footer = () => {
   const router = useRouter();
