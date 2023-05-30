@@ -3,7 +3,6 @@ import React from "react";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import Head from "next/head";
 
 const BackToTop = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -15,9 +14,6 @@ const BackToTop = () => {
   };
   return (
     <>
-    <Head>
-    <meta name="robots" content="noindex"/>
-    </Head>
       {matches && (
         <div>
           <Tooltip title="Torna su">

@@ -16,9 +16,6 @@ const Footer = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <>
-      <Head>
-        <meta name="robots" content="noindex" />
-      </Head>
       <div className={styles.footerWrapper}>
         <p className={styles.footerTitle}>
           Seguici sui social per le ultime creazioni!
