@@ -7,7 +7,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import styles from "./Footer.module.css";
 import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import theme from "../../styles/main";
+import theme from "../styles/main";
 import Head from "next/head";
 
 

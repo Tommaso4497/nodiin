@@ -6,7 +6,7 @@ import InfoDialog from "./InfoDialog";
 import CircleIcon from "@mui/icons-material/Circle";
 import ImageEdit from "./ImageEdit";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import theme from "../../styles/main";
+import theme from "../styles/main";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 

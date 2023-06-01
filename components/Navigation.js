@@ -20,9 +20,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { menuElement } from "../../utilsFunction/utilsFunction";
+import { menuElement } from "../utilsFunction/utilsFunction";
 import Image from "next/image";
-import logo from "../../images/logo.png";
+import logo from "../images/logo.png";
 import Head from "next/head";
 
 
