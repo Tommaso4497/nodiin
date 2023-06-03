@@ -11,11 +11,10 @@ import {
 } from "@mui/material";
 import styles from "./Chiacchierino.module.css";
 import { elements } from "../../utilsFunction/utilsFunction";
-import SingleCard from "../components/SingleCard";
+import SingleCard from "../../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import BackToTop from "../components/BackToTop";
-import ImageEdit from "../components/ImageEdit";
+import BackToTop from "../../components/BackToTop";
 
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");

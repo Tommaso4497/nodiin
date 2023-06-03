@@ -7,11 +7,11 @@ import React, { useEffect, useState } from "react";
 import copertina from "../../images/copertina.jpeg";
 import styles from "./Amigrumi.module.css";
 import { elements, uncinettoElements } from "../../utilsFunction/utilsFunction";
-import SingleCard from "../components/SingleCard";
+import SingleCard from "../../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import SearchIcon from "@mui/icons-material/Search";
-import BackToTop from "../components/BackToTop";
+import BackToTop from "../../components/BackToTop";
 import Image from "next/image";
 
 const Amigrumi = () => {
