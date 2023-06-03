@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React, { useEffect, useState } from "react";
 import { elements } from "../utilsFunction/utilsFunction";
-import SingleCard from "./components/SingleCard";
+import SingleCard from "../components/SingleCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
@@ -16,8 +16,8 @@ import copertina4 from "../images/cover/copertina4.jpg";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import { useRouter } from "next/router";
-import BackToTop from "./components/BackToTop";
-import ImageEdit from "./components/ImageEdit";
+import BackToTop from "../components/BackToTop";
+import ImageEdit from "../components/ImageEdit";
 
 export default function Home() {
   const mathes = useMediaQuery(theme.breakpoints.up("md"));
@@ -103,13 +103,13 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="it_IT" />
         <meta property="og:site_name" content="Nodi in Chiacchierino" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <link rel="alternate" href=" " hreflang="x-default" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="alternate" href=" " hrefLang="x-default" />
         <link
           rel="sitemap"
           type="application/xml"
