@@ -49,6 +49,7 @@ const Uncinetto = () => {
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
       </p>
+      {/*       
       <div
         style={{
           display: "flex",
@@ -106,30 +107,9 @@ const Uncinetto = () => {
             label="Completi"
           />
         </RadioGroup>
-      </div>
+      </div> */}
 
-      <div className={styles.wrapperGrid}>
-        {elements
-          .filter(
-            (elem) =>
-              elem.category === "Uncinetto" &&
-              (elem.title.toLowerCase().match(search.toLowerCase()) ||
-                elem.desc.toLowerCase().match(search.toLowerCase())) &&
-              elem.cat.toLowerCase().match(categorySearch.toLowerCase())
-          )
-          .map((filt) => (
-            <SingleCard
-              size={filt.size}
-              cat={filt.cat}
-              category={filt.category}
-              key={filt.id}
-              title={filt.title}
-              pics={filt?.images}
-              imZ={filt.imZ}
-              descr={filt.desc}
-            ></SingleCard>
-          ))}
-      </div>
+      <div className={styles.wrapperGrid}></div>
       {visibilityButtonToTop && <BackToTop />}
     </div>
   );
