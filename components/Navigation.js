@@ -24,6 +24,8 @@ import { menuElement } from "../utilsFunction/utilsFunction";
 import Image from "next/image";
 import logo from "../images/logo.png";
 import Head from "next/head";
+import TikTokIcons from "../icons/TikTokIcons";
+
 
 
 const Navigation = () => {
@@ -116,7 +118,6 @@ const Navigation = () => {
               >
                 <FacebookIcon style={{ color: "#fff" }} />
               </a>
-
               <a
                 className={styles.iconLinkDrawer}
                 target="_blank"
@@ -124,6 +125,13 @@ const Navigation = () => {
                 href="https://www.instagram.com/nodiinchiacchierino/"
               >
                 <InstagramIcon style={{ color: "#fff" }} />
+              </a>
+              <a
+                className={styles.iconLinkDrawer}
+                target="_blank"
+                href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
+              >
+                <TikTokIcons style={{ color: "#fff" }} />
               </a>
               <a
                 className={styles.iconLinkDrawer}

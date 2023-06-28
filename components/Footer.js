@@ -1,4 +1,4 @@
-import { IconButton, SvgIcon } from "@mui/material";
+import { IconButton } from "@mui/material";
 import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -8,9 +8,7 @@ import styles from "./Footer.module.css";
 import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../styles/main";
-import Head from "next/head";
-
-
+import TikTokIcons from "../icons/TikTokIcons";
 const Footer = () => {
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -30,27 +28,26 @@ const Footer = () => {
             <FacebookIcon fontSize={matches ? "large" : "medium"} />
           </IconButton>
           <IconButton
-            className={styles.iconButt}
             target="_blank"
             href="https://www.instagram.com/nodiinchiacchierino/"
           >
             <InstagramIcon fontSize={matches ? "large" : "medium"} />
           </IconButton>
-          {/* <IconButton
-          onClick={() => router.push("contactUs/")}
-          className={styles.iconButt}
-          >
-          <EmailOutlinedIcon fontSize={matches ? "large" : "medium"} />
-        </IconButton> */}
           <IconButton
-            // className={styles.iconButt}
+            target="_blank"
+            href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
+          >
+            <TikTokIcons color={"#707070"} fontSize={matches ? "large" : "medium"}/>
+          </IconButton>
+          <IconButton
             target="_blank"
             href="https://t.me/+pvDtZ4zVIYk3OGU8"
           >
-            <TelegramIcon fontSize={matches ? "large" : "medium"} />
+            <TelegramIcon
+              fontSize={matches ? "large" : "medium"}
+            />
           </IconButton>
           <IconButton
-            className={styles.iconButt}
             target="_blank"
             href="https://twitter.com/ndChiacchierino"
           >

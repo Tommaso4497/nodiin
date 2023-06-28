@@ -13,12 +13,6 @@
   justify-content: center;
   flex-direction: column;
 }
-
-.iconButt:hover {
-  background-color: transparent;
-  color: #c9184a;
-}
-
 .footerTitle {
   margin: 0;
   font-family: "Italianno";
