@@ -129,6 +129,7 @@ const Navigation = () => {
               <a
                 className={styles.iconLinkDrawer}
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
               >
                 <TikTokIcons style={{ color: "#fff" }} />
