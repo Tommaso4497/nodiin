@@ -37,7 +37,7 @@ const Footer = () => {
             target="_blank"
             href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
           >
-            <TikTokIcons color={"#707070"} fontSize={matches ? "large" : "medium"}/>
+            <TikTokIcons color={"#707070"} height={matches ? "24px" : "20px"} width={matches ? "24px" : "20px"}/>
           </IconButton>
           <IconButton
             target="_blank"

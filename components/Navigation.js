@@ -132,7 +132,7 @@ const Navigation = () => {
                 rel="noopener noreferrer"
                 href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
               >
-                <TikTokIcons style={{ color: "#fff" }} />
+                <TikTokIcons color="#fff" height={"20px"} width={"20px"}/>
               </a>
               <a
                 className={styles.iconLinkDrawer}

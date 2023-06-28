@@ -1,10 +1,10 @@
 import React from "react";
-const TikToIcons = () => {
+const TikToIcons = ({color, width,height}) => {
   return (
       <svg
         viewBox="0 0 54 54"
-        width="24" height="24"
-        fill={"#707070"}
+        width={width ? width: "24px"} height={height ? height : "24px"}
+        fill={color}
       >
         <defs></defs>
         <path
