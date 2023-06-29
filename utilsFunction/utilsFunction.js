@@ -122,6 +122,11 @@ import smile from "../images/amigrumi/smile.jpeg";
 import spring from "../images/amigrumi/spring.jpeg";
 import draghetto from "../images/amigrumi/draghetto.jpeg";
 
+
+import uncinetto1 from "../images/uncinetto/uncinetto1.webp";
+import uncinetto2 from "../images/uncinetto/uncinetto2.webp";
+import uncinetto3 from "../images/uncinetto/uncinetto3.webp";
+
 const COMMON = 0;
 const SPECIAL = 1;
 const LAST = 2;
@@ -154,6 +159,75 @@ const menuElement = [
 ];
 
 const elements = [
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    size: {
+      height: "",
+      width: "",
+      diameter: 8,
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: uncinetto1,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    size: {
+      height: "",
+      width: "",
+      diameter: 8,
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: uncinetto2,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    size: {
+      height: "",
+      width: "",
+      diameter: 8,
+      lenght: "",
+      chain: false,
+      adjustable: false,
+    },
+    images: [
+      {
+        name: "Multicolor",
+        gradient: true,
+        imG: uncinetto3,
+      },
+    ],
+    category: "Uncinetto",
+    cat: "Orecchini",
+  },
   {
     id: uuidv4(),
     type: SPECIAL,

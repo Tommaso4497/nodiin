@@ -109,7 +109,28 @@ const Uncinetto = () => {
         </RadioGroup>
       </div> */}
 
-      <div className={styles.wrapperGrid}></div>
+
+      <div className={styles.wrapperGrid}>
+      {elements
+          .filter(
+            (elem) =>
+              (elem.category === "Uncinetto") &&
+              (elem.title.toLowerCase().match(search.toLowerCase()) ||
+                elem.desc.toLowerCase().match(search.toLowerCase())) &&
+              elem.cat.toLowerCase().match(categorySearch.toLowerCase())
+          )
+          .map((filt) => (
+            <SingleCard
+              size={filt.size}
+              cat={filt.cat}
+              category={filt.category}
+              key={filt.id}
+              title={filt.title}
+              pics={filt?.images}
+              descr={filt.desc}
+            ></SingleCard>
+          ))}
+      </div>
       {visibilityButtonToTop && <BackToTop />}
     </div>
   );
