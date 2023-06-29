@@ -37,7 +37,7 @@ export default function Home() {
   const responsiveCard = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -164,26 +164,6 @@ export default function Home() {
           <Image src={copertina1} placeholder="blur" alt="carouselImage" />
         </Carousel>
       </div>
-      {/* <div className={styles.subtitleWrapper}>
-        <p className={styles.subtitle}>  Gioielli Natalizi</p>
-        <ImageEdit url={box} w={mathes ? "" : "30"} h={mathes ? "" : "30"} />
-      </div>
-
-      <div className={styles.carouselWrapper}>
-        <Carousel responsive={responsiveCard}>
-          {elements.filter((elem) => elem.type === 1).map((elem) => (
-            <SingleCard
-              category={elem.category}
-              key={elem.id}
-              title={elem.title}
-              pics={elem.images}
-              descr={elem.desc}
-              cat={elem.cat}
-              size={elem.size}
-            ></SingleCard>
-          ))}
-        </Carousel>
-      </div> */}
       <div className={styles.subtitleWrapper}>
         <p className={styles.paragraph}>Ultime Creazioni!</p>
       </div>
@@ -194,10 +174,8 @@ export default function Home() {
               category={elem.category}
               key={elem.id}
               title={elem.title}
-              pics={elem.images}
+              image={elem.image}
               descr={elem.desc}
-              cat={elem.cat}
-              size={elem.size}
             ></SingleCard>
           ))}
         </Carousel>
