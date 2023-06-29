@@ -48,27 +48,6 @@ const Chiacchierino = () => {
           alignItems: "center",
           justifyContent: "center",
           paddingBottom: "2rem",
-        }}
-      >
-        <OutlinedInput
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          style={{ width: mathes ? "40%" : "90%" }}
-          size="small"
-          placeholder="Cerca..."
-          startAdornment={
-            <InputAdornment position="start">
-              <SearchIcon color="primary" />
-            </InputAdornment>
-          }
-        />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingBottom: "2rem",
           padding: mathes ? "0rem" : "1rem",
         }}
       >
@@ -107,17 +86,13 @@ const Chiacchierino = () => {
             (elem) =>
               (elem.category === "Chiacchierino") &&
               (elem.title.toLowerCase().match(search.toLowerCase()) ||
-                elem.desc.toLowerCase().match(search.toLowerCase())) &&
-              elem.cat.toLowerCase().match(categorySearch.toLowerCase())
-          )
+                elem.desc.toLowerCase().match(search.toLowerCase())) )
           .map((filt) => (
             <SingleCard
-              size={filt.size}
-              cat={filt.cat}
               category={filt.category}
               key={filt.id}
               title={filt.title}
-              pics={filt?.images}
+              image={filt?.image}
               descr={filt.desc}
             ></SingleCard>
           ))}

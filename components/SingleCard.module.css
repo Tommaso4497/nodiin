@@ -8,12 +8,6 @@
   position: relative;
 }
 
-@media only screen and (max-width: 550px) {
-  .card {
-    height: 35rem;
-  }
-}
-
 .image {
   cursor: zoom-in;
   display: flex;
