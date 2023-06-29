@@ -7,7 +7,7 @@ import ImageEdit from "./ImageEdit";
 const InfoDialog = ({ open, zoom, onClose }) => {
   return (
     <Dialog open={open} maxWidth={"md"}>
-      <ImageEdit url={zoom} w={900} h={675} />
+      <ImageEdit url={zoom} />
       <button onClick={onClose} className={styles.exitbutton}>
         <CloseIcon />
       </button>
