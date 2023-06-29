@@ -49,28 +49,7 @@ const Uncinetto = () => {
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
       </p>
-      {/*       
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingBottom: "2rem",
-        }}
-      >
-        <OutlinedInput
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          style={{ width: matches ? "40%" : "90%" }}
-          size="small"
-          placeholder="Cerca..."
-          startAdornment={
-            <InputAdornment position="start">
-              <SearchIcon color="primary" />
-            </InputAdornment>
-          }
-        />
-      </div>
+            
       <div
         style={{
           display: "flex",
@@ -107,7 +86,7 @@ const Uncinetto = () => {
             label="Completi"
           />
         </RadioGroup>
-      </div> */}
+      </div>
 
 
       <div className={styles.wrapperGrid}>
@@ -116,17 +95,14 @@ const Uncinetto = () => {
             (elem) =>
               (elem.category === "Uncinetto") &&
               (elem.title.toLowerCase().match(search.toLowerCase()) ||
-                elem.desc.toLowerCase().match(search.toLowerCase())) &&
-              elem.cat.toLowerCase().match(categorySearch.toLowerCase())
+                elem.desc.toLowerCase().match(search.toLowerCase()))
           )
           .map((filt) => (
             <SingleCard
-              size={filt.size}
-              cat={filt.cat}
+              image={filt.image}
               category={filt.category}
               key={filt.id}
               title={filt.title}
-              pics={filt?.images}
               descr={filt.desc}
             ></SingleCard>
           ))}
