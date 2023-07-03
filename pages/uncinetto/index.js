@@ -1,7 +1,5 @@
 import {
   FormControlLabel,
-  InputAdornment,
-  OutlinedInput,
   Radio,
   RadioGroup,
   Tooltip,
