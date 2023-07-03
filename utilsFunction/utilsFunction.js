@@ -49,6 +49,7 @@ import uncinetto26 from "../images/uncinetto/uncinetto26.webp";
 import uncinetto27 from "../images/uncinetto/uncinetto27.webp";
 import uncinetto28 from "../images/uncinetto/uncinetto28.webp";
 import uncinetto29 from "../images/uncinetto/uncinetto29.webp";
+import uncinetto30 from "../images/uncinetto/uncinetto30.webp";
 
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
@@ -321,6 +322,14 @@ const elements = [
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
     image:uncinetto29,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto30,
     category: "Uncinetto",
   },
   {
