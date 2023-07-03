@@ -36,6 +36,19 @@ import uncinetto13 from "../images/uncinetto/uncinetto13.webp";
 import uncinetto14 from "../images/uncinetto/uncinetto14.webp";
 import uncinetto15 from "../images/uncinetto/uncinetto15.webp";
 import uncinetto16 from "../images/uncinetto/uncinetto16.webp";
+import uncinetto17 from "../images/uncinetto/uncinetto17.webp";
+import uncinetto18 from "../images/uncinetto/uncinetto18.webp";
+import uncinetto19 from "../images/uncinetto/uncinetto19.webp";
+import uncinetto20 from "../images/uncinetto/uncinetto20.webp";
+import uncinetto21 from "../images/uncinetto/uncinetto21.webp";
+import uncinetto22 from "../images/uncinetto/uncinetto22.webp";
+import uncinetto23 from "../images/uncinetto/uncinetto23.webp";
+import uncinetto24 from "../images/uncinetto/uncinetto24.webp";
+import uncinetto25 from "../images/uncinetto/uncinetto25.webp";
+import uncinetto26 from "../images/uncinetto/uncinetto26.webp";
+import uncinetto27 from "../images/uncinetto/uncinetto27.webp";
+import uncinetto28 from "../images/uncinetto/uncinetto28.webp";
+import uncinetto29 from "../images/uncinetto/uncinetto29.webp";
 
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
@@ -204,6 +217,110 @@ const elements = [
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
     image:uncinetto16,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto17,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto18,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto19,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto20,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto21,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto22,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto23,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto24,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto25,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto26,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto27,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto28,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Orecchini uncinetto",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:uncinetto29,
     category: "Uncinetto",
   },
   {
