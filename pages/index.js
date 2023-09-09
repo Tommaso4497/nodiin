@@ -164,9 +164,6 @@ export default function Home() {
           <Image src={copertina1} placeholder="blur" alt="carouselImage" />
         </Carousel>
       </div>
-      <div className={styles.subtitleWrapper}>
-        <p className={styles.paragraph}>Ultime Creazioni!</p>
-      </div>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
           {elements.filter((elem) => elem.type === 2).map((elem) => (

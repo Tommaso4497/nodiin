@@ -122,7 +122,7 @@ const Navigation = () => {
                 className={styles.iconLinkDrawer}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.instagram.com/nodiinchiacchierino/"
+                href="https://www.instagram.com/nodi_in_chiacchierino/"
               >
                 <InstagramIcon style={{ color: "#fff" }} />
               </a>
