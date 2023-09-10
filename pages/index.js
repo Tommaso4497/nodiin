@@ -8,11 +8,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import copertina from "../images/cover/copertina.jpg";
-import copertina1 from "../images/cover/copertina1.jpg";
-import copertina2 from "../images/cover/copertina2.jpg";
-import copertina3 from "../images/cover/copertina3.jpg";
-import copertina4 from "../images/cover/copertina4.jpg";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import { useRouter } from "next/router";
@@ -146,23 +141,6 @@ export default function Home() {
 
       <div className={styles.pageTitle}>
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
-      </div>
-      <div className={styles.headerCarousel}>
-        <Carousel
-          responsive={responsive}
-          autoPlay={true}
-          infinite={true}
-          arrows={true}
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dynamicHeight={true}
-          autoPlaySpeed={4000}
-        >
-          <Image src={copertina3} placeholder="blur" alt="carouselImage" />
-          <Image src={copertina2} placeholder="blur" alt="carouselImage" />
-          <Image src={copertina4} placeholder="blur" alt="carouselImage" />
-          <Image src={copertina} placeholder="blur" alt="carouselImage" />
-          <Image src={copertina1} placeholder="blur" alt="carouselImage" />
-        </Carousel>
       </div>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>

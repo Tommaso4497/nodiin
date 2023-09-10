@@ -20,22 +20,6 @@ import spring from "../images/amigrumi/spring.jpeg";
 import draghetto from "../images/amigrumi/draghetto.jpeg";
 
 
-import uncinetto1 from "../images/uncinetto/uncinetto1.webp";
-import uncinetto2 from "../images/uncinetto/uncinetto2.webp";
-import uncinetto3 from "../images/uncinetto/uncinetto3.webp";
-import uncinetto4 from "../images/uncinetto/uncinetto4.webp";
-import uncinetto5 from "../images/uncinetto/uncinetto5.webp";
-import uncinetto6 from "../images/uncinetto/uncinetto6.webp";
-import uncinetto7 from "../images/uncinetto/uncinetto7.webp";
-import uncinetto8 from "../images/uncinetto/uncinetto8.webp";
-import uncinetto9 from "../images/uncinetto/uncinetto9.webp";
-import uncinetto10 from "../images/uncinetto/uncinetto10.webp";
-import uncinetto11 from "../images/uncinetto/uncinetto11.webp";
-import uncinetto12 from "../images/uncinetto/uncinetto12.webp";
-import uncinetto13 from "../images/uncinetto/uncinetto13.webp";
-import uncinetto14 from "../images/uncinetto/uncinetto14.webp";
-import uncinetto15 from "../images/uncinetto/uncinetto15.webp";
-import uncinetto16 from "../images/uncinetto/uncinetto16.webp";
 import uncinetto17 from "../images/uncinetto/uncinetto17.webp";
 import uncinetto18 from "../images/uncinetto/uncinetto18.webp";
 import uncinetto19 from "../images/uncinetto/uncinetto19.webp";
@@ -52,9 +36,26 @@ import uncinetto29 from "../images/uncinetto/uncinetto29.webp";
 import uncinetto30 from "../images/uncinetto/uncinetto30.webp";
 
 
-import ororosa from "../images/uncinetto/ororosa.jpg";
-import orogiallo from "../images/uncinetto/orogiallo.jpg";
-import orecchinipastello from "../images/uncinetto/orecchinipastello.png";
+import esplosionedicolori from "../images/uncinetto/esplosionedicolori.jpg";
+import riflessidinatura from "../images/uncinetto/riflessidinatura.jpg";
+import ciondoloriflessidinatura from "../images/uncinetto/ciondoloriflessidinatura.webp";
+import turcheseinfuoco from "../images/uncinetto/turcheseinfuoco.png";
+import stellafiorita from "../images/uncinetto/stellafiorita.webp";
+import trioflorealerosa from "../images/uncinetto/trioflorealerosa.webp";
+import trioflorealeturchese from "../images/uncinetto/trioflorealeturchese.webp";
+import cristallibluverdefloreali from "../images/uncinetto/cristallibluverdefloreali.webp";
+import lillanottenera from "../images/uncinetto/lillanottenera.webp";
+import cristallicelestedazzurro from "../images/uncinetto/cristallicelestedazzurro.webp";
+import sfumaturedibosco from "../images/uncinetto/sfumaturedibosco.webp";
+import verdedimezzanotte from "../images/uncinetto/verdedimezzanotte.webp";
+import margheritadeicampi from "../images/uncinetto/margheritadeicampi.webp";
+import margheritadibosco from "../images/uncinetto/margheritadibosco.webp";
+import cristalliditramonto from "../images/uncinetto/cristalliditramonto.webp";
+import rosaautunnale from "../images/uncinetto/rosaautunnale.webp";
+import fogliedicristalli from "../images/uncinetto/fogliedicristalli.webp";
+import orecchiniblunotte from "../images/uncinetto/orecchiniblunotte.webp";
+import ciondoloblunotte from "../images/uncinetto/ciondoloblunotte.webp";
+import orecchinicristallidisabbia from "../images/uncinetto/orecchinicristallidisabbia.webp";
 
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
@@ -84,7 +85,7 @@ const menuElement = [
   },
   // {
   //   id: 3,
-  //   section: "Amigrumi",
+  //   section: "Amigrumi",0
   //   path: "amigrumi/",
   //   icon: <CollectionsIcon />,
   // },
@@ -96,7 +97,7 @@ const elements = [
     title: "Esplosione di colori",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:ororosa,
+    image:esplosionedicolori,
     category: "Uncinetto",
   },
   {
@@ -104,7 +105,15 @@ const elements = [
     title: "Riflessi di natura",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:orogiallo,
+    image:riflessidinatura,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: " Ciondolo riflessi di natura",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:ciondoloriflessidinatura,
     category: "Uncinetto",
   },
   {
@@ -112,15 +121,15 @@ const elements = [
     title: "Turchese in fuoco",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:orecchinipastello,
+    image:turcheseinfuoco,
     category: "Uncinetto",
   },
   {
     id: uuidv4(),
-    title: "Stella Fiorita",
+    title: "Stella fiorita",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto1,
+    image:stellafiorita,
     category: "Uncinetto",
   },
   {
@@ -128,7 +137,7 @@ const elements = [
     title: "Trio floreale rosa",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto2,
+    image:trioflorealerosa,
     category: "Uncinetto",
 
   },
@@ -137,7 +146,7 @@ const elements = [
     title: "Trio floreale turchese",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto3,
+    image:trioflorealeturchese,
     category: "Uncinetto",
 
   },
@@ -146,7 +155,7 @@ const elements = [
     title: "Cristalli blu-verde floreali",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto4,
+    image:cristallibluverdefloreali,
     category: "Uncinetto",
 
   },
@@ -155,7 +164,7 @@ const elements = [
     title: "Lilla notte nera",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto5,
+    image:lillanottenera,
     category: "Uncinetto",
 
   },
@@ -164,7 +173,7 @@ const elements = [
     title: "Cristalli celeste d'azzurro",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto6,
+    image:cristallicelestedazzurro,
     category: "Uncinetto",
 
   },
@@ -173,7 +182,7 @@ const elements = [
     title: "Sfumature di bosco",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto7,
+    image:sfumaturedibosco,
     category: "Uncinetto",
 
   },
@@ -182,7 +191,7 @@ const elements = [
     title: "Verde di mezzanotte",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto8,
+    image:verdedimezzanotte,
     category: "Uncinetto",
   },
   {
@@ -190,7 +199,7 @@ const elements = [
     title: "Margerita dei campi",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto9,
+    image:margheritadeicampi,
     category: "Uncinetto",
   },
   {
@@ -198,7 +207,7 @@ const elements = [
     title: "Margerita di bosco",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto10,
+    image:margheritadibosco,
     category: "Uncinetto",
   },
   {
@@ -206,7 +215,7 @@ const elements = [
     title: "Cristalli di tramonto",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto11,
+    image:cristalliditramonto,
     category: "Uncinetto",
   },
   {
@@ -214,7 +223,7 @@ const elements = [
     title: "Rosa autunnale",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto12,
+    image:rosaautunnale,
     category: "Uncinetto",
   },
   {
@@ -222,7 +231,7 @@ const elements = [
     title: "Foglie di cristalli",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto13,
+    image:fogliedicristalli,
     category: "Uncinetto",
   },
   {
@@ -230,7 +239,7 @@ const elements = [
     title: "Orecchini blu notte",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto14,
+    image:orecchiniblunotte,
     category: "Uncinetto",
   },
   {
@@ -238,7 +247,7 @@ const elements = [
     title: "Ciondolo blu notte",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto15,
+    image:ciondoloblunotte,
     category: "Uncinetto",
   },
   {
@@ -246,7 +255,7 @@ const elements = [
     title: "Orecchini cristalli di sabbia",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto16,
+    image:orecchinicristallidisabbia,
     category: "Uncinetto",
   },
   {
