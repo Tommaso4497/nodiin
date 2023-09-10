@@ -5,13 +5,12 @@ import {
   Tooltip,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import copertina from "../../images/copertina.jpeg";
+// import copertina from "../../images/cover/donnaorecchini.png";
 import styles from "./Uncinetto.module.css";
 import { elements } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
-import SearchIcon from "@mui/icons-material/Search";
 import BackToTop from "../../components/BackToTop";
 import Image from "next/image";
 
@@ -39,7 +38,7 @@ const Uncinetto = () => {
           justifyContent: "center",
         }}
       >
-        <Image src={copertina} alt="crochetBackground" />
+        {/* <Image src={copertina} alt="crochetBackground" width={500} height={500} /> */}
       </div>
       <div className={styles.pageTitle}>
         <p style={{ marginBlock: "0" }}>Uncinetto</p>
@@ -91,9 +90,10 @@ const Uncinetto = () => {
       {elements
           .filter(
             (elem) =>
-              (elem.category === "Uncinetto") &&
-              (elem.title.toLowerCase().match(search.toLowerCase()) ||
-                elem.desc.toLowerCase().match(search.toLowerCase()))
+              (elem.category === "Uncinetto")
+              //  &&
+              // (elem.title.toLowerCase().match(search.toLowerCase()) ||
+              //   elem.desc.toLowerCase().match(search.toLowerCase()))
           )
           .map((filt) => (
             <SingleCard

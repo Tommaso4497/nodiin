@@ -6,13 +6,21 @@
     rgba(201, 24, 74, 0.14) 0px 1px 1px 0px,
     rgba(201, 24, 74, 0.12) 0px 1px 3px 0px;
   position: relative;
+  transition: transform .2s;
+  background-color: #fff;
+  
 }
+
+.card:hover {
+  transform: scale(1.2);
+  z-index:555555 !important;}
 
 .image {
   cursor: zoom-in;
   display: flex;
   justify-content: center;
 }
+
 
 .title {
   padding-block: .75rem;;
@@ -25,9 +33,11 @@
 .descriptionWrapper {
   padding-top: 1rem;
   font-family: sans-serif;
+  background-color: #fff;
 }
 
 .footerCard {
+  background-color: #fff;
   display: flex;
   padding: 0.25rem 0.5rem;
   align-items: center;

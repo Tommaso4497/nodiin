@@ -19,9 +19,6 @@ import smile from "../images/amigrumi/smile.jpeg";
 import spring from "../images/amigrumi/spring.jpeg";
 import draghetto from "../images/amigrumi/draghetto.jpeg";
 
-
-import uncinetto17 from "../images/uncinetto/uncinetto17.webp";
-import uncinetto18 from "../images/uncinetto/uncinetto18.webp";
 import uncinetto19 from "../images/uncinetto/uncinetto19.webp";
 import uncinetto20 from "../images/uncinetto/uncinetto20.webp";
 import uncinetto21 from "../images/uncinetto/uncinetto21.webp";
@@ -37,6 +34,7 @@ import uncinetto30 from "../images/uncinetto/uncinetto30.webp";
 
 
 import esplosionedicolori from "../images/uncinetto/esplosionedicolori.jpg";
+import ciondoloesplosionedicolori from "../images/uncinetto/ciondoloesplosionedicolori.webp";
 import riflessidinatura from "../images/uncinetto/riflessidinatura.jpg";
 import ciondoloriflessidinatura from "../images/uncinetto/ciondoloriflessidinatura.webp";
 import turcheseinfuoco from "../images/uncinetto/turcheseinfuoco.png";
@@ -56,13 +54,23 @@ import fogliedicristalli from "../images/uncinetto/fogliedicristalli.webp";
 import orecchiniblunotte from "../images/uncinetto/orecchiniblunotte.webp";
 import ciondoloblunotte from "../images/uncinetto/ciondoloblunotte.webp";
 import orecchinicristallidisabbia from "../images/uncinetto/orecchinicristallidisabbia.webp";
-
+import ciondolocristallidisabbia from "../images/uncinetto/ciondolocristallidisabbia.webp";
+import orecchiniperlediluce from "../images/uncinetto/orecchiniperlediluce.webp";
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 
 const COMMON = 0;
 const SPECIAL = 1;
 const LAST = 2;
+
+
+const ALL = 0;
+const EARRINGS = 1;
+const NECKLACE = 2;
+const BRACELETS = 3;
+const PENDERS = 4;
+const COMPLETE = 5;
+const OTHER = 6;
 
 const menuElement = [
   {
@@ -98,6 +106,14 @@ const elements = [
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
     image:esplosionedicolori,
+    category: "Uncinetto",
+  },
+  {
+    id: uuidv4(),
+    title: "Ciondolo esplosione di colori",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:ciondoloesplosionedicolori,
     category: "Uncinetto",
   },
   {
@@ -263,7 +279,7 @@ const elements = [
     title: "Ciondolo cristalli di sabbia",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto17,
+    image:ciondolocristallidisabbia,
     category: "Uncinetto",
   },
   {
@@ -271,7 +287,7 @@ const elements = [
     title: "Orecchini perle di luce",
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
-    image:uncinetto18,
+    image:orecchiniperlediluce,
     category: "Uncinetto",
   },
   // {
