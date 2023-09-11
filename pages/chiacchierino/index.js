@@ -56,26 +56,32 @@ const Chiacchierino = () => {
           value={categorySearch}
           onChange={(e) => setCategorySearch(e.target.value)}
         >
+
           <FormControlLabel value="" control={<Radio />} label="Tutto" />
           <FormControlLabel
-            value="Orecchini"
+            value="EARRINGS"
             control={<Radio />}
             label="Orecchini"
           />
           <FormControlLabel
-            value="Bracciale"
+            value="BRACELETS"
             control={<Radio />}
             label="Bracciali"
           />
           <FormControlLabel
-            value="Ciondolo"
+            value="PENDERS"
             control={<Radio />}
             label="Ciondoli"
           />
           <FormControlLabel
-            value="Completo"
+            value="COMPLETE"
             control={<Radio />}
             label="Completi"
+          />
+          <FormControlLabel
+            value="OTHER"
+            control={<Radio />}
+            label="Altri"
           />
         </RadioGroup>
       </div>
@@ -85,8 +91,9 @@ const Chiacchierino = () => {
           .filter(
             (elem) =>
               (elem.category === "Chiacchierino") &&
-              (elem.title.toLowerCase().match(search.toLowerCase()) ||
-                elem.desc.toLowerCase().match(search.toLowerCase())) )
+              elem.product.toLowerCase().match(categorySearch.toLowerCase()) )
+              // (elem.title.toLowerCase().match(search.toLowerCase()) ||
+              //   elem.desc.toLowerCase().match(search.toLowerCase())) )
           .map((filt) => (
             <SingleCard
               category={filt.category}

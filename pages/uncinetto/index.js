@@ -2,7 +2,6 @@ import {
   FormControlLabel,
   Radio,
   RadioGroup,
-  Tooltip,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 // import copertina from "../../images/cover/donnaorecchini.png";
@@ -15,7 +14,6 @@ import BackToTop from "../../components/BackToTop";
 import Image from "next/image";
 
 const Uncinetto = () => {
-  const [search, setSearch] = useState("");
   const [categorySearch, setCategorySearch] = useState("");
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
@@ -61,26 +59,32 @@ const Uncinetto = () => {
           value={categorySearch}
           onChange={(e) => setCategorySearch(e.target.value)}
         >
+
           <FormControlLabel value="" control={<Radio />} label="Tutto" />
           <FormControlLabel
-            value="Orecchini"
+            value="EARRINGS"
             control={<Radio />}
             label="Orecchini"
           />
           <FormControlLabel
-            value="Bracciale"
+            value="BRACELETS"
             control={<Radio />}
             label="Bracciali"
           />
           <FormControlLabel
-            value="Ciondolo"
+            value="PENDERS"
             control={<Radio />}
             label="Ciondoli"
           />
           <FormControlLabel
-            value="Completo"
+            value="COMPLETE"
             control={<Radio />}
             label="Completi"
+          />
+          <FormControlLabel
+            value="OTHER"
+            control={<Radio />}
+            label="Altri"
           />
         </RadioGroup>
       </div>
@@ -91,6 +95,8 @@ const Uncinetto = () => {
           .filter(
             (elem) =>
               (elem.category === "Uncinetto")
+              &&
+              elem.product.toLowerCase().match(categorySearch.toLowerCase()) 
               //  &&
               // (elem.title.toLowerCase().match(search.toLowerCase()) ||
               //   elem.desc.toLowerCase().match(search.toLowerCase()))
