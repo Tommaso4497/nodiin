@@ -12,13 +12,12 @@
 
 @media only screen and (max-width: 550px) {
   .card:hover {
-    transform: scale(1);
+    transform: scale(0);
   }
 }
 
 .card:hover {
   transform: scale(1.2);
-  z-index: 555555 !important;
 }
 
 .image {
