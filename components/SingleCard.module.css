@@ -6,14 +6,20 @@
     rgba(201, 24, 74, 0.14) 0px 1px 1px 0px,
     rgba(201, 24, 74, 0.12) 0px 1px 3px 0px;
   position: relative;
-  transition: transform .2s;
+  transition: transform 0.2s;
   background-color: #fff;
-  
+}
+
+@media only screen and (max-width: 550px) {
+  .card:hover {
+    transform: scale(1);
+  }
 }
 
 .card:hover {
   transform: scale(1.2);
-  z-index:555555 !important;}
+  z-index: 555555 !important;
+}
 
 .image {
   cursor: zoom-in;
@@ -21,9 +27,8 @@
   justify-content: center;
 }
 
-
 .title {
-  padding-block: .75rem;;
+  padding-block: 0.75rem;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: auto;
@@ -47,5 +52,3 @@
   bottom: 0;
   left: 0;
 }
-
-
