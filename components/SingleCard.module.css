@@ -6,19 +6,7 @@
     rgba(201, 24, 74, 0.14) 0px 1px 1px 0px,
     rgba(201, 24, 74, 0.12) 0px 1px 3px 0px;
   position: relative;
-  transition: transform 0.2s;
   background-color: #fff;
-}
-
-@media (max-width: 550px) {
-  .card {
-    transition:  none !important;
-  }
-}
-
-
-.card:hover {
-  transform: scale(1.2);
 }
 
 .image {
