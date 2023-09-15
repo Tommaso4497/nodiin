@@ -114,7 +114,7 @@ const Navigation = () => {
                 className={styles.iconLinkDrawer}
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.facebook.com/profile.php?id=100088005822575"
+                href="https://www.facebook.com/profile.php?id=61551068286214"
               >
                 <FacebookIcon style={{ color: "#fff" }} />
               </a>

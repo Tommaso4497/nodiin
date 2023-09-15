@@ -23,7 +23,7 @@ const Footer = () => {
           <IconButton
             className={styles.iconButt}
             target="_blank"
-            href="https://www.facebook.com/profile.php?id=100088005822575"
+            href="https://www.facebook.com/profile.php?id=61551068286214"
           >
             <FacebookIcon fontSize={matches ? "large" : "medium"} />
           </IconButton>
