@@ -1,15 +1,10 @@
-.wrapper {
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 325px);
-  gap: 2rem;
-}
-
-.gridWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2rem;
-  gap: 1rem;
+.pageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-block: 0;
+  font-size: 6rem;
+  font-family: "Italianno";
 }
 
 .uppergrid {
@@ -18,22 +13,8 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   padding: 2rem;
-
-}
-.carouselWrapper {
-  padding: 1rem;
-}
-
-.headerCarousel {
-  padding: 1rem;
-}
-
-.title {
-  font-family: "Italianno", cursive;
-  font-size: 3.5rem;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 1.5rem;
+  font-size: small;
+  font-family: sans-serif;
 }
 
 .subtitleWrapper {
@@ -46,32 +27,31 @@
   gap: 1.5rem;
 }
 
-.subtitle {
-  margin-block: 2rem;
-  color: #f00;
+.clickableImage {
+  cursor:pointer;
 }
+
+/* .clickableImage:hover {
+  position: relative;
+  animation-name: tril;
+  animation-duration: 250ms;
+  animation-iteration-count: 2;
+} */
 
 .paragraph {
   margin-block: 2rem;
 }
 
-.pageTitle {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-block: 0;
-  font-size: 6rem;
-  font-family: "Italianno";
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 @media only screen and (max-width: 899px) {
   .pageTitle {
     font-size: 2.5rem;
-  }
-
-  .subtitle {
-    margin-block: 1rem;
-    font-size: 2rem;
   }
 
   .paragraph {
@@ -84,6 +64,16 @@
   }
 
   .uppergrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
+
 }
+
+/* 
+@keyframes tril {
+  0% {rotate: 0deg;}
+  25% {rotate: -10deg;}
+  50% {rotate: 0deg;}
+  75% {rotate: 10deg;}
+  100% {rotate: 0deg;}
+} */

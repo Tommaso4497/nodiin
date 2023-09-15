@@ -16,7 +16,6 @@ import BackToTop from "../components/BackToTop";
 import ImageEdit from "../components/ImageEdit";
 
 export default function Home() {
-  const mathes = useMediaQuery(theme.breakpoints.up("md"));
   const router = useRouter();
 
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
@@ -176,13 +175,13 @@ export default function Home() {
       </div>
       <div className={styles.gridWrapper}>
         <div
-          style={{ cursor: "pointer" }}
+          className={styles.clickableImage}
           onClick={() => router.push("/chiacchierino")}
         >
           <ImageEdit url={chiacchierino} alt="chiacchierinoBackground" />
         </div>
         <div
-          style={{ cursor: "pointer" }}
+          className={styles.clickableImage}
           onClick={() => {
             router.push("/uncinetto");
           }}
