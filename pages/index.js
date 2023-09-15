@@ -144,15 +144,17 @@ export default function Home() {
       </div>
       <div className={styles.carouselWrapper}>
         <Carousel responsive={responsiveCard}>
-          {elements.filter((elem) => elem.type === 2).map((elem) => (
-            <SingleCard
-              category={elem.category}
-              key={elem.id}
-              title={elem.title}
-              image={elem.image}
-              descr={elem.desc}
-            ></SingleCard>
-          ))}
+          {elements
+            .filter((elem) => elem.type === 2)
+            .map((elem) => (
+              <SingleCard
+                category={elem.category}
+                key={elem.id}
+                title={elem.title}
+                image={elem.image}
+                descr={elem.desc}
+              ></SingleCard>
+            ))}
         </Carousel>
       </div>
       <div className={styles.subtitleWrapper}>
@@ -163,21 +165,17 @@ export default function Home() {
       <div className={styles.gridWrapper}>
         <div
           style={{ cursor: "pointer" }}
-          onClick={() => router.push("chiacchierino/")}
+          onClick={() => router.push("/chiacchierino")}
         >
-          <ImageEdit
-            url={chiacchierino}
-            alt="chiacchierinoBackground"
-          />
+          <ImageEdit url={chiacchierino} alt="chiacchierinoBackground" />
         </div>
         <div
           style={{ cursor: "pointer" }}
-          onClick={() => router.push("uncinetto/")}
+          onClick={() => {
+            router.push("/uncinetto");
+          }}
         >
-          <ImageEdit
-            url={uncinetto}
-            alt="uncinettoBackground"
-          />
+          <ImageEdit url={uncinetto} alt="uncinettoBackground" />
         </div>
       </div>
       {visibilityButtonToTop && <BackToTop />}

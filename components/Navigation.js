@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Navigation.module.css";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -26,23 +26,26 @@ import logo from "../images/logo.png";
 import Head from "next/head";
 import TikTokIcons from "../icons/TikTokIcons";
 
-
-
 const Navigation = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  const [isSelected, setIsSelected] = useState(0);
+  const [isSelected, setIsSelected] = useState(router.pathname);
+
+  useEffect(()=>{
+    setIsSelected(router.pathname)
+  },[router.pathname])
 
   const elementWeb = menuElement.map((element) => (
     <Button
       style={{
-        backgroundColor: element?.id === isSelected ? "#c9184a" : "transparent",
-        color: element?.id === isSelected ? "#fff" : "#c9184a",
+        backgroundColor:
+          element?.path == isSelected ? "#c9184a" : "transparent",
+        color: element?.path == isSelected ? "#fff" : "#c9184a",
       }}
       key={element?.id}
       onClick={() => {
         router.push(`${element?.path}`);
-        setIsSelected(element?.id);
+        setIsSelected(element?.path);
       }}
     >
       {element.section}
@@ -132,7 +135,7 @@ const Navigation = () => {
                 rel="noopener noreferrer"
                 href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
               >
-                <TikTokIcons color="#fff" height={"20px"} width={"20px"}/>
+                <TikTokIcons color="#fff" height={"20px"} width={"20px"} />
               </a>
               <a
                 className={styles.iconLinkDrawer}

@@ -91,13 +91,13 @@ const menuElement = [
   {
     id: 1,
     section: "Chiacchierino",
-    path: "chiacchierino/",
+    path: "/chiacchierino",
     icon: <CollectionsIcon />,
   },
   {
     id: 2,
     section: "Uncinetto",
-    path: "uncinetto/",
+    path: "/uncinetto",
     icon: <CollectionsIcon />,
   },
   // {
@@ -207,7 +207,7 @@ const elements = [
     desc: "Orecchini ricamati a forma di stella.",
     image:m,
     category: "Chiacchierino",
-    product:BRACELETS,
+    product:EARRINGS,
   },
   {
     id: uuidv4(),
@@ -216,7 +216,7 @@ const elements = [
     desc: "Orecchini ricamati a forma di stella.",
     image:n,
     category: "Chiacchierino",
-    product:BRACELETS,
+    product:EARRINGS,
   },
   {
     id: uuidv4(),
@@ -225,7 +225,7 @@ const elements = [
     desc: "Orecchini ricamati a forma di stella.",
     image:o,
     category: "Chiacchierino",
-    product:BRACELETS,
+    product:EARRINGS,
   },
   {
     id: uuidv4(),
