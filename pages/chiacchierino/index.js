@@ -33,7 +33,13 @@ const Chiacchierino = () => {
 
   return (
     <div>
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Image src={copertina} alt="chiacchierinoBackground" />
       </div>
       <div className={styles.pageTitle}>
@@ -44,19 +50,16 @@ const Chiacchierino = () => {
       </p>
       <div
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           paddingBottom: "2rem",
           padding: mathes ? "0rem" : "1rem",
         }}
       >
         <RadioGroup
+          style={{ width:"auto", display:"flex", justifyContent:"space-between" }}
           row
           value={categorySearch}
           onChange={(e) => setCategorySearch(e.target.value)}
         >
-
           <FormControlLabel value="" control={<Radio />} label="Tutto" />
           <FormControlLabel
             value="EARRINGS"
@@ -78,11 +81,7 @@ const Chiacchierino = () => {
             control={<Radio />}
             label="Completi"
           />
-          <FormControlLabel
-            value="OTHER"
-            control={<Radio />}
-            label="Altri"
-          />
+          <FormControlLabel value="OTHER" control={<Radio />} label="Altri" />
         </RadioGroup>
       </div>
 
@@ -90,10 +89,11 @@ const Chiacchierino = () => {
         {elements
           .filter(
             (elem) =>
-              (elem.category === "Chiacchierino") &&
-              elem.product.toLowerCase().match(categorySearch.toLowerCase()) )
-              // (elem.title.toLowerCase().match(search.toLowerCase()) ||
-              //   elem.desc.toLowerCase().match(search.toLowerCase())) )
+              elem.category === "Chiacchierino" &&
+              elem.product.toLowerCase().match(categorySearch.toLowerCase())
+          )
+          // (elem.title.toLowerCase().match(search.toLowerCase()) ||
+          //   elem.desc.toLowerCase().match(search.toLowerCase())) )
           .map((filt) => (
             <SingleCard
               category={filt.category}

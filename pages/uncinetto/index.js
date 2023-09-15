@@ -1,8 +1,4 @@
-import {
-  FormControlLabel,
-  Radio,
-  RadioGroup,
-} from "@mui/material";
+import { FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import React, { useEffect, useState } from "react";
 // import copertina from "../../images/cover/donnaorecchini.png";
 import styles from "./Uncinetto.module.css";
@@ -44,7 +40,7 @@ const Uncinetto = () => {
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
       </p>
-            
+
       <div
         style={{
           display: "flex",
@@ -55,11 +51,15 @@ const Uncinetto = () => {
         }}
       >
         <RadioGroup
+          style={{
+            width: "auto",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
           row
           value={categorySearch}
           onChange={(e) => setCategorySearch(e.target.value)}
         >
-
           <FormControlLabel value="" control={<Radio />} label="Tutto" />
           <FormControlLabel
             value="EARRINGS"
@@ -81,25 +81,19 @@ const Uncinetto = () => {
             control={<Radio />}
             label="Completi"
           />
-          <FormControlLabel
-            value="OTHER"
-            control={<Radio />}
-            label="Altri"
-          />
+          <FormControlLabel value="OTHER" control={<Radio />} label="Altri" />
         </RadioGroup>
       </div>
 
-
       <div className={styles.wrapperGrid}>
-      {elements
+        {elements
           .filter(
             (elem) =>
-              (elem.category === "Uncinetto")
-              &&
-              elem.product.toLowerCase().match(categorySearch.toLowerCase()) 
-              //  &&
-              // (elem.title.toLowerCase().match(search.toLowerCase()) ||
-              //   elem.desc.toLowerCase().match(search.toLowerCase()))
+              elem.category === "Uncinetto" &&
+              elem.product.toLowerCase().match(categorySearch.toLowerCase())
+            //  &&
+            // (elem.title.toLowerCase().match(search.toLowerCase()) ||
+            //   elem.desc.toLowerCase().match(search.toLowerCase()))
           )
           .map((filt) => (
             <SingleCard
