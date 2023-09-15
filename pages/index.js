@@ -143,12 +143,14 @@ export default function Home() {
       <div className={styles.pageTitle}>
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
       </div>
-      <div
-        className={styles.uppergrid}
-      >
+      <div className={styles.uppergrid}>
         <div>
           <ImageEdit url={woman1} />
-          <a target="_blank" href="https://it.freepik.com/foto-gratuito/bella-donna_6452293.htm#page=2&query=viso%20donna%20truccata%20profilo&position=36&from_view=search&track=ais">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://it.freepik.com/foto-gratuito/bella-donna_6452293.htm#page=2&query=viso%20donna%20truccata%20profilo&position=36&from_view=search&track=ais"
+          >
             Immagine di Racool_studio
           </a>{" "}
           su Freepik
@@ -157,7 +159,11 @@ export default function Home() {
         <ImageEdit url={turcheseinfuoco} />
         <div>
           <ImageEdit url={woman2} />
-          <a href="https://it.freepik.com/foto-gratuito/profilo-di-una-giovane-donna-bellissima-con-la-pelle-fresca-e-pulita-isolata-su-bianco_10730984.htm#query=viso%20donna%20truccata%20profilo&position=10&from_view=search&track=ais">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://it.freepik.com/foto-gratuito/profilo-di-una-giovane-donna-bellissima-con-la-pelle-fresca-e-pulita-isolata-su-bianco_10730984.htm#query=viso%20donna%20truccata%20profilo&position=10&from_view=search&track=ais"
+          >
             Immagine di valuavitaly
           </a>{" "}
           su Freepik
