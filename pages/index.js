@@ -2,14 +2,15 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import theme from "../styles/main";
 import React, { useEffect, useState } from "react";
-import { elements } from "../utilsFunction/utilsFunction";
-import SingleCard from "../components/SingleCard";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
+import woman1 from "../images/woman1.png";
+import woman2 from "../images/woman2.png";
+import esplosionedicolori from "../images/uncinetto/esplosionedicolori.jpg";
+import turcheseinfuoco from "../images/uncinetto/turcheseinfuoco.png";
 import { useRouter } from "next/router";
 import BackToTop from "../components/BackToTop";
 import ImageEdit from "../components/ImageEdit";
@@ -142,20 +143,25 @@ export default function Home() {
       <div className={styles.pageTitle}>
         <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
       </div>
-      <div className={styles.carouselWrapper}>
-        <Carousel responsive={responsiveCard}>
-          {elements
-            .filter((elem) => elem.type === 2)
-            .map((elem) => (
-              <SingleCard
-                category={elem.category}
-                key={elem.id}
-                title={elem.title}
-                image={elem.image}
-                descr={elem.desc}
-              ></SingleCard>
-            ))}
-        </Carousel>
+      <div
+        className={styles.uppergrid}
+      >
+        <div>
+          <ImageEdit url={woman1} />
+          <a target="_blank" href="https://it.freepik.com/foto-gratuito/bella-donna_6452293.htm#page=2&query=viso%20donna%20truccata%20profilo&position=36&from_view=search&track=ais">
+            Immagine di Racool_studio
+          </a>{" "}
+          su Freepik
+        </div>
+        <ImageEdit url={esplosionedicolori} />
+        <ImageEdit url={turcheseinfuoco} />
+        <div>
+          <ImageEdit url={woman2} />
+          <a href="https://it.freepik.com/foto-gratuito/profilo-di-una-giovane-donna-bellissima-con-la-pelle-fresca-e-pulita-isolata-su-bianco_10730984.htm#query=viso%20donna%20truccata%20profilo&position=10&from_view=search&track=ais">
+            Immagine di valuavitaly
+          </a>{" "}
+          su Freepik
+        </div>
       </div>
       <div className={styles.subtitleWrapper}>
         <p className={styles.paragraph}>

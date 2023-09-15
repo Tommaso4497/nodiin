@@ -85,7 +85,7 @@ const Navigation = () => {
                 <MenuIcon style={{ color: "#fff" }} />
               </IconButton>
               <div className={styles.imageWrapper}>
-                <Image src={logo} width="40" height="40" alt="logo" />
+                <Image src={logo} width="60" height="60" alt="logo" />
               </div>
             </Toolbar>
           </AppBar>

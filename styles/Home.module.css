@@ -12,6 +12,14 @@
   gap: 1rem;
 }
 
+.uppergrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 2rem;
+
+}
 .carouselWrapper {
   padding: 1rem;
 }
@@ -56,7 +64,6 @@
   font-family: "Italianno";
 }
 
-
 @media only screen and (max-width: 899px) {
   .pageTitle {
     font-size: 2.5rem;
@@ -73,6 +80,10 @@
   }
 
   .gridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .uppergrid {
     grid-template-columns: 1fr;
   }
 }
