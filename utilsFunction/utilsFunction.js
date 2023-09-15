@@ -58,10 +58,21 @@ import ciondolocristallidisabbia from "../images/uncinetto/ciondolocristallidisa
 import orecchiniperlediluce from "../images/uncinetto/orecchiniperlediluce.webp";
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
+import a from "../images/chiacchierino/a.webp";
+import b from "../images/chiacchierino/b.webp";
+import c from "../images/chiacchierino/c.webp";
+import d from "../images/chiacchierino/d.webp";
+import e from "../images/chiacchierino/e.webp";
+import f from "../images/chiacchierino/f.webp";
+import g from "../images/chiacchierino/g.webp";
+import h from "../images/chiacchierino/h.webp";
+import i from "../images/chiacchierino/i.webp";
+import l from "../images/chiacchierino/l.webp";
+import m from "../images/chiacchierino/m.webp";
+import n from "../images/chiacchierino/n.webp";
+import o from "../images/chiacchierino/o.webp";
 
 const COMMON = 0;
-const SPECIAL = 1;
-const LAST = 2;
 
 const EARRINGS = "EARRINGS";
 const NECKLACE = "NECKLACE";
@@ -97,7 +108,125 @@ const menuElement = [
   // },
 ];
 
+
 const elements = [
+  {
+    id: uuidv4(),
+    title: "a",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:a,
+    category: "Chiacchierino",
+    product:PENDERS,
+  },
+  {
+    id: uuidv4(),
+    title: "b",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:b,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "c",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:c,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "d",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:d,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "e",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:e,
+    category: "Chiacchierino",
+    product:BRACELETS,
+  },
+  {
+    id: uuidv4(),
+    title: "f",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:f,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "g",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:g,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "h",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:h,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "i",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:i,
+    category: "Chiacchierino",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "l",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:l,
+    category: "Chiacchierino",
+    product:BRACELETS,
+  },
+  {
+    id: uuidv4(),
+    title: "m",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:m,
+    category: "Chiacchierino",
+    product:BRACELETS,
+  },
+  {
+    id: uuidv4(),
+    title: "n",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:n,
+    category: "Chiacchierino",
+    product:BRACELETS,
+  },
+  {
+    id: uuidv4(),
+    title: "o",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:o,
+    category: "Chiacchierino",
+    product:BRACELETS,
+  },
   {
     id: uuidv4(),
     title: "Esplosione di colori",
@@ -310,15 +439,6 @@ const elements = [
     image:orecchiniperlediluce,
     category: "Uncinetto",
     product:EARRINGS,
-  },
-  {
-    id: uuidv4(),
-    title: "Orecchini chiaccheirino",
-    type: LAST,
-    desc: "Orecchini ricamati a forma di stella.",
-    image:orecchiniFioreCascata,
-    category: "Chiacchierino",
-    product:EARRINGS
   },
  ];
 
