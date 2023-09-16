@@ -141,7 +141,7 @@ export default function Home() {
       </Head>
       <p className={styles.pageTitle}>Nodi in Chiacchierino</p>
       <div className={styles.presentationCard}>
-        <Image src={background} />
+        <Image src={background} alt="backgroundImage" />
         <div className={styles.textIntroduction}>
           <p className={styles.description}>
             Benvenuti nel mio mondo creativo! <br /> Qui l'arte dell'uncinetto e
