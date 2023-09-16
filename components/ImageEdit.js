@@ -2,6 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 
 
+const imageLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
 
 const ImageEdit = ({ url, w, h }) => {
 
@@ -25,8 +28,9 @@ const ImageEdit = ({ url, w, h }) => {
       : window.btoa(str);
 
   return (
-    <Image src={url} width={w} height={h} placeholder="blur" alt="creationImage" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(w, h))}`} />
-  );
+    <Image src={url} width={w} height={h} placeholder="blur" alt="creationImage" />
+    // blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(w, h))}`}
+    );
 };
 
 export default ImageEdit;

@@ -19,7 +19,7 @@ import BackToTop from "../../components/BackToTop";
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");
   const [categorySearch, setCategorySearch] = useState("");
-  const mathes = useMediaQuery(theme.breakpoints.up("md"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
 
   useEffect(() => {
@@ -40,7 +40,6 @@ const Chiacchierino = () => {
           justifyContent: "center",
         }}
       >
-        <Image src={copertina} alt="chiacchierinoBackground" />
       </div>
       <div className={styles.pageTitle}>
         <p style={{ marginBlock: "0" }}>Chiacchierino</p>
@@ -50,12 +49,19 @@ const Chiacchierino = () => {
       </p>
       <div
         style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           paddingBottom: "2rem",
-          padding: mathes ? "0rem" : "1rem",
+          padding: matches ? "0rem" : "1rem",
         }}
       >
         <RadioGroup
-          style={{ width:"auto", display:"flex", justifyContent:"space-between" }}
+          style={{
+            width: "auto",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
           row
           value={categorySearch}
           onChange={(e) => setCategorySearch(e.target.value)}
