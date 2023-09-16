@@ -1,10 +1,29 @@
-.pageTitle {
+.presentationCard {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  margin-block: 0;
+  align-items: center;
+  background-color: #c9184a;
+  padding: 0.5rem;
+}
+
+.textIntroduction {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.pageTitle {
   font-size: 6rem;
+  text-align: center;
   font-family: "Italianno";
+  color: #000;
+  margin-block: 0;
+}
+
+.description {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .uppergrid {
@@ -25,10 +44,11 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  margin-block: 0;
 }
 
 .clickableImage {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .paragraph {
@@ -57,7 +77,12 @@
   }
 
   .uppergrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
+  .presentationCard {
+    flex-direction: column;
+  }
+  .description{
+    font-size: 1rem;
+  }
 }

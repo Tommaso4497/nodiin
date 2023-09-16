@@ -9,6 +9,7 @@ import uncinetto from "../images/uncinetto.jpg";
 import chiacchierino from "../images/chiacchierino.jpg";
 import woman1 from "../images/woman1.png";
 import woman2 from "../images/woman2.png";
+import background from "../images/background.jpeg";
 import esplosionedicolori from "../images/uncinetto/esplosionedicolori.jpg";
 import turcheseinfuoco from "../images/uncinetto/turcheseinfuoco.png";
 import { useRouter } from "next/router";
@@ -138,10 +139,31 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-
-      <div className={styles.pageTitle}>
-        <p style={{ marginBlock: "0" }}>Nodi in Chiacchierino</p>
+      <p className={styles.pageTitle}>Nodi in Chiacchierino</p>
+      <div className={styles.presentationCard}>
+        <Image src={background} />
+        <div className={styles.textIntroduction}>
+          <p className={styles.description}>
+            Benvenuti nel mio mondo creativo! <br /> Qui l'arte dell'uncinetto e
+            del chiacchierino si fondono per dare vita a opere uniche e
+            affascinanti.
+            <br />
+            <br />
+            Troverete una varietà gioielli fatti a mano che aggiungono un tocco
+            di eleganza a qualsiasi outfit.
+            <br /> Ogni pezzo è unico, realizzato con cura e dedizione.
+            <br />
+            L'uncinetto e il chiacchierino sono tecniche antiche che hanno
+            attraversato generazioni, <br /> eppure continuano ad affascinare e
+            ispirare. <br />
+            <br /> Con ago, filo e tanta passione, creo ricami impreziositi con
+            pietre e cristalli.
+          </p>
+        </div>
       </div>
+      <div className={styles.subtitleWrapper}>
+        <p className={styles.paragraph}>Novità </p>
+      </div>{" "}
       <div className={styles.uppergrid}>
         <div>
           <ImageEdit url={woman1} />
