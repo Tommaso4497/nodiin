@@ -144,7 +144,7 @@ export default function Home() {
         <Image src={background} alt="backgroundImage" />
         <div className={styles.textIntroduction}>
           <p className={styles.description}>
-            Benvenuti nel mio mondo creativo! <br /> Qui l'arte dell'uncinetto e
+            Benvenuti nel mio mondo creativo! <br /> Qui l&apos;arte dell&apos;uncinetto e
             del chiacchierino si fondono per dare vita a opere uniche e
             affascinanti.
             <br />
@@ -153,7 +153,7 @@ export default function Home() {
             di eleganza a qualsiasi outfit.
             <br /> Ogni pezzo è unico, realizzato con cura e dedizione.
             <br />
-            L'uncinetto e il chiacchierino sono tecniche antiche che hanno
+            L&apos;uncinetto e il chiacchierino sono tecniche antiche che hanno
             attraversato generazioni, <br /> eppure continuano ad affascinare e
             ispirare. <br />
             <br /> Con ago, filo e tanta passione, creo ricami impreziositi con
