@@ -10,14 +10,7 @@
   background-color: #fff;
 }
 
-@media(pointer: fine) {
-  .card:hover {
-    transform: scale(1.2);
-  }
-}
-
 .image {
-  cursor: zoom-in;
   display: flex;
   justify-content: center;
 }

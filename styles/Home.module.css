@@ -31,13 +31,6 @@
   cursor:pointer;
 }
 
-/* .clickableImage:hover {
-  position: relative;
-  animation-name: tril;
-  animation-duration: 250ms;
-  animation-iteration-count: 2;
-} */
-
 .paragraph {
   margin-block: 2rem;
 }
@@ -68,12 +61,3 @@
   }
 
 }
-
-/* 
-@keyframes tril {
-  0% {rotate: 0deg;}
-  25% {rotate: -10deg;}
-  50% {rotate: 0deg;}
-  75% {rotate: 10deg;}
-  100% {rotate: 0deg;}
-} */
