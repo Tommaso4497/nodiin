@@ -60,6 +60,9 @@ import ciondololillanottenera from "../images/uncinetto/ciondololillanottenera.w
 import ciondoloperlediluce from "../images/uncinetto/ciondoloperlediluce.webp";
 import orecchini1 from "../images/uncinetto/1.webp";
 import orecchini2 from "../images/uncinetto/2.webp";
+import orecchini3 from "../images/uncinetto/3.webp";
+import orecchini4 from "../images/uncinetto/4.webp";
+import orecchini5 from "../images/uncinetto/5.webp";
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 import a from "../images/chiacchierino/a.webp";
@@ -476,6 +479,33 @@ const elements = [
     type: COMMON,
     desc: "Orecchini ricamati a forma di stella.",
     image:orecchini2,
+    category: "Uncinetto",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "3",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:orecchini3,
+    category: "Uncinetto",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "4",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:orecchini4,
+    category: "Uncinetto",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "5",
+    type: COMMON,
+    desc: "Orecchini ricamati a forma di stella.",
+    image:orecchini5,
     category: "Uncinetto",
     product:EARRINGS,
   },
