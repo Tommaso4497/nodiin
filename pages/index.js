@@ -144,9 +144,9 @@ export default function Home() {
         <Image src={background} alt="backgroundImage" />
         <div className={styles.textIntroduction}>
           <p className={styles.description}>
-            Benvenuti nel mio mondo creativo! <br /> Qui l&apos;arte dell&apos;uncinetto e
-            del chiacchierino si fondono per dare vita a opere uniche e
-            affascinanti.
+            Benvenuti nel mio mondo creativo! <br /> Qui l&apos;arte
+            dell&apos;uncinetto e del chiacchierino si fondono per dare vita a
+            opere uniche e affascinanti.
             <br />
             <br />
             Troverete una varietà gioielli fatti a mano che aggiungono un tocco
@@ -176,8 +176,15 @@ export default function Home() {
           </a>{" "}
           su Freepik
         </div>
+        <div>
+
         <ImageEdit url={esplosionedicolori} />
-        <ImageEdit url={turcheseinfuoco} />
+          <p>Esplosione di colori</p>
+        </div>
+        <div>
+          <ImageEdit url={turcheseinfuoco} />
+          <p>Turchese in fuoco</p>
+        </div>
         <div>
           <ImageEdit url={woman2} />
           <a
