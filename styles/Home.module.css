@@ -64,6 +64,12 @@
   gap: 1rem;
 }
 
+.changePage {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 899px) {
   .pageTitle {
     font-size: 2.5rem;
@@ -85,6 +91,6 @@
     flex-direction: column;
   }
   .description{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }

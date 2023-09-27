@@ -62,7 +62,10 @@ import orecchini1 from "../images/uncinetto/1.webp";
 import orecchini2 from "../images/uncinetto/2.webp";
 import orecchini3 from "../images/uncinetto/3.webp";
 import orecchini4 from "../images/uncinetto/4.webp";
-import orecchini5 from "../images/uncinetto/5.webp";
+import orecchini6 from "../images/uncinetto/5.webp";
+import orecchini5 from "../images/uncinetto/6.webp"; 
+import orecchini7 from "../images/uncinetto/7.webp"; 
+import orecchini8 from "../images/uncinetto/8.webp"; 
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 import a from "../images/chiacchierino/a.webp";
@@ -78,6 +81,7 @@ import l from "../images/chiacchierino/l.webp";
 import m from "../images/chiacchierino/m.webp";
 import n from "../images/chiacchierino/n.webp";
 import o from "../images/chiacchierino/o.webp";
+import { Mail } from "@mui/icons-material";
 
 const COMMON = 0;
 
@@ -106,6 +110,18 @@ const menuElement = [
     section: "Uncinetto",
     path: "/uncinetto",
     icon: <CollectionsIcon />,
+  },
+  {
+    id: 3,
+    section: "Cotone",
+    path: "/cotone",
+    icon: <CollectionsIcon />,
+  },
+  {
+    id: 4,
+    section: "Contatti",
+    path: "/contatti",
+    icon: <Mail />,
   },
   // {
   //   id: 3,
@@ -463,6 +479,30 @@ const elements = [
     title: "5",
     type: COMMON,
     image:orecchini5,
+    category: "Uncinetto",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "6",
+    type: COMMON,
+    image:orecchini6,
+    category: "Uncinetto",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "7",
+    type: COMMON,
+    image:orecchini7,
+    category: "Uncinetto",
+    product:EARRINGS,
+  },
+  {
+    id: uuidv4(),
+    title: "8",
+    type: COMMON,
+    image:orecchini8,
     category: "Uncinetto",
     product:EARRINGS,
   },

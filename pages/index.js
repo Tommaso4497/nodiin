@@ -30,36 +30,6 @@ export default function Home() {
     });
   }, []);
 
-  const responsiveCard = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
   return (
     <div>
       <Head>
@@ -144,20 +114,21 @@ export default function Home() {
         <Image src={background} alt="backgroundImage" />
         <div className={styles.textIntroduction}>
           <p className={styles.description}>
-            Benvenuti nel mio mondo creativo! <br /> Qui l&apos;arte
+            Benvenuti nel mio mondo creativo! <br /> <br/> Qui l&apos;arte
             dell&apos;uncinetto e del chiacchierino si fondono per dare vita a
             opere uniche e affascinanti.
             <br />
             <br />
             Troverete una varietà gioielli fatti a mano che aggiungono un tocco
             di eleganza a qualsiasi outfit.
-            <br /> Ogni pezzo è unico, realizzato con cura e dedizione.
-            <br />
+            <br /> <br/>Ogni pezzo è unico, realizzato con cura e dedizione.
+            <br /><br />
             L&apos;uncinetto e il chiacchierino sono tecniche antiche che hanno
             attraversato generazioni, <br /> eppure continuano ad affascinare e
             ispirare. <br />
             <br /> Con ago, filo e tanta passione, creo ricami impreziositi con
-            pietre e cristalli.
+            pietre e cristalli.<br /><br />
+            Per qualsiasi informazione, non esitare a <a className={styles.changePage} onClick={()=>{router.push(`/contatti`)}}>contattarmi!</a>
           </p>
         </div>
       </div>
