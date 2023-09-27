@@ -114,7 +114,7 @@ export default function Home() {
         <Image src={background} alt="backgroundImage" />
         <div className={styles.textIntroduction}>
           <p className={styles.description}>
-            Benvenuti nel mio mondo creativo! <br /> <br/> Qui l&apos;arte
+            Benvenuti nel mio mondo creativo!<br /> <br/> Qui l&apos;arte
             dell&apos;uncinetto e del chiacchierino si fondono per dare vita a
             opere uniche e affascinanti.
             <br />
