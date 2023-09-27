@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import theme from "../../styles/main";
-import styles from "../cotone/Cotone.module.css"
+import styles from "./Cotone.module.css"
 import {
   FormControlLabel,
   Radio,
