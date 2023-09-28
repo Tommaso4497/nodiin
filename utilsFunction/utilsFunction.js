@@ -78,10 +78,10 @@ import braccialefioreametista from "../images/chiacchierino/braccialefioreametis
 import pietredelpassato from "../images/chiacchierino/pietredelpassato.webp";
 import ellissidarancio from "../images/chiacchierino/ellissidarancio.webp";
 import tramontoinfuocato from "../images/chiacchierino/tramontoinfuocato.webp";
-import l from "../images/chiacchierino/l.webp";
-import m from "../images/chiacchierino/m.webp";
-import n from "../images/chiacchierino/n.webp";
-import o from "../images/chiacchierino/o.webp";
+import braccialerossodorato from "../images/chiacchierino/braccialerossodorato.webp";
+import mezzalunaarancione from "../images/chiacchierino/mezzalunaarancione.webp";
+import mezzalunasabbia from "../images/chiacchierino/mezzalunasabbia.webp";
+import mezzalunarossa from "../images/chiacchierino/mezzalunarossa.webp";
 import { Mail } from "@mui/icons-material";
 
 const COMMON = 0;
@@ -208,33 +208,33 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "l",
+    title: "Bracciale rosso dorato",
     type: COMMON,
-    image:l,
+    image:braccialerossodorato,
     category: "Chiacchierino",
     product:BRACELETS,
   },
   {
     id: uuidv4(),
-    title: "m",
+    title: "Mezzaluna arancione",
     type: COMMON,
-    image:m,
+    image:mezzalunaarancione,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "n",
+    title: "Mezzaluna sabbia",
     type: COMMON,
-    image:n,
+    image:mezzalunasabbia,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "o",
+    title: "Mezzaluna rossa",
     type: COMMON,
-    image:o,
+    image:mezzalunarossa,
     category: "Chiacchierino",
     product:EARRINGS,
   },
