@@ -58,25 +58,26 @@ import ciondolocristallidisabbia from "../images/uncinetto/ciondolocristallidisa
 import orecchiniperlediluce from "../images/uncinetto/orecchiniperlediluce.webp";
 import ciondololillanottenera from "../images/uncinetto/ciondololillanottenera.webp";
 import ciondoloperlediluce from "../images/uncinetto/ciondoloperlediluce.webp";
-import orecchini1 from "../images/uncinetto/1.webp";
-import orecchini2 from "../images/uncinetto/2.webp";
-import orecchini3 from "../images/uncinetto/3.webp";
-import orecchini4 from "../images/uncinetto/4.webp";
-import orecchini6 from "../images/uncinetto/5.webp";
-import orecchini5 from "../images/uncinetto/6.webp"; 
-import orecchini7 from "../images/uncinetto/7.webp"; 
-import orecchini8 from "../images/uncinetto/8.webp"; 
+import pietredelgiardino from "../images/uncinetto/pietredelgiardino.webp";
+import Sfumaturedicacaodiarancia from "../images/uncinetto/Sfumaturedicacaodiarancia.webp";
+import arcobalenodicristalli from "../images/uncinetto/arcobalenodicristalli.webp";
+import arcobalenodibosco from "../images/uncinetto/arcobalenodibosco.webp";
+import arcobalenoditramonto from "../images/uncinetto/arcobalenoditramonto.webp"; 
+import fioreincantato from "../images/uncinetto/fioreincantato.webp";
+import mosaicodicristalli from "../images/uncinetto/mosaicodicristalli.webp"; 
+import sabbiadeldeserto from "../images/uncinetto/sabbiadeldeserto.webp"; 
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
-import a from "../images/chiacchierino/a.webp";
-import b from "../images/chiacchierino/b.webp";
-import c from "../images/chiacchierino/c.webp";
-import d from "../images/chiacchierino/d.webp";
-import e from "../images/chiacchierino/e.webp";
-import f from "../images/chiacchierino/f.webp";
-import g from "../images/chiacchierino/g.webp";
-import h from "../images/chiacchierino/h.webp";
-import i from "../images/chiacchierino/i.webp";
+
+import rinascitaverde from "../images/chiacchierino/rinascitaverde.webp";
+import fioridipesco from "../images/chiacchierino/fioridipesco.webp";
+import rosadavorio from "../images/chiacchierino/rosadavorio.webp";
+import lucedelmare from "../images/chiacchierino/lucedelmare.webp";
+import orecchinifioreametista from "../images/chiacchierino/orecchinifioreametista.webp";
+import braccialefioreametista from "../images/chiacchierino/braccialefioreametista.webp";
+import pietredelpassato from "../images/chiacchierino/pietredelpassato.webp";
+import ellissidarancio from "../images/chiacchierino/ellissidarancio.webp";
+import tramontoinfuocato from "../images/chiacchierino/tramontoinfuocato.webp";
 import l from "../images/chiacchierino/l.webp";
 import m from "../images/chiacchierino/m.webp";
 import n from "../images/chiacchierino/n.webp";
@@ -135,73 +136,73 @@ const menuElement = [
 const elements = [
   {
     id: uuidv4(),
-    title: "a",
+    title: "Rinascita verde",
     type: COMMON,
-    image:a,
+    image:rinascitaverde,
     category: "Chiacchierino",
     product:PENDERS,
   },
   {
     id: uuidv4(),
-    title: "b",
+    title: "Fiori di Pesco",
     type: COMMON,
-    image:b,
+    image:fioridipesco,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "c",
+    title: "Rosa d'avorio",
     type: COMMON,
-    image:c,
+    image:rosadavorio,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "d",
+    title: "Luce del mare",
     type: COMMON,
-    image:d,
+    image:lucedelmare,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "e",
+    title: "Bracciale fiore d'ametista",
     type: COMMON,
-    image:e,
+    image:braccialefioreametista,
     category: "Chiacchierino",
     product:BRACELETS,
   },
   {
     id: uuidv4(),
-    title: "f",
+    title: "Orecchini fiore d'ametista",
     type: COMMON,
-    image:f,
+    image:orecchinifioreametista,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "g",
+    title: "Pietre del passato",
     type: COMMON,
-    image:g,
+    image:pietredelpassato,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "h",
+    title: "Ellissi d'arancio",
     type: COMMON,
-    image:h,
+    image:ellissidarancio,
     category: "Chiacchierino",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "i",
+    title: "Tramonto infuocato",
     type: COMMON,
-    image:i,
+    image:tramontoinfuocato,
     category: "Chiacchierino",
     product:EARRINGS,
   },
@@ -444,65 +445,65 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "1",
+    title: "Pietre del giardino",
     type: COMMON,
-    image:orecchini1,
+    image:pietredelgiardino,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "2",
+    title: "Sfumature di cacao e di arancia",
     type: COMMON,
-    image:orecchini2,
+    image:Sfumaturedicacaodiarancia,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "3",
+    title: "Arcobaleno di cristalli",
     type: COMMON,
-    image:orecchini3,
+    image:arcobalenodicristalli,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "4",
+    title: "Arcobaleno di bosco",
     type: COMMON,
-    image:orecchini4,
+    image:arcobalenodibosco,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "5",
+    title: "Arcobaleno di tramonto",
     type: COMMON,
-    image:orecchini5,
+    image:arcobalenoditramonto,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "6",
+    title: "Fiore incantato",
     type: COMMON,
-    image:orecchini6,
+    image:fioreincantato,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "7",
+    title: "Mosaico di cristalli",
     type: COMMON,
-    image:orecchini7,
+    image:mosaicodicristalli,
     category: "Uncinetto",
     product:EARRINGS,
   },
   {
     id: uuidv4(),
-    title: "8",
+    title: "Sabbia del deserto",
     type: COMMON,
-    image:orecchini8,
+    image:sabbiadeldeserto,
     category: "Uncinetto",
     product:EARRINGS,
   },
