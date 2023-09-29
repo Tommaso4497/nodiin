@@ -3,7 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div>
-      <h1 >
+      <h1>
         Privacy Policy
         <br />
         <span>Last Updated On 29-Sep-2023</span>
@@ -11,18 +11,16 @@ const PrivacyPolicy = () => {
         <span>Effective Date 29-Sep-2023</span>
       </h1>
 
-      <p >
+      <p>
         This Privacy Policy describes the policies of Nodi in Chiacchierino,
         Campobasso, Campobasso 86021, Italy, email:
         nodiinchiacchierino@gmail.com,
-        {/* phone: 3200980784 on the collection */}
-        , use
-        and disclosure of your information that we collect when you use our
-        website ( nodiinchiacchierino.it ). (the “Service”). By accessing or
-        using the Service, you are consenting to the collection, use and
-        disclosure of your information in accordance with this Privacy Policy.
-        If you do not consent to the same, please do not access or use the
-        Service.
+        {/* phone: 3200980784 on the collection */}, use and disclosure of your
+        information that we collect when you use our website (
+        nodiinchiacchierino.it ). (the “Service”). By accessing or using the
+        Service, you are consenting to the collection, use and disclosure of
+        your information in accordance with this Privacy Policy. If you do not
+        consent to the same, please do not access or use the Service.
       </p>
 
       <p>
@@ -37,7 +35,7 @@ const PrivacyPolicy = () => {
       <ol>
         <li>
           <h2>Your Rights:</h2>
-          <p >
+          <p>
             Depending on the law that applies, you may have a right to access
             and rectify or erase your personal data or receive a copy of your
             personal data, restrict or object to the active processing of your
@@ -108,6 +106,7 @@ const PrivacyPolicy = () => {
         Privacy Policy generated with{" "}
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.cookieyes.com/?utm_source=PP&utm_medium=footer&utm_campaign=UW"
         >
           CookieYes
