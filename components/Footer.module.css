@@ -1,3 +1,22 @@
+.footerWrapper {
+  background-color: black;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footerTitle {
+  color: #fff;
+  margin: 0;
+  font-family: "Italianno";
+  font-size: 3rem;
+}
+
+.iconButton {
+  color: #fff;
+}
+
 .iconWrapper {
   display: flex;
   align-items: center;
@@ -6,17 +25,29 @@
   margin-block: 2rem;
 }
 
-.footerWrapper {
-  padding: 0.5rem;
+.wrapperPolicyLink {
+  color: #fff;
+  gap: 3rem;
+  font-size: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding-block: 0rem 1.5rem;
 }
-.footerTitle {
-  margin: 0;
-  font-family: "Italianno";
-  font-size: 3rem;
+
+.policyLink, .link {
+  cursor: pointer;
+  font-weight: 800;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.policyLabel {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.link {
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 899px) {

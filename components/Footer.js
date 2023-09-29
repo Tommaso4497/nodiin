@@ -21,13 +21,14 @@ const Footer = () => {
 
         <div className={styles.iconWrapper}>
           <IconButton
-            className={styles.iconButt}
+            className={styles.iconButton}
             target="_blank"
             href="https://www.facebook.com/profile.php?id=61551068286214"
           >
             <FacebookIcon fontSize={matches ? "large" : "medium"} />
           </IconButton>
           <IconButton
+            className={styles.iconButton}
             target="_blank"
             href="https://www.instagram.com/nodi_in_chiacchierino/"
           >
@@ -37,23 +38,38 @@ const Footer = () => {
             target="_blank"
             href="https://www.tiktok.com/@nodiinchiacchierino?_t=8dXO076c9NK&_r=1"
           >
-            <TikTokIcons color={"#707070"} height={matches ? "24px" : "20px"} width={matches ? "24px" : "20px"}/>
+            <TikTokIcons
+              color={"#fff"}
+              height={matches ? "24px" : "20px"}
+              width={matches ? "24px" : "20px"}
+            />
           </IconButton>
           <IconButton
             target="_blank"
             href="https://t.me/+pvDtZ4zVIYk3OGU8"
+            className={styles.iconButton}
           >
-            <TelegramIcon
-              fontSize={matches ? "large" : "medium"}
-            />
+            <TelegramIcon fontSize={matches ? "large" : "medium"} />
           </IconButton>
           <IconButton
+            className={styles.iconButton}
             target="_blank"
             href="https://twitter.com/ndChiacchierino"
           >
             <TwitterIcon fontSize={matches ? "large" : "medium"} />
           </IconButton>
         </div>
+        <div className={styles.wrapperPolicyLink}>
+          <p className={styles.policyLink}>Cookie Policy</p>
+          <p className={styles.policyLink}>Privacy Policy</p>
+        </div>
+        <p className={styles.policyLabel}>
+          Copyright © 2023 Nodi in Chiacchierino
+          <p>
+            Edit By <br/>
+            <a className={styles.link}>info@tommasoditusa.it</a>
+          </p>
+        </p>
       </div>
     </>
   );
