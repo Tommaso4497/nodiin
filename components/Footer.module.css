@@ -33,7 +33,7 @@
   padding-block: 0rem 1.5rem;
 }
 
-.policyLink, .link {
+.policyLink {
   cursor: pointer;
   font-weight: 800;
   text-decoration: underline;
@@ -46,8 +46,13 @@
   color: #fff;
 }
 
-.link {
+.mail {
   font-weight: 400;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
 }
 
 @media only screen and (max-width: 899px) {

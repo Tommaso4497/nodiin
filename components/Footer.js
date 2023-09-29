@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../styles/main";
 import TikTokIcons from "../icons/TikTokIcons";
+import { MailOutline } from "@mui/icons-material";
 const Footer = () => {
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
@@ -60,16 +61,19 @@ const Footer = () => {
           </IconButton>
         </div>
         <div className={styles.wrapperPolicyLink}>
-          <p className={styles.policyLink}>Cookie Policy</p>
-          <p className={styles.policyLink}>Privacy Policy</p>
-        </div>
-        <p className={styles.policyLabel}>
+          <p onClick={()=>{router.push("/cookiepolicy")}} className={styles.policyLink}>Cookie Policy</p>
+          <p onClick={()=>{router.push("/privacypolicy")}} className={styles.policyLink}>Privacy Policy</p>
+        </div> 
+        <div className={styles.policyLabel}>
           Copyright © 2023 Nodi in Chiacchierino
           <p>
-            Edit By <br/>
-            <a className={styles.link}>info@tommasoditusa.it</a>
+            Edit By <br />
+              <a href="mailto:info@tommasoditusa.it" className={styles.mail}>
+                <MailOutline />
+                info@tommasoditusa.it
+              </a>
           </p>
-        </p>
+        </div>
       </div>
     </>
   );

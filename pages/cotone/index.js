@@ -8,8 +8,6 @@ import {
   useMediaQuery,
 } from "@mui/material";
 
-import { Cookies } from "next/headers";
-
 const Cotone = () => {
   const [categorySearch, setCategorySearch] = useState("");
   const matches = useMediaQuery(theme.breakpoints.up("md"));
