@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./CookiePolicy.module.css";
 
+
 const CookiePolicy = () => {
   return (
     <div style={{ backgroundColor: "#ff0", textAlign: "center" }}>
@@ -51,8 +52,7 @@ const CookiePolicy = () => {
       <div></div>
       &nbsp;
       <h5>Gestisci le preferenze sui cookie</h5>
-      <a className={styles.ckybannerelement}>Preferenze Cookie</a>
-      <br />
+      <a class="cky-banner-element">Preferenze Cookie</a>      <br />
       <div>
         <p>
           È possibile modificare le preferenze relative ai cookie in qualsiasi
