@@ -33,7 +33,7 @@ const Footer = () => {
             target="_blank"
             href="https://www.instagram.com/nodi_in_chiacchierino/"
           >
-            <InstagramIcon fontSize={matches ? "large" : "medium"} />
+            <InstagramIcon color="#fff" fontSize={matches ? "large" : "medium"} />
           </IconButton>
           <IconButton
             target="_blank"
