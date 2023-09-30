@@ -1,0 +1,10 @@
+.wrapperPolicy{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 1rem;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+} 

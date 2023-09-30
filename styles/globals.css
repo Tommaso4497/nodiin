@@ -5,8 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, italianno,
-    sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, italianno;
 }
 
 a {
@@ -25,4 +24,9 @@ a.cky-banner-element {
   box-sizing: border-box;
   border-radius: 2px;
   cursor: pointer;
+}
+
+:root {
+  --color-primary: #c9184a;
+  --color-secondary: #ffffff; 
 }

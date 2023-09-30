@@ -1,109 +1,119 @@
 import React from "react";
+import style from "../../styles/Policy.module.css";
 
 const PrivacyPolicy = () => {
   return (
-    <div>
-      <h1>
+    <div className={style.wrapperPolicy}>
+      <h1 className={style.title}>
         Privacy Policy
         <br />
-        <span>Last Updated On 29-Sep-2023</span>
+        <span>Ultimo aggiornamento 29-Set-2023</span>
         <br />
-        <span>Effective Date 29-Sep-2023</span>
+        <span>Data effettiva 29-Set-2023</span>
       </h1>
 
       <p>
-        This Privacy Policy describes the policies of Nodi in Chiacchierino,
+        Questa Privacy Policy descrive le politiche di Nodi in Chiacchierino,
         Campobasso, Campobasso 86021, Italy, email:
         nodiinchiacchierino@gmail.com,
-        {/* phone: 3200980784 on the collection */}, use and disclosure of your
-        information that we collect when you use our website (
-        nodiinchiacchierino.it ). (the “Service”). By accessing or using the
-        Service, you are consenting to the collection, use and disclosure of
-        your information in accordance with this Privacy Policy. If you do not
-        consent to the same, please do not access or use the Service.
+        {/* phone: 3200980784 on the collection */} all&apos;uso e alla
+        divulgazione delle vostre informazioni che raccogliamo quando utilizzate
+        il nostro sito web ( nodiinchiacchierino.it ). (il
+        &apos;Servizio&apos;). Accedendo o utilizzando il Servizio,
+        l&apos;utente acconsente alla raccolta, all&apos;utilizzo e alla
+        divulgazione delle delle vostre informazioni in conformità con la
+        presente Informativa sulla privacy. Se non si acconsente allo stesso, si
+        prega di non accedere o utilizzare il Servizio.
       </p>
 
       <p>
-        We may modify this Privacy Policy at any time without any prior notice
-        to you and will post the revised Privacy Policy on the Service. The
-        revised Policy will be effective 180 days from when the revised Policy
-        is posted in the Service and your continued access or use of the Service
-        after such time will constitute your acceptance of the revised Privacy
-        Policy. We therefore recommend that you periodically review this page.
+        Possiamo modificare la presente Informativa sulla privacy in qualsiasi
+        momento senza alcun preavviso all&apos;utente e pubblicheremo
+        l&apos;Informativa sulla privacy modificata sul Servizio. La Politica
+        rivista sarà efficace dopo 180 giorni dalla data di pubblicazione della
+        Politica rivista nel Servizio e l&apos;accesso o l&apos;uso continuato
+        del Servizio da parte dell&apos;utente dopo tale termine costituirà
+        l&apos;accettazione dell&apos;Informativa sulla privacy rivista.
+        Pertanto raccomandiamo di rivedere periodicamente questa pagina.
       </p>
 
       <ol>
         <li>
-          <h2>Your Rights:</h2>
+          <h2>Vostri diritti:</h2>
           <p>
-            Depending on the law that applies, you may have a right to access
-            and rectify or erase your personal data or receive a copy of your
-            personal data, restrict or object to the active processing of your
-            data, ask us to share (port) your personal information to another
-            entity, withdraw any consent you provided to us to process your
-            data, a right to lodge a complaint with a statutory authority and
-            such other rights as may be relevant under applicable laws. To
-            exercise these rights, you can write to us at
-            nodiinchiacchierino@gmail.com. We will respond to your request in
-            accordance with applicable law.
+            A seconda della legge applicabile, voi potete avere il diritto di
+            accedere e di rettificare o cancellare i vostri dati personali o di
+            ricevere una copia dei vostri dati personali, limitare o opporsi al
+            trattamento attivo dei vostri dati, chiederci di condividere
+            (portare) le vostre informazioni personali a un&apos;altra entità,
+            revocare il consenso al trattamento dei vostri dati che ci avete
+            fornito, il diritto di presentare un reclamo a un&apos;autorità
+            legale e altri diritti che possono essere rilevanti ai sensi delle
+            leggi applicabili. Per esercitare questi diritti, Potete scriverci a
+            nodiinchiacchierino@gmail.com. Risponderemo alla vostra richiesta in
+            in conformità con la legge applicabile.
           </p>
 
           <p>
-            Do note that if you do not allow us to collect or process the
-            required personal information or withdraw the consent to process the
-            same for the required purposes, you may not be able to access or use
-            the services for which your information was sought.
+            Si noti che se l&apos;utente non ci consente di raccogliere o
+            elaborare le informazioni personali richieste o ritirate il consenso
+            al trattamento delle stesse per gli scopi richiesti, potreste non
+            essere in grado di accedere o utilizzare i servizi per i quali le
+            vostre informazioni sono state richieste.
           </p>
         </li>
         <li>
-          <h2>Cookies Etc.</h2>
+          <h2>Cookie Etc.</h2>
           <p>
-            To learn more about how we use these and your choices in relation to
-            these tracking technologies, please refer to our
+            Per saperne di più su come le utilizziamo e sulle vostre scelte in
+            relazione a queste tecnologie di tracciamento, si prega di
+            consultare la nostra
             <a href="nodiinchiacchierino.it/cookiepolicy">Cookie Policy.</a>
           </p>
         </li>
 
         <li>
-          <h2>Security:</h2>
+          <h2>Sicurezza:</h2>
           <p>
-            The security of your information is important to us and we will use
-            reasonable security measures to prevent the loss, misuse or
-            unauthorized alteration of your information under our control.
-            However, given the inherent risks, we cannot guarantee absolute
-            security and consequently, we cannot ensure or warrant the security
-            of any information you transmit to us and you do so at your own
-            risk.
+            La sicurezza delle vostre informazioni è importante per noi e
+            utilizzeremo misure di sicurezza ragionevoli per prevenire la
+            perdita, l&apos;uso improprio o l&apos; alterazione non autorizzata
+            delle vostre informazioni sotto il nostro controllo. Tuttavia,dati i
+            rischi intrinseci, non possiamo garantire una sicurezza assoluta e
+            di conseguenza, non possiamo assicurare o garantire la sicurezza di
+            qualsiasi informazioni che ci trasmettete e lo fate a vostro rischio
+            e pericolo
           </p>
         </li>
 
         <li>
-          <h2>Third Party Links & Use Of Your Information:</h2>
+          <h2>Link di terze parti & utilizzo delle vostre informazioni:</h2>
           <p>
-            Our Service may contain links to other websites that are not
-            operated by us. This Privacy Policy does not address the privacy
-            policy and other practices of any third parties, including any third
-            party operating any website or service that may be accessible via a
-            link on the Service. We strongly advise you to review the privacy
-            policy of every site you visit. We have no control over and assume
-            no responsibility for the content, privacy policies or practices of
-            any third party sites or services.
+            Il nostro Servizio può contenere collegamenti ad altri siti web che
+            non sono gestiti da noi. Questa Privacy Policy non tratta la
+            politica sulla privacy e le altre pratiche di terzi, compresi i
+            terzi che gestiscono siti o servizi terze parti che gestiscono
+            qualsiasi sito web o servizio accessibile tramite un link sul
+            Servizio. Consigliamo vivamente di prendere visione dell&apos;informativa
+            sulla privacy di ogni sito visitato. Non abbiamo alcun controllo e
+            non ci assumiamo alcuna responsabilità per i contenuti, le politiche
+            sulla privacy o le pratiche di qualsiasi sito o servizio di terzi.
           </p>
         </li>
 
         <li>
-          <h2>Grievance / Data Protection Officer:</h2>
+          <h2>Reclami / Responsabile della protezione dei dati:</h2>
           <p>
-            If you have any queries or concerns about the processing of your
-            information that is available with us, you may email our Grievance
-            Officer at Nodi in Chiacchierino, nodiinchiacchierino@gmail.com,
-            email: nodiinchiacchierino@gmail.com. We will address your concerns
-            in accordance with applicable law.
+            In caso di domande o dubbi sull&apos;elaborazione delle vostre
+            informazioni che avete a disposizione, potete inviare un&apos;e-mail al
+            nostro responsabile di Nodi in Chiacchierino, email:
+            nodiinchiacchierino@gmail.com. Risponderemo alle vostre
+            preoccupazioni in in conformità con la legge applicabile.
           </p>
         </li>
       </ol>
       <p>
-        Privacy Policy generated with{" "}
+        Privacy Policy generated with
         <a
           target="_blank"
           rel="noopener noreferrer"

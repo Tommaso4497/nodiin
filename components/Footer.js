@@ -26,7 +26,7 @@ const Footer = () => {
             target="_blank"
             href="https://www.facebook.com/profile.php?id=61551068286214"
           >
-            <FacebookIcon fontSize={matches ? "large" : "medium"} />
+            <FacebookIcon style={{color:"#fff"}} fontSize={matches ? "large" : "medium"} />
           </IconButton>
           <IconButton
             className={styles.iconButton}
@@ -50,14 +50,14 @@ const Footer = () => {
             href="https://t.me/+pvDtZ4zVIYk3OGU8"
             className={styles.iconButton}
           >
-            <TelegramIcon fontSize={matches ? "large" : "medium"} />
+            <TelegramIcon style={{color:"#fff"}} fontSize={matches ? "large" : "medium"} />
           </IconButton>
           <IconButton
             className={styles.iconButton}
             target="_blank"
             href="https://twitter.com/ndChiacchierino"
           >
-            <TwitterIcon fontSize={matches ? "large" : "medium"} />
+            <TwitterIcon style={{color:"#fff"}} fontSize={matches ? "large" : "medium"} />
           </IconButton>
         </div>
         <div className={styles.wrapperPolicyLink}>
