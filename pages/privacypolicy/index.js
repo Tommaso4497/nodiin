@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
       <ul className={style.list}>
         <li>
           <span>
-            <b>DIRITTI DELL'INTERESSATO:</b> A seconda della legge applicabile,
+            <b>DIRITTI DELL&apos;INTERESSATO:</b> A seconda della legge applicabile,
             voi potete avere il diritto di accedere e di rettificare o
             cancellare i vostri dati personali o di ricevere una copia dei
             vostri dati personali, limitare o opporsi al trattamento attivo dei
