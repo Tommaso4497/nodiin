@@ -1,17 +1,16 @@
 import React from "react";
-import styles from "./CookiePolicy.module.css";
-
+import styles from "../../styles/Policy.module.css";
 
 const CookiePolicy = () => {
   return (
-    <div style={{ backgroundColor: "#ff0", textAlign: "center" }}>
-      <h1> Cookie Policy</h1>
+    <div className={styles.wrapperPolicy}>
+      <h1 className={styles.title}> Cookie Policy</h1>
       <p>
         Data effettiva: 29-Set-2023 <br />
         Last Updated: 29-Set-2023
       </p>
       &nbsp;
-      <h5>Cosa sono i Cookie?</h5>
+      <h3 className={styles.title}>Cosa sono i Cookie?</h3>
       <div>
         <p>
           La presente Politica sui cookie spiega cosa sono i cookie e come li
@@ -30,7 +29,7 @@ const CookiePolicy = () => {
         </p>
       </div>
       &nbsp;
-      <h5>Come usiamo i cookie?</h5>
+      <h3 className={styles.title}>Come usiamo i cookie?</h3>
       <div>
         <p>
           Come la maggior parte dei servizi online, il nostro sito web utilizza
@@ -48,11 +47,13 @@ const CookiePolicy = () => {
         </p>
       </div>
       &nbsp;
-      <h5>Tipi di Cookie che utilizziamo</h5>
-      <div></div>
+      <h3 className={styles.title}>Tipi di Cookie che utilizziamo</h3>
+      <div>Necessari</div>
       &nbsp;
-      <h5>Gestisci le preferenze sui cookie</h5>
-      <a class="cky-banner-element">Preferenze Cookie</a>      <br />
+      <div className={styles.cookieSettingWrapper}>
+        <h3>Gestisci le preferenze sui cookie</h3>
+        <a class="cky-banner-element">Preferenze Cookie</a> <br />
+      </div>
       <div>
         <p>
           È possibile modificare le preferenze relative ai cookie in qualsiasi

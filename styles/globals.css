@@ -5,7 +5,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, italianno;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, italianno;
+}
+
+:root {
+  --color-primary: #c9184a;
+  --color-secondary: #ffffff; 
 }
 
 a {
@@ -19,14 +24,9 @@ a {
 a.cky-banner-element {
   padding: 8px 30px;
   background: #F8F9FA;
-  color: #858A8F;
+  color: var(--color-primary);
   border: 1px solid #DEE2E6;
   box-sizing: border-box;
-  border-radius: 2px;
+  border-radius: 20px;
   cursor: pointer;
-}
-
-:root {
-  --color-primary: #c9184a;
-  --color-secondary: #ffffff; 
 }
