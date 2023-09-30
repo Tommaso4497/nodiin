@@ -1,10 +1,11 @@
 .wrapperPolicy {
   background-color: var(--color-primary);
   color: var(--color-secondary);
-  padding: 1rem;
+  padding:2rem 25rem;
 }
 
 .title {
+  font-family: "Italianno";
   padding: 0;
   margin: 0;
   text-align: center;
@@ -14,7 +15,8 @@
   text-align: center;
 }
 
-.cookieSettingWrapper {
-  text-align: "center";
-  padding-bottom: ".75rem";
-}
+
+@media only screen and (max-width: 899px) {
+  .wrapperPolicy {
+    padding:2rem 1.75rem;
+  }}

@@ -128,7 +128,7 @@ export default function Home() {
             ispirare. <br />
             <br /> Con ago, filo e tanta passione, creo ricami impreziositi con
             pietre e cristalli.<br /><br />
-            Per qualsiasi informazione, non esitare a <a className={styles.changePage} onClick={()=>{router.push(`/contatti`)}}>contattarmi!</a>
+            Per qualsiasi informazione, non esitare a <a className="link" onClick={()=>{router.push(`/contatti`)}}>contattarmi!</a>
           </p>
         </div>
       </div>
