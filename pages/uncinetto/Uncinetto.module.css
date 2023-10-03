@@ -57,7 +57,7 @@
 @media only screen and (max-width: 550px) {
 
   .wrapperGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 0;
   }
 

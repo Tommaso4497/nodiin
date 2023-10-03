@@ -1,4 +1,4 @@
-import { FormControlLabel, Radio, RadioGroup } from "@mui/material";
+import { Button, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import React, { useEffect, useState } from "react";
 // import copertina from "../../images/cover/donnaorecchini.png";
 import styles from "./Uncinetto.module.css";
@@ -41,50 +41,14 @@ const Uncinetto = () => {
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
       </p>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingBottom: "2rem",
-          padding: matches ? "0rem" : "1rem",
-        }}
-      >
-        <RadioGroup
-          style={{
-            width: "auto",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-          row
-          value={categorySearch}
-          onChange={(e) => setCategorySearch(e.target.value)}
-        >
-          <FormControlLabel value="" control={<Radio />} label="Tutto" />
-          <FormControlLabel
-            value="EARRINGS"
-            control={<Radio />}
-            label="Orecchini"
-          />
-          <FormControlLabel
-            value="BRACELETS"
-            control={<Radio />}
-            label="Bracciali"
-          />
-          <FormControlLabel
-            value="PENDERS"
-            control={<Radio />}
-            label="Ciondoli"
-          />
-          <FormControlLabel
-            value="COMPLETE"
-            control={<Radio />}
-            label="Completi"
-          />
-          <FormControlLabel value="OTHER" control={<Radio />} label="Altri" />
-        </RadioGroup>
+      <div role="group" className="radioButtonWrapper">
+        <Button onClick={()=>{setCategorySearch("")}} className={categorySearch  == "" ? "radioButtonActive" : "radioButton"}  >Tutti</Button>
+        <Button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  == "EARRINGS" ? "radioButtonActive" : "radioButton"}>Orecchini</Button>
+        <Button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? "radioButtonActive" : "radioButton"}>Bracciali</Button>
+        <Button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? "radioButtonActive" : "radioButton"}>Ciondoli</Button>
+        <Button onClick={()=>{setCategorySearch("COMPLETE")}} className={categorySearch  == "COMPLETE" ? "radioButtonActive" : "radioButton"}>Completi</Button>
+        <Button onClick={()=>{setCategorySearch("OTHER")}} className={categorySearch  == "OTHER" ? "radioButtonActive" : "radioButton"}>Altri</Button>
       </div>
-
       <div className={styles.wrapperGrid}>
         {elements
           .filter(
