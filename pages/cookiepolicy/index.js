@@ -69,6 +69,7 @@ const CookiePolicy = () => {
         <p>
           Chrome:{" "}
           <a
+          style={{wordBreak:"break-all"}}
             className="link"
             href="https://support.google.com/accounts/answer/32050"
             target="_blank"
