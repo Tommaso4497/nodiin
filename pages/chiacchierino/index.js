@@ -19,9 +19,11 @@ import BackToTop from "../../components/BackToTop";
 
 const Chiacchierino = () => {
   const [search, setSearch] = useState("");
-  const [categorySearch, setCategorySearch] = useState("");
+  const [categorySearch, setCategorySearch] = useState("ALL");
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
+
+  console.log("state:",categorySearch)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -48,7 +50,7 @@ const Chiacchierino = () => {
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!
       </p>
       <div role="group" className="radioButtonWrapper">
-        <Button onClick={()=>{setCategorySearch(""); console.log(categorySearch)}} className={categorySearch  === "" ? "radioButtonActive" : "radioButton"} >Tutti</Button>
+        <Button onClick={()=>{setCategorySearch("ALL"); console.log(categorySearch)}} className={categorySearch == "ALL" ? "radioButtonActive" : "radioButton"} >Tutti</Button>
         <Button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  == "EARRINGS" ? "radioButtonActive" : "radioButton"}>Orecchini</Button>
         <Button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? "radioButtonActive" : "radioButton"}>Bracciali</Button>
         <Button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? "radioButtonActive" : "radioButton"}>Ciondoli</Button>
@@ -61,7 +63,7 @@ const Chiacchierino = () => {
           .filter(
             (elem) =>
               elem.category === "Chiacchierino" &&
-              elem.product.toLowerCase().match(categorySearch.toLowerCase())
+              elem.product.toLowerCase().includes(categorySearch.toLowerCase())
           )
           // (elem.title.toLowerCase().match(search.toLowerCase()) ||
           //   elem.desc.toLowerCase().match(search.toLowerCase())) )

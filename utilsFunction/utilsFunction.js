@@ -86,6 +86,7 @@ import { Mail } from "@mui/icons-material";
 
 const COMMON = 0;
 
+const ALL = "ALL";
 const EARRINGS = "EARRINGS";
 const NECKLACE = "NECKLACE";
 const BRACELETS = "BRACELETS";
@@ -140,7 +141,7 @@ const elements = [
     type: COMMON,
     image:rinascitaverde,
     category: "Chiacchierino",
-    product:PENDERS,
+    product:"PENDERS-ALL",
   },
   {
     id: uuidv4(),
@@ -148,7 +149,7 @@ const elements = [
     type: COMMON,
     image:fioridipesco,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -156,7 +157,7 @@ const elements = [
     type: COMMON,
     image:rosadavorio,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -164,7 +165,7 @@ const elements = [
     type: COMMON,
     image:lucedelmare,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -172,7 +173,7 @@ const elements = [
     type: COMMON,
     image:braccialefioreametista,
     category: "Chiacchierino",
-    product:BRACELETS,
+    product:"BRACELETS-ALL",
   },
   {
     id: uuidv4(),
@@ -180,7 +181,7 @@ const elements = [
     type: COMMON,
     image:orecchinifioreametista,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -188,7 +189,7 @@ const elements = [
     type: COMMON,
     image:pietredelpassato,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -196,7 +197,7 @@ const elements = [
     type: COMMON,
     image:ellissidarancio,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -204,7 +205,7 @@ const elements = [
     type: COMMON,
     image:tramontoinfuocato,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -212,7 +213,7 @@ const elements = [
     type: COMMON,
     image:braccialerossodorato,
     category: "Chiacchierino",
-    product:BRACELETS,
+    product:"BRACELETS-ALL",
   },
   {
     id: uuidv4(),
@@ -220,7 +221,7 @@ const elements = [
     type: COMMON,
     image:mezzalunaarancione,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -228,7 +229,7 @@ const elements = [
     type: COMMON,
     image:mezzalunasabbia,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -236,7 +237,7 @@ const elements = [
     type: COMMON,
     image:mezzalunarossa,
     category: "Chiacchierino",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -244,7 +245,7 @@ const elements = [
     type: COMMON,
     image:esplosionedicolori,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -252,7 +253,7 @@ const elements = [
     type: COMMON,
     image:ciondoloesplosionedicolori,
     category: "Uncinetto",
-    product:PENDERS,
+    product:"PENDERS-ALL",
   },
   {
     id: uuidv4(),
@@ -260,7 +261,7 @@ const elements = [
     type: COMMON,
     image:riflessidinatura,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -268,7 +269,7 @@ const elements = [
     type: COMMON,
     image:ciondoloriflessidinatura,
     category: "Uncinetto",
-    product:PENDERS,
+    product:"PENDERS-ALL",
   },
   {
     id: uuidv4(),
@@ -276,7 +277,7 @@ const elements = [
     type: COMMON,
     image:turcheseinfuoco,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -284,7 +285,7 @@ const elements = [
     type: COMMON,
     image:stellafiorita,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -292,7 +293,7 @@ const elements = [
     type: COMMON,
     image:trioflorealerosa,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
 
   },
   {
@@ -301,7 +302,7 @@ const elements = [
     type: COMMON,
     image:trioflorealeturchese,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
 
   },
   {
@@ -310,7 +311,7 @@ const elements = [
     type: COMMON,
     image:cristallibluverdefloreali,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
 
   },
   {
@@ -319,7 +320,7 @@ const elements = [
     type: COMMON,
     image:lillanottenera,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -327,7 +328,7 @@ const elements = [
     type: COMMON,
     image:ciondololillanottenera,
     category: "Uncinetto",
-    product:PENDERS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -335,7 +336,7 @@ const elements = [
     type: COMMON,
     image:cristallicelestedazzurro,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
 
   },
   {
@@ -344,7 +345,7 @@ const elements = [
     type: COMMON,
     image:sfumaturedibosco,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
 
   },
   {
@@ -353,7 +354,7 @@ const elements = [
     type: COMMON,
     image:verdedimezzanotte,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -361,7 +362,7 @@ const elements = [
     type: COMMON,
     image:margheritadeicampi,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -369,7 +370,7 @@ const elements = [
     type: COMMON,
     image:margheritadibosco,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -377,7 +378,7 @@ const elements = [
     type: COMMON,
     image:cristalliditramonto,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -385,7 +386,7 @@ const elements = [
     type: COMMON,
     image:rosaautunnale,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -393,7 +394,7 @@ const elements = [
     type: COMMON,
     image:fogliedicristalli,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -401,7 +402,7 @@ const elements = [
     type: COMMON,
     image:orecchiniblunotte,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -409,7 +410,7 @@ const elements = [
     type: COMMON,
     image:ciondoloblunotte,
     category: "Uncinetto",
-    product:PENDERS,
+    product:"PENDERS-ALL",
   },
   {
     id: uuidv4(),
@@ -417,7 +418,7 @@ const elements = [
     type: COMMON,
     image:orecchinicristallidisabbia,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -425,7 +426,7 @@ const elements = [
     type: COMMON,
     image:ciondolocristallidisabbia,
     category: "Uncinetto",
-    product:PENDERS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -433,7 +434,7 @@ const elements = [
     type: COMMON,
     image:orecchiniperlediluce,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -441,7 +442,7 @@ const elements = [
     type: COMMON,
     image:ciondoloperlediluce,
     category: "Uncinetto",
-    product:PENDERS,
+    product:"PENDERS-ALL",
   },
   {
     id: uuidv4(),
@@ -449,7 +450,7 @@ const elements = [
     type: COMMON,
     image:pietredelgiardino,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -457,7 +458,7 @@ const elements = [
     type: COMMON,
     image:Sfumaturedicacaodiarancia,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -465,7 +466,7 @@ const elements = [
     type: COMMON,
     image:arcobalenodicristalli,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -473,7 +474,7 @@ const elements = [
     type: COMMON,
     image:arcobalenodibosco,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -481,7 +482,7 @@ const elements = [
     type: COMMON,
     image:arcobalenoditramonto,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -489,7 +490,7 @@ const elements = [
     type: COMMON,
     image:fioreincantato,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -497,7 +498,7 @@ const elements = [
     type: COMMON,
     image:mosaicodicristalli,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
   {
     id: uuidv4(),
@@ -505,7 +506,7 @@ const elements = [
     type: COMMON,
     image:sabbiadeldeserto,
     category: "Uncinetto",
-    product:EARRINGS,
+    product:"EARRINGS-ALL",
   },
  ];
 
