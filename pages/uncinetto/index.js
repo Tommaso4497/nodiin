@@ -42,12 +42,12 @@ const Uncinetto = () => {
       </p>
 
       <div role="group" className={styles.radioButtonWrapper}>
-        <Button onClick={()=>{setCategorySearch("ALL")}} className={categorySearch  == "ALL" ? styles.radioButtonActive : styles.radioButton}  >Tutti</Button>
-        <Button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  == "EARRINGS" ? styles.radioButtonActive : styles.radioButton}>Orecchini</Button>
-        <Button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? styles.radioButtonActive : styles.radioButton}>Bracciali</Button>
-        <Button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? styles.radioButtonActive : styles.radioButton}>Ciondoli</Button>
-        <Button onClick={()=>{setCategorySearch("COMPLETE")}} className={categorySearch  == "COMPLETE" ? styles.radioButtonActive : styles.radioButton}>Completi</Button>
-        <Button onClick={()=>{setCategorySearch("OTHER")}} className={categorySearch  == "OTHER" ? styles.radioButtonActive : styles.radioButton}>Altri</Button>
+        <button onClick={()=>{setCategorySearch("ALL")}} className={categorySearch  === "ALL" ? styles.radioButtonActive : styles.radioButton}  >Tutti</button>
+        <button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  === "EARRINGS" ? styles.radioButtonActive : styles.radioButton}>Orecchini</button>
+        <button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? styles.radioButtonActive : styles.radioButton}>Bracciali</button>
+        <button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? styles.radioButtonActive : styles.radioButton}>Ciondoli</button>
+        <button onClick={()=>{setCategorySearch("COMPLETE")}} className={categorySearch  == "COMPLETE" ? styles.radioButtonActive : styles.radioButton}>Completi</button>
+        <button onClick={()=>{setCategorySearch("OTHER")}} className={categorySearch  == "OTHER" ? styles.radioButtonActive : styles.radioButton}>Altri</button>
       </div>
       <div className={styles.wrapperGrid}>
         {elements
