@@ -49,13 +49,13 @@ const Chiacchierino = () => {
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!
       </p>
-      <div role="group" className="radioButtonWrapper">
-        <Button onClick={()=>{setCategorySearch("ALL"); console.log(categorySearch)}} className={categorySearch == "ALL" ? "radioButtonActive" : "radioButton"} >Tutti</Button>
-        <Button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  == "EARRINGS" ? "radioButtonActive" : "radioButton"}>Orecchini</Button>
-        <Button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? "radioButtonActive" : "radioButton"}>Bracciali</Button>
-        <Button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? "radioButtonActive" : "radioButton"}>Ciondoli</Button>
-        <Button onClick={()=>{setCategorySearch("COMPLETE")}} className={categorySearch  == "COMPLETE" ? "radioButtonActive" : "radioButton"}>Completi</Button>
-        <Button onClick={()=>{setCategorySearch("OTHER")}} className={categorySearch  == "OTHER" ? "radioButtonActive" : "radioButton"}>Altri</Button>
+      <div role="group" className={styles.radioButtonWrapper}>
+        <Button onClick={()=>{setCategorySearch("ALL"); console.log(categorySearch)}} className={categorySearch == "ALL" ? styles.radioButtonActive : styles.radioButton} >Tutti</Button>
+        <Button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  == "EARRINGS" ? styles.radioButtonActive : styles.radioButton}>Orecchini</Button>
+        <Button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? styles.radioButtonActive : styles.radioButton}>Bracciali</Button>
+        <Button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? styles.radioButtonActive : styles.radioButton}>Ciondoli</Button>
+        <Button onClick={()=>{setCategorySearch("COMPLETE")}} className={categorySearch  == "COMPLETE" ? styles.radioButtonActive : styles.radioButton}>Completi</Button>
+        <Button onClick={()=>{setCategorySearch("OTHER")}} className={categorySearch  == "OTHER" ? styles.radioButtonActive : styles.radioButton}>Altri</Button>
       </div>
 
       <div className={styles.wrapperGrid}>

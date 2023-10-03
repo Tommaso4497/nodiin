@@ -38,21 +38,3 @@ a.cky-banner-element {
   border-radius: 20px;
   cursor: pointer;
 }
-
-.radioButtonWrapper{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.radioButton{
-  background-color: transparent;
-  box-sizing: border-box;
-  border: 1px solid var(--color-primary);
-}
-.radioButtonActive{
-  background-color:var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color:var(--color-secondary);
-}
