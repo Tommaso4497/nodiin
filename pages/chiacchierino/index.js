@@ -48,7 +48,7 @@ const Chiacchierino = () => {
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!
       </p>
       <div role="group" className="radioButtonWrapper">
-        <Button onClick={()=>{setCategorySearch("")}} className={categorySearch  == "" ? "radioButtonActive" : "radioButton"}  >Tutti</Button>
+        <Button onClick={()=>{setCategorySearch(""); console.log(categorySearch)}} className={categorySearch  === "" ? "radioButtonActive" : "radioButton"} >Tutti</Button>
         <Button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  == "EARRINGS" ? "radioButtonActive" : "radioButton"}>Orecchini</Button>
         <Button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? "radioButtonActive" : "radioButton"}>Bracciali</Button>
         <Button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? "radioButtonActive" : "radioButton"}>Ciondoli</Button>
