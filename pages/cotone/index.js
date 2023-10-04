@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 import theme from "../../styles/main";
-import styles from "./Cotone.module.css"
+import styles from "./Cotone.module.css";
 import {
   FormControlLabel,
   Radio,
   RadioGroup,
   useMediaQuery,
 } from "@mui/material";
+import RadioMenu from "../../components/RadioMenu";
+import { category, elements } from "../../utilsFunction/utilsFunction";
+import SingleCard from "../../components/SingleCard";
+import BackToTop from "../../components/BackToTop";
 
 const Cotone = () => {
-  const [categorySearch, setCategorySearch] = useState("");
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const [categorySearch, setCategorySearch] = useState("ALL");
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
 
   useEffect(() => {
@@ -27,49 +30,27 @@ const Cotone = () => {
       <div className={styles.pageTitle}>
         <p style={{ marginBlock: "0" }}>Cotone</p>
       </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingBottom: "2rem",
-          padding: matches ? "0rem" : "1rem",
-        }}
-      >
-        <RadioGroup
-          style={{
-            width: "auto",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-          row
-          value={categorySearch}
-          onChange={(e) => setCategorySearch(e.target.value)}
-        >
-          <FormControlLabel value="" control={<Radio />} label="Tutto" />
-          <FormControlLabel
-            value="EARRINGS"
-            control={<Radio />}
-            label="Orecchini"
-          />
-          <FormControlLabel
-            value="BRACELETS"
-            control={<Radio />}
-            label="Bracciali"
-          />
-          <FormControlLabel
-            value="PENDERS"
-            control={<Radio />}
-            label="Ciondoli"
-          />
-          <FormControlLabel
-            value="COMPLETE"
-            control={<Radio />}
-            label="Completi"
-          />
-          <FormControlLabel value="OTHER" control={<Radio />} label="Altri" />
-        </RadioGroup>
+      <RadioMenu elements={category} setCategory={setCategorySearch} />
+      <div className={styles.wrapperGrid}>
+        {elements
+          .filter(
+            (elem) =>
+              elem.category === "Cotone" &&
+              elem.product.toLowerCase().includes(categorySearch.toLowerCase())
+          )
+          // (elem.title.toLowerCase().match(search.toLowerCase()) ||
+          //   elem.desc.toLowerCase().match(search.toLowerCase())) )
+          .map((filt) => (
+            <SingleCard
+              category={filt.category}
+              key={filt.id}
+              title={filt.title}
+              image={filt?.image}
+              descr={filt.desc}
+            ></SingleCard>
+          ))}
       </div>
+      {visibilityButtonToTop && <BackToTop />}
     </div>
   );
 };
