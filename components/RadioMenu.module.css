@@ -4,15 +4,47 @@
     align-items:center;
     justify-content:center;
     flex-wrap:wrap;
+    padding-bottom: 1rem;
 }
-
-  .radioButton{
+.radioButton{
+    font-size: 1rem;
+    padding:10px;
     background-color: transparent;
     box-sizing: border-box;
     border: 1px solid var(--color-primary);
-  }
-  .radioButtonActive{
+}
+.radioButtonActive{
+    padding:10px;
+    font-size: 1rem;
     background-color:var(--color-primary);
     border: 1px solid var(--color-primary);
     color:var(--color-secondary);
+}
+
+.radioButton:nth-of-type(1){
+    border-radius: 20px 0px 0px 20px;
+}
+.radioButtonActive:nth-of-type(1){
+    border-radius: 20px 0px 0px 20px;
+}
+.radioButton:nth-of-type(6){
+    border-radius: 0px 20px 20px 0px;
+}
+.radioButtonActive:nth-of-type(6){
+    border-radius: 0px 20px 20px 0px;
+}
+
+@media only screen and (max-width: 550px) {
+    .radioButton:nth-of-type(1){
+        border-radius: 0px 0px 0px 0px;
+    }
+    .radioButtonActive:nth-of-type(1){
+        border-radius: 0px 0px 0px 0px;
+    }
+    .radioButton:nth-of-type(6){
+        border-radius: 0px 0px 0px 0px;
+    }
+    .radioButtonActive:nth-of-type(6){
+        border-radius: 0px 0px 0px 0px;
+    }
   }
