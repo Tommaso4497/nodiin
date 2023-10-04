@@ -32,7 +32,6 @@ import uncinetto28 from "../images/uncinetto/uncinetto28.webp";
 import uncinetto29 from "../images/uncinetto/uncinetto29.webp";
 import uncinetto30 from "../images/uncinetto/uncinetto30.webp";
 
-
 import esplosionedicolori from "../images/uncinetto/esplosionedicolori.jpg";
 import ciondoloesplosionedicolori from "../images/uncinetto/ciondoloesplosionedicolori.webp";
 import riflessidinatura from "../images/uncinetto/riflessidinatura.jpg";
@@ -62,10 +61,10 @@ import pietredelgiardino from "../images/uncinetto/pietredelgiardino.webp";
 import Sfumaturedicacaodiarancia from "../images/uncinetto/Sfumaturedicacaodiarancia.webp";
 import arcobalenodicristalli from "../images/uncinetto/arcobalenodicristalli.webp";
 import arcobalenodibosco from "../images/uncinetto/arcobalenodibosco.webp";
-import arcobalenoditramonto from "../images/uncinetto/arcobalenoditramonto.webp"; 
+import arcobalenoditramonto from "../images/uncinetto/arcobalenoditramonto.webp";
 import fioreincantato from "../images/uncinetto/fioreincantato.webp";
-import mosaicodicristalli from "../images/uncinetto/mosaicodicristalli.webp"; 
-import sabbiadeldeserto from "../images/uncinetto/sabbiadeldeserto.webp"; 
+import mosaicodicristalli from "../images/uncinetto/mosaicodicristalli.webp";
+import sabbiadeldeserto from "../images/uncinetto/sabbiadeldeserto.webp";
 
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 
@@ -86,13 +85,14 @@ import { Mail } from "@mui/icons-material";
 
 const COMMON = 0;
 
-const ALL = "ALL";
-const EARRINGS = "EARRINGS";
-const NECKLACE = "NECKLACE";
-const BRACELETS = "BRACELETS";
-const PENDERS = "PENDERS" ;
-const COMPLETE = "COMPLETE";
-const OTHER = "OTHER";
+const category = [
+  { name: "Tutti", value: "ALL" },
+  { name: "Orecchini", value: "EARRINGS" },
+  { name: "Bracciali", value: "BRACELETS" },
+  { name: "Pendenti", value: "PENDERS" },
+  { name: "Completi", value: "COMPLETE" },
+  { name: "Altri", value: "OTHER" },
+];
 
 const menuElement = [
   {
@@ -133,382 +133,376 @@ const menuElement = [
   // },
 ];
 
-
 const elements = [
   {
     id: uuidv4(),
     title: "Rinascita verde",
     type: COMMON,
-    image:rinascitaverde,
+    image: rinascitaverde,
     category: "Chiacchierino",
-    product:"PENDERS-ALL",
+    product: "PENDERS-ALL",
   },
   {
     id: uuidv4(),
     title: "Fiori di Pesco",
     type: COMMON,
-    image:fioridipesco,
+    image: fioridipesco,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Rosa d'avorio",
     type: COMMON,
-    image:rosadavorio,
+    image: rosadavorio,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Luce del mare",
     type: COMMON,
-    image:lucedelmare,
+    image: lucedelmare,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Bracciale fiore d'ametista",
     type: COMMON,
-    image:braccialefioreametista,
+    image: braccialefioreametista,
     category: "Chiacchierino",
-    product:"BRACELETS-ALL",
+    product: "BRACELETS-ALL",
   },
   {
     id: uuidv4(),
     title: "Orecchini fiore d'ametista",
     type: COMMON,
-    image:orecchinifioreametista,
+    image: orecchinifioreametista,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Pietre del passato",
     type: COMMON,
-    image:pietredelpassato,
+    image: pietredelpassato,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Ellissi d'arancio",
     type: COMMON,
-    image:ellissidarancio,
+    image: ellissidarancio,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Tramonto infuocato",
     type: COMMON,
-    image:tramontoinfuocato,
+    image: tramontoinfuocato,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Bracciale rosso dorato",
     type: COMMON,
-    image:braccialerossodorato,
+    image: braccialerossodorato,
     category: "Chiacchierino",
-    product:"BRACELETS-ALL",
+    product: "BRACELETS-ALL",
   },
   {
     id: uuidv4(),
     title: "Mezzaluna arancione",
     type: COMMON,
-    image:mezzalunaarancione,
+    image: mezzalunaarancione,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Mezzaluna sabbia",
     type: COMMON,
-    image:mezzalunasabbia,
+    image: mezzalunasabbia,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Mezzaluna rossa",
     type: COMMON,
-    image:mezzalunarossa,
+    image: mezzalunarossa,
     category: "Chiacchierino",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Esplosione di colori",
     type: COMMON,
-    image:esplosionedicolori,
+    image: esplosionedicolori,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Ciondolo esplosione di colori",
     type: COMMON,
-    image:ciondoloesplosionedicolori,
+    image: ciondoloesplosionedicolori,
     category: "Uncinetto",
-    product:"PENDERS-ALL",
+    product: "PENDERS-ALL",
   },
   {
     id: uuidv4(),
     title: "Riflessi di natura",
     type: COMMON,
-    image:riflessidinatura,
+    image: riflessidinatura,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: " Ciondolo riflessi di natura",
     type: COMMON,
-    image:ciondoloriflessidinatura,
+    image: ciondoloriflessidinatura,
     category: "Uncinetto",
-    product:"PENDERS-ALL",
+    product: "PENDERS-ALL",
   },
   {
     id: uuidv4(),
     title: "Turchese in fuoco",
     type: COMMON,
-    image:turcheseinfuoco,
+    image: turcheseinfuoco,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Stella fiorita",
     type: COMMON,
-    image:stellafiorita,
+    image: stellafiorita,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Trio floreale rosa",
     type: COMMON,
-    image:trioflorealerosa,
+    image: trioflorealerosa,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
-
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Trio floreale turchese",
     type: COMMON,
-    image:trioflorealeturchese,
+    image: trioflorealeturchese,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
-
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Cristalli blu-verde floreali",
     type: COMMON,
-    image:cristallibluverdefloreali,
+    image: cristallibluverdefloreali,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
-
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Lilla notte nera",
     type: COMMON,
-    image:lillanottenera,
+    image: lillanottenera,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Ciondolo lilla notte nera",
     type: COMMON,
-    image:ciondololillanottenera,
+    image: ciondololillanottenera,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Cristalli celeste d'azzurro",
     type: COMMON,
-    image:cristallicelestedazzurro,
+    image: cristallicelestedazzurro,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
-
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Sfumature di bosco",
     type: COMMON,
-    image:sfumaturedibosco,
+    image: sfumaturedibosco,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
-
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Verde di mezzanotte",
     type: COMMON,
-    image:verdedimezzanotte,
+    image: verdedimezzanotte,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Margerita dei campi",
     type: COMMON,
-    image:margheritadeicampi,
+    image: margheritadeicampi,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Margerita di bosco",
     type: COMMON,
-    image:margheritadibosco,
+    image: margheritadibosco,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Cristalli di tramonto",
     type: COMMON,
-    image:cristalliditramonto,
+    image: cristalliditramonto,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Rosa autunnale",
     type: COMMON,
-    image:rosaautunnale,
+    image: rosaautunnale,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Foglie di cristalli",
     type: COMMON,
-    image:fogliedicristalli,
+    image: fogliedicristalli,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Orecchini blu notte",
     type: COMMON,
-    image:orecchiniblunotte,
+    image: orecchiniblunotte,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Ciondolo blu notte",
     type: COMMON,
-    image:ciondoloblunotte,
+    image: ciondoloblunotte,
     category: "Uncinetto",
-    product:"PENDERS-ALL",
+    product: "PENDERS-ALL",
   },
   {
     id: uuidv4(),
     title: "Orecchini cristalli di sabbia",
     type: COMMON,
-    image:orecchinicristallidisabbia,
+    image: orecchinicristallidisabbia,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Ciondolo cristalli di sabbia",
     type: COMMON,
-    image:ciondolocristallidisabbia,
+    image: ciondolocristallidisabbia,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Orecchini perle di luce",
     type: COMMON,
-    image:orecchiniperlediluce,
+    image: orecchiniperlediluce,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Ciondolo perle di luce",
     type: COMMON,
-    image:ciondoloperlediluce,
+    image: ciondoloperlediluce,
     category: "Uncinetto",
-    product:"PENDERS-ALL",
+    product: "PENDERS-ALL",
   },
   {
     id: uuidv4(),
     title: "Pietre del giardino",
     type: COMMON,
-    image:pietredelgiardino,
+    image: pietredelgiardino,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Sfumature di cacao e di arancia",
     type: COMMON,
-    image:Sfumaturedicacaodiarancia,
+    image: Sfumaturedicacaodiarancia,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Arcobaleno di cristalli",
     type: COMMON,
-    image:arcobalenodicristalli,
+    image: arcobalenodicristalli,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Arcobaleno di bosco",
     type: COMMON,
-    image:arcobalenodibosco,
+    image: arcobalenodibosco,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Arcobaleno di tramonto",
     type: COMMON,
-    image:arcobalenoditramonto,
+    image: arcobalenoditramonto,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Fiore incantato",
     type: COMMON,
-    image:fioreincantato,
+    image: fioreincantato,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Mosaico di cristalli",
     type: COMMON,
-    image:mosaicodicristalli,
+    image: mosaicodicristalli,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
   {
     id: uuidv4(),
     title: "Sabbia del deserto",
     type: COMMON,
-    image:sabbiadeldeserto,
+    image: sabbiadeldeserto,
     category: "Uncinetto",
-    product:"EARRINGS-ALL",
+    product: "EARRINGS-ALL",
   },
- ];
+];
 
 const axiosToData = async (axiosPromise) => {
   try {
@@ -519,8 +513,4 @@ const axiosToData = async (axiosPromise) => {
   }
 };
 
-export {
-  menuElement,
-  axiosToData,
-  elements,
-};
+export { menuElement, axiosToData, elements, category };

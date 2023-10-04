@@ -2,12 +2,13 @@ import { Button, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import React, { useEffect, useState } from "react";
 // import copertina from "../../images/cover/donnaorecchini.png";
 import styles from "./Uncinetto.module.css";
-import { elements } from "../../utilsFunction/utilsFunction";
+import { elements, category } from "../../utilsFunction/utilsFunction";
 import SingleCard from "../../components/SingleCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../../styles/main";
 import BackToTop from "../../components/BackToTop";
 import Image from "next/image";
+import RadioMenu from "../../components/RadioMenu";
 
 const Uncinetto = () => {
   const [categorySearch, setCategorySearch] = useState("ALL");
@@ -41,14 +42,7 @@ const Uncinetto = () => {
         In questa sezione troverai tutte le mie creazioni in Uncinetto!
       </p>
 
-      <div role="group" className={styles.radioButtonWrapper}>
-        <button onClick={()=>{setCategorySearch("ALL")}} className={categorySearch  === "ALL" ? styles.radioButtonActive : styles.radioButton}  >Tutti</button>
-        <button onClick={()=>{setCategorySearch("EARRINGS")}} className={categorySearch  === "EARRINGS" ? styles.radioButtonActive : styles.radioButton}>Orecchini</button>
-        <button onClick={()=>{setCategorySearch("BRACELETS")}} className={categorySearch == "BRACELETS" ? styles.radioButtonActive : styles.radioButton}>Bracciali</button>
-        <button onClick={()=>{setCategorySearch("PENDERS")}} className={categorySearch  == "PENDERS" ? styles.radioButtonActive : styles.radioButton}>Ciondoli</button>
-        <button onClick={()=>{setCategorySearch("COMPLETE")}} className={categorySearch  == "COMPLETE" ? styles.radioButtonActive : styles.radioButton}>Completi</button>
-        <button onClick={()=>{setCategorySearch("OTHER")}} className={categorySearch  == "OTHER" ? styles.radioButtonActive : styles.radioButton}>Altri</button>
-      </div>
+        <RadioMenu elements={category} setCategory={setCategorySearch} />
       <div className={styles.wrapperGrid}>
         {elements
           .filter(
