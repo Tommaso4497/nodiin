@@ -27,6 +27,7 @@ a {
   text-decoration: underline;
   color: #fffd82;
   text-align: center;
+  cursor:pointer;
 }
 
 a.cky-banner-element {

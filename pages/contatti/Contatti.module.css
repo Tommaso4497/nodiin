@@ -1,29 +1,104 @@
 .pageTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-block: 0;
-    font-size: 6rem;
-    font-family: "Italianno";
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-block: 0;
+  font-size: 6rem;
+  font-family: "Italianno";
+}
 
-  .notConfirm{
-    background-color: blue;
-  }
+.contactsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 4rem;
+  gap: 5rem;
+}
 
-  .confirm{
-    background-color: aqua;
-  }
+.emailWrapper {
+  padding: 1rem 10rem 1rem 10rem;
+  background-color: #fffd8242;
+  border-radius: 60px;
+}
+.subtitle {
+  font-size: 2rem;
+  font-family: "Italianno";
+  text-align: center;
+  margin-top: 0;
+}
 
-  @media only screen and (max-width: 899px) {
-    .pageTitle {
-      font-size: 3rem;
-    }
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.socialWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #c9184a42;
+  border-radius: 60px
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconTitle {
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.formTitle{
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 899px) {
+  .pageTitle {
+    font-size: 3rem;
+  }
+  .subtitle {
+    margin-block: 1rem;
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    .pageTitle {
-      font-size: 2.5rem;
-    }
+  .pageTitle {
+    font-size: 2.5rem;
   }
+  .contactsWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .emailWrapper {
+    padding: 1rem;
+  }
+  .iconTitle {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  .formTitle{
+    font-size: 1rem;
+  }
+  .socialWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c9184a42;
+    border-radius: 20px
+  }
+  .emailWrapper {
+    padding: 1rem;
+    background-color: #fffd8242;
+    border-radius: 20px;
+  }
+}
