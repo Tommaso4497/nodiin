@@ -5,8 +5,12 @@ const PrivacyPolicy = () => {
   return (
     <div className={style.wrapperPolicy}>
       <h1 className={style.title}>Privacy Policy</h1>
-      <h4 className={style.subtitle}>Ultimo aggiornamento 29-Set-2023</h4>
-      <h4 className={style.subtitle}>Data effettiva 29-Set-2023</h4>
+      <h4 className={style.subtitle}>
+        Ultimo aggiornamento l&apos;8 ottobre 2023
+      </h4>
+      <h4 className={style.subtitle}>
+        Data di entrata in vigore 29-settembre 2023
+      </h4>
 
       <p>
         Questa Privacy Policy descrive le politiche di Nodi in Chiacchierino,
@@ -35,18 +39,60 @@ const PrivacyPolicy = () => {
       <ul className={style.list}>
         <li>
           <span>
-            <b>DIRITTI DELL&apos;INTERESSATO:</b> A seconda della legge applicabile,
-            voi potete avere il diritto di accedere e di rettificare o
-            cancellare i vostri dati personali o di ricevere una copia dei
-            vostri dati personali, limitare o opporsi al trattamento attivo dei
-            vostri dati, chiederci di condividere (portare) le vostre
-            informazioni personali a un&apos;altra entità, revocare il consenso
-            al trattamento dei vostri dati che ci avete fornito, il diritto di
-            presentare un reclamo a un&apos;autorità legale e altri diritti che
-            possono essere rilevanti ai sensi delle leggi applicabili. Per
-            esercitare questi diritti, Potete scriverci a
-            nodiinchiacchierino@gmail.com. Risponderemo alla vostra richiesta in
-            in conformità con la legge applicabile.
+            <b>INFORMAZIONI CHE RACCOGLIAMO:</b> Raccoglieremo e tratteremo le
+            seguenti informazioni personali su di te:
+            <ol>
+              <li>Nome</li>
+              <li>Email</li>
+            </ol>
+          </span>
+        </li>
+        <li>
+          <b>COME UTILIZZIAMO LE TUE INFORMAZIONI:</b>
+          <span>
+            Utilizzeremo le informazioni che raccogliamo su di te per i seguenti
+            scopi:
+          </span>
+          <ol>
+            <li>Marketing/Promozionale</li>
+            <li>Applicate T&C</li>
+            <li>Supporto</li>
+            <li>Protezione del sito</li>
+          </ol>
+          Se desideriamo utilizzare le tue informazioni per qualsiasi altro
+          scopo, ti chiederemo il consenso e utilizzeremo le tue informazioni
+          solo dopo aver ricevuto il tuo consenso e solo per lo scopo/i per cui
+          hai concesso il consenso, a meno che non siamo obbligati a fare
+          diversamente dalla legge.
+        </li>
+        <li>
+          <span>
+            <b>CONSERVAZIONE DELLE INFORMAZIONI:</b>Conserveremo le tue
+            informazioni personali con noi  da 90 giorni a 2 anni dopo la
+            chiusura dei tuoi account o per tutto il tempo necessario per
+            adempiere agli scopi per cui sono state raccolte come dettagliato in
+            questa Informativa sulla privacy. Potremmo dover conservare alcune
+            informazioni per periodi più lunghi, ad esempio per la tenuta dei
+            registri/rapporti in conformità con la legge applicabile o per altri
+            motivi legittimi come l'esercizio dei diritti legali, la prevenzione
+            delle frodi, ecc. Informazioni anonime residue e informazioni
+            aggregate, che non ti identificano (direttamente o indirettamente),
+            possono essere conservate a tempo indeterminato.
+          </span>
+        </li>
+        <li>
+          <span>
+            <b>I TUOI DIRITTI:</b> A seconda della legge applicabile, voi potete
+            avere il diritto di accedere e di rettificare o cancellare i vostri
+            dati personali o di ricevere una copia dei vostri dati personali,
+            limitare o opporsi al trattamento attivo dei vostri dati, chiederci
+            di condividere (portare) le vostre informazioni personali a
+            un&apos;altra entità, revocare il consenso al trattamento dei vostri
+            dati che ci avete fornito, il diritto di presentare un reclamo a
+            un&apos;autorità legale e altri diritti che possono essere rilevanti
+            ai sensi delle leggi applicabili. Per esercitare questi diritti,
+            Potete scriverci a nodiinchiacchierino@gmail.com. Risponderemo alla
+            vostra richiesta in in conformità con la legge applicabile.
           </span>
 
           <p>

@@ -71,6 +71,13 @@ const Contatti = () => {
           <form>
             <div className={styles.formWrapper}>
               <TextField
+                label="Nome"
+                type="text"
+                name="name"
+                variant="outlined"
+                placeholder="Maria"
+              />
+              <TextField
                 label="Email"
                 type="email"
                 name="email"
@@ -133,10 +140,16 @@ const Contatti = () => {
           textAlign: "center",
           textDecoration: "underline",
           color: "var(--color-primary)",
-          cursor:"pointer"
+          cursor: "pointer",
         }}
       >
-        <p onClick={()=>{router.back()}}>Torna alla home</p>
+        <p
+          onClick={() => {
+            router.back();
+          }}
+        >
+          Torna alla home
+        </p>
       </div>
     </div>
   );
