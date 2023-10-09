@@ -9,7 +9,7 @@ export default async function emailAPI(req, res) {
     service: "gmail",
     auth: {
       user: "nodiinchiacchierino@gmail.com",
-      pass: "xaloktlelehvdxip",
+      pass: prova,
     },
   });
 
