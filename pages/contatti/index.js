@@ -1,10 +1,4 @@
-import {
-  Button,
-  IconButton,
-  TextField,
-  Tooltip,
-  useMediaQuery,
-} from "@mui/material";
+import { Button, IconButton, TextField, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
 import styles from "./Contatti.module.css";
 import Checkbox from "@mui/material/Checkbox";
@@ -13,39 +7,31 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TikTokIcons from "../../icons/TikTokIcons";
 import theme from "../../styles/main";
 import { useRouter } from "next/router";
+import { useRef } from "react";
+import emailJs from "@emailjs/browser";
 
 const Contatti = () => {
   const [confirm, setConfirm] = useState(false);
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const sendmail = async (e) => {
-    const data ={
-      name: name,
-      email: email,
-      message: message,
-
-    }
-    const response = await fetch("/api/contatti", {
-      method:"POST",
-      headers: {
-        Accept:"application/json",
-        "Content-Type": "applocation/json",
-      },
-      body: JSON.stringify(data),  
-    })
-    if(response.ok){
-      console.log("Messaggio inviato")
-    }
-    if(!response.ok){
-      console.log("ERRORE!")
-    }
-    
-  }
+    emailJs
+      .sendForm(
+        "service_o79fxts",
+        "template_p5gvyke",
+        form.current,
+        "21RBqklwr7ZB3s4fr"
+      )
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text)
+      });
+  };
 
   return (
     <div>
@@ -96,29 +82,25 @@ const Contatti = () => {
         </div>
         <div className={styles.emailWrapper}>
           <h2 className={styles.formTitle}>Inviaci una mail</h2>
-          <form method="post" onSubmit={sendmail}>
+          <form ref={form} onSubmit={sendEmail}>
             <div className={styles.formWrapper}>
               <TextField
-                value={name}
-                onChange={(e)=>setName(e.target.value)}
                 label="Nome"
                 type="text"
-                name="name"
+                name="from_name"
                 variant="outlined"
                 placeholder="Maria"
-                />
+              />
               <TextField
-                value={email}
-                onChange={(e)=>setEmail(e.target.value)}
                 id="email"
                 label="Email"
                 type="email"
-                name="email"
+                name="from_email"
                 variant="outlined"
                 placeholder="prova@esempio.it"
               />
               <TextField
-              id="message"
+                id="message"
                 label="Messaggio:"
                 type="text"
                 name="message"
@@ -126,8 +108,6 @@ const Contatti = () => {
                 multiline
                 minRows={matches ? 20 : 10}
                 variant="outlined"
-                value={message}
-                onChange={(e)=>setMessage(e.target.value)}
               />
               <div
                 style={{
