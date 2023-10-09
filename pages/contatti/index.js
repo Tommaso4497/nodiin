@@ -1,9 +1,16 @@
-import { Button, IconButton, TextField, useMediaQuery } from "@mui/material";
+import {
+  Button,
+  IconButton,
+  Snackbar,
+  TextField,
+  useMediaQuery,
+} from "@mui/material";
 import React, { useState } from "react";
 import styles from "./Contatti.module.css";
 import Checkbox from "@mui/material/Checkbox";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Close from "@mui/icons-material/Close";
 import TikTokIcons from "../../icons/TikTokIcons";
 import theme from "../../styles/main";
 import { useRouter } from "next/router";
@@ -15,23 +22,35 @@ const Contatti = () => {
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const form = useRef();
+  const [open, setOpen] = useState(false);
 
   const sendEmail = (e) => {
-    e.preventDefault();
-
     emailJs
       .sendForm(
-        "service_o79fxts",
-        "template_p5gvyke",
+        "service_9ky36ru",
+        "template_oz6byla",
         form.current,
         "21RBqklwr7ZB3s4fr"
       )
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text)
-      });
-  };
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+     }, function(error) {
+        console.log('FAILED...', error);
+     });
+    }
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={() => setOpen(false)}
+      >
+        <Close fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   return (
     <div>
@@ -160,6 +179,13 @@ const Contatti = () => {
           Torna alla home
         </p>
       </div>
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+        message="Mail inviata"
+        action={action}
+      />
     </div>
   );
 };
