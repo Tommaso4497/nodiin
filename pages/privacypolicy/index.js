@@ -74,7 +74,7 @@ const PrivacyPolicy = () => {
             questa Informativa sulla privacy. Potremmo dover conservare alcune
             informazioni per periodi più lunghi, ad esempio per la tenuta dei
             registri/rapporti in conformità con la legge applicabile o per altri
-            motivi legittimi come l'esercizio dei diritti legali, la prevenzione
+            motivi legittimi come l&apos;esercizio dei diritti legali, la prevenzione
             delle frodi, ecc. Informazioni anonime residue e informazioni
             aggregate, che non ti identificano (direttamente o indirettamente),
             possono essere conservate a tempo indeterminato.
