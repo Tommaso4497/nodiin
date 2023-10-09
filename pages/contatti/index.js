@@ -18,6 +18,34 @@ const Contatti = () => {
   const [confirm, setConfirm] = useState(false);
   const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+
+  const sendmail = async (e) => {
+    const data ={
+      name: name,
+      email: email,
+      message: message,
+
+    }
+    const response = await fetch("/api/contatti", {
+      method:"POST",
+      headers: {
+        Accept:"application/json",
+        "Content-Type": "applocation/json",
+      },
+      body: JSON.stringify(data),  
+    })
+    if(response.ok){
+      console.log("Messaggio inviato")
+    }
+    if(!response.ok){
+      console.log("ERRORE!")
+    }
+    
+  }
 
   return (
     <div>
@@ -68,16 +96,21 @@ const Contatti = () => {
         </div>
         <div className={styles.emailWrapper}>
           <h2 className={styles.formTitle}>Inviaci una mail</h2>
-          <form>
+          <form method="post" onSubmit={sendmail}>
             <div className={styles.formWrapper}>
               <TextField
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
                 label="Nome"
                 type="text"
                 name="name"
                 variant="outlined"
                 placeholder="Maria"
-              />
+                />
               <TextField
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
+                id="email"
                 label="Email"
                 type="email"
                 name="email"
@@ -85,13 +118,7 @@ const Contatti = () => {
                 placeholder="prova@esempio.it"
               />
               <TextField
-                label="Oggetto"
-                placeholder="Oggetto..."
-                type="text"
-                name="object"
-                variant="outlined"
-              />
-              <TextField
+              id="message"
                 label="Messaggio:"
                 type="text"
                 name="message"
@@ -99,6 +126,8 @@ const Contatti = () => {
                 multiline
                 minRows={matches ? 20 : 10}
                 variant="outlined"
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
               />
               <div
                 style={{
