@@ -3,6 +3,7 @@ import {
   IconButton,
   Snackbar,
   TextField,
+  TextareaAutosize,
   useMediaQuery,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -25,6 +26,7 @@ const Contatti = () => {
   const [open, setOpen] = useState(false);
 
   const sendEmail = (e) => {
+    e.preventDefault();
     emailJs
       .sendForm(
         "service_9ky36ru",
@@ -32,9 +34,10 @@ const Contatti = () => {
         form.current,
         "21RBqklwr7ZB3s4fr"
       )
-      .then(function(response) {
+      .then((response) => {
+  
         console.log('SUCCESS!', response.status, response.text);
-     }, function(error) {
+     }, (error) => {
         console.log('FAILED...', error);
      });
     }
@@ -118,7 +121,7 @@ const Contatti = () => {
                 variant="outlined"
                 placeholder="prova@esempio.it"
               />
-              <TextField
+              <textarea
                 id="message"
                 label="Messaggio:"
                 type="text"
@@ -126,7 +129,6 @@ const Contatti = () => {
                 placeholder="Inserisci qui il messaggio..."
                 multiline
                 minRows={matches ? 20 : 10}
-                variant="outlined"
               />
               <div
                 style={{
