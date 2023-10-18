@@ -18,12 +18,19 @@ import { useRouter } from "next/router";
 import { useRef } from "react";
 import emailJs from "@emailjs/browser";
 
-const Contatti = () => {
+const ContactForm = ({ matches }) => {
+
   const [confirm, setConfirm] = useState(false);
-  const router = useRouter();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
-  const form = useRef();
-  const [open, setOpen] = useState(false);
+  const [textfieldProps, setTextfieldProps] = React.useState(undefined);
+  const form = useRef()
+
+  React.useEffect(() => {
+    setTextfieldProps({
+      multiline: true,
+      rows: matches ? 20 : 10
+    });
+  }, [matches]);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,12 +42,82 @@ const Contatti = () => {
         "21RBqklwr7ZB3s4fr"
       )
       .then((response) => {
-  
+
         console.log('SUCCESS!', response.status, response.text);
-     }, (error) => {
+      }, (error) => {
         console.log('FAILED...', error);
-     });
-    }
+      });
+  }
+
+  const contactForm = (
+    <form onSubmit={sendEmail}>
+      <div className={styles.formWrapper}>
+        <TextField
+          label="Nome"
+          type="text"
+          name="from_name"
+          variant="outlined"
+          placeholder="Maria"
+        />
+        <TextField
+          id="email"
+          label="Email"
+          type="email"
+          name="from_email"
+          variant="outlined"
+          placeholder="prova@esempio.it"
+        />
+        <TextField
+          id="message"
+          label="Messaggio:"
+          type="text"
+          name="message"
+          placeholder="Inserisci qui il messaggio..."
+          fullWidth
+          {...textfieldProps}
+        />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Checkbox
+            checked={confirm}
+            onChange={() => {
+              setConfirm(!confirm);
+            }}
+          />
+          <p>
+            Ho letto e accetto la{" "}
+            <a
+              rel="noopener noreferrer"
+              href="https://nodiinchiacchierino.it/privacypolicy/"
+            >
+              Privacy Policy
+            </a>
+          </p>
+        </div>
+      </div>
+      <Button
+        className={confirm ? styles.confirm : styles.notConfirm}
+        disabled={!confirm}
+        type="submit"
+        value="Submit"
+      >
+        Invia
+      </Button>
+    </form>
+  );
+
+  return contactForm;
+}
+
+const Contatti = () => {
+  const router = useRouter();
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const [open, setOpen] = useState(false);
 
   const action = (
     <React.Fragment>
@@ -104,65 +181,7 @@ const Contatti = () => {
         </div>
         <div className={styles.emailWrapper}>
           <h2 className={styles.formTitle}>Inviaci una mail</h2>
-          <form ref={form} onSubmit={sendEmail}>
-            <div className={styles.formWrapper}>
-              <TextField
-                label="Nome"
-                type="text"
-                name="from_name"
-                variant="outlined"
-                placeholder="Maria"
-              />
-              <TextField
-                id="email"
-                label="Email"
-                type="email"
-                name="from_email"
-                variant="outlined"
-                placeholder="prova@esempio.it"
-              />
-              <textarea
-                id="message"
-                label="Messaggio:"
-                type="text"
-                name="message"
-                placeholder="Inserisci qui il messaggio..."
-                multiline
-                minRows={matches ? 20 : 10}
-              />
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Checkbox
-                  checked={confirm}
-                  onChange={() => {
-                    setConfirm(!confirm);
-                  }}
-                />
-                <p>
-                  Ho letto e accetto la{" "}
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://nodiinchiacchierino.it/privacypolicy/"
-                  >
-                    Privacy Policy
-                  </a>
-                </p>
-              </div>
-            </div>
-            <Button
-              className={confirm ? styles.confirm : styles.notConfirm}
-              disabled={!confirm}
-              type="submit"
-              value="Submit"
-            >
-              Invia
-            </Button>
-          </form>
+          <ContactForm matches={matches} />
         </div>
       </div>
       <div
