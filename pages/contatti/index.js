@@ -1,12 +1,13 @@
 import {
   Button,
+  CircularProgress,
   IconButton,
   Snackbar,
   TextField,
   TextareaAutosize,
   useMediaQuery,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Contatti.module.css";
 import Checkbox from "@mui/material/Checkbox";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -17,42 +18,53 @@ import theme from "../../styles/main";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import emailJs from "@emailjs/browser";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-const ContactForm = ({ matches }) => {
-
+const ContactForm = ({ matches, handleOpen }) => {
   const [confirm, setConfirm] = useState(false);
-  const [textfieldProps, setTextfieldProps] = React.useState(undefined);
-  const form = useRef()
+  const [textfieldProps, setTextfieldProps] = useState(undefined);
+  const [isLoading, setIsLoading] = useState(false);
 
-  React.useEffect(() => {
+  const form = useRef();
+
+  useEffect(() => {
     setTextfieldProps({
       multiline: true,
-      rows: matches ? 20 : 10
+      rows: matches ? 20 : 10,
     });
   }, [matches]);
 
-
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     emailJs
-      .sendForm(
-        "service_9ky36ru",
-        "template_oz6byla",
-        form.current,
-        "21RBqklwr7ZB3s4fr"
+    .sendForm(
+      "service_9ky36ru",
+      "template_oz6byla",
+      form.current,
+      "21RBqklwr7ZB3s4fr"
       )
-      .then((response) => {
-
-        console.log('SUCCESS!', response.status, response.text);
-      }, (error) => {
-        console.log('FAILED...', error);
-      });
-  }
+      .then(
+        (response) => {
+          setIsLoading(false);
+          setConfirm(false);
+          handleOpen(true);
+          e.target.reset();
+        },
+        (error) => {
+          setIsLoading(false);
+          setConfirm(false);
+          handleOpen(true);
+          e.target.reset();
+        }
+      );
+  };
 
   const contactForm = (
-    <form onSubmit={sendEmail}>
+    <form onSubmit={sendEmail} ref={form}>
       <div className={styles.formWrapper}>
         <TextField
+          required
           label="Nome"
           type="text"
           name="from_name"
@@ -60,6 +72,7 @@ const ContactForm = ({ matches }) => {
           placeholder="Maria"
         />
         <TextField
+          required
           id="email"
           label="Email"
           type="email"
@@ -68,6 +81,7 @@ const ContactForm = ({ matches }) => {
           placeholder="prova@esempio.it"
         />
         <TextField
+          required
           id="message"
           label="Messaggio:"
           type="text"
@@ -102,17 +116,17 @@ const ContactForm = ({ matches }) => {
       </div>
       <Button
         className={confirm ? styles.confirm : styles.notConfirm}
-        disabled={!confirm}
+        disabled={!confirm || isLoading}
         type="submit"
         value="Submit"
       >
-        Invia
+        {isLoading ? <CircularProgress /> : "Invia"}
       </Button>
     </form>
   );
 
   return contactForm;
-}
+};
 
 const Contatti = () => {
   const router = useRouter();
@@ -181,7 +195,11 @@ const Contatti = () => {
         </div>
         <div className={styles.emailWrapper}>
           <h2 className={styles.formTitle}>Inviaci una mail</h2>
-          <ContactForm matches={matches} />
+          <ContactForm
+            matches={matches}
+            openDialog={open}
+            handleOpen={setOpen}
+          />
         </div>
       </div>
       <div
@@ -190,15 +208,21 @@ const Contatti = () => {
           textDecoration: "underline",
           color: "var(--color-primary)",
           cursor: "pointer",
+          marginBottom:"1rem",
         }}
-      >
-        <p
+        >
+
+        <Button
+        style={{
+          borderRadius:"2rem"
+        }}
+        startIcon={<ArrowBackIcon/>}
           onClick={() => {
             router.back();
           }}
         >
           Torna alla home
-        </p>
+        </Button>
       </div>
       <Snackbar
         open={open}
