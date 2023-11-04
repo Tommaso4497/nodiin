@@ -6,13 +6,15 @@
 }
 
 .pageTitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  text-align: center;
   margin-block: 0;
   font-size: 6rem;
   font-family: "Italianno";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation-name: entra;
+  animation-duration: 2s;
 }
 .subtitle {
   font-size: 2rem;
@@ -21,28 +23,33 @@
   margin-top: 0;
 }
 
-.radioButtonWrapper{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-wrap:wrap;
+.radioButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.radioButton{
+.radioButton {
   background-color: transparent;
   box-sizing: border-box;
   border: 1px solid var(--color-primary);
 }
-.radioButtonActive{
-  background-color:var(--color-primary);
+.radioButtonActive {
+  background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
-  color:var(--color-secondary);
+  color: var(--color-secondary);
 }
 
+@keyframes entra {
+  0% { left:-20%;}
+  100% { left:10%; }
+  }
 
 @media only screen and (max-width: 899px) {
   .pageTitle {
     font-size: 3rem;
+    top:10%
   }
   .subtitle {
     margin-block: 1rem;
@@ -61,5 +68,6 @@
   }
   .pageTitle {
     font-size: 2.5rem;
+    top: 8%;
   }
 }

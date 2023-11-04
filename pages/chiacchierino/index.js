@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import copertina from "../../images/copertina.jpeg";
+import copertina from "../../images/copChia.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import {
   Button,
@@ -22,8 +22,6 @@ const Chiacchierino = () => {
   const [categorySearch, setCategorySearch] = useState("ALL");
   const [visibilityButtonToTop, setVisibilityButtonToTop] = useState(false);
 
-  console.log("state:", categorySearch);
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 800) {
@@ -35,16 +33,15 @@ const Chiacchierino = () => {
 
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      ></div>
-      <div className={styles.pageTitle}>
-        <p style={{ marginBlock: "0" }}>Chiacchierino</p>
-      </div>
+      <Image
+        src={copertina}
+        alt="backgroundImage"
+        style={{ position: "relative" }}
+      />
+      <p className={styles.pageTitle} style={{ marginBlock: "0" }}>
+        Chiacchierino
+      </p>
+
       <p className={styles.subtitle}>
         In questa sezione troverai tutte le mie creazioni in Chiacchierino!
       </p>

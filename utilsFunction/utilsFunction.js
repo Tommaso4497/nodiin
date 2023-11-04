@@ -69,6 +69,8 @@ import sabbiadeldeserto from "../images/uncinetto/sabbiadeldeserto.webp";
 import orecchiniFioreCascata from "../images/chiacchierino/orecchiniFioreCascata.jpeg";
 
 import rinascitaverde from "../images/chiacchierino/rinascitaverde.webp";
+import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
+import angeloArgento from "../images/chiacchierino/angeloArgento.jpg";
 import fioridipesco from "../images/chiacchierino/fioridipesco.webp";
 import rosadavorio from "../images/chiacchierino/rosadavorio.webp";
 import lucedelmare from "../images/chiacchierino/lucedelmare.webp";
@@ -134,6 +136,22 @@ const menuElement = [
 ];
 
 const elements = [
+  {
+    id: uuidv4(),
+    title: "Angelo portafortuna ",
+    type: COMMON,
+    image: angeloBianco,
+    category: "Chiacchierino",
+    product: "PENDERS-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Angelo portafortuna ",
+    type: COMMON,
+    image: angeloArgento,
+    category: "Chiacchierino",
+    product: "PENDERS-ALL",
+  },
   {
     id: uuidv4(),
     title: "Rinascita verde",
