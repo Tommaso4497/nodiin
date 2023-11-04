@@ -84,8 +84,17 @@ import braccialerossodorato from "../images/chiacchierino/braccialerossodorato.w
 import mezzalunaarancione from "../images/chiacchierino/mezzalunaarancione.webp";
 import mezzalunasabbia from "../images/chiacchierino/mezzalunasabbia.webp";
 import mezzalunarossa from "../images/chiacchierino/mezzalunarossa.webp";
-import ventagliorose from "../images/chiacchierino/ventagioRose.webp";
+import ventagliorose from "../images/chiacchierino/ventaglioRose.webp";
 import ventagliorosso from "../images/chiacchierino/ventaglioRosso.webp";
+import braccialeschiavaverde from "../images/chiacchierino/braccialeschiavaverde.webp";
+import braccialeschiavarosa from "../images/chiacchierino/braccialeschiavarosa.webp";
+import lunanera from "../images/chiacchierino/lunaNera.webp";
+import stellaverde from "../images/chiacchierino/stellaVerde.webp";
+import stellablu from "../images/chiacchierino/stellaBlu.webp";
+import stellarosa from "../images/chiacchierino/stellaRosa.webp";
+import stellagialla from "../images/chiacchierino/stellaGialla.webp";
+import stellaarancione from "../images/chiacchierino/stellaArancione.webp";
+import completoautunno from "../images/chiacchierino/completoautunno.webp";
 
 import { Mail } from "@mui/icons-material";
 
@@ -174,6 +183,30 @@ const elements = [
   },
   {
     id: uuidv4(),
+    title: "Luna nera",
+    type: COMMON,
+    image: lunanera,
+    category: "Chiacchierino",
+    product: "EARRINGS-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale alla schiava",
+    type: COMMON,
+    image: braccialeschiavaverde,
+    category: "Chiacchierino",
+    product: "BRACELETS-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale alla schiava",
+    type: COMMON,
+    image: braccialeschiavarosa,
+    category: "Chiacchierino",
+    product: "BRACELETS-ALL",
+  },
+  {
+    id: uuidv4(),
     title: "Rinascita verde",
     type: COMMON,
     image: rinascitaverde,
@@ -195,6 +228,54 @@ const elements = [
     image: ventagliorosso,
     category: "Chiacchierino",
     product: "EARRINGS-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella Rosa",
+    type: COMMON,
+    image: stellarosa,
+    category: "Chiacchierino",
+    product: "COMPLETE-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella Blu",
+    type: COMMON,
+    image: stellablu,
+    category: "Chiacchierino",
+    product: "COMPLETE-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella Verde",
+    type: COMMON,
+    image: stellaverde,
+    category: "Chiacchierino",
+    product: "COMPLETE-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella Arancione",
+    type: COMMON,
+    image: stellaarancione,
+    category: "Chiacchierino",
+    product: "COMPLETE-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Stella Gialla",
+    type: COMMON,
+    image: stellagialla,
+    category: "Chiacchierino",
+    product: "COMPLETE-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Completo dell'Autunno",
+    type: COMMON,
+    image: completoautunno,
+    category: "Chiacchierino",
+    product: "COMPLETE-ALL",
   },
   {
     id: uuidv4(),
