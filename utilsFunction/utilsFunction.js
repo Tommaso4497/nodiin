@@ -2,22 +2,6 @@ import CollectionsIcon from "@mui/icons-material/Collections";
 import HomeIcon from "@mui/icons-material/Home";
 import { v4 as uuidv4 } from "uuid";
 
-import pokeball from "../images/amigrumi/pokeball.jpeg";
-import pallinaMinions from "../images/amigrumi/pallina_minions.jpeg";
-import polipetto from "../images/amigrumi/polipetto.jpeg";
-import pinguino from "../images/amigrumi/pinguino.png";
-import balenottere from "../images/amigrumi/balenottere.jpeg";
-import smileHearts from "../images/amigrumi/smileHearts.jpeg";
-import orsetto from "../images/amigrumi/orsetto.jpeg";
-import polipi from "../images/amigrumi/polipi.jpeg";
-import polipetti from "../images/amigrumi/polipetti.jpeg";
-import panda from "../images/amigrumi/panda.jpeg";
-import minionsBall from "../images/amigrumi/pallinaminions.jpeg";
-import minions3 from "../images/amigrumi/minions3.jpeg";
-import minions4 from "../images/amigrumi/minions4.jpeg";
-import smile from "../images/amigrumi/smile.jpeg";
-import spring from "../images/amigrumi/spring.jpeg";
-import draghetto from "../images/amigrumi/draghetto.jpeg";
 
 import uncinetto19 from "../images/uncinetto/uncinetto19.webp";
 import uncinetto20 from "../images/uncinetto/uncinetto20.webp";
