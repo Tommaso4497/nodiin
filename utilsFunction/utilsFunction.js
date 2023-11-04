@@ -72,6 +72,7 @@ import rinascitaverde from "../images/chiacchierino/rinascitaverde.webp";
 import angeloBianco from "../images/chiacchierino/angeloBianco.jpg";
 import angeloArgento from "../images/chiacchierino/angeloArgento.jpg";
 import fioridipesco from "../images/chiacchierino/fioridipesco.webp";
+import braccialepesco from "../images/chiacchierino/braccialePesca.webp";
 import rosadavorio from "../images/chiacchierino/rosadavorio.webp";
 import lucedelmare from "../images/chiacchierino/lucedelmare.webp";
 import orecchinifioreametista from "../images/chiacchierino/orecchinifioreametista.webp";
@@ -83,6 +84,9 @@ import braccialerossodorato from "../images/chiacchierino/braccialerossodorato.w
 import mezzalunaarancione from "../images/chiacchierino/mezzalunaarancione.webp";
 import mezzalunasabbia from "../images/chiacchierino/mezzalunasabbia.webp";
 import mezzalunarossa from "../images/chiacchierino/mezzalunarossa.webp";
+import ventagliorose from "../images/chiacchierino/ventagioRose.webp";
+import ventagliorosso from "../images/chiacchierino/ventaglioRosso.webp";
+
 import { Mail } from "@mui/icons-material";
 
 const COMMON = 0;
@@ -154,6 +158,22 @@ const elements = [
   },
   {
     id: uuidv4(),
+    title: "Fiori di Pesco",
+    type: COMMON,
+    image: fioridipesco,
+    category: "Chiacchierino",
+    product: "EARRINGS-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Bracciale Pesco",
+    type: COMMON,
+    image: braccialepesco,
+    category: "Chiacchierino",
+    product: "BRACELETS-ALL",
+  },
+  {
+    id: uuidv4(),
     title: "Rinascita verde",
     type: COMMON,
     image: rinascitaverde,
@@ -162,9 +182,17 @@ const elements = [
   },
   {
     id: uuidv4(),
-    title: "Fiori di Pesco",
+    title: "Ventaglio di Rose",
     type: COMMON,
-    image: fioridipesco,
+    image: ventagliorose,
+    category: "Chiacchierino",
+    product: "EARRINGS-ALL",
+  },
+  {
+    id: uuidv4(),
+    title: "Ventaglio in Rosso",
+    type: COMMON,
+    image: ventagliorosso,
     category: "Chiacchierino",
     product: "EARRINGS-ALL",
   },
