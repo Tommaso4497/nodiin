@@ -78,7 +78,7 @@ import stellablu from "../images/chiacchierino/stellaBlu.webp";
 import stellarosa from "../images/chiacchierino/stellaRosa.webp";
 import stellagialla from "../images/chiacchierino/stellaGialla.webp";
 import stellaarancione from "../images/chiacchierino/stellaArancione.webp";
-import completoautunno from "../images/chiacchierino/completoautunno.webp";
+import completoautunno from "../images/chiacchierino/completoAutunno.webp";
 
 import { Mail } from "@mui/icons-material";
 
